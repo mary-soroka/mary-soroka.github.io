@@ -60,7 +60,7 @@ a {
 	font-size:2em;
 	letter-spacing:-.01em;
 	line-height:1.4;
-	padding:6vw 10vw 0;
+	padding:7vw 10vw 0;
 	margin:0;
 }
 
@@ -208,3 +208,29 @@ img.project {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+/* project page */
+
+.project-description {
+	margin:0;
+	padding-bottom:6vw;
+	font-weight:400;
+}
+
+.back {
+	padding:6vw;
+	float:right;
+}
+
+.back a {
+	color:lightgrey;
+	font-size:1em;
+	font-weight:400;
+	letter-spacing:2px;
+	text-transform:uppercase;
+}
+
+.back a:hover {
+	color:black;
+}
+
