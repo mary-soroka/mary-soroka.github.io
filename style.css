@@ -1,5 +1,5 @@
 /* font */
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300, 400,700);
 
 
 /* universal */
@@ -203,8 +203,8 @@ h2 {
 
 .project-description {
 	font-size:2em;
-	font-weight:400;
-	margin-bottom:8vw;
+	font-weight:300;
+	margin-bottom:10vw;
 }
 
 .project-credits {
