@@ -246,3 +246,10 @@ img.project {
 	color:black;
 }
 
+.project-video {
+	background-color:black;
+	padding:56% 0 0;
+	position:relative;
+	margin-bottom:2vw;
+}
+
