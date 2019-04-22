@@ -215,13 +215,12 @@ img.project {
 
 .project-description {
 	margin:0;
-	padding-bottom:5vw;
+	padding-bottom:6vw;
 	font-weight:400;
 }
 
 .project-credits {
 	margin:0;
-	padding-bottom:6vw;
 	color:grey;
 	font-size:.35em;
 	font-weight:400;
