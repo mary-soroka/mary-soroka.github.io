@@ -221,6 +221,7 @@ img.project {
 
 .project-credits {
 	margin:0;
+	padding:7vw 10vw 0;
 	color:grey;
 	font-size:.35em;
 	font-weight:400;
@@ -229,7 +230,7 @@ img.project {
 }
 
 .back-button {
-	padding:6vw;
+	padding:0 6vw 6vw;
 	float:right;
 }
 
