@@ -54,6 +54,7 @@ a {
 	border-bottom:1px solid #f0f0f0;
 }
 
+
 /* intro */
 
 .intro {
@@ -86,6 +87,7 @@ h2 {
 	line-height:1;
 }
 
+
 /* awards */
 
 .awards {
@@ -111,6 +113,7 @@ h2 {
 	line-height:1.2;
 	letter-spacing:.005em;
 }
+
 
 /* brands */
 
@@ -145,7 +148,6 @@ img.brand {
 
 
 /* work */
-
 
 .work {
 	margin-top:7em;
@@ -210,6 +212,7 @@ img.project {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
 
 /* project page */
 
