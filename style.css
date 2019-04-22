@@ -11,17 +11,11 @@ body {
 	-webkit-font-smoothing: antialiased;
 	padding:0;
 	margin:0;
-	font-size: 12px;
 }
 
 a {
 	transition: all .1s ease-out;
 	text-decoration: none;
-}
-
-a:active {
-	color:red;
-	transition: all .1s ease-out;
 }
 
 
@@ -31,31 +25,28 @@ a:active {
 	top:0;
 	position:fixed;
 	width:100%;
-	text-align: center;
-	padding:1em 0;
-	margin:0;
 	background-color:white;
-	text-transform:uppercase;
+	z-index: 999;
+	padding:3vw 0;
+}
+
+.buttons {
+	float:right;
+	margin-right:3vw;
+	font-size:.7em;
 	font-weight:400;
 	letter-spacing:2px;
-	color:grey;
-	z-index: 999;
+	text-transform:uppercase;
 }
 
-.nav-buttons {
-	float:right;
-	padding:1em 0;
-	margin-right:2em;
-}
-
-.nav-buttons a {
+.buttons a {
 	color:black;
-	padding:1em 2em;
+	padding:1.5vw;
 	margin:0;
 }
 
-.nav-buttons a:hover {
-	color:pink;
+.buttons a:hover {
+	color:lightgrey;
 }
 
 .on {
@@ -66,68 +57,55 @@ a:active {
 /* intro */
 
 .intro {
-	font-size:2.5em;
-	letter-spacing: -.1pt;
-	line-height:1.5;
-	padding:0 0 0;
-}
-
-p {
-	padding: 0 11.5vw;
+	font-size:2em;
+	letter-spacing:-.01em;
+	line-height:1.4;
+	padding:6vw 10vw 0;
+	margin:0;
 }
 
 .intro a {
-	color: pink;
+	color:lightgrey;
 }
 
 .intro a:hover {
-	color:hotpink;
+	color:black;
 }
 
 h1 {
-	margin:1.2em 0 0;
-	font-size:16vw;
-	letter-spacing:-.5vw;
-	line-height:1;
+	margin:0;
+	font-size:4.6em;
+	letter-spacing:-.03em;
 	padding-top:2vw;
-	padding-left: 11.5vw;
+	padding-bottom:2vw;
 }
 
 h2 {
-	font-size:8vw;
-	letter-spacing:-.1vw;
-	line-height:1;
-	margin:0;
-	padding-top:8vw;
-	padding-left: 11.5vw;
+	font-size:2.3em;
+	letter-spacing:-.03em;
+	line-height:.9;
 }
 
 /* awards */
 
 .awards {
-	padding: 0 11.5vw;
-	margin-top:5vw;
-	margin-bottom:0;
+	padding-left:.15em;
+	margin-bottom:10vw;
 }
 
 .award {
-	margin-top:3vw;
+	margin-top:2.5vw;
 	padding-bottom:3vw;
 	border-bottom:1px solid #f0f0f0;
 }
 
-.award-title {
-	font-size:;
-}
-
 .award-color {
 	font-weight:400;
-	margin:0;
 }
 
 .award-category {
 	color:grey;
-	font-size:1.2vw;
+	font-size:.35em;
 	font-weight:400;
 	margin-top:1vw;
 }
@@ -190,7 +168,6 @@ img.project {
   vertical-align: top;
   width: 100%;
 }
-
 
 .container {
   position: relative;
