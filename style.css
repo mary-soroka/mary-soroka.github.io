@@ -137,13 +137,13 @@ img.brand {
 
 }
 .logos span {
-  display: table-cell;
-  width: auto;
-  padding:1em 3em;
+	display: table-cell;
+	width: auto;
+	padding:1em 3em;
 }
 .logos span img {
-  vertical-align: top;
-  width: 100%;
+	vertical-align: top;
+	width: 100%;
 }
 
 
@@ -161,56 +161,68 @@ img.project {
 .projects {
 	display: table;
 	width: 100%;
-
+	margin:0;
+	padding:0;
 }
+
 .projects span {
-  display: table-cell;
-  width: auto;
-  padding:0;
+	display: table-cell;
+	width: auto;
+	margin:0;
+	padding:0;
 }
 .projects span img {
-  vertical-align: top;
-  width: 100%;
+	vertical-align: top;
+	margin:0;
+	padding:0;
 }
 
 .container {
-  position: relative;
-  display: table-cell;
-  background-color:black;
+	position: relative;
+	display: table-cell;
+	background-color:black;
+	margin:0;
+	padding:0;
 }
 
 .thumbnail-container {
-  width: 100%;
-  height: auto;
+	width: 100%;
+	height: auto;
+	margin:0;
+	padding:0;
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: white;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: transparent;
+	margin:0;
+	padding:0;
 }
 
 .container:hover .overlay {
-  opacity: .9;
+	opacity: 1;
+	margin:0;
+	padding:0;
 }
 
 .text {
-  color: black;
-  font-size: 2em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+	color: white;
+	font-size: 2vw;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+	margin:0;
+	padding:0;
 }
 
 
