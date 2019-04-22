@@ -203,15 +203,16 @@ h2 {
 
 .project-description {
 	font-weight:400;
+	margin-bottom:5vw;
 }
 
 .project-credits {
 	margin:0;
 	padding:7vw 10vw 3vw;
 	color:grey;
-	font-size:.4em;
+	font-size:.5em;
 	font-weight:400;
-	line-height:1.4;
+	line-height:1.5;
 	letter-spacing:.005em;
 }
 
