@@ -108,6 +108,8 @@ h2 {
 	font-size:.35em;
 	font-weight:400;
 	margin-top:1vw;
+	line-height:1.5;
+	letter-spacing:.005em;
 }
 
 /* brands */
@@ -213,16 +215,26 @@ img.project {
 
 .project-description {
 	margin:0;
-	padding-bottom:6vw;
+	padding-bottom:5vw;
 	font-weight:400;
 }
 
-.back {
+.project-credits {
+	margin:0;
+	padding-bottom:6vw;
+	color:grey;
+	font-size:.35em;
+	font-weight:400;
+	line-height:1.5;
+	letter-spacing:.005em;
+}
+
+.back-button {
 	padding:6vw;
 	float:right;
 }
 
-.back a {
+.back-button a {
 	color:lightgrey;
 	font-size:1em;
 	font-weight:400;
@@ -230,7 +242,7 @@ img.project {
 	text-transform:uppercase;
 }
 
-.back a:hover {
+.back-button a:hover {
 	color:black;
 }
 
