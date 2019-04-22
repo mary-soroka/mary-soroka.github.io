@@ -202,8 +202,9 @@ h2 {
 /* project page */
 
 .project-description {
+	font-size:2em;
 	font-weight:400;
-	margin-bottom:5vw;
+	margin-bottom:8vw;
 }
 
 .project-credits {
