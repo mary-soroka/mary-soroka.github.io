@@ -39,13 +39,13 @@ a {
 	text-transform:uppercase;
 }
 
-.buttons a {
+.header a {
 	color:black;
 	padding:1.5vw;
 	margin:0;
 }
 
-.buttons a:hover {
+.header a:hover {
 	color:lightgrey;
 }
 
