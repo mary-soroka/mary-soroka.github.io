@@ -69,12 +69,11 @@ a:active {
 	font-size:2.5em;
 	letter-spacing: -.1pt;
 	line-height:1.5;
-	margin:2em 0 0;
 	padding:0 0 0;
 }
 
 p {
-	padding:.5em 5em;
+	padding: 0 11.5vw;
 }
 
 .intro a {
@@ -86,37 +85,39 @@ p {
 }
 
 h1 {
-	font-size:5em;
-	letter-spacing:-.04em;
+	margin:1.2em 0 0;
+	font-size:16vw;
+	letter-spacing:-.5vw;
 	line-height:1;
-	margin:0;
-	padding:.5em .94em 0;
+	padding-top:2vw;
+	padding-left: 11.5vw;
 }
 
 h2 {
-	font-size:3em;
-	letter-spacing:-.02em;
+	font-size:8vw;
+	letter-spacing:-.1vw;
 	line-height:1;
 	margin:0;
-	padding:1.1em 1.62em 0;
+	padding-top:8vw;
+	padding-left: 11.5vw;
 }
 
 /* awards */
 
 .awards {
-	padding:0 5em;
-	margin-top:2em;
+	padding: 0 11.5vw;
+	margin-top:5vw;
 	margin-bottom:0;
 }
 
 .award {
-	margin-bottom:1em;
-	padding-bottom:1em;
+	margin-top:3vw;
+	padding-bottom:3vw;
 	border-bottom:1px solid #f0f0f0;
 }
 
 .award-title {
-	font-size:1.2em;
+	font-size:;
 }
 
 .award-color {
@@ -126,9 +127,9 @@ h2 {
 
 .award-category {
 	color:grey;
-	font-size:.4em;
+	font-size:1.2vw;
 	font-weight:400;
-	margin-top:.5em;
+	margin-top:1vw;
 }
 
 /* brands */
