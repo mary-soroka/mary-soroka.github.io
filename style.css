@@ -5,16 +5,22 @@
 /* universal */
 
 body {
+	color:white;
 	font-family: 'Montserrat', sans serif;
 	font-weight:700;
 	text-align: left;
 	-webkit-font-smoothing: antialiased;
 	padding:0;
 	margin:0;
+	background:url('images/gradient.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 a {
-	transition: all .1s ease-out;
+	transition: all .3s ease-out;
 	text-decoration: none;
 }
 
@@ -25,28 +31,34 @@ a {
 	top:0;
 	position:fixed;
 	width:100%;
-	background-color:white;
 	z-index: 999;
-	padding:3vw 0;
+	padding:2.5vw 1.5vw;
+	font-size:1.3em;
+}
+
+.me {
+	float:left;
+	line-height:.5;
 }
 
 .buttons {
 	float:right;
-	margin-right:3vw;
-	font-size:.7em;
+	padding:0;
+	margin-right:4vw;
+	font-size:.6em;
 	font-weight:400;
-	letter-spacing:.1em;
-	text-transform:uppercase;
+	letter-spacing:.05em;
+	line-height:2;
 }
 
 .header a {
-	color:black;
+	color:white;
 	padding:1.5vw;
 	margin:0;
 }
 
 .header a:hover {
-	color:lightgrey;
+	color:rgb(255,255,255,.7);
 }
 
 .on {
@@ -74,30 +86,45 @@ a {
 }
 
 h1 {
+	color:white;
 	margin:0;
-	font-size:4.6em;
+	font-size:6.2vw;
 	letter-spacing:-.03em;
-	padding-top:2vw;
+	line-height:1;
+	padding-top:0vw;
 	padding-bottom:2vw;
 }
 
 h2 {
-	font-size:1.7em;
+	color:white;
+	font-size:3em;
 	letter-spacing:-.02em;
 	line-height:1;
 }
 
-.hello {
+.or {
 	font-weight:400;
+	font-size:.6em;
 }
 
-.hello a {
-	color:lightgrey;
+/* background video*/
+
+#bg-video {
+  position: fixed;
+  height:100%;
 }
 
-.hello a:hover {
-	color:black;
+/* background video*/
+
+.content {
+  position: fixed;
+  margin-top:5vw;
+  background: rgba(0, 0, 0, 0);
+  color: #f1f1f1;
+  width: 100%;
+  height:100%;
 }
+
 
 /* awards */
 
@@ -107,6 +134,7 @@ h2 {
 }
 
 .award {
+	font-size:1.2em;
 	margin-top:2.5vw;
 	padding-bottom:3vw;
 	border-bottom:1px solid #f0f0f0;
@@ -119,12 +147,15 @@ h2 {
 .award-category {
 	color:grey;
 	font-size:.4em;
-	font-weight:400;
+	font-weight:300;
 	margin-top:1vw;
 	line-height:1.4;
 	letter-spacing:.005em;
+	padding-left:0vw;
 }
 
+.award-date {
+}
 /* brands */
 
 .logos {
@@ -184,8 +215,8 @@ h2 {
 	left: 0;
 	right: 0;
 	opacity: 0;
-	transition: .5s ease;
-	background-color: black;
+	transition: .3s ease;
+	background-color: transparent;
 	margin:0;
 	padding:0;
 }
@@ -198,7 +229,8 @@ h2 {
 
 .overlay-text {
 	color: white;
-	font-size: 1.8vw;
+	font-size: 7vw;
+	line-height:1.1;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -248,8 +280,7 @@ h2 {
 
 .project-video {
 	background-color:black;
-	padding:56% 0 0;
+	padding:0 0;
 	position:relative;
 	margin-bottom:2vw;
 }
-
