@@ -3,7 +3,9 @@
 
 /* mobile */
 @media only screen and (max-width: 600px) {
-font-size:5em;
+
+body {font-size:5em;}
+
 }
 
 /* universal */
@@ -132,12 +134,12 @@ h2 {
 .video-foreground,
 .video-background iframe {
 	background-color:black;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
 }
 .vidtop-content {
 	background-color:rgba(0,0,0,.2);
