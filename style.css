@@ -88,7 +88,7 @@ a {
 h1 {
 	color:white;
 	margin:0;
-	font-size:6.1vw;
+	font-size:4.5vw;
 	letter-spacing:-.03em;
 	line-height:1;
 	padding-top:0vw;
@@ -111,7 +111,8 @@ h2 {
 
 #bg-video {
   position: fixed;
-  height:100%;
+  width:100%;
+  height:auto;
 }
 
 /* background video*/
