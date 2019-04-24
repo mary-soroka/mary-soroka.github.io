@@ -1,12 +1,6 @@
 /* font */
 @import url(https://fonts.googleapis.com/css?family=Montserrat:300, 400,700);
 
-/* mobile */
-@media only screen and (max-width: 600px) {
-body {font-size:3em;}
-
-}
-
 /* universal */
 
 body {
@@ -37,19 +31,20 @@ a {
 	position:fixed;
 	width:100%;
 	z-index: 999;
-	padding:2.5vw 1.5vw;
+	padding:2.5vw 0;
 	font-size:1.3em;
 }
 
 .me {
 	float:left;
-	line-height:.5;
+	margin-left:2vw;
+	line-height:.8;
 }
 
 .buttons {
 	float:right;
 	padding:0;
-	margin-right:4vw;
+	margin-right:2vw;
 	font-size:.6em;
 	font-weight:400;
 	letter-spacing:.05em;
@@ -93,7 +88,7 @@ a {
 h1 {
 	color:white;
 	margin:0;
-	font-size:5.5vw;
+	font-size:6vw;
 	letter-spacing:-.03em;
 	line-height:1;
 	padding-top:0vw;
@@ -141,7 +136,7 @@ h2 {
 	pointer-events: none;
 }
 .vidtop-content {
-	background-color:rgba(0,0,0,.2);
+	background-color:rgba(0,0,0,.3);
 	top: 0;
 	height:100%;
 }
@@ -158,7 +153,6 @@ h2 {
 @media all and (max-width: 500px) {
 .vid-info .acronym { display: none; }
 }	
-
 
 /* awards */
 
@@ -190,10 +184,11 @@ h2 {
 
 .award-date {
 }
+
 /* brands */
 
 .logos {
-	background-color:#f0f0f0;
+	background-color:transparent;
 	padding:2.5vw 8vw 6vw;
 	margin-top:8vw;
 }
@@ -203,6 +198,13 @@ h2 {
 	display: table-cell;
 	margin:0;
 	padding:2.4vw;
+}
+
+.logothumbcontainer{
+	width: 100%;
+	height: auto;
+	margin:0;
+	padding:0;
 }
 
 /* projects */
@@ -318,3 +320,141 @@ h2 {
 	position:relative;
 	margin-bottom:2vw;
 }
+
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+  h1 {
+  	margin-top:40vw;
+    font-size:8vw;
+  }
+
+.header {
+	top:0;
+	position:fixed;
+	width:100%;
+	z-index: 999;
+	padding:10vw;
+	font-size:1.3em;
+	text-align:left;
+	background:url('images/gradient.jpg') no-repeat center center fixed;
+}
+
+.me {
+	font-size:1em;
+	float:none;
+	margin-left:0;
+	line-height:2.5;
+	padding:0;
+	margin:0;
+}
+
+.buttons {
+	float:none;
+	font-size:1em;
+	font-weight:400;
+	letter-spacing:.05em;
+	line-height:2.5;
+	padding:0;
+	margin:0;
+}
+
+.header a {
+	color:white;
+	padding:1.5vw 1.5vw;
+	margin:0;
+	border:0;
+}
+
+.header a:hover {
+	color:rgb(255,255,255,.7);
+}
+
+.on {
+	padding:1.5vw 0;
+	margin:0;
+	border-bottom:1px solid white;
+}
+
+.work {
+	margin-top:40vw;
+}
+
+
+/* awards */
+
+.awards {
+	margin-top:40vw;
+}
+
+.logos {
+	margin-top:40vw;
+	padding:5vw;
+}
+
+.logocontainer {
+	position:relative;
+	display: inline;
+	margin:0;
+	padding:7vw;
+}
+
+.logothumbcontainer {
+	display:inline-block;
+	width:30vw;
+	margin:0;
+	padding:0;
+}
+
+/* projects */
+
+.projects {
+	display: inline-block;
+	width: 100%;
+	margin:0;
+	padding:0;
+}
+
+.projects span {
+	display: inline-block;
+	width: auto;
+	margin:0;
+	padding:0;
+}
+
+.projects span img {
+	vertical-align: top;
+	margin:0;
+	padding:0;
+}
+
+.container {
+	position: relative;
+	display: inline;
+	background-color:black;
+	margin:0;
+	padding:0;
+}
+
+.thumbnail-container {
+	width: 100%;
+	height: auto;
+	margin:0;
+	padding:0;
+}
+
+.overlay {
+	display:none;
+}
+
+.container:hover .overlay {
+	display:none;
+}
+
+.overlay-text {
+	display:none;
+}
+
+
+}
+
