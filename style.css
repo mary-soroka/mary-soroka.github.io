@@ -96,6 +96,7 @@ h1 {
 	color:white;
 	margin:0;
 	font-size:5vw;
+	font-weight:700;
 	letter-spacing:-.03em;
 	line-height:1;
 	padding-top:0vw;
@@ -106,12 +107,13 @@ h1 {
 h2 {
 	color:white;
 	font-size:3em;
+	font-weight:700;
 	letter-spacing:-.02em;
 	line-height:1;
 }
 
 .or {
-	font-weight:400;
+	font-weight:700;
 	font-size:1.35vw;
 }
 
