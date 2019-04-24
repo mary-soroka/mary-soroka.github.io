@@ -1,0 +1,159 @@
+
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+  h1 {
+  	margin-top:60vw;
+    font-size:8vw;
+  }
+
+.header {
+	top:0;
+	position:fixed;
+	width:100%;
+	z-index: 999;
+	padding:10vw;
+	font-size:1.3em;
+	text-align:left;
+	background:url('images/gradient.jpg') no-repeat center center fixed;
+}
+
+.me {
+	font-size:3em;
+	float:none;
+	margin-left:0;
+	line-height:1;
+	padding:0;
+	margin:0 0 3vw;
+}
+
+.buttons {
+	float:none;
+	font-size:1em;
+	font-weight:400;
+	letter-spacing:.05em;
+	line-height:2.5;
+	padding:0;
+	margin:0;
+}
+
+.header a {
+	color:white;
+	padding:1.5vw 1.5vw;
+	margin:0;
+	border:0;
+}
+
+.header a:hover {
+	color:rgb(255,255,255,.7);
+}
+
+.on {
+	padding:1.5vw 0;
+	margin:0;
+	border-bottom:1px solid white;
+}
+
+.or {
+	font-size:4vw;
+}
+
+/* work */
+
+.work {
+	margin-top:57vw;
+}
+
+.projects {
+	display: inline-block;
+	width: 100%;
+	margin:0;
+	padding:0;
+}
+
+.projects span {
+	display: inline-block;
+	width: auto;
+	margin:0;
+	padding:0;
+}
+
+.projects span img {
+	vertical-align: top;
+	margin:0;
+	padding:0;
+}
+
+.container {
+	position: relative;
+	display: inline;
+	background-color:black;
+	margin:0;
+	padding:0;
+}
+
+.thumbnail-container {
+	width: 100%;
+	height: auto;
+	margin:0;
+	padding:0;
+}
+
+.overlay {
+	display:none;
+}
+
+.container:hover .overlay {
+	display:none;
+}
+
+.overlay-text {
+	display:none;
+}
+
+/* awards */
+
+.awards {
+	margin-top:60vw;
+}
+
+.awards h2 {
+	font-size:15vw;
+	padding:0;
+	margin:0;
+	padding-bottom:10vw;
+}
+
+/* brands */
+
+.logos {
+	margin-top:57vw;
+	padding:5vw;
+}
+
+.logocontainer {
+	position:relative;
+	display: inline;
+	margin:0;
+	padding:7vw;
+}
+
+.logothumbcontainer {
+	display:inline-block;
+	width:30vw;
+	margin:0;
+	padding:0;
+}
+
+/* contact */
+
+.contact {
+	font-size:15vw;
+	margin-top:60vw;
+	letter-spacing:-.01em;
+	line-height:1;
+	padding:10vw 10vw 0;
+}
+
+
+}
