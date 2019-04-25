@@ -316,11 +316,12 @@ h2 {
 }
 
 .back-button a {
-	color:lightgrey;
+	color:white;
 	font-size:1em;
 	font-weight:400;
 	letter-spacing:2px;
 	text-transform:uppercase;
+	transition: .3s ease;
 }
 
 .back-button a:hover {
