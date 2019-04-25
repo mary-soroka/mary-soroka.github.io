@@ -249,7 +249,7 @@ h2 {
 	left: 0;
 	right: 0;
 	opacity: 0;
-	background-color: transparent;
+	background-color: rgba(0,0,0,.5);
 	margin:0;
 	padding:0;
 }
