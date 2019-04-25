@@ -47,7 +47,7 @@ a {
 	font-size:.6em;
 	font-weight:400;
 	letter-spacing:.05em;
-	line-height:2;
+	line-height:1.5;
 }
 
 .header a {
@@ -57,7 +57,7 @@ a {
 }
 
 .header a:hover {
-	color:rgb(255,255,255,.7);
+	color:rgba(255,255,255,.7);
 }
 
 .on {
@@ -218,6 +218,10 @@ h2 {
 
 /* projects */
 
+.work {
+	margin-top:6.2vw;
+}
+
 .projects {
 	display: table;
 	width: 100%;
@@ -320,7 +324,7 @@ h2 {
 }
 
 .back-button a:hover {
-	color:black;
+	color:rgba(255,255,255,.7);
 }
 
 .project-video {
