@@ -1,35 +1,45 @@
 
 
 /* mobile */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
+	
   h1 {
   	margin-top:60vw;
     font-size:8vw;
   }
+
+.intro {
+	padding:0 2vw 0;
+	margin:0;
+}
 
 .header {
 	top:0;
 	position:fixed;
 	width:100%;
 	z-index: 999;
-	padding:10vw;
+	padding:4vw;
 	font-size:1.3em;
 	text-align:left;
 	background:url('images/gradient.jpg') no-repeat center center fixed;
+
+	border-bottom:1px solid rgba(255,255,255,1);
 }
 
 .me {
-	font-size:3em;
+	text-align:center;
+	font-size:2em;
 	float:none;
 	margin-left:0;
 	line-height:1;
 	padding:0;
-	margin:0 0 3vw;
+	margin:0 0 2vw;
 }
 
 .buttons {
+	text-align:center;
 	float:none;
-	font-size:1em;
+	font-size:.8em;
 	font-weight:400;
 	letter-spacing:.05em;
 	line-height:2.5;
@@ -39,7 +49,7 @@
 
 .header a {
 	color:white;
-	padding:1.5vw 1.5vw;
+	padding:0 1.5vw;
 	margin:0;
 	border:0;
 }
@@ -114,7 +124,8 @@
 /* awards */
 
 .awards {
-	margin-top:60vw;
+	margin-top:35vw;
+	padding:5vw;
 }
 
 .awards h2 {
@@ -144,16 +155,5 @@
 	margin:0;
 	padding:0;
 }
-
-/* contact */
-
-.contact {
-	font-size:15vw;
-	margin-top:60vw;
-	letter-spacing:-.01em;
-	line-height:1;
-	padding:10vw 10vw 0;
-}
-
 
 }
