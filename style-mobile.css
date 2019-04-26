@@ -13,6 +13,10 @@
 	margin:0;
 }
 
+.project-intro {
+	margin-top:30vw;
+}
+
 .header {
 	top:0;
 	position:fixed;
