@@ -154,6 +154,13 @@ h1 {
 	border-bottom:1px solid rgba(255,255,255,0.1);
 }
 
+.award-last {
+	font-size:1.2em;
+	margin-top:2.5vw;
+	padding-bottom:3vw;
+	border-bottom:0;
+}
+
 .award-color {
 	font-weight:400;
 }
