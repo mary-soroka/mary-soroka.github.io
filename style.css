@@ -363,6 +363,11 @@ h1 {
 /* mobile */
 @media screen and (max-width: 930px) {
 
+body {
+	background-color:black;
+	background:url('https://mary-soroka.github.io/images/gradient-virgin.jpg') no-repeat center center fixed;
+}
+
 .intro {
 	padding:0 2vw 0;
 	margin:0;
@@ -376,7 +381,8 @@ h1 {
 	padding:4vw;
 	font-size:1.2em;
 	text-align:left;
-	background:url('images/gradient.jpg') no-repeat center center fixed;
+	background-color:black;
+	background:url('https://mary-soroka.github.io/images/gradient-virgin.jpg') no-repeat center center fixed;
 	border-bottom:1px solid rgba(255,255,255,.1);
 }
 
