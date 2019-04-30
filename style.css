@@ -361,7 +361,7 @@ h1 {
 
 
 /* mobile */
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 800px) {
 
 body {
 	background-color:black;
