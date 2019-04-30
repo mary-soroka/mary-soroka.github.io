@@ -298,6 +298,15 @@ h1 {
 img.project-image {
 	width:20vw;
 	height:auto;
+	padding:0;
+	margin:0;
+}
+
+.project-image img {
+	width:20vw;
+	height:auto;
+	padding:0;
+	margin:0;
 }
 
 .project-credits {
