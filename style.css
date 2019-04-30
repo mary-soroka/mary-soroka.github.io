@@ -295,6 +295,11 @@ h1 {
 	margin:3vw 0 5vw;
 }
 
+img.project-image {
+	width:20vw;
+	height:auto;
+}
+
 .project-credits {
 	margin:0;
 	padding:7vw 10vw 3vw;
