@@ -361,7 +361,7 @@ h1 {
 
 
 /* mobile */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 930px) {
 
 .intro {
 	padding:0 2vw 0;
