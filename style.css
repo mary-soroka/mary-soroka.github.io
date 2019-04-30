@@ -479,7 +479,7 @@ h1 {
 /* project page */
 
 .project-content {
-	padding:0;
+	padding:2vw;
 	margin:0;
 }
 
@@ -497,29 +497,30 @@ h1 {
 
 .awards {
 	margin:0;
-	padding:5vw;
+	padding:0;
 }
 
 /* brands */
 
 .logos {
 	display:inline-block;
-	margin:2vw 0;
-	padding:3vw;
+	margin:10vw 0;
+	padding:0;
 }
 
 .logocontainer {
 	position:relative;
 	display: inline-block;
 	margin:0;
-	padding:5vw;
+	padding:0;
+	text-align:center;
 }
 
 .logothumbcontainer {
-	display:inline-block;
-	width:20vw;
+	display:inline;
+	width:50%;
 	margin:0;
-	padding:0;
+	padding:5vw 0;
 }
 
 }
