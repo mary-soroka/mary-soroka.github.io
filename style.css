@@ -12,10 +12,8 @@ body {
 	-webkit-font-smoothing: antialiased;
 	padding:0;
 	margin:0;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	background:url('https://mary-soroka.github.io/images/gradient-virgin.jpg') no-repeat center center fixed;
+	background-height:100%;
 }
 
 a {
@@ -241,13 +239,15 @@ h1 {
 	left: 0;
 	right: 0;
 	opacity: 0;
-	background-color: rgba(0,0,0,.5);
+	background-color: rgba(0,0,0,.8);
 	margin:0;
 	padding:0;
+	background:url('https://mary-soroka.github.io/images/gradient-virgin.jpg') no-repeat center center fixed;
+	background-height:100%;
 }
 
 .container:hover .overlay {
-	opacity: .8;
+	opacity: .9;
 	margin:0;
 	padding:0;
 	transition: .3s ease;
@@ -255,7 +255,7 @@ h1 {
 
 .overlay-text {
 	color: white;
-	font-size: 3vw;
+	font-size: 1.8vw;
 	line-height:1.1;
 	position: absolute;
 	top: 50%;
