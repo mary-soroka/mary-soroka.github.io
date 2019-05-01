@@ -63,24 +63,29 @@ a {
 }
 
 .header-home a {
-	color:white;
+	color:grey;
+	opacity:1;
 	padding:1.5vw;
 	margin:0;
 }
 
 .header-pages a {
-	color:black;
+	color:grey;
+	opacity:1;
 	padding:1.5vw;
 	margin:0;
+
 }
 
 .header-home a:hover {
-	color:rgba(255,255,255,.7);
+	color:grey;
+	opacity:.3;
 	transition: .3s ease;
 }
 
 .header-pages a:hover {
-	color:rgba(0,0,0,.3);
+	color:grey;
+	opacity:.3;
 	transition: .3s ease;
 }
 
@@ -353,7 +358,7 @@ h1 {
 
 .back-button a:hover {
 	color:grey;
-	opacity:.7;
+	opacity:.3;
 	transition: .3s ease;
 }
 
