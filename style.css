@@ -30,23 +30,14 @@ a {
 
 .header-pages {
 	top:0;
-	background-color:white;
 	position:fixed;
 	width:100%;
 	z-index: 999;
 	padding:2.5vw 0;
+	background-color:white;
 }
 
-
-.me-home {
-
-	float:left;
-	margin-left:4.5vw;
-	line-height:.8;
-	font-size:1.3em;
-}
-
-.me-pages {
+.me {
 	float:left;
 	margin-left:4.5vw;
 	line-height:.8;
