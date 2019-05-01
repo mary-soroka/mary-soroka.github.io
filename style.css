@@ -142,7 +142,7 @@ h1 {
 }
 
 .vidtop-content {
-	background-color:rgba(0,0,0,.3);
+	background-color:rgba(0,0,0,0);
 	padding:26% 0;
 	margin:0;
 	height:100%;
@@ -343,7 +343,7 @@ h1 {
 .back-button a {
 	color:grey;
 	font-size:1em;
-	font-weight:400;
+	font-weight:500;
 }
 
 .back-button a:hover {
@@ -385,8 +385,7 @@ h1 {
 @media screen and (max-width: 800px) {
 
 body {
-	background-color:black;
-	background:url('https://mary-soroka.github.io/images/gradient-virgin.jpg') no-repeat center center fixed;
+	background-color:white;
 }
 
 .intro {
@@ -394,36 +393,41 @@ body {
 	margin:0;
 }
 
-.header {
+.header-home {
 	top:0;
 	position:relative;
 	width:100%;
 	z-index: 999;
 	padding:4vw;
-	font-size:1.2em;
-	text-align:left;
-	background-color:black;
-	background:url('https://mary-soroka.github.io/images/gradient-virgin.jpg') no-repeat center center fixed;
-	border-bottom:1px solid rgba(255,255,255,.1);
+	background-color:none;
+	background-image:none;
+}
+
+.header-pages {
+	top:0;
+	position:fixed;
+	width:100%;
+	z-index: 999;
+	padding:4vw;
+	background-color:white;
+	height:10vw;
 }
 
 .me {
-	text-align:center;
-	font-size:2em;
-	float:none;
-	margin-left:0;
+	font-size:2.5vw;
+	float:left;
 	line-height:1;
 	padding:0;
-	margin:0 0 2vw;
+	margin:0;
 }
 
 .buttons {
 	text-align:center;
-	float:none;
-	font-size:.8em;
-	font-weight:400;
-	letter-spacing:.05em;
-	line-height:2.5;
+	float:right;
+	font-size:2.5vw;
+	font-weight:500;
+	letter-spacing:0em;
+	line-height:1;
 	padding:0;
 	margin:0;
 }
@@ -505,8 +509,8 @@ body {
 /* project page */
 
 .project-content {
-	padding:2vw;
-	margin:0;
+	padding:1vw;
+	margin:15vw 0 0;
 }
 
 .project-intro h2 {
