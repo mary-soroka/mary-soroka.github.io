@@ -383,7 +383,7 @@ h1 {
 
 
 /* mobile */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 
 body {
 	background-color:white;
@@ -547,7 +547,7 @@ body {
 }
 
 .project-description {
-	font-size: 1em;
+	font-size:3.5vw;
 	line-height:1.5;
 	font-weight:500;
 	margin:6vw 0 8vw;
@@ -558,7 +558,7 @@ body {
 	padding:8vw 10vw 5vw;
 	font-size:3.5vw;
 	font-weight:500;
-	line-height:1.55;
+	line-height:1.5;
 	letter-spacing:.005em;
 }
 
