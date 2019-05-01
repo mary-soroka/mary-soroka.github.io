@@ -509,7 +509,7 @@ body {
 /* project page */
 
 .project-content {
-	padding:12vw 10vw 0;
+	padding:15vw 10vw 0;
 	margin:0;
 }
 
@@ -519,14 +519,14 @@ body {
 }
 
 .project-intro {
-	font-size:2em;
+	font-size:3em;
 }
 
 .project-description {
 	color:grey;
-	font-size:1em;
+	font-size:1.5em;
 	font-weight:500;
-	margin:8vw 0 8vw;
+	margin:5vw 0 8vw;
 }
 
 .project-credits {
