@@ -509,18 +509,38 @@ body {
 /* project page */
 
 .project-content {
-	padding:3vw;
-	margin:12vw 0 0;
+	padding:12vw 3vw 0;
+	margin:0;
 }
 
-.project-intro h2 {
-	padding:0;
+.project-content2 {
+	padding:2vw 3vw 0;
 	margin:0;
+}
+
+.project-intro {
+	font-size:2em;
 }
 
 .project-description {
-	padding:0;
+	color:grey;
+	font-size:1em;
+	font-weight:500;
+	margin:3vw 0 5vw;
+}
+
+.project-credits {
 	margin:0;
+	padding:7vw 10vw 3vw;
+	color:grey;
+	font-size:.7em;
+	font-weight:500;
+	line-height:1.6;
+	letter-spacing:.005em;
+}
+
+.back-button {
+	padding:2vw 10vw 10vw;
 }
 
 /* awards */
