@@ -74,16 +74,6 @@ a {
 	text-align:center;
 }
 
-.m {
-	padding:25vw 0 0;
-	margin:0;
-	text-align:center;
-}
-
-.m img {
-	width:60%;
-	}
-
 h1 {
 	color:white;
 	font-size:10vw;
@@ -113,14 +103,15 @@ h1 {
 
 * { box-sizing: border-box; }
 .video-background {
-  background: #000;
   position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
   z-index: -99;
 }
-.video-foreground,
-.video-background iframe {
-	background-color:black;
+
+.video-foreground, .video-background iframe {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -128,11 +119,19 @@ h1 {
 	height: 100%;
 	pointer-events: none;
 }
+
 .vidtop-content {
 	background-color:rgba(0,0,0,.3);
-	top: 0;
+	padding:30% 0;
+	margin:0;
 	height:100%;
+	text-align:center;
 }
+
+.vidtop-content img {
+	width:60%;
+	}
+
 @media (min-aspect-ratio: 16/9) {
   .video-foreground { height: 300%; top: -100%; }
 }
