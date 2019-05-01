@@ -401,13 +401,18 @@ body {
 	margin:0;
 }
 
+.slash {
+	display:none;
+}
+
 .header-home {
-	top:0;
-	position:relative;
 	width:100%;
 	z-index: 999;
-	padding:4vw;
-	background-color:none;
+	padding:0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 
 .header-pages {
@@ -424,9 +429,8 @@ body {
 .me-home {
 	text-align:center;
 	font-size:13vw;
-	float:none;
 	line-height:1.2;
-	padding:50% 0 4vw;
+	padding:0 0 4vw;
 	margin:0;
 }
 
@@ -465,10 +469,6 @@ body {
 	padding:1.5vw 0;
 	margin:0;
 }
-
-.m img {
-	width:80%;
-	}
 
 /* work */
 
