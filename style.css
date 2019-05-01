@@ -4,14 +4,12 @@
 /* universal */
 
 body {
-	color:white;
-	background-color:black;
+	background-color:white;
 	font-family: 'Montserrat', Sans-Serif;
 	font-weight:700;
 	-webkit-font-smoothing: antialiased;
 	padding:0;
 	margin:0;
-	background:url('https://mary-soroka.github.io/images/gradient-virgin.jpg') no-repeat center center fixed;
 	background-height:100%;
 }
 
@@ -22,7 +20,7 @@ a {
 
 /* header */
 
-.header {
+.header-home {
 	top:0;
 	position:fixed;
 	width:100%;
@@ -30,7 +28,25 @@ a {
 	padding:2.5vw 0;
 }
 
-.me {
+.header-pages {
+	top:0;
+	background-color:white;
+	position:fixed;
+	width:100%;
+	z-index: 999;
+	padding:2.5vw 0;
+}
+
+
+.me-home {
+
+	float:left;
+	margin-left:4.5vw;
+	line-height:.8;
+	font-size:1.3em;
+}
+
+.me-pages {
 	float:left;
 	margin-left:4.5vw;
 	line-height:.8;
@@ -46,22 +62,32 @@ a {
 	letter-spacing:.05em;
 }
 
-.header a {
+.header-home a {
 	color:white;
 	padding:1.5vw;
 	margin:0;
 }
 
-.header a:hover {
+.header-pages a {
+	color:black;
+	padding:1.5vw;
+	margin:0;
+}
+
+.header-home a:hover {
 	color:rgba(255,255,255,.7);
+	transition: .3s ease;
+}
+
+.header-pages a:hover {
+	color:rgba(0,0,0,.3);
 	transition: .3s ease;
 }
 
 .on {
 	padding-bottom:.5em;
-	border-bottom:1px solid rgba(255,255,255,.1);
+	border-bottom:1px solid rgba(0,0,0,.1);
 }
-
 
 /* intro */
 
@@ -122,7 +148,7 @@ h1 {
 
 .vidtop-content {
 	background-color:rgba(0,0,0,.3);
-	padding:30% 0;
+	padding:26% 0;
 	margin:0;
 	height:100%;
 	text-align:center;
@@ -202,6 +228,7 @@ h1 {
 /* projects */
 
 .work {
+	background-color:black;
 	margin-top:6.2vw;
 }
 
@@ -247,10 +274,9 @@ h1 {
 	left: 0;
 	right: 0;
 	opacity: 0;
-	background-color: rgba(0,0,0,.8);
+	background-color: rgba(0,0,0,.9);
 	margin:0;
 	padding:0;
-	background:url('https://mary-soroka.github.io/images/gradient-virgin.jpg') no-repeat center center fixed;
 	background-height:100%;
 }
 
