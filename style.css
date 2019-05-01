@@ -412,7 +412,7 @@ body {
 	padding:4vw;
 	background-color:white;
 	height:25vw;
-	border-bottom:1px solid grey;
+	border-bottom:1px solid rgba(0,0,0,.1);
 }
 
 .me {
@@ -530,7 +530,7 @@ body {
 /* project page */
 
 .project-content {
-	padding:25vw 10vw 0;
+	padding:30vw 10vw 0;
 	margin:0;
 }
 
@@ -544,7 +544,7 @@ body {
 }
 
 .project-description {
-	font-size:1em;
+	font-size:.8em;
 	font-weight:500;
 	margin:5vw 0 8vw;
 }
