@@ -412,7 +412,7 @@ body {
 	padding:4vw;
 	background-color:white;
 	height:25vw;
-	border-bottom:1px solid rgba(0,0,0,.1);
+	border-bottom:1px solid rgba(0,0,0,.05);
 }
 
 .me {
