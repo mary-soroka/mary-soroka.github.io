@@ -54,7 +54,7 @@ a {
 }
 
 .header-home a {
-	color:grey;
+	color:white;
 	opacity:1;
 	padding:1.5vw;
 	margin:0;
@@ -69,7 +69,7 @@ a {
 }
 
 .header-home a:hover {
-	color:grey;
+	color:white;
 	opacity:.3;
 	transition: .3s ease;
 }
