@@ -541,7 +541,7 @@ body {
 }
 
 .project-intro {
-	font-size:6vw;
+	font-size:6.2vw;
 	font-weight:700;
 	letter-spacing:-.5;
 }
@@ -555,7 +555,7 @@ body {
 
 .project-credits {
 	margin:0;
-	padding:8vw 10vw 5vw;
+	padding:8vw 10vw 8vw;
 	font-size:3.5vw;
 	font-weight:500;
 	line-height:1.5;
@@ -563,7 +563,7 @@ body {
 }
 
 .back-button {
-	padding:0 10vw 10vw;
+	padding:0 10vw 15vw;
 }
 
 /* awards */
