@@ -61,7 +61,7 @@ a {
 }
 
 .header-pages a {
-	color:grey;
+	color:#808080;
 	opacity:1;
 	padding:1.5vw;
 	margin:0;
@@ -186,7 +186,7 @@ h1 {
 }
 
 .award-category {
-	color:grey;
+	color:#808080;
 	font-size:.4em;
 	font-weight:300;
 	margin-top:1vw;
@@ -311,7 +311,7 @@ h1 {
 }
 
 .project-intro {
-	color:grey;
+	color:#808080;
 	font-size:2.8em;
 	font-weight:700;
 	letter-spacing:-.02em;
@@ -319,7 +319,7 @@ h1 {
 }
 
 .project-description {
-	color:grey;
+	color:#808080;
 	font-size:1.2em;
 	font-weight:500;
 	margin:3vw 0 5vw;
@@ -328,7 +328,7 @@ h1 {
 .project-credits {
 	margin:0;
 	padding:7vw 10vw 3vw;
-	color:grey;
+	color:#808080;
 	font-size:.7em;
 	font-weight:500;
 	line-height:1.6;
@@ -341,7 +341,7 @@ h1 {
 }
 
 .back-button a {
-	color:grey;
+	color:#808080;
 	font-size:1em;
 	font-weight:500;
 }
@@ -523,7 +523,6 @@ body {
 }
 
 .project-description {
-	color:grey;
 	font-size:1.2em;
 	font-weight:500;
 	margin:5vw 0 8vw;
@@ -532,7 +531,6 @@ body {
 .project-credits {
 	margin:0;
 	padding:8vw 10vw 8vw;
-	color:grey;
 	font-size:.7em;
 	font-weight:500;
 	line-height:1.6;
