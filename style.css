@@ -412,6 +412,7 @@ body {
 	padding:4vw;
 	background-color:white;
 	height:25vw;
+	border-bottom:1px solid grey;
 }
 
 .me {
@@ -496,16 +497,35 @@ body {
 }
 
 .overlay {
-	display:none;
-}
-
-.container:hover .overlay {
-	display:none;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 1;
+	background-color: rgba(0,0,0,.9);
+	margin:0;
+	padding:0;
+	background-height:100%;
 }
 
 .overlay-text {
-	display:none;
+	color: white;
+	font-size: 5vw;
+	line-height:0;
+	position: absolute;
+	top: -50;
+	left: 0;
+	bottom:0;
+	right:0;
+	-webkit-transform: none;
+	-ms-transform: none;
+	transform: none;
+	text-align: center;
+	margin:0;
+	padding:0;
 }
+
 
 /* project page */
 
