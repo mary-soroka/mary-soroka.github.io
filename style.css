@@ -684,6 +684,11 @@ body {
 	padding:0;
 }	
 
+.project-photography-triple img {
+	width:49.7%;
+	padding:0;
+}	
+
 }
 
 
@@ -694,6 +699,12 @@ body {
 	width:100%;
 	padding:.4vw 0;
 }	
+
+.project-photography-triple img {
+	width:100%;
+	padding:.4vw 0;
+}	
+
 
 }
 
