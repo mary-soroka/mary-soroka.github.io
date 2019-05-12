@@ -358,6 +358,13 @@ h1 {
 	margin-bottom:2vw;
 }
 
+.double-videos {
+	padding:0;
+	margin:0;
+	width:39.7vw;
+	height:23vw;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 0px;}
