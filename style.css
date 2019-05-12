@@ -715,7 +715,7 @@ body {
 
 @media screen and (min-width:941px) and (max-width: 1130px) {
 
-.project-photography-double img {
+img.project-photography-double {
 	width:49.7%;
 	padding:0;
 	margin:0;
@@ -732,7 +732,7 @@ img.project-photography-triple {
 
 @media screen and (min-width:700px) and (max-width: 940px) {
 
-.project-photography-double img, {
+img.project-photography-double, {
 	width:100%;
 	padding:.4vw 0;
 }
