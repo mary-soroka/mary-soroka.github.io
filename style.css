@@ -701,6 +701,9 @@ body {
 	background-color:transparent;
 	padding:44.8% 0 0;
 	margin:0 0 5vw;
+
+	/* delete or not */
+
 	position:relative;
 }
 
@@ -712,6 +715,8 @@ body {
 	left:0;
 	width:100%;
 	height:100%;
+
+	/* delete or not */
 
 	padding:0;
 	margin:0;
