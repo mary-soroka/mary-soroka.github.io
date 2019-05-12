@@ -299,6 +299,16 @@ h1 {
 	margin:0;
 }
 
+/* single photos */
+
+.project-photography img {
+	width:100%;
+	margin-bottom:5vw;
+}
+
+/* double photos */
+
+
 .project-photography-double {
 	padding:5vw 10vw 0;
 	margin:0;
