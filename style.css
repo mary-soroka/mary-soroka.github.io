@@ -148,28 +148,13 @@ h1 {
 	pointer-events: none;
 }
 
-.vidtop-content {
-	background-color:rgba(0,0,0,0);
-	padding:26% 0;
-	margin:0;
-	height:100%;
-	text-align:center;
-}
-
-.vidtop-content img {
-	width:60%;
-	}
-
 @media (min-aspect-ratio: 16/9) {
   .video-foreground { height: 300%; top: -100%; }
 }
 @media (max-aspect-ratio: 16/9) {
   .video-foreground { width: 300%; left: -100%; }
 }
-@media all and (max-width: 600px) {
-.vid-info { width: 50%; padding: .5rem; }
-.vid-info h1 { margin-bottom: .2rem; }
-}
+
 @media all and (max-width: 500px) {
 .vid-info .acronym { display: none; }
 }	
