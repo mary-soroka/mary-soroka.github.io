@@ -697,7 +697,7 @@ body {
 /* div video sits in */
 
 .double-video-container {
-	display:initial;
+	display:inline;
 	background-color:transparent;
 	padding:44.8% 0 0;
 	margin:0 0 5vw;
