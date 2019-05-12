@@ -1,4 +1,9 @@
+
+/* BODY ------------------------------------------------------------------ */
+
+
 /* font */
+
 @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700);
 
 /* universal */
@@ -13,12 +18,15 @@ body {
 	background-height:100%;
 }
 
+/* links */
+
 a {
 	text-decoration: none;
 }
 
+/* HEADER ------------------------------------------------------------------ */
 
-/* header */
+/* landing page header */
 
 .header-home {
 	top:0;
@@ -27,6 +35,8 @@ a {
 	z-index: 999;
 	padding:2.5vw 0;
 }
+
+/* content page header */
 
 .header-pages {
 	top:0;
@@ -37,6 +47,8 @@ a {
 	background-color:white;
 }
 
+/* landing page name */
+
 .me-home {
 	float:left;
 	margin-left:2vw;
@@ -44,12 +56,16 @@ a {
 	font-size:1.3em;
 }
 
+/* content page name */
+
 .me-pages {
 	float:left;
 	margin-left:2vw;
 	line-height:.8;
 	font-size:1.3em;
 }
+
+/* nav buttons */
 
 .buttons {
 	float:right;
@@ -91,33 +107,7 @@ a {
 	color:black;
 }
 
-/* intro */
-
-.intro {
-	font-size:1.9em;
-	letter-spacing:-.01em;
-	line-height:1.4;
-	padding:8vw 10vw 0;
-	margin:0;
-	text-align:center;
-}
-
-h1 {
-	color:white;
-	font-size:10vw;
-	font-weight:700;
-	letter-spacing:0em;
-	padding:0;
-	margin-top:15vw;
-	top:50%;
-	left:50%;
-
-}
-
-.or {
-	font-weight:700;
-	font-size:1.5vw;
-}
+/* PAGE CONTENT ------------------------------------------------------------------ */
 
 /* background video*/
 
@@ -310,6 +300,12 @@ h1 {
 	width:100%;
 	margin-bottom:5vw;
 }
+
+img.project-photography {
+	width:100%;
+	margin-bottom:5vw;
+}
+
 
 /* double photos */
 
