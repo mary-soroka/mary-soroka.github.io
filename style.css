@@ -402,8 +402,9 @@ img.project-photography {
 	margin:0;
 }
 
-.project-photography-double img {
+img.project-photography-double {
 	width:49.7%;
+	padding:0;
 }
 
 /* triple photos */
@@ -412,7 +413,7 @@ img.project-photography {
 	padding:5vw 10vw 0;
 	margin:0;
 }
-.project-photography-triple img {
+img.project-photography-triple {
 	width:33%;
 }
 
@@ -642,12 +643,12 @@ body {
 	margin:6vw 0 8vw;
 }
 
-.project-photography, .project-photography-double, .project-photography-triple {
+.project-photography, .project-photography-triple {
 	padding:2vw 10vw 0;
 	margin:2vw 0;
 }
 
-.project-photography img, .project-photography-double img, .project-photography-triple img, {
+.project-photography img, .project-photography-triple img, {
 	width:100%;
 	padding:.5vw 0;
 }
@@ -692,23 +693,24 @@ body {
 
 
 
-/* photography middle */
+
+
+/* --------------------------- MIDDLE WIDTH */
+
+
+/* wider middle */
+
 @media screen and (min-width:941px) and (max-width: 1130px) {
 
-.project-photography img {
+.project-photography img, .project-photography-double img, .project-photography-triple img {
 	width:49.7%;
 	padding:0;
-}	
-
-.project-photography-triple img {
-	width:49.7%;
-	padding:0;
-}	
+}
 
 }
 
+/* narrow middle */
 
-/* photography middle */
 @media screen and (min-width:700px) and (max-width: 940px) {
 
 .project-photography img, .project-photography-double img, .project-photography-triple img {
@@ -718,13 +720,15 @@ body {
 
 }
 
-
-
-
+/* --------------------------- SMALLEST WIDTH AND MOBILE */
 
 /* double videos middle */
 @media screen and (max-width: 750px) {
 
+.project-photography img, .project-photography-double img, .project-photography-triple img {
+	width:100%;
+	padding:.4vw 0;
+}
 
 /* double videos */
 
