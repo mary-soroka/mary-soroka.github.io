@@ -167,8 +167,15 @@ display:visible;
 }
 
 .mobile {
-background-image:url('https://mary-soroka.github.io/images/reel/reel.gif');
-display:visible;
+background-image:url("https://mary-soroka.github.io/images/reel/reel.gif");
+background-color:black;
+width:100%;
+height:100%;
+opacity:0;
+background-repeat:no-repeat;
+-webkit-transform: translateY(16%);
+-ms-transform: translateY(16%);
+transform: translateY(16%);
 }
 
 /* responsive settings */
@@ -493,11 +500,11 @@ img.project-photography-triple {
 @media screen and (max-width: 500px) {
 
 iframe.desktop {
-display:none;
+opacity:0;
 }
 
 .mobile {
-display:visible;
+opacity:1;
 }
 
 }
@@ -508,6 +515,10 @@ display:visible;
 
 body {
 	background-color:white;
+}
+
+.mobile-homepage {
+	background-color:black;
 }
 
 .intro {
