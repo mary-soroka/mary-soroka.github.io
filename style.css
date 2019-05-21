@@ -166,8 +166,9 @@ iframe.desktop {
 display:visible;
 }
 
-img.mobile {
-display:none;
+.mobile {
+background-image:url('https://mary-soroka.github.io/images/reel/reel.gif');
+display:visible;
 }
 
 /* responsive settings */
@@ -495,7 +496,7 @@ iframe.desktop {
 display:none;
 }
 
-img.mobile {
+.mobile {
 display:visible;
 }
 
