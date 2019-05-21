@@ -166,7 +166,7 @@ iframe.desktop {
 display:visible;
 }
 
-iframe.mobile {
+img.mobile {
 display:none;
 }
 
@@ -495,7 +495,7 @@ iframe.desktop {
 display:none;
 }
 
-iframe.mobile {
+img.mobile {
 display:visible;
 }
 
