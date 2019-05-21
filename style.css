@@ -489,7 +489,7 @@ img.project-photography-triple {
 
 /* --------------------------- NARROW AND MOBILE */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
 
 iframe.desktop {
 display:none;
@@ -498,6 +498,10 @@ display:none;
 iframe.mobile {
 display:visible;
 }
+
+/* --------------------------- NARROW AND MOBILE */
+
+@media screen and (max-width: 700px) {
 
 body {
 	background-color:white;
