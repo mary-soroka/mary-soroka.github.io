@@ -162,6 +162,14 @@ a {
 	pointer-events: none;
 }
 
+iframe.desktop {
+display:visible;
+}
+
+iframe.mobile {
+display:none;
+}
+
 /* responsive settings */
 
 @media (min-aspect-ratio: 16/9) {
@@ -482,6 +490,14 @@ img.project-photography-triple {
 /* --------------------------- NARROW AND MOBILE */
 
 @media screen and (max-width: 700px) {
+
+iframe.desktop {
+display:none;
+}
+
+iframe.mobile {
+display:visible;
+}
 
 body {
 	background-color:white;
