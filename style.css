@@ -789,7 +789,11 @@ img.project-photography-triple {
 	padding:.4vw 0;
 }
 
-/* double videos */
+}
+
+@media screen and (max-width: 748px) {
+
+	/* double videos */
 
 /* div video sits in */
 
