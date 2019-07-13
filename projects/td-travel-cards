@@ -1,0 +1,70 @@
+<script src="https://player.vimeo.com/api/player.js"></script>
+
+<head>
+
+<title>Mary Soroka - TD Travel Cards</title>
+
+<link rel="shortcut icon" href="images/favicon/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="https://mary-soroka.github.io/style.css"/>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<div class="header-pages">
+	<div class="me-pages">
+		<a href="https://mary-soroka.github.io/index.html">Mary Soroka<font style="font-weight:400;"> / Art Director</font></a>
+	</div>
+	<div class="buttons">
+		<a href="https://mary-soroka.github.io/work.html"><span class="on">Work</span></a>
+		<a href="https://mary-soroka.github.io/brands.html">Brands</a>
+		<a href="https://mary-soroka.github.io/recognitions.html">Recognitions</a>
+		<a href="mailto:mary.soroka@gmail.com">Email</a>
+		<a href="https://ca.linkedin.com/in/marysoroka" target="_blank">LinkedIn</a>
+	</div>
+<div>
+
+</div>
+</div>
+
+<!-- BODY -->
+
+<div class="project-content">
+
+	<div class="project-intro">TD Travel Cards</div>
+
+	<div class="project-description">
+		The TD Aeroplan Visa Infinite card lets you earn and redeem TD Aeroplan miles with confidence. So you'll never have to wonder if you should have upgraded your flight or opted for the better balcony view.
+	</div>
+
+</div>
+
+<!-- CONTENT -->
+
+<div style="background-color:transparent;margin-bottom:5vw;padding:35.45% 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/347945766?color=ffffff&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+
+<div style="background-color:transparent;padding:35.45% 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/347945809?color=ffffff&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+
+<!-- CREDITS -->
+
+<div class="project-credits">
+	<font style="font-weight:700">Art Director: </font>Mary Soroka<BR>
+	<font style="font-weight:700">Copywriter: </font>Shauna Roe<BR>
+	<font style="font-weight:700">Director + Cinematographer: </font>Jorn Haagen<BR>
+	<font style="font-weight:700">Producer(s): </font>Emma Du Boisson, Shannon Farrell<BR>
+	<font style="font-weight:700">Creative Director(s): </font>Kerry Reynolds, Chris Munnik
+</div>
+
+<!-- BACK BUTTON -->
+
+<div class="back-button"><a href="https://mary-soroka.github.io/work.html">&#8592; Back</a></div>
+
+</div>
+
+</body>
+</html>
