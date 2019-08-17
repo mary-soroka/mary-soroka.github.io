@@ -235,7 +235,7 @@ p {
 
 .work {
 	background-color:black;
-	margin-top:7vw;
+	margin-top:6vw;
 }
 
 /* container holding all thumbnails */
@@ -383,7 +383,7 @@ p {
 .back-button a {
 	color:#808080;
 	font-size:1em;
-	font-weight:500;
+	font-weight:400;
 }
 
 .back-button a:hover {
