@@ -1,156 +1,173 @@
-
-
-
-
-
-/* --------------------------- */
-/* --------------------------- */
-/* --------------------------- */
-/* --------------------------- */
-/* --------------------------- */
-/* --------------------------- BODY */
-/* --------------------------- */
-/* --------------------------- */
-/* --------------------------- */
-/* --------------------------- */
-/* --------------------------- */
-
-
-
-
-
-/* font */
-
 @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700);
 
-/* universal */
-
 body {
-	background-color:white;
 	font-family: 'Montserrat', Sans-Serif;
 	font-weight:700;
+	background-color:white;
 	-webkit-font-smoothing: antialiased;
 	padding:0;
 	margin:0;
 	background-height:100%;
 }
 
-/* links */
-
 a {
 	text-decoration: none;
 }
 
-/* --------------------------- HEADER */
+/* HOMEPAGE */
 
-/* landing page header */
-
-.header-home {
+.top-bar {
 	top:0;
 	position:fixed;
 	width:100%;
 	z-index: 999;
-	padding:2.5vw 0;
-}
-
-/* content page header */
-
-.header-pages {
-	top:0;
-	position:fixed;
-	width:100%;
-	z-index: 999;
-	padding:2.5vw 0;
-	background-color:white;
-}
-
-/* landing page name */
-
-.me-home {
-	float:left;
-	margin-left:2vw;
-	line-height:.8;
-	font-size:1.3em;
-}
-
-/* content page name */
-
-.me-pages {
-	float:left;
-	margin-left:2vw;
-	line-height:.8;
-	font-size:1.3em;
-}
-
-/* nav buttons */
-
-.buttons {
-	float:right;
-	padding:0;
-	margin-right:2vw;
+	padding:3vw 4vw;
 	font-size:.7em;
 	font-weight:500;
 	letter-spacing:.05em;
+	background-image:linear-gradient(to top,rgba(0,0,0,0),rgba(0,0,0,.2));
 }
 
-/* landing page nav button styles */
+.top-bar2 {
+	top:0;
+	position:fixed;
+	width:100%;
+	z-index: 999;
+	padding:3vw 4vw;
+	font-size:.7em;
+	font-weight:500;
+	letter-spacing:.05em;
+	background-color:white;
+	color:grey;
+	}
 
-.header-home a {
+.top-buttons-container {
+	float:right;
+	padding:0;
+	margin:0;
+	line-height:4.5;
+}
+
+.top-buttons-container a {
 	color:white;
 	opacity:1;
-	padding:1.5vw;
-	margin:0;
+	padding:0;
+	margin-left:2vw;
 }
 
-.header-home a:hover {
-	color:white;
+.top-buttons-container a:hover {
 	opacity:.3;
 	transition: .3s ease;
 }
 
-/* content page nav button styles */
-
-.header-pages a {
-	color:#808080;
-	opacity:1;
-	padding:1.5vw;
-	margin:0;
-
+.top-bar2 a {
+	color:grey;
 }
 
-.header-pages a:hover {
-	color:black;
-	opacity:1;
+.left-name {
+	float:left;
+	padding:0;
+	margin:0;
+	color:grey;
+	font-size:3vw;
+	font-weight:300;
+	text-transform:uppercase;
+	letter-spacing:-.5;
+}
+
+.left-name a {
+	color:grey;
+	font-weight:700;
+}
+
+.left-name a:hover {
+	opacity:.3;
 	transition: .3s ease;
 }
 
-/* active page marker */
-
-.on {
+.on a {
 	color:black;
 }
+
+.job-title {
+	float:left;
+}
+
+.location {
+	float:right;
+}
+
+.location-icon {
+	width:12px;
+	vertical-align:text-bottom;
+}
+
+.bottom-bar {
+	color:white;
+	bottom:0;
+	position:fixed;
+	width:100%;
+	z-index: 999;
+	padding:4vw;
+	margin:0;
+	font-size:.7em;
+	font-weight:500;
+	letter-spacing:.05em;
+	line-height:0;
+	background-image:linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,.2));
+}
+
+.bottom-bar2 {
+	color:white;
+	bottom:0;
+	position:fixed;
+	width:100%;
+	z-index: 999;
+	padding:4vw;
+	margin:0;
+	font-size:.7em;
+	font-weight:500;
+	letter-spacing:.05em;
+	line-height:0;
+	background-image:linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,.8));
+}
+
+.name {
+	text-align:center;
+	color:white;
+	font-size:17.5vw;
+	line-height:.9;
+	position: absolute;
+	left: 0%;
+	top:23%;
+	padding:0;
+	margin:0;
+	text-transform:uppercase;
+}​
 
 /* --------------------------- LANDING PAGE VIDEO */
 
 /* video container */
 
 #bg-video {
-  position: fixed;
-  width:auto;
-  height:100%;
+	position: fixed;
+	width:auto;
+	height:100%;
 }
 
 /* video */
 
 * { box-sizing: border-box; }
+
 .video-background {
-  position: fixed;
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
-  z-index: -99;
+	position: fixed;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	z-index: -99;
 }
+
 /* iframe settings */
 
 .video-foreground, .video-background iframe {
@@ -167,7 +184,7 @@ iframe.desktop {
 }
 
 .mobile {
-opacity:0;
+	opacity:0;
 }
 
 /* responsive settings */
@@ -184,33 +201,33 @@ opacity:0;
 	.vid-info .acronym { display: none; }
 }	
 
-/* --------------------------- BRANDS + AWARDS */
+/* ABOUT */
 
-/* brands + awards pages */
-
-.logos {
-	background-color:transparent;
-	padding:2.5vw 8vw 6vw;
-	margin-top:8vw;
+.about {
+background-color:transparent;
+margin:10vw 0 0;
+padding:0 8vw 0;
+line-height:1.5;
 }
 
-/* container holding all logos */
-
-.logocontainer {
-	position: relative;
-	display: table-cell;
-	margin:0;
-	padding:2.4vw;
+h1 {
+	font-size:5vw;
+	text-transform:uppercase;
+	line-height:1.2;
 }
 
-/* logo containers */
-
-.logothumbcontainer{
-	width: 100%;
-	height: auto;
-	margin:0;
-	padding:0;
+h2 {
+	font-size:2vw;
+	text-transform:uppercase;
+	font-weight:400;
 }
+
+p {
+	font-size:1.3vw;
+	font-weight:300;
+}
+
+
 
 /* --------------------------- PROJECTS */
 
@@ -224,15 +241,15 @@ opacity:0;
 /* container holding all thumbnails */
 
 .projects {
-	display: table;
-	width: 100%;
+	display:table;
+	width:100%;
 	margin:0;
 	padding:0;
 }
 
 .projects span {
-	display: table-cell;
-	width: auto;
+	display:table-cell;
+	width:auto;
 	margin:0;
 	padding:0;
 }
@@ -246,11 +263,11 @@ opacity:0;
 /* thumbnail containers */
 
 .container {
-	position: relative;
-	display: table-cell;
-	background-color:transparent;
+	position:relative;
+	display:table-cell;
 	margin:0;
 	padding:0;
+	background-color:black;
 }
 
 .thumbnail-container {
@@ -269,14 +286,14 @@ opacity:0;
 	left: 0;
 	right: 0;
 	opacity: 0;
-	background-color: rgba(0,0,0,.9);
+	background-color: rgba(0,0,0,.2);
 	margin:0;
 	padding:0;
 	background-height:100%;
 }
 
 .container:hover .overlay {
-	opacity: .9;
+	opacity: 1;
 	margin:0;
 	padding:0;
 	transition: .3s ease;
@@ -286,7 +303,8 @@ opacity:0;
 
 .overlay-text {
 	color: white;
-	font-size: 1.8vw;
+	font-size: 2.5vw;
+	font-weight:300;
 	line-height:1.1;
 	position: absolute;
 	top: 50%;
@@ -461,6 +479,34 @@ img.project-photography-triple {
 	height:23vw;
 }
 
+/* BRANDS + RECOGNITIONS */
+
+/* logo section */
+
+.logos {
+	background-color:transparent;
+	padding:2.5vw 8vw 0vw;
+	margin:8vw 0 0 0;
+}
+
+/* container holding all logos */
+
+.logocontainer {
+	position: relative;
+	display: table-cell;
+	margin:0;
+	padding:2.4vw;
+}
+
+/* logo containers */
+
+.logothumbcontainer{
+	width: 100%;
+	height: auto;
+	margin:0;
+	padding:0;
+}
+
 /* --------------------------- SCROLLBAR */
 
 /* disappearing srollbar */
@@ -526,11 +572,11 @@ body {
 	display:none;
 }
 
-.header-home {
+.nav-bar {
 	width:100%;
 	z-index: 999;
 	padding:0;
-	top: 50%;
+	top: 5%;
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
@@ -547,12 +593,17 @@ body {
 	border-bottom:1px solid rgba(0,0,0,.05);
 }
 
-.me-home {
+.name {
 	text-align:center;
-	font-size:13vw;
-	line-height:1.2;
-	padding:0 0 4vw;
+	color:white;
+	font-size:18vw;
+	line-height:.9;
+	position: absolute;
+	left: 0%;
+	top:35%;
+	padding:0;
 	margin:0;
+	font-weight:700;
 }
 
 .me-pages {
@@ -564,10 +615,10 @@ body {
 	margin:0;
 }
 
-.buttons {
+.nav-buttons-container {
 	text-align:center;
 	float:none;
-	font-size:3.5vw;
+	font-size:4.5vw;
 	font-weight:500;
 	letter-spacing:0em;
 	line-height:1;
@@ -575,9 +626,12 @@ body {
 	margin:0;
 }
 
+.nav-buttons-container a {
+	padding:0 4vw;
+}
+
 .header a {
 	color:white;
-	padding:0 1.5vw;
 	margin:0;
 	border:0;
 }
@@ -729,12 +783,7 @@ body {
 	margin:0;
 	padding:5vw 0;
 }
-
 }
-
-
-
-
 
 /* --------------------------- MEDIUM WIDTH */
 
