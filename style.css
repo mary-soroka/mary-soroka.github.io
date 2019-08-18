@@ -635,6 +635,11 @@ body {
 .subhead-bottom-left {
 	float:left;
 	margin-bottom:2vw;
+	margin-left:2vw;
+}
+
+.subhead-bottom-right {
+	padding-right:5.5vw;
 }
 
 .name {
