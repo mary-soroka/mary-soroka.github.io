@@ -316,7 +316,7 @@ line-height:1.5;
 
 .project-title {
 	color:grey;
-	font-size:4.5em;
+	font-size:5em;
 	font-weight:300;
 	letter-spacing:-.04em;
 	line-height:1;
@@ -628,7 +628,7 @@ iframe.desktop-video-frame {
 }
 
 .name {
-	left: 0%;
+	left:0%;
 	top:38%;
 	padding:0;
 	margin:0;
@@ -698,6 +698,7 @@ iframe.desktop-video-frame {
 }
 
 .projects {
+	background-color:black;
 	display: inline-block;
 	width: 100%;
 	margin:0;
@@ -727,9 +728,9 @@ iframe.desktop-video-frame {
 
 .thumbnail-container {
 	width: 100%;
-	height: auto;
 	margin:0;
 	padding:0;
+	border-radius:0%;
 }
 
 .overlay {
@@ -768,7 +769,7 @@ iframe.desktop-video-frame {
 /* project page */
 
 .project-content {
-	padding:32vw 10vw 0;
+	padding:32vw 3.5vw 0;
 	margin:0;
 }
 
@@ -778,7 +779,7 @@ iframe.desktop-video-frame {
 }
 
 .project-title {
-	font-size:8vw;
+	font-size: 10vw;
 	font-weight:300;
 	letter-spacing:-.04em;
 	line-height:1;
@@ -798,7 +799,7 @@ iframe.desktop-video-frame {
 
 .project-credits {
 	margin:0;
-	padding:8vw 10vw 8vw;
+	padding:8vw 3vw 8vw;
 	font-size:2.6vw;
 	font-weight:500;
 	line-height:1.5;
