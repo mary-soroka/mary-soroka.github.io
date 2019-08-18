@@ -763,10 +763,10 @@ h1 {
 	letter-spacing:.05em;
 	line-height:0;
 	position: absolute;
-	top: -45;
+	top: -30;
 	left: 0;
 	bottom:0;
-	right: 35;
+	right: 20;
 	-webkit-transform: none;
 	-ms-transform: none;
 	transform: none;
