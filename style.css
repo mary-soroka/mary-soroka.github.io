@@ -655,41 +655,41 @@ iframe.desktop-video-frame {
 }
 
 .top-buttons-container a {
-	padding:0 1.5vw;
+	padding:0 1.2vw;
 }
 
 .top-bar2 {
-	font-size:3.2vw;
+	font-size:3.4vw;
 	text-align:center;
-	height:35vw;
-	letter-spacing:0;
+	height:30vw;
 }
 
 .icon-white {
 	width:3.5vw;
+	margin-right:1.2vw;
 }
 
 .icon-grey {
 	width:3.5vw;
-	vertical-align:text-bottom;
-	margin-right:10px;
+	margin-right:1.2vw;
 }
 
 .left-name {
 	float:none;
 	font-size:8.5vw;
-	padding:0;
+	padding:1.5vw 0 0 0;
 	margin:0;
 }
 
 .left-name a , .left-name a:hover {
 	opacity:1;
+	line-height:1.8;
 }
 
 /* WORK */
 
 .work {
-	margin:34vw 0 0;
+	margin:30vw 0 0;
 }
 
 h1 {
