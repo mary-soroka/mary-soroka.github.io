@@ -662,14 +662,14 @@ body {
 
 .top-buttons-container {
 	float:none;
-	padding:0;
+	padding:2vw 0 0;
 	margin:0;
 	line-height:0;
 	text-align:center;
 }
 
 .top-buttons-container a {
-	padding:0 4vw;
+	padding:0 2.3vw;
 }
 
 .top-bar2 {
