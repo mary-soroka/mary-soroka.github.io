@@ -641,12 +641,12 @@ iframe.desktop-video-frame {
 
 .top-buttons-container {
 	float:right;
-	padding:2.2vw 2vw 0 0;
+	padding:1.8vw 4vw 0 0;
 	margin:0;
 }
 
 .top-buttons-container a {
-	padding:0;
+	padding:0 .5vw 0;
 	color:grey;
 }
 
@@ -659,15 +659,15 @@ iframe.desktop-video-frame {
 }
 
 .icon-white, .icon-grey {
-	width:9vw;
-	margin-right:5px;
+	width:6.5vw;
+	margin-right:0;
 	padding:0;
 	display:initial;
 }
 
 .left-name {
-	font-size:3.3vw;
-	padding:3vw 0 0 3vw;
+	font-size:3.8vw;
+	padding:3vw 0 0 4vw;
 	margin:0;
 	text-transform:none;
 }
@@ -676,7 +676,7 @@ iframe.desktop-video-frame {
 	color:grey;
 	opacity:1;
 	line-height:1.35;
-	font-weight:400;
+	font-weight:300;
 }
 
 .disappearing-text {
