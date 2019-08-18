@@ -660,6 +660,7 @@ iframe.desktop-video-frame {
 	font-size:3.6vw;
 	text-align:center;
 	height:30vw;
+	font-weight:600;
 }
 
 .icon-white {
@@ -756,7 +757,7 @@ iframe.desktop-video-frame {
 .overlay-text {
 	color: white;
 	font-size: 3.6vw;
-	font-weight:500;
+	font-weight:600;
 	letter-spacing:.05em;
 	line-height:0;
 	position: absolute;
