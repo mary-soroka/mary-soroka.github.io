@@ -664,7 +664,7 @@ body {
 	float:none;
 	padding:0;
 	margin:0;
-	line-height:3;
+	line-height:0;
 	text-align:center;
 }
 
@@ -673,15 +673,9 @@ body {
 }
 
 .top-bar2 {
-	font-size:4vw;
-	font-weight:500;
-	letter-spacing:.05em;
-	background-color:white;
+	font-size:3.2vw;
 	text-align:center;
-	height:28vw;
-	line-height:0;
-	padding:0;
-	margin:0;
+	height:35vw;
 	letter-spacing:0;
 }
 
@@ -700,21 +694,16 @@ body {
 	font-size:8.5vw;
 	padding:0;
 	margin:0;
-	line-height:2.3;
 }
 
-.left-name a {
-	opacity:1;
-}
-
-.left-name a:hover {
+.left-name a , .left-name a:hover {
 	opacity:1;
 }
 
 /* WORK */
 
 .work {
-	margin:28vw 0 0;
+	margin:34vw 0 0;
 }
 
 h1 {
