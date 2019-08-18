@@ -61,6 +61,12 @@ audio {
 	display:none;
 }
 
+.icon-location {
+	width:1em;
+	vertical-align:-2;
+	margin-right:10px;
+}
+
 /* PAGES HEADER */
 
 .top-bar2 {
@@ -113,7 +119,7 @@ audio {
 .subhead-bottom-left {
 	float:left;
 	padding:1vw 3vw 2vw;
-	margin:0;
+	margin:0 0 .5vw 0;
 }
 
 .bottom-bar {
@@ -124,7 +130,7 @@ audio {
 	z-index: 999;
 	padding:0;
 	margin:0;
-	font-size:.7em;
+	font-size:.9em;
 	font-weight:500;
 	letter-spacing:.05em;
 	line-height:1;
