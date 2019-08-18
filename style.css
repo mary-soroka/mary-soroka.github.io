@@ -625,13 +625,8 @@ iframe.desktop-video-frame {
 }
 
 .name {
-	text-align:center;
-	color:white;
-	font-size:18vw;
-	line-height:.9;
-	position: absolute;
 	left: 0%;
-	top:35%;
+	top:45%;
 	padding:0;
 	margin:0;
 	font-weight:700;
@@ -643,51 +638,54 @@ iframe.desktop-video-frame {
 }
 
 .top-buttons-container {
-	float:none;
-	padding:6vw 0 0 0;
+	float:right;
+	padding:4vw 3vw 0 0;
 	margin:0;
-	line-height:0;
-	text-align:center;
 }
 
 .top-buttons-container a {
-	padding:0 1.2vw;
+	padding:0;
 	color:grey;
 }
 
 .top-bar2 {
+	background-color:transparent;
 	font-size:3.6vw;
 	text-align:center;
 	font-weight:600;
+	height:15vw;
 }
 
 .icon-white {
-	width:3.5vw;
+	width:7vw;
 	margin-right:5px;
-	padding-bottom:3px;
-	vertical-align:middle;
-	display:none;
+	padding:0;
+	display:initial;
 }
 
 .icon-grey {
-	width:3.5vw;
+	width:7vw;
 	margin-right:5px;
-	padding-bottom:3px;
-	vertical-align:middle;
+	padding:0;
 	display:initial;
 }
 
 .left-name {
-	font-size:8.5vw;
-	padding:3vw;
+	font-size:7vw;
+	padding:3vw 0 0 3vw;
 	margin:0;
+	text-transform:uppercase;
 }
 
 .left-name a , .left-name a:hover {
 	color:grey;
 	opacity:1;
-	line-height:1;
-	font-weight:400;
+	line-height:1.35;
+	font-weight:700;
+}
+
+.disappearing-text {
+	display:none;
 }
 
 /* WORK */
