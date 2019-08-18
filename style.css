@@ -652,9 +652,11 @@ iframe.desktop-video-frame {
 
 .top-buttons-container a {
 	padding:0 1.2vw;
+	color:white;
 }
 
 .top-bar2 {
+	background-color:black;
 	font-size:3.6vw;
 	text-align:center;
 	height:30vw;
@@ -684,6 +686,7 @@ iframe.desktop-video-frame {
 .left-name a , .left-name a:hover {
 	opacity:1;
 	line-height:1.8;
+	color:white;
 }
 
 /* WORK */
