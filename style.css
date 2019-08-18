@@ -687,6 +687,8 @@ iframe.desktop-video-frame {
 	opacity:1;
 	line-height:1.8;
 	color:white;
+	text-transform:uppercase;
+	font-weight:700;
 }
 
 /* WORK */
