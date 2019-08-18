@@ -785,15 +785,16 @@ h1 {
 }
 
 .project-intro {
-	font-size:6.2vw;
+	font-size:4.5em;
 	font-weight:300;
-	letter-spacing:-.5;
+	letter-spacing:-.04em;
+	line-height:1;
 }
 
 .project-description {
-	font-size:5vw;
+	font-size:3.6vw;
 	line-height:1.5;
-	font-weight:500;
+	font-weight:300;
 	letter-spacing:.05em;
 	margin:6vw 0 8vw;
 }
