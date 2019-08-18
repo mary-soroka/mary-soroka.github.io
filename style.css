@@ -47,6 +47,18 @@ audio {
 	color:grey;
 }
 
+.icon-grey {
+	width:12px;
+	vertical-align:text-bottom;
+	margin-right:10px;
+}
+
+.icon-white {
+	width:12px;
+	vertical-align:text-bottom;
+	margin-right:10px;
+}
+
 .top-buttons-container {
 	float:right;
 	padding:3vw;
@@ -105,18 +117,6 @@ audio {
 	float:left;
 	padding:1vw 3vw 2vw;
 	margin:0;
-}
-
-.icon-grey {
-	width:12px;
-	vertical-align:text-bottom;
-	margin-right:10px;
-}
-
-.icon-white {
-	width:12px;
-	vertical-align:text-bottom;
-	margin-right:10px;
 }
 
 .bottom-bar {
@@ -657,7 +657,7 @@ body {
 
 .top-bar {
 	font-size:3.2vw;
-	padding-top:2vw;
+	padding:2vw 0 0;
 }
 
 .top-buttons-container {
@@ -669,7 +669,7 @@ body {
 }
 
 .top-buttons-container a {
-	padding:0 2.3vw;
+	padding:0 1.5vw;
 }
 
 .top-bar2 {
@@ -684,7 +684,7 @@ body {
 }
 
 .icon-grey {
-	width:20px;
+	width:3.5vw;
 	vertical-align:text-bottom;
 	margin-right:10px;
 }
