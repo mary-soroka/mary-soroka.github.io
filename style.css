@@ -21,7 +21,7 @@ audio {
 }
 
 /* HOMEPAGE */
-
+ 
 .top-bar {
 	top:0;
 	position:fixed;
@@ -108,6 +108,11 @@ audio {
 }
 
 .location-icon {
+	width:12px;
+	vertical-align:text-bottom;
+}
+
+.icon {
 	width:12px;
 	vertical-align:text-bottom;
 }
@@ -504,6 +509,45 @@ img.project-photography-triple {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* --------------------------- */
 /* --------------------------- */
 /* --------------------------- */
@@ -515,6 +559,43 @@ img.project-photography-triple {
 /* --------------------------- */
 /* --------------------------- */
 /* --------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -549,6 +630,11 @@ body {
 	background-color:white;
 }
 
+.subhead-bottom-left {
+	float:left;
+	margin-bottom:2vw;
+}
+
 .name {
 	text-align:center;
 	color:white;
@@ -560,6 +646,29 @@ body {
 	padding:0;
 	margin:0;
 	font-weight:700;
+}
+
+.top-bar {
+	top:0;
+	position:fixed;
+	width:100%;
+	z-index: 999;
+	padding:0;
+	font-size:5vw;
+	font-weight:500;
+	letter-spacing:.05em;
+}
+
+.top-buttons-container {
+	float:none;
+	padding:0;
+	margin:0;
+	line-height:3;
+	text-align:center;
+}
+
+.top-buttons-container a {
+	padding:0 2vw;
 }
 
 .top-bar2 {
@@ -575,12 +684,7 @@ body {
 	letter-spacing:0;
 }
 
-.top-buttons-container {
-	float:none;
-	padding:0;
-	margin:0;
-	line-height:0;
-}
+
 
 .left-name {
 	float:none;
