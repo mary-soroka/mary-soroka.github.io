@@ -644,7 +644,7 @@ iframe.desktop-video-frame {
 
 .top-buttons-container {
 	float:none;
-	padding:2vw 0 0;
+	padding:6vw 0 0 0;
 	margin:0;
 	line-height:0;
 	text-align:center;
@@ -652,14 +652,12 @@ iframe.desktop-video-frame {
 
 .top-buttons-container a {
 	padding:0 1.2vw;
-	color:white;
+	color:grey;
 }
 
 .top-bar2 {
-	background-color:black;
 	font-size:3.6vw;
 	text-align:center;
-	height:30vw;
 	font-weight:600;
 }
 
@@ -668,6 +666,7 @@ iframe.desktop-video-frame {
 	margin-right:5px;
 	padding-bottom:3px;
 	vertical-align:middle;
+	display:none;
 }
 
 .icon-grey {
@@ -675,27 +674,26 @@ iframe.desktop-video-frame {
 	margin-right:5px;
 	padding-bottom:3px;
 	vertical-align:middle;
+	display:initial;
 }
 
 .left-name {
-	float:none;
 	font-size:8.5vw;
-	padding:1.5vw 0 0 0;
+	padding:3vw;
 	margin:0;
 }
 
 .left-name a , .left-name a:hover {
+	color:grey;
 	opacity:1;
-	line-height:1.8;
-	color:white;
-	text-transform:uppercase;
-	font-weight:700;
+	line-height:1;
+	font-weight:400;
 }
 
 /* WORK */
 
 .work {
-	margin:30vw 0 0;
+	margin:15.2vw 0 0;
 }
 
 .top-buttons-container a {
@@ -821,12 +819,13 @@ iframe.desktop-video-frame {
 /* brands and awards */
 
 ul {
+	color:grey;
 	list-style:none;
 	font-size:2.5vw;
 	font-weight:600;
 	letter-spacing:.05em;
 	padding:0 8vw;
-	margin:0;
+	margin:15vw 0 0;
 }
 
 li {
