@@ -213,7 +213,7 @@ line-height:1.5;
 }
 
 h1 {
-	color:#808080;
+	color:grey;
 	font-size:4.5em;
 	font-weight:300;
 	letter-spacing:-.04em;
@@ -321,7 +321,7 @@ h1 {
 /* project title */
 
 .project-intro {
-	color:#808080;
+	color:grey;
 	font-size:4.5em;
 	font-weight:300;
 	letter-spacing:-.04em;
@@ -331,7 +331,7 @@ h1 {
 /* project description */
 
 .project-description {
-	color:#808080;
+	color:grey;
 	font-size:1.6em;
 	font-weight:300;
 	margin:3vw 0 5vw;
@@ -344,7 +344,7 @@ h1 {
 .project-credits {
 	margin:0;
 	padding:7vw 10vw 3vw;
-	color:#808080;
+	color:grey;
 	font-size:.7em;
 	font-weight:500;
 	line-height:1.8;
@@ -373,7 +373,7 @@ h1 {
 }
 
 .back-button a {
-	color:#808080;
+	color:grey;
 	font-size:1em;
 	font-weight:400;
 }
@@ -794,7 +794,7 @@ h1 {
 .project-description {
 	font-size:3.6vw;
 	line-height:1.5;
-	font-weight:300;
+	font-weight:400;
 	letter-spacing:.05em;
 	margin:6vw 0 8vw;
 }
