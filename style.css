@@ -115,6 +115,7 @@ audio {
 .icon {
 	width:12px;
 	vertical-align:text-bottom;
+	margin-right:10px;
 }
 
 .bottom-bar {
