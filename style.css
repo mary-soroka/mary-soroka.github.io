@@ -667,11 +667,15 @@ iframe.desktop-video-frame {
 .icon-white {
 	width:3.5vw;
 	margin-right:5px;
+	padding-bottom:3px;
+	vertical-align:middle;
 }
 
 .icon-grey {
 	width:3.5vw;
 	margin-right:5px;
+	padding-bottom:3px;
+	vertical-align:middle;
 }
 
 .left-name {
