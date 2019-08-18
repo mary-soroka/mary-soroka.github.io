@@ -772,26 +772,6 @@ h1 {
 	text-shadow: rgba(0,0,0,.4) 1px 1px 5px;
 }
 
-.overlay-text-grey {
-	color: grey;
-	font-size: 3.6vw;
-	font-weight:500;
-	letter-spacing:.05em;
-	line-height:0;
-	position: absolute;
-	top: -45;
-	left: 0;
-	bottom:0;
-	right: 35;
-	-webkit-transform: none;
-	-ms-transform: none;
-	transform: none;
-	text-align: right;
-	margin:0;
-	padding:0 0 6vw 6vw;
-	text-shadow: rgba(0,0,0,.4) 1px 1px 5px;
-}
-
 /* project page */
 
 .project-content {
@@ -806,12 +786,12 @@ h1 {
 
 .project-intro {
 	font-size:6.2vw;
-	font-weight:700;
+	font-weight:300;
 	letter-spacing:-.5;
 }
 
 .project-description {
-	font-size:3.5vw;
+	font-size:5vw;
 	line-height:1.5;
 	font-weight:500;
 	margin:6vw 0 8vw;
