@@ -626,7 +626,7 @@ iframe.desktop-video-frame {
 
 .name {
 	left: 0%;
-	top:45%;
+	top:40%;
 	padding:0;
 	margin:0;
 	font-weight:700;
@@ -649,7 +649,7 @@ iframe.desktop-video-frame {
 }
 
 .top-bar2 {
-	background-color:transparent;
+	background-color:white;
 	font-size:3.6vw;
 	text-align:center;
 	font-weight:600;
