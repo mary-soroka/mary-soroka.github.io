@@ -212,15 +212,6 @@ padding:0 8vw 0;
 line-height:1.5;
 }
 
-h1 {
-	color:grey;
-	font-size:4.5em;
-	font-weight:300;
-	letter-spacing:-.04em;
-	line-height:1;
-}
-
-
 /* --------------------------- PROJECTS */
 
 /* projects page */
@@ -320,7 +311,7 @@ h1 {
 
 /* project title */
 
-.project-intro {
+.project-title {
 	color:grey;
 	font-size:4.5em;
 	font-weight:300;
@@ -696,10 +687,6 @@ iframe.desktop-video-frame {
 	margin:30vw 0 0;
 }
 
-h1 {
-	text-align:center;
-}
-
 .top-buttons-container a {
 	opacity:1;
 }
@@ -788,7 +775,7 @@ h1 {
 	margin:0;
 }
 
-.project-intro {
+.project-title {
 	font-size:4.5em;
 	font-weight:300;
 	letter-spacing:-.04em;
