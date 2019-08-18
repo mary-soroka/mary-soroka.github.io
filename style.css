@@ -639,7 +639,7 @@ iframe.desktop-video-frame {
 
 .top-buttons-container {
 	float:right;
-	padding:4vw 3vw 0 0;
+	padding:4vw 4vw 0 0;
 	margin:0;
 }
 
@@ -653,35 +653,28 @@ iframe.desktop-video-frame {
 	font-size:3.6vw;
 	text-align:center;
 	font-weight:600;
-	height:15vw;
+	height:17.5vw;
 }
 
-.icon-white {
-	width:7vw;
-	margin-right:5px;
-	padding:0;
-	display:initial;
-}
-
-.icon-grey {
-	width:7vw;
+.icon-white, .icon-grey {
+	width:9vw;
 	margin-right:5px;
 	padding:0;
 	display:initial;
 }
 
 .left-name {
-	font-size:7vw;
+	font-size:8vw;
 	padding:3vw 0 0 3vw;
 	margin:0;
-	text-transform:uppercase;
+	text-transform:none;
 }
 
 .left-name a, .left-name a:hover {
 	color:grey;
 	opacity:1;
 	line-height:1.35;
-	font-weight:700;
+	font-weight:400;
 }
 
 .disappearing-text {
@@ -691,7 +684,7 @@ iframe.desktop-video-frame {
 /* WORK */
 
 .work {
-	margin:14.5vw 0 0;
+	margin:17vw 0 0;
 }
 
 .top-buttons-container a {
@@ -783,7 +776,7 @@ iframe.desktop-video-frame {
 }
 
 .project-title {
-	font-size:4vw;
+	font-size:8vw;
 	font-weight:300;
 	letter-spacing:-.04em;
 	line-height:1;
