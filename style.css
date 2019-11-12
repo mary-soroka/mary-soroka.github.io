@@ -353,11 +353,6 @@ line-height:1.5;
 .project-credits {
 	margin:0;
 	padding:7vw 10vw 3vw;
-	color:grey;
-	font-size:.7em;
-	font-weight:500;
-	line-height:1.8;
-	letter-spacing:.005em;
 }
 
 /* secondary content */
@@ -815,10 +810,6 @@ iframe.desktop-video-frame {
 .project-credits {
 	margin:0;
 	padding:8vw 3vw 8vw;
-	font-size:2.6vw;
-	font-weight:500;
-	line-height:1.5;
-	letter-spacing:.005em;
 }
 
 .back-button {
