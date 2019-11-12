@@ -14,13 +14,21 @@ a {
 	text-decoration: none;
 }
 
-.tab {position:absolute;left:150px; }
-
 audio {
     width: 0;
     padding:0;
     margin:0;
 }
+
+/* CREDITS TABLE */
+
+table {border-collapse: collapse;}
+
+.credit-category {font-weight:700;margin-right:30px;}
+
+td, th {padding:5px;}
+
+tr {border-bottom:1px solid lightgrey;}
 
 /* HOMEPAGE HEADER */
  
