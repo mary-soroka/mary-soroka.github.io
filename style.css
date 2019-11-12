@@ -30,11 +30,10 @@ table {
 	line-height:1.8;
 	letter-spacing:.005em;}
 
-.credit-category {font-weight:700;margin-right:25px;}
-
 td, th {padding:5px;}
 
-tr {border-bottom:1px solid lightgrey;}
+.credit-category {font-weight:700;margin-right:25px;}
+
 
 /* HOMEPAGE HEADER */
  
