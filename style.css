@@ -14,6 +14,8 @@ a {
 	text-decoration: none;
 }
 
+.tab {position:absolute;left:150px; }
+
 audio {
     width: 0;
     padding:0;
