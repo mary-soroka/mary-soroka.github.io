@@ -22,7 +22,8 @@ audio {
 
 /* CREDITS TABLE */
 
-table {border-collapse: collapse;
+table {
+	border-collapse: collapse;
 	color:grey;
 	font-size:.7em;
 	font-weight:500;
