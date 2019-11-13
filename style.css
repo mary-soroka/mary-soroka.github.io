@@ -30,7 +30,7 @@ table {
 	line-height:1.8;
 	letter-spacing:.005em;}
 
-td, th {padding:3px;}
+td, th {padding:0 3px 3px 0;}
 
 .credit-category {font-weight:700;margin-right:25px;}
 
