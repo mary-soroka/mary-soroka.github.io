@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700);
 
-.subhead-work {
+.section-title {
   color:#ad9460;
   font-weight:600;
   font-size:10px;
@@ -10,6 +10,7 @@
   position:relative;
   top:0vw;
   left:12.5vw;
+  width:100px;
 }
 
 .awards {
@@ -34,7 +35,7 @@ h1 {
 }
 
 img.logo {
-  width:5vw;
+  width:4.8vw;
   margin:2vw 2.3vw;
   padding:0;
   transition: .3s ease-in-out;
@@ -67,9 +68,4 @@ img.logo:hover {
 img.brand {
   width:9.6vw;
   padding:2.2vw;
-}
-
-
-#footer {
-  z-index:1000;
 }
