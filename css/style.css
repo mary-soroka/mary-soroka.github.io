@@ -32,7 +32,7 @@ a {
 .job-title {
   width:100%;
   color:#ad9460;
-  z-index:100;
+  z-index:3;
   position:fixed;
   top:60%;
   left:0;
@@ -92,18 +92,6 @@ a {
   opacity:1;
 }
 
-.scroll {
-  color:#ad9460;
-  z-index:2;
-  position:fixed;
-  bottom:30px;
-  right:3.2%;
-  font-size:2em;
-  text-transform:uppercase;
-  letter-spacing:.5em;
-  text-align:center;
-}
-
 .section-title {
   color:#ad9460;
   font-weight:600;
@@ -119,7 +107,7 @@ a {
 }
 
 .awards {
-  z-index:10;
+  z-index:1;
   margin:0;
   padding:0 12.5vw;
 }
@@ -133,7 +121,7 @@ h1 {
 }
 
 .logo-container {
-  z-index:1000;
+  z-index:1;
   padding:0;
   margin:0;
   /*-webkit-mask: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);*/
@@ -176,7 +164,7 @@ img.contact:hover {
   position:relative;
   bottom:20vw;
   left:20vw;
-  z-index:-1;
+  z-index:1;
   width:100%;
 }
 
@@ -199,12 +187,12 @@ img.brand {
 @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700);
 
 .panels {
-  z-index:5;
+    z-index:1;
 }
 
 /* panel styles */
 .panel {
-  z-index:5;
+
   /* min height incase content is higher than window height */
   min-height: 80vh;
   display: flex;
