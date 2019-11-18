@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700);
 
 body {
-	background-color:white;
+	background-color:black;
 	scroll-behavior: smooth;
 	font-family: 'Montserrat', Sans-Serif;
 	-webkit-font-smoothing: antialiased;
@@ -11,6 +11,53 @@ body {
 
 a {
 	text-decoration: none;
+}
+
+.back {
+  font-family: 'Montserrat', Sans-Serif;
+  color:#ad9460;
+  padding:10px;
+  font-weight:600;
+  font-size:9px;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  border:0;
+  border-right:1px solid transparent;
+  background-color:transparent;
+  display: inline-block;
+  transition: .3s ease-in-out;
+}
+
+.back:hover {
+  color:white;
+  border-right:1px solid #ad9460;
+  opacity:1;
+}
+
+.nav {
+  text-align:right;
+  font-weight:600;
+  font-size:9px;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  line-height:2;
+  z-index:99;
+  position:fixed;
+  top:30px;
+  right:3.2%;
+}
+
+.nav a {
+  color:#ad9460;
+  padding:10px;
+  border-right:1px solid transparent;
+  transition: .3s ease-in-out;
+}
+
+.nav a:hover {
+  color:white;
+  border-right:1px solid #ad9460;
+  opacity:1;
 }
 
 audio {
@@ -63,7 +110,7 @@ td, th {padding:0 3px 3px 0;}
 /* PAGES HEADER */
 
 .top-bar {
-	top:0;
+	bottom:0;
 	position:fixed;
 	width:100%;
 	z-index:999;
