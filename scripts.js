@@ -37,3 +37,13 @@ $(window).scroll(function(){
     $(".job-title").css("opacity", 1 - $(window).scrollTop() / 600);
     $(".video").css("opacity", 1 - $(window).scrollTop() / 300);
   });
+
+
+
+
+var scrollEventHandler = function()
+{
+  window.scroll(0, window.pageYOffset)
+}
+
+window.addEventListener("scroll", scrollEventHandler, false);

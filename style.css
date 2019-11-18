@@ -2,7 +2,6 @@
 
 body {
   color:#ad9460;
-  scroll-behavior: smooth;
   background-color: black;
   transition: background-color 1s ease;
   font-family: 'Montserrat', sans-serif;
@@ -91,14 +90,8 @@ a {
   opacity:1;
 }
 
-.scroll {
-  color:#ad9460;
-  z-index:999;
-  position:fixed;
-  bottom:30px;
-  right:3.2%;
-  font-size:2em;
-  text-transform:uppercase;
-  letter-spacing:.5em;
-  text-align:center;
+
+/* disappearing srollbar */
+::-webkit-scrollbar {
+  width: 0px;
 }
