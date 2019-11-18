@@ -73,7 +73,7 @@ a {
   letter-spacing:.2em;
   text-transform:uppercase;
   line-height:2;
-  z-index:999;
+  z-index:2;
   position:fixed;
   top:30px;
   right:3.2%;
@@ -154,6 +154,11 @@ img.contact {
   width:8vw;
   margin:0;
   padding:0;
+  transition: .3s ease-in-out;
+}
+
+img.contact:hover {
+  transform:translate(5px,-5px);
 }
 
 .intro-brands {
