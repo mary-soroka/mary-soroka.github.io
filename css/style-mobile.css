@@ -342,5 +342,24 @@ img.contact {
   right:-72vw;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 1.5px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,1); 
+  padding-right:5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ad9460; 
+  height:152px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white; 
 }

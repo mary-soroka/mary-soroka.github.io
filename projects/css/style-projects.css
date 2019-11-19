@@ -353,29 +353,27 @@ img.project-photography-triple {
 
 
 
-/* --------------------------- SCROLLBAR */
-
 /* width */
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 1.5px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: rgba(0,0,0,0); 
+  background: rgba(0,0,0,1); 
+  padding-right:5px;
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #ad9460; 
+  height:152px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: white; 
 }
-
-
 
 
 
@@ -484,6 +482,28 @@ img.project-photography-triple {
 .project-credits {
 	margin:0;
 	padding:8vw 10vw 8vw;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 1.5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,1); 
+  padding-right:5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ad9460; 
+  height:152px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white; 
 }
 
 }
