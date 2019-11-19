@@ -6,23 +6,76 @@
 
 .video {
   z-index:2;
-  top:0;
+  top:-100;
   padding:0;
   margin:0;
   height: 70vw;
-}
-
-/* iframe settings */
-
-.video iframe {
-  z-index:2;
-  padding:0;
-  margin:0;
-  position:relative;
-  top:0;
-  left:-50vw;
-  width: 201%;
-  height: 100%;
   pointer-events: none;
 }
 
+.now-playing {
+  z-index:2;
+  font-weight:600;
+  font-size:9px;
+  letter-spacing:.2em;
+  line-height:2;
+  text-transform:uppercase;
+  color:#ad9460;
+  position:fixed;
+  top:30px;
+  text-align:center;
+  width:100%;
+  opacity:.3;
+  transition: .3s ease-in-out;
+}
+
+.now-playing a {
+      transition: .3s ease-in-out;
+}
+
+.now-playing:hover {
+  opacity:1;
+}
+
+.now-playing a:hover {
+  color:white;
+}
+
+.vimeo-wrapper {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   pointer-events: none;
+   overflow: hidden;
+}
+.vimeo-wrapper iframe {
+   width: 100vw;
+   height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+   min-height: 100vh;
+   min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.control-cover {
+  width:100%;
+  z-index:99999999;
+  background-color:black;
+  height:120px;
+  position:relative;
+  top:570px;
+}
+
+.control-cover-gradient {
+  width:100%;
+  z-index:99999999;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+  height:100px;
+  position:relative;
+  top:570px;
+}

@@ -4,6 +4,10 @@
 
 @media screen and (max-width: 640px) {
 
+html, body {
+  scroll-behavior: smooth;
+}
+
   /* Setting fade transition and default settings */
 body {
   margin:0;

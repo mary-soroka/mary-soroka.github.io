@@ -26,6 +26,7 @@ a {
   background-color:transparent;
   display: inline-block;
   transition: .3s ease-in-out;
+  cursor:pointer;
 }
 
 .back:hover {
