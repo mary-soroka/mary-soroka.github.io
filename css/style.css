@@ -408,13 +408,12 @@ img.brand {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 1.5px;
+  width: 1px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   background: rgba(0,0,0,1); 
-  padding-right:5px;
 }
  
 /* Handle */
