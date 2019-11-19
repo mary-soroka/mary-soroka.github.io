@@ -29,7 +29,8 @@
 
 <!-- partial:index.partial.html -->
 
-<div class="now-playing"><a href="projects/virgin-mobile.html">Playing: Virgin Mobile</a></div>
+<div class="now-playing"><a href="projects/virgin-mobile.html">
+Playing: Virgin Mobile</a></div>
 
 <div class="scroll-prompt">
 S<p>
@@ -65,9 +66,7 @@ L<p>
 
 		<div class="awards">
 			<h1>
-				An award-winning Art Director<BR>
-				on a mission to make everything<BR>
-				look and feel amazing.
+				An award-winning Art Director on a mission to make everything look and feel amazing.
 			</h1>
 
 	<div class="logo-container">
@@ -402,9 +401,7 @@ Insurance
 
 		<div class="awards">
 			<h1>
-				I'm lucky. I've worked on<BR>
-				some great brands, and I've never<BR>
-				had to sell cigarettes to babies.
+				I'm lucky. I've worked on some great brands, and I've never had to sell cigarettes to babies.
 			</h1>
 
 	<div class="logo-container">
@@ -488,6 +485,15 @@ Insurance
         player.setVolume(0);
     });
 </script>
+
+<script>$(window).scroll(function() {
+  if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+    $('.scroll-prompt').hide();
+  }
+  else {
+    $('.scroll-prompt').show();
+  }
+});</script>
 
 </body>
 </html>

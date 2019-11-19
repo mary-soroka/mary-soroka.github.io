@@ -20,10 +20,14 @@ a {
 }
 
 .big-name {
-top:40%;
+display:none;
 }
 
 .job-title {
+display:none;
+}
+
+.video {
 display:none;
 }
 
@@ -31,18 +35,26 @@ display:none;
 display:none;
 }
 
+.scroll-prompt {
+  display:none;
+}
+
+.now-playing {
+  display:none;
+}
+
 .name {
   z-index:999999;
   font-weight:600;
-  font-size:11px;
+  font-size:20px;
   letter-spacing:.2em;
   line-height:2;
   text-transform:uppercase;
   color:#ad9460;
-  position:fixed;
-  top:95px;
-  left:-35px;
-  transform:rotate(-90deg);
+  position:absolute;
+  top:30px;
+  left:62px;
+  transform:rotate(0deg);
 }
 
 .name a {
@@ -59,7 +71,7 @@ display:none;
   font-size:11px;
   letter-spacing:.2em;
   text-transform:uppercase;
-  line-height:1;
+  line-height:.8;
   z-index:999999;
   position:fixed;
   top:30px;

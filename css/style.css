@@ -94,7 +94,6 @@ a {
   position:fixed;
   bottom:110px;
   left:-3vw;
-  opacity:.3;
   transition: .3s ease-in-out;
   transform:rotate(-90deg);
 }
@@ -322,12 +321,12 @@ img.brand {
 
 /* td insurance */
 .color-16 {
-  background-color: #314853;
+  background-color: #3e332a;
 }
 
 /* dodgeball */
 .color-17 {
-  background-color: #d42d21;
+  background-color: #851910;
 }
 
 /* footer */
