@@ -53,7 +53,7 @@ display:none;
   color:#ad9460;
   position:absolute;
   top:30px;
-  left:62px;
+  left:12.5vw;
   transform:rotate(0deg);
 }
 
@@ -68,10 +68,10 @@ display:none;
 .nav {
   text-align:right;
   font-weight:600;
-  font-size:11px;
+  font-size:10px;
   letter-spacing:.2em;
   text-transform:uppercase;
-  line-height:.8;
+  line-height:1.5;
   z-index:999999;
   position:fixed;
   top:30px;
@@ -275,7 +275,7 @@ img.contact {
 .showcase {
   z-index:99999;
   width:75%;
-  height:80vw;
+  height:100vw;
   background-size:cover;
   background-position:center;
  /*-  border-right:2px solid transparent;*/
