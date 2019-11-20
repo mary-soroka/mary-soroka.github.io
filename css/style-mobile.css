@@ -19,6 +19,9 @@ a {
   color:#ad9460;
 }
 
+.home {
+	display:none;}
+
 .big-name {
 display:none;
 }
@@ -36,10 +39,6 @@ display:none;
 }
 
 .scroll-prompt {
-  display:none;
-}
-
-.now-playing {
   display:none;
 }
 
@@ -355,7 +354,6 @@ img.contact {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #ad9460; 
-  height:152px;
 }
 
 /* Handle on hover */

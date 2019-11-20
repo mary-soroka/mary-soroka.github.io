@@ -50,13 +50,13 @@ a {
 .name {
   z-index:2;
   font-weight:600;
-  font-size:9px;
+  font-size:10px;
   letter-spacing:.2em;
   line-height:2;
   text-transform:uppercase;
   color:#ad9460;
   position:fixed;
-  top:70px;
+  top:75px;
   left:.5vw;
   transform:rotate(-90deg);
 }
@@ -81,33 +81,6 @@ a {
   bottom:45px;
   right:4vw;
   text-align:center;
-}
-
-.now-playing {
-  z-index:2;
-  font-weight:600;
-  font-size:9px;
-  letter-spacing:.2em;
-  line-height:2;
-  text-transform:uppercase;
-  color:#ad9460;
-  position:fixed;
-  bottom:110px;
-  left:-3vw;
-  transition: .3s ease-in-out;
-  transform:rotate(-90deg);
-}
-
-.now-playing a {
-      transition: .3s ease-in-out;
-}
-
-.now-playing:hover {
-  opacity:1;
-}
-
-.now-playing a:hover {
-  color:white;
 }
 
 .nav {
@@ -419,7 +392,6 @@ img.brand {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #ad9460; 
-  height:152px;
 }
 
 /* Handle on hover */
