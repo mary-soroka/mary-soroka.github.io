@@ -54,6 +54,14 @@ h2 {
 	padding:5px;
 }
 
+.nav-name {
+	display:none;
+}
+
+.half-opacity {
+	color:lightgrey;
+}
+
 .job-title {
 	color:#ad9460;
 	width:100%;
@@ -155,6 +163,58 @@ img.contact:hover {
 img.brand {
 	width:9.6vw;
 	padding:2.2vw;
+}
+
+.showcase {
+z-index:99999;
+width:75%;
+height:40vw;
+background-size:100%;
+/*-  border-right:2px solid transparent;*/
+padding-left:0;
+transition: .3s ease-in-out;
+}
+
+.showcase:hover {
+/*-  border-right:2px solid #ad9460;*/
+padding-left:10px;
+}
+
+.showcase img {
+z-index:99999;
+width:100%;
+height:auto;
+}
+
+.showcase-text {
+z-index:99999;
+width:60vw;
+}
+
+.showcase-title-one-line, .showcase-title-two-lines, .showcase-title-three-lines {
+z-index:99999;
+font-size: 9vw;
+font-weight:700;
+letter-spacing:-.02em;
+line-height:1.05;
+position:relative;
+top:15vw;
+left:-3.5vw;
+}
+
+.showcase-title-one-line, {
+top:15vw;
+left:-3.5vw;
+}
+
+.showcase-title-two-lines {
+top:10vw;
+left:-3.5vw;
+}
+
+.showcase-title-three-lines {
+top:6vw;
+left:-3.5vw;
 }
 
 /* width */
