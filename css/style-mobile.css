@@ -2,7 +2,6 @@
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700);
 
-
 .name, .job-title, .scroll-prompt, .video, .video iframe, img.logo, .section, .disappear {
   display:none;
 }
