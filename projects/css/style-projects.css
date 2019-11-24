@@ -449,6 +449,14 @@ img.project-photography-triple {
 
 @media screen and (max-width: 640px) {
 
+	/* CREDITS TABLE */
+
+table {
+	font-size:.5em;
+	line-height:1.8;}
+
+.credit-category {margin-right:20px;}
+
 
 .name, .nav-name, .job-title, .scroll-prompt, .video, .video iframe, img.logo, .section, .disappear {
   display:none;
