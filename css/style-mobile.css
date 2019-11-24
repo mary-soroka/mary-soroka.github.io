@@ -15,7 +15,7 @@
   width:100%;
   height:50px;
   z-index:99999;
-border-bottom:1px solid black;}
+  border-bottom:1px solid black;}
  
 .nav-name {
   z-index:9999999;
@@ -50,12 +50,12 @@ h1 {
 
 .showcase {
   z-index:99999;
-  width:100%;
+  width:80%;
   height:100vw;
   background-size:cover;
   background-position:center;
   background-attachment:no-repeat;
-padding-left:0;
+  padding:0;
 }
 
 .showcase:hover {

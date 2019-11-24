@@ -50,7 +50,7 @@ h3 {
 	font-size: 1.2em;
 	font-weight:300;
 	letter-spacing:-.01em;
-	line-height:1.1;
+	line-height:1.4;
 	width:88%;
 	margin:0;
 	padding:0 0 5vw;
@@ -447,37 +447,44 @@ img.project-photography-triple {
 
 @media screen and (max-width: 640px) {
 
-/* project page */
 
-.project-content {
-	padding:13vw 13vw 0;
-	margin:0;
+.name, .job-title, .scroll-prompt, .video, .video iframe, img.logo, .section, .disappear {
+  display:none;
 }
 
-.project-content2 {
-	padding:2vw 10vw 0;
-	margin:0;
+.nav {
+  margin:0;
+  padding:15px 15px 0 0;
+  right:0;
+  top:0;
+  background-color:white;
+  width:100%;
+  height:50px;
+  z-index:99999;
+  border-bottom:1px solid black;}
+ 
+.nav-name {
+  z-index:9999999;
+  color:black;
+  display:inherit;
+  float:left;
+  padding:10px 0 0 30px;
 }
 
-.project-title {
-	font-size: 13vw;
-	margin-bottom:5vw;
+.nav a {
+  z-index:9999999;
+  border:0;
+  color:black;}
+
+.nav a:hover {
+  border:0;
 }
 
-.project-description {
-	width:100%;
-	font-size:4vw;
-	margin-bottom:10vw;
-}
+h1 {padding-bottom:4vw;}
+h2 {padding-bottom:5vw;}
+h3 {padding-bottom:8vw;}
 
-.project-photography img {
-	padding:.5vw 0;
-}
 
-.project-credits {
-	margin:0;
-	padding:8vw 13vw 8vw;
-}
 
 /* width */
 ::-webkit-scrollbar {
