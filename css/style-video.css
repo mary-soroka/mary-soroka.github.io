@@ -22,6 +22,7 @@
    z-index: -1;
    pointer-events: none;
    overflow: hidden;
+  background-color:black;
 }
 .vimeo-wrapper iframe {
    width: 100vw;
