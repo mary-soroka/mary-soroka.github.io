@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700);
 
 
-.name, .nav-name, .job-title, .scroll-prompt, .video, .video iframe, img.logo, .section, .disappear {
+.name, .job-title, .scroll-prompt, .video, .video iframe, img.logo, .section, .disappear {
   display:none;
 }
 
@@ -70,10 +70,6 @@ h3 {
 	padding:5px;
 }
 
-.half-opacity {
-	color:lightgrey;
-}
-
 .job-title {
 	color:#ad9460;
 	width:100%;
@@ -98,23 +94,29 @@ h3 {
 	text-align:center;
 }
 
+.nav-name {
+  display:none;
+}
+
 .nav {
-	text-align:right;
-	z-index:2;
-	position:fixed;
-	top:30px;
-	right:3.2%;
+  text-align:right;
+  z-index:2;
+  position:fixed;
+  top:0;
+  right:inherit;
+  width:100%;
+  margin:0;
 }
 
 .nav a {
-	padding:10px;
-	border-right:1px solid transparent;
-	transition: .3s ease-in-out;
+  padding:10px;
+  border-right:1px solid transparent;
+  transition: .3s ease-in-out;
 }
 
 .nav a:hover {
-	border-right:1px solid #ad9460;
-	opacity:1;
+  border-right:1px solid #ad9460;
+  opacity:1;
 }
 
 ul {
@@ -140,7 +142,7 @@ li {
 .back {
   font-family: 'Montserrat', Sans-Serif;
   color:#ad9460;
-  padding:10px;
+  padding:3.2vw 4.2vw 0;
   font-weight:600;
   font-size:9px;
   letter-spacing:.2em;
@@ -452,30 +454,29 @@ img.project-photography-triple {
   display:none;
 }
 
-.project-content {
-	padding:25vw 12.5vw 0;
-}
-
 .nav {
+	background-color:pink;
   margin:0;
-  padding:15px 15px 0 0;
+  padding:20px 20px 0;
   right:0;
   top:0;
-  background-color:white;
   width:100%;
-  height:50px;
+  height:65px;
   z-index:99999;
   border-bottom:1px solid black;}
  
 .nav-name {
+  margin:0;
+  padding:0;
   z-index:9999999;
   color:black;
   display:inherit;
   float:left;
-  padding:10px 0 0 30px;
 }
 
 .nav a {
+  margin:0;
+  padding:0;
   z-index:9999999;
   border:0;
   color:black;}
@@ -488,7 +489,24 @@ h1 {padding-bottom:4vw;}
 h2 {padding-bottom:5vw;}
 h3 {padding-bottom:8vw;}
 
+.back {
+  padding:0;
+  margin:0;
+  border:0;
+  display: inherit;
+  float:right;
+}
 
+.back:hover {
+  border:0;
+  padding:0;
+  margin:0;
+  opacity:1;
+}
+
+.project-content {
+	padding:25vw 12.5vw 0;
+}
 
 /* width */
 ::-webkit-scrollbar {
