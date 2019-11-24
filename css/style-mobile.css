@@ -3,6 +3,12 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700);
 
 
+.panels {margin-top:100vw;}
+
+.disappear {
+  display:none;
+}
+
 .nav {
   z-index:9999999;
 }
@@ -36,7 +42,7 @@ h1 {
 .panel {
 
 /* min height incase content is higher than window height */
-  min-height: 80vh;
+  min-height: 90vh;
 }
 
 .showcase {
