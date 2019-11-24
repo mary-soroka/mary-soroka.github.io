@@ -1,5 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700);
 
+@font-face {
+font-family: "Apercu";
+src: url("https://yoursite.com/css/fonts/Apercu.ttf");
+src: url("https://yoursite.com/css/fonts/Apercu.woff") format("woff"),
+url("https://yoursite.com/css/fonts/Apercu.otf") format("opentype"),
+}
+
 html, body {
   scroll-behavior: smooth;
 }
@@ -8,7 +15,7 @@ body {
   color:#ad9460;
   background-color: black;
   transition: background-color 1s ease;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Apercu', 'Montserrat', sans-serif;
   margin:0;
   padding:0;
   overflow-x:hidden;
