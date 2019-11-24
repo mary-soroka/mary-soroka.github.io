@@ -452,6 +452,10 @@ img.project-photography-triple {
   display:none;
 }
 
+.project-content {
+	padding:25vw 12.5vw 0;
+}
+
 .nav {
   margin:0;
   padding:15px 15px 0 0;
