@@ -403,6 +403,27 @@ img.project-photography-triple {
 	margin:0;
 	padding:8vw 13vw 8vw;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(255,255,255,1);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ad9460; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white; 
+}
+
 }
 
 /* --------------------------- MEDIUM WIDTH */
