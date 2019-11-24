@@ -6,7 +6,7 @@ $(window).scroll(function() {
       $panel = $('.panel');
   
   // Change 33% earlier than scroll position so colour is there when you arrive.
-  var scroll = $window.scrollTop() + ($window.height() / 2);
+  var scroll = $window.scrollTop() + ($window.height() / 1.9);
  
   $panel.each(function () {
     var $this = $(this);
@@ -34,7 +34,7 @@ $(window).scroll(function() {
 
 $(window).scroll(function(){
     $(".scroll-prompt").css("opacity", 1 - $(window).scrollTop() / 100);
-    $(".big-name").css("opacity", 1 - $(window).scrollTop() / 500);
+    $(".name").css("opacity", 1 - $(window).scrollTop() / 500);
     $(".job-title").css("opacity", 1 - $(window).scrollTop() / 500);
     $(".video").css("opacity", 1 - $(window).scrollTop() / 500);
     $(".now-playing").css("opacity", 1 - $(window).scrollTop() / 100);

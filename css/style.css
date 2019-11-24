@@ -1,12 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700);
 
-@font-face {
-font-family: "Apercu";
-src: url("fonts/Apercu.ttf");
-src: url("fonts/Apercu.woff") format("woff"),
-url("fonts/Apercu.otf") format("opentype"),
-}
-
 html, body {
   scroll-behavior: smooth;
 }
@@ -15,7 +8,7 @@ body {
   color:#ad9460;
   background-color: black;
   transition: background-color 1s ease;
-  font-family: 'Apercu', 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin:0;
   padding:0;
   overflow-x:hidden;
@@ -26,9 +19,8 @@ a {
   color:#ad9460;
 }
 
-.big-name {
+.name {
   width:100%;
-  color:#ad9460;
   z-index:3;
   position:fixed;
   top:38%;
@@ -42,7 +34,6 @@ a {
 
 .job-title {
   width:100%;
-  color:#ad9460;
   z-index:3;
   position:fixed;
   top:58%;
@@ -77,14 +68,16 @@ a {
   color:white;
 }*/
 
+h2 {
+	font-weight:600;
+	font-size:9px;
+	letter-spacing:.2em;
+	line-height:2;
+	text-transform:uppercase;
+}
+
 .scroll-prompt {
   z-index:2;
-  font-weight:600;
-  font-size:9px;
-  letter-spacing:.2em;
-  line-height:.4;
-  text-transform:uppercase;
-  color:#ad9460;
   position:fixed;
   bottom:5vw;
   width:100%;
@@ -93,11 +86,6 @@ a {
 
 .nav {
   text-align:right;
-  font-weight:600;
-  font-size:8px;
-  letter-spacing:.2em;
-  text-transform:uppercase;
-  line-height:2;
   z-index:2;
   position:fixed;
   top:30px;
@@ -105,7 +93,6 @@ a {
 }
 
 .nav a {
-  color:#ad9460;
   padding:10px;
   border-right:1px solid transparent;
   transition: .3s ease-in-out;
@@ -117,14 +104,18 @@ a {
   opacity:1;
 }
 
+ul {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+
+li {
+	margin:0;
+	padding:0 0 10px;
+}
 
 .section-title {
-  color:#ad9460;
-  font-weight:600;
-  font-size:8px;
-  letter-spacing:.2em;
-  line-height:2;
-  text-transform:uppercase;
   position:relative;
   top:0vw;
   left:12.5vw;
@@ -138,10 +129,9 @@ a {
 }
 
 h1 {
-  color:#ad9460;
-  font-size: 4.7vw;
+  font-size: 4.6vw;
   font-weight:400;
-  letter-spacing:-.02em;
+  letter-spacing:-.01em;
   line-height:1.2;
 }
 
@@ -171,7 +161,6 @@ img.contact:hover {
 }
 
 .intro-brands {
-  color:#ad9460;
   font-size: 3em;
   font-weight:700;
   letter-spacing:-.02em;
@@ -215,7 +204,7 @@ img.brand {
 .panel {
 
   /* min height incase content is higher than window height */
-  min-height: 80vh;
+  min-height: 85vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -233,7 +222,7 @@ img.brand {
 
 /* bell x star wars */
 .color-3 {
-  background-color: #404f4d;
+  background-color: #362c23;
 }
 
 /* ferrero rocher */
@@ -253,7 +242,7 @@ img.brand {
 
 /* td visa infinite */
 .color-7 {
-  background-color: #c3b9ae;
+  background-color: #3a5154;
 }
 
 /* ohip */
@@ -293,7 +282,7 @@ img.brand {
 
 /* pride */
 .color-15 {
-  background-color: #7a3843;
+  background-color: #1e2b3b;
 }
 
 /* td insurance */
@@ -336,10 +325,9 @@ img.brand {
 .showcase-text {
   z-index:99999;
   width:60vw;
-  color:#ad9460;
 }
 
-.showcase-title-one-line {
+.showcase-title-one-line, .showcase-title-two-lines, .showcase-title-three-lines {
   z-index:99999;
   font-size: 9vw;
   font-weight:700;
@@ -350,37 +338,19 @@ img.brand {
   left:-3.5vw;
 }
 
+.showcase-title-one-line, {
+  top:15vw;
+  left:-3.5vw;
+}
+
 .showcase-title-two-lines {
-  z-index:99999;
-  font-size: 9vw;
-  font-weight:700;
-  letter-spacing:-.02em;
-  line-height:1.05;
-  position:relative;
   top:10vw;
   left:-3.5vw;
 }
 
 .showcase-title-three-lines {
-  z-index:99999;
-  font-size: 9vw;
-  font-weight:700;
-  letter-spacing:-.02em;
-  line-height:1.05;
-  position:relative;
   top:6vw;
   left:-3.5vw;
-}
-
-.showcase-subhead {
-  z-index:99999;
-  font-size: 1.2vw;
-  font-weight:400;
-  letter-spacing:.06em;
-  line-height:1.05;
-  position:relative;
-  top:16.5vw;
-  right:-72vw;
 }
 
 /* width */
