@@ -33,6 +33,7 @@ $(window).scroll(function() {
 
 
 $(window).scroll(function(){
+    $(".scroll-prompt").css("opacity", 1 - $(window).scrollTop() / 100);
     $(".big-name").css("opacity", 1 - $(window).scrollTop() / 500);
     $(".job-title").css("opacity", 1 - $(window).scrollTop() / 500);
     $(".video").css("opacity", 1 - $(window).scrollTop() / 500);
