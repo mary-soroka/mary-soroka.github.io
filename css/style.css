@@ -41,7 +41,7 @@ h2 {
 }
 
 .contact-mobile {
-	display:none;
+	opacity:0;
 }
 
 .name {
