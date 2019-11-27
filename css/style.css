@@ -40,6 +40,10 @@ h2 {
 	padding:0;
 }
 
+.contact-mobile {
+	display:none;
+}
+
 .name {
 	color:#ad9460;
 	width:100%;
