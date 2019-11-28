@@ -11,7 +11,6 @@
 
 .contact-mobile {
   display:inherit;
-  color:#ad9460;
   opacity:1;
   width:100%;
   text-align:center;
@@ -26,20 +25,13 @@
 .contact-mobile a {
   z-index:9999999999;
   color:#ad9460;
-  opacity:1;
-  display:inherit;
-}
-
-h2 {
-  display:inherit;
-  color:#ad9460;
   font-weight:600;
   font-size:0.02em;
   letter-spacing:.2em;
   line-height:2;
   text-transform:uppercase;
-  margin:0;
-  padding:0;
+  opacity:1;
+  display:inherit;
 }
 
 .nav {
