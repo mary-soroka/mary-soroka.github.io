@@ -26,12 +26,10 @@
   z-index:9999999999;
   color:#ad9460;
   font-weight:600;
-  font-size:0.02em;
+  font-size:1em;
   letter-spacing:.2em;
   line-height:2;
   text-transform:uppercase;
-  opacity:1;
-  display:inherit;
 }
 
 .nav {
