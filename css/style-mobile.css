@@ -15,11 +15,11 @@
   width:100%;
   text-align:center;
   position:fixed;
-  bottom:0;
+  top:0;
   height:40px;
   z-index:999999999999;
   background-color:transparent;
-  border-top:1px solid #ad9460;
+  border-bottom:1px solid #ad9460;
 }
 
 .contact-mobile a {
@@ -31,14 +31,14 @@
   line-height:2;
   text-transform:uppercase;
   margin:0;
-  padding:20px;
+  padding:15px;
 }
 
 .scroll-prompt {
   color:#ad9460;
   z-index:2;
   position:fixed;
-  top:5vw;
+  bottom:5vw;
   width:100%;
   text-align:center;
 }
