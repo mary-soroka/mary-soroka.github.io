@@ -40,7 +40,13 @@ body {
   width: 100%;
 }
 
-.photos {padding:50px;}
+.photos {
+  padding:50px;
+}
+
+.journal {
+  width:100%;
+}
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
