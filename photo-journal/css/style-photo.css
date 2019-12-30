@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700);
 
 
-.name, .job-title, .scroll-prompt, .video, .video iframe, img.logo, .section, .disappear {
+.name, .job-title, .scroll-prompt, .video, .video iframe, img.logo, .section {
   display:none;
 }
 
@@ -142,13 +142,13 @@ li {
 .back {
   font-family: 'Montserrat', Sans-Serif;
   color:#ad9460;
-  padding:3.2vw 4.2vw 0;
+  padding:0 10px;
+  border-right:1px solid transparent;
   font-weight:600;
   font-size:9px;
   letter-spacing:.2em;
   text-transform:uppercase;
   border:0;
-  border-right:1px solid transparent;
   background-color:transparent;
   display: inline-block;
   transition: .3s ease-in-out;
@@ -164,72 +164,6 @@ audio {
     width: 0;
     padding:0;
     margin:0;
-}
-
-/* CREDITS TABLE */
-
-table {
-	color: #a7aaaf;
-	font-weight:500;
-	font-size:.7em;
-	letter-spacing:.08;
-	line-height:2;
-	border-collapse: collapse;
-	margin-bottom:5vw;}
-
-td, th {
-	padding:0 3px 3px 0;
-	vertical-align: top;
-}
-
-.credit-category {font-weight:700;margin-right:50px;}
-
-/* --------------------------- PROJECTS */
-
-/* projects page */
-
-.work {
-	background-color:black;
-	margin-top:80px;
-}
-
-/* container holding all thumbnails */
-
-.projects {
-	display:table;
-	width:100%;
-	margin:0;
-	padding:0;
-}
-
-.projects span {
-	display:table-cell;
-	width:auto;
-	margin:0;
-	padding:0;
-}
-
-.projects span img {
-	vertical-align: top;
-	margin:0;
-	padding:0;
-}
-
-/* thumbnail containers */
-
-.container {
-	position:relative;
-	display:table-cell;
-	margin:0;
-	padding:0;
-	background-color:black;
-}
-
-.thumbnail-container {
-	width: 100%;
-	height: auto;
-	margin:0;
-	padding:0;
 }
 
 /* --------------------------- PROJECT CONTENT */
