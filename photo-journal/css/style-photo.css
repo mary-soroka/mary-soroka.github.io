@@ -45,17 +45,6 @@ h2 {
 	padding:0 0 2vw;
 }
 
-h3 {
-	color:black;
-	font-size: 1.2em;
-	font-weight:300;
-	letter-spacing:-.01em;
-	line-height:1.4;
-	width:88%;
-	margin:0;
-	padding:0 0 5vw;
-}
-
 .name {
 	color:#ad9460;
 	width:100%;
@@ -102,9 +91,9 @@ h3 {
   text-align:right;
   z-index:2;
   position:fixed;
-  top:0;
-  right:inherit;
-  width:100%;
+  top:15px;
+  right:10px;
+  width:100px;
   margin:0;
 }
 
@@ -112,6 +101,8 @@ h3 {
   padding:10px;
   border-right:1px solid transparent;
   transition: .3s ease-in-out;
+  background-color:white;
+  opacity:.3;
 }
 
 .nav a:hover {
@@ -142,17 +133,19 @@ li {
 .back {
   font-family: 'Montserrat', Sans-Serif;
   color:#ad9460;
-  padding:0 10px;
+  padding:10px 10px;
+  margin:0;
   border-right:1px solid transparent;
   font-weight:600;
   font-size:9px;
   letter-spacing:.2em;
   text-transform:uppercase;
   border:0;
-  background-color:transparent;
+  background-color:white;
   display: inline-block;
   transition: .3s ease-in-out;
   cursor:pointer;
+  opacity:.3;
 }
 
 .back:hover {
@@ -171,119 +164,11 @@ audio {
 /* project page */
 
 .project-content {
-	padding:12vw 12.5vw 0;
+	padding:12vw 10vw 0;
 	margin:0;
 }
 
-/* project credits */
-
-.project-credits {
-	margin:0;
-	padding:7vw 13vw 3vw;
-}
-
-/* secondary content */
-
-.project-content2 {
-	padding:2vw 10vw 0;
-	margin:0;
-}
-
-/* secondary content title */
-
-.project-content3 {
-	padding:0vw 10vw 0;
-	margin:0;
-}
-
-/* --------------------------- PROJECT VIDEOS */
-
-/* single video */
-
-.project-video {
-	background-color:black;
-	padding:0 0;
-	position:relative;
-	margin-bottom:2vw;
-}
-
-/* div video sits in */
-
-.single-video-container {
-	background-color:transparent;
-	margin-bottom:5vw;
-	padding:44.8% 0 0;
-	position:relative;
-}
-
-/* iframe settings */
-
-.single-video {
-	position:absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
-}
-
-/* --------------------------- PROJECT PHOTOGRAPHY */
-
-
-/* single photos */
-
-.project-photography {
-	padding:0;
-	margin:0;
-}
-
-img.project-photography {
-	width:100%;
-	padding:.5vw 0;
-}
-
-/* double photos */
-
-.project-photography-double {
-	padding:5vw 10vw 0;
-	margin:0;
-}
-
-img.project-photography-double {
-	width:49.7%;
-	padding:0;
-}
-
-/* triple photos */
-
-.project-photography-triple {
-	padding:5vw 13vw 0;
-	margin:0;
-}
-
-img.project-photography-triple {
-	width:33%;
-	padding:0;
-}
-
-/* video container */
-
-.double-video-container {
-	display:inline;
-	background-color:transparent;
-	padding:0;
-	margin:0;
-	position:relative;
-}
-
-/* iframe settings */
-
-.double-video {
-	padding:0;
-	margin:0;
-	width:39.7vw;
-	height:23vw;
-}
-
+/* --------------------------- SCROLLBAR */
 
 
 /* width */
