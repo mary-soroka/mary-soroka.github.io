@@ -130,15 +130,12 @@ h2 {
   right:10px;
   width:100px;
   margin:15px 0 0;
-  padding:0;
-  background-color:white;
-  border:1px solid blue;
+  padding:15px 0;
 }
 
 .nav a {
 	border-right:1px solid transparent;
 	transition: .3s ease-in-out;
-	background-color:white;
 	opacity:1;
 	color:#ad9460;
 	font-weight:600;
@@ -275,19 +272,6 @@ li {
 
 @media screen and (max-width: 640px) {
 
-	/* CREDITS TABLE */
-
-table {
-	font-size:.5em;
-	line-height:1.8;}
-
-.credit-category {margin-right:20px;}
-
-
-.name, .nav-name, .job-title, .scroll-prompt, .video, .video iframe, img.logo, .section, .disappear {
-  display:none;
-}
-
 .nav {
   margin:0;
   padding:20px 20px 0;
@@ -311,25 +295,6 @@ h1 {padding-bottom:4vw;}
 h2 {padding-bottom:5vw;}
 h3 {padding-bottom:8vw;}
 
-.back {
-  padding:0;
-  margin:0;
-  border:0;
-  display: inherit;
-  float:right;
-}
-
-.back:hover {
-  border:0;
-  padding:0;
-  margin:0;
-  opacity:1;
-}
-
-.project-content {
-	padding:25vw 12.5vw 0;
-}
-
 /* width */
 ::-webkit-scrollbar {
   width: 3px;
@@ -348,61 +313,6 @@ h3 {padding-bottom:8vw;}
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: white; 
-}
-
-}
-
-/* --------------------------- MEDIUM WIDTH */
-
-
-/* wider middle */
-
-@media screen and (min-width:941px) and (max-width: 1130px) {
-
-img.project-photography-double {
-	width:49.7%;
-	padding:0;
-	margin:0;
-}
-
-img.project-photography-triple {
-	width:49.7%;
-	padding:0;
-}
-
-}
-
-/* narrower middle */
-
-@media screen and (min-width:700px) and (max-width: 940px) {
-
-img.project-photography-double, {
-	width:100%;
-	padding:.4vw 0;
-}
-
-img.project-photography-triple {
-	width:100%;
-	padding:.4vw 0;
-}
-
-}
-
-/* --------------------------- NARROW AND MOBILE */
-
-/* double videos middle */
-@media screen and (max-width: 699px) {
-
-.project-photography-double img, {
-	width:100%;
-	padding:.4vw 0;
-}
-
-img.project-photography-triple {
-	width:100%;
-	padding:.4vw 0;
-}
-
 }
 
 }
