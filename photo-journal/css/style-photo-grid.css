@@ -21,8 +21,12 @@ body {
 
 .text {
   font-family:'Montserrat', 'Arial', sans-serif;
-  margin-bottom:40px;
+  margin:50px 0 0;
   background-color:none;
+}
+
+a.title {
+  cursor:default;
 }
 
 /* Create four equal columns that sits next to each other */
