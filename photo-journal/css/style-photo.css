@@ -1,8 +1,87 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700);
 
 
-.name, .job-title, .scroll-prompt, .video, .video iframe, img.logo, .section {
-  display:none;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.text {
+  font-family:'Montserrat', 'Arial', sans-serif;
+  margin:50px 0 0;
+  background-color:none;
+}
+
+a.title {
+  cursor:default;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  max-width: 50%;
+  padding:2vw;
+}
+
+.column img {
+
+  margin-bottom:4vw;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.photos {
+  padding:0;
+}
+
+.journal {
+  width:100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+
+.photos {
+  padding:0;
+}
+
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 00px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+
+.photos {
+  padding:0 80px 50px;
+}
+
+
 }
 
 html, body {
@@ -11,7 +90,6 @@ html, body {
 
 body {
 	background-color: white;
-	transition: background-color 1s ease;
 	font-family: 'Montserrat', sans-serif;
 	margin:0;
 	padding:0;
@@ -42,67 +120,34 @@ h2 {
 	line-height:1.1;
 	width:88%;
 	margin:0;
-	padding:0 0 2vw;
-}
-
-.name {
-	color:#ad9460;
-	width:100%;
-	z-index:3;
-	position:fixed;
-	top:38%;
-	left:0;
-	font-size:6vw;
-	text-transform:uppercase;
-	letter-spacing:.455em;
-	text-align:center;
-	padding:5px;
-}
-
-.job-title {
-	color:#ad9460;
-	width:100%;
-	z-index:3;
-	position:fixed;
-	top:58%;
-	left:0;
-	text-align:center;
-	font-weight:500;
-	font-size:14px;
-	letter-spacing:.2em;
-	line-height:2;
-	text-transform:uppercase;
-}
-
-.scroll-prompt {
-	color:#ad9460;
-	z-index:2;
-	position:fixed;
-	bottom:5vw;
-	width:100%;
-	text-align:center;
-}
-
-.nav-name {
-  display:none;
+	padding:0;
 }
 
 .nav {
   text-align:right;
   z-index:2;
   position:fixed;
-  top:15px;
   right:10px;
   width:100px;
-  margin:0;
+  margin:15px 0 0;
+  padding:0;
+  background-color:white;
+  border:1px solid blue;
 }
 
 .nav a {
-  padding:10px;
-  border-right:1px solid transparent;
-  transition: .3s ease-in-out;
-  background-color:white;
-  opacity:.3;
+	border-right:1px solid transparent;
+	transition: .3s ease-in-out;
+	background-color:white;
+	opacity:1;
+	color:#ad9460;
+	font-weight:600;
+	font-size:0.02em;
+	letter-spacing:.2em;
+	line-height:2;
+	text-transform:uppercase;
+	margin:0;
+	padding:10px;
 }
 
 .nav a:hover {
@@ -118,53 +163,15 @@ ul {
 
 li {
 	margin:0;
-	padding:0 0 10px;
-}
-
-.section {
-	position:relative;
-	top:0vw;
-	left:12.5vw;
-	margin:0;
 	padding:0;
-}
-
-
-.back {
-  font-family: 'Montserrat', Sans-Serif;
-  color:#ad9460;
-  padding:10px 10px;
-  margin:0;
-  border-right:1px solid transparent;
-  font-weight:600;
-  font-size:9px;
-  letter-spacing:.2em;
-  text-transform:uppercase;
-  border:0;
-  background-color:white;
-  display: inline-block;
-  transition: .3s ease-in-out;
-  cursor:pointer;
-  opacity:.3;
-}
-
-.back:hover {
-  border-right:1px solid #ad9460;
-  opacity:1;
-}
-
-audio {
-    width: 0;
-    padding:0;
-    margin:0;
 }
 
 /* --------------------------- PROJECT CONTENT */
 
 /* project page */
 
-.project-content {
-	padding:12vw 10vw 0;
+.headline {
+	padding:12vw 4vw 0;
 	margin:0;
 }
 
@@ -294,8 +301,7 @@ table {
   margin:0;
   padding:0;
   z-index:9999999;
-  border:0;
-  color:black;}
+  border:0;}
 
 .nav a:hover {
   border:0;
