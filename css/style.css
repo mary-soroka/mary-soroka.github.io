@@ -19,7 +19,7 @@ html, body {
 }
 
 body {
-	background-color: white;
+	background-color: black;
 	transition: background-color 1s ease;
 	font-family: 'DM Sans', sans-serif;
 	margin:0;
