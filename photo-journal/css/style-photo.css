@@ -103,11 +103,11 @@ a {
 
 h1 {
 	color:#ad9460;
-	font-weight:600;
-	font-size:0.02em;
-	letter-spacing:.2em;
+  font-weight:500;
+	font-size:.8em;
+	letter-spacing:0;
 	line-height:2;
-	text-transform:uppercase;
+	text-transform:none;
 	margin:0;
 	padding:0 0 3vw;
 }
@@ -138,11 +138,11 @@ h2 {
 	transition: .3s ease-in-out;
 	opacity:1;
 	color:#ad9460;
-	font-weight:600;
-	font-size:0.02em;
-	letter-spacing:.2em;
+	font-weight:500;
+	font-size:.8em;
+	letter-spacing:0;
 	line-height:2;
-	text-transform:uppercase;
+	text-transform:none;
 	margin:0;
 	padding:10px;
 }
