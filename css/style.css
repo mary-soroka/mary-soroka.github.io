@@ -4,8 +4,22 @@ html, body {
 	scroll-behavior: smooth;
 }
 
+.panels {
+	z-index:1;
+}
+
+/* panel styles */
+.panel {
+
+/* min height incase content is higher than window height */
+	min-height: 90vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
 body {
-	background-color: black;
+	background-color: white;
 	transition: background-color 1s ease;
 	font-family: 'DM Sans', sans-serif;
 	margin:0;
