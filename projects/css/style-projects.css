@@ -1,5 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700);
-
+@import url('https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&display=swap');
 
 .name, .job-title, .scroll-prompt, .video, .video iframe, img.logo, .section, .disappear {
   display:none;
@@ -12,7 +11,7 @@ html, body {
 body {
 	background-color: white;
 	transition: background-color 1s ease;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'DM Sans', sans-serif;
 	margin:0;
 	padding:0;
 	overflow-x:hidden;
