@@ -7,7 +7,7 @@ html, body {
 body {
 	background-color: black;
 	transition: background-color 1s ease;
-	font-family: 'DM+Sans', sans-serif;
+	font-family: 'DM Sans', sans-serif;
 	margin:0;
 	padding:0;
 	overflow-x:hidden;
