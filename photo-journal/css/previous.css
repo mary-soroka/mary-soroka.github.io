@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.text {
+  font-family:'DM Sans', 'Arial', sans-serif;
+  margin:50px 0 0;
+  background-color:none;
+}
+
+a.title {
+  cursor:default;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  max-width: 50%;
+  padding:2vw;
+}
+
+.column img {
+
+  margin-bottom:4vw;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.photos {
+  padding:0;
+}
+
+.journal {
+  width:100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+
+.photos {
+  padding:0;
+}
+
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 00px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+
+.photos {
+  padding:0 80px 50px;
+}
+
+
+}
+
+html, body {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: white;
+	font-family: 'DM Sans', sans-serif;
+	margin:0;
+	padding:0;
+	overflow-x:hidden;
+}
+
+a {
+	text-decoration:none;
+	color:#ad9460;
+}
+
+h1 {
+	color:#ad9460;
+  font-weight:500;
+	font-size:.8em;
+	letter-spacing:0;
+	line-height:2;
+	text-transform:none;
+	margin:0;
+	padding:0 0 3vw;
+}
+
+h2 {
+	color:black;
+	font-size: 2.8em;
+	font-weight:400;
+	letter-spacing:-.01em;
+	line-height:1.1;
+	width:88%;
+	margin:0;
+	padding:0;
+}
+
+.nav {
+  text-align:right;
+  z-index:2;
+  position:fixed;
+  right:10px;
+  width:100px;
+  margin:15px 0 0;
+  padding:15px 0;
+}
+
+.nav a {
+	border-right:1px solid transparent;
+	transition: .3s ease-in-out;
+	opacity:1;
+	color:#ad9460;
+	font-weight:500;
+	font-size:.8em;
+	letter-spacing:0;
+	line-height:2;
+	text-transform:none;
+	margin:0;
+	padding:10px;
+}
+
+.nav a:hover {
+  border-right:1px solid #ad9460;
+  opacity:1;
+}
+
+ul {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+
+li {
+	margin:0;
+	padding:0;
+}
+
+/* --------------------------- PROJECT CONTENT */
+
+/* project page */
+
+.headline {
+	padding:12vw 4vw 0;
+	margin:0;
+}
+
+/* --------------------------- SCROLLBAR */
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(255,255,255,1);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ad9460; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------- */
+/* --------------------------- */
+/* --------------------------- */
+/* --------------------------- */
+/* --------------------------- RESPONSIVE */
+/* --------------------------- */
+/* --------------------------- */
+/* --------------------------- */
+/* --------------------------- */
+/* --------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------- NARROW AND MOBILE */
+
+@media screen and (max-width: 640px) {
+
+.nav {
+  margin:0;
+  padding:20px 20px 0;
+  right:0;
+  top:0;
+  width:100%;
+  height:65px;
+  z-index:99999;}
+
+.nav a {
+  margin:0;
+  padding:0;
+  z-index:9999999;
+  border:0;}
+
+.nav a:hover {
+  border:0;
+}
+
+h1 {padding-bottom:4vw;}
+h2 {padding-bottom:5vw;}
+h3 {padding-bottom:8vw;}
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(255,255,255,1);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ad9460; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white; 
+}
+
+}

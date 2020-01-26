@@ -1,12 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&display=swap');
 
 
+
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
+  font-family: 'DM Sans';
+}
+
+h1 {
+  color:#ad9460;
+  font-family: 'DM Sans', sans-serif;
+  font-weight:500;
+  font-size:8vw;
+  letter-spacing:0;
+  line-height:2;
+  text-transform:none;
+  margin:0;
+  padding:5vw;
 }
 
 .header {
@@ -19,17 +34,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
-  padding: 20px;
-}
-
-.text {
-  font-family:'DM Sans', 'Arial', sans-serif;
-  margin:50px 0 0;
-  background-color:none;
-}
-
-a.title {
-  cursor:default;
+  padding: 0 4px;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -37,22 +42,7 @@ a.title {
   -ms-flex: 50%; /* IE10 */
   flex: 50%;
   max-width: 50%;
-  padding:2vw;
-}
-
-.column img {
-
-  margin-bottom:4vw;
-  vertical-align: middle;
-  width: 100%;
-}
-
-.photos {
-  padding:0;
-}
-
-.journal {
-  width:100%;
+  padding: 0 4px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -62,65 +52,46 @@ a.title {
     flex: 50%;
     max-width: 50%;
   }
-
-.photos {
-  padding:0;
-}
-
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 00px) {
+@media screen and (max-width: 600px) {
   .column {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
   }
-
-.photos {
-  padding:0 80px 50px;
 }
 
+.label {
+  font-size:1.2em;
+  font-weight:400;
+  padding:0;
+  margin:0;
+  text-align:right;
+  color:white;
+  padding:2vw;
+  width:100%;
+  height:100%;
+  opacity:0;
+  transition: .2s ease-in-out;
+  }
+
+a {text-decoration:none;
+cursor:default;
+}
+
+.label:hover {
+opacity:1;
 
 }
 
-html, body {
-	scroll-behavior: smooth;
-}
-
-body {
-	background-color: white;
-	font-family: 'DM Sans', sans-serif;
-	margin:0;
-	padding:0;
-	overflow-x:hidden;
-}
-
-a {
-	text-decoration:none;
-	color:#ad9460;
-}
-
-h1 {
-	color:#ad9460;
-  font-weight:500;
-	font-size:.8em;
-	letter-spacing:0;
-	line-height:2;
-	text-transform:none;
-	margin:0;
-	padding:0 0 3vw;
-}
-
-h2 {
-	color:black;
-	font-size: 2.8em;
-	font-weight:400;
-	letter-spacing:-.01em;
-	line-height:1.1;
-	width:88%;
-	margin:0;
-	padding:0;
+.tile {
+  height:31vw;
+  background-size:cover;
+  background-position:center;
+  margin-bottom:8px;
+  vertical-align: middle;
 }
 
 .nav {
@@ -134,17 +105,17 @@ h2 {
 }
 
 .nav a {
-	border-right:1px solid transparent;
-	transition: .3s ease-in-out;
-	opacity:1;
-	color:#ad9460;
-	font-weight:500;
-	font-size:.8em;
-	letter-spacing:0;
-	line-height:2;
-	text-transform:none;
-	margin:0;
-	padding:10px;
+  border-right:1px solid transparent;
+  transition: .3s ease-in-out;
+  opacity:1;
+  color:#ad9460;
+  font-weight:500;
+  font-size:.8em;
+  letter-spacing:0;
+  line-height:2;
+  text-transform:none;
+  margin:0;
+  padding:10px;
 }
 
 .nav a:hover {
@@ -153,24 +124,19 @@ h2 {
 }
 
 ul {
-	list-style-type: none;
-	margin:0;
-	padding:0;
+  list-style-type: none;
+  margin:0;
+  padding:0;
 }
 
 li {
-	margin:0;
-	padding:0;
+  margin:0;
+  padding:0;
 }
 
-/* --------------------------- PROJECT CONTENT */
 
-/* project page */
 
-.headline {
-	padding:12vw 4vw 0;
-	margin:0;
-}
+
 
 /* --------------------------- SCROLLBAR */
 
@@ -193,126 +159,4 @@ li {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: white; 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* --------------------------- */
-/* --------------------------- */
-/* --------------------------- */
-/* --------------------------- */
-/* --------------------------- RESPONSIVE */
-/* --------------------------- */
-/* --------------------------- */
-/* --------------------------- */
-/* --------------------------- */
-/* --------------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* --------------------------- NARROW AND MOBILE */
-
-@media screen and (max-width: 640px) {
-
-.nav {
-  margin:0;
-  padding:20px 20px 0;
-  right:0;
-  top:0;
-  width:100%;
-  height:65px;
-  z-index:99999;}
-
-.nav a {
-  margin:0;
-  padding:0;
-  z-index:9999999;
-  border:0;}
-
-.nav a:hover {
-  border:0;
-}
-
-h1 {padding-bottom:4vw;}
-h2 {padding-bottom:5vw;}
-h3 {padding-bottom:8vw;}
-
-/* width */
-::-webkit-scrollbar {
-  width: 3px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: rgba(255,255,255,1);
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #ad9460; 
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: white; 
-}
-
 }
