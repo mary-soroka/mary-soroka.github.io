@@ -24,35 +24,43 @@ a {
 
 h1 {
 	color:#ad9460;
-	font-weight:500;
-	font-size:.8em;
-	letter-spacing:none;
-	line-height:2;
-	text-transform:none;
-	margin:0;
-	padding:0 0 3vw;
-}
-
-h2 {
-	color:black;
-	font-size: 2.8em;
+	font-size: 1.1em;
 	font-weight:400;
 	letter-spacing:-.01em;
 	line-height:1.1;
-	width:88%;
+	width:70%;
 	margin:0;
 	padding:0 0 2vw;
 }
 
-h3 {
-	color:black;
-	font-size: 1.2em;
-	font-weight:300;
-	letter-spacing:-.01em;
-	line-height:1.4;
-	width:88%;
+h2 {
+	color:#ad9460;
+	font-weight:400;
+	font-size:0.9em;
+	line-height:2;
 	margin:0;
-	padding:0 0 5vw;
+	padding:0;
+}
+
+h3 {
+	color:#ad9460;
+	font-weight:400;
+	font-size:4em;
+	line-height:1;
+	margin:3vw 0 0;
+	padding:0;
+}
+
+
+h4 {
+	font-weight:400;
+	line-height:1.7;
+	margin-top:3vw;
+	margin-bottom:5vw;
+}
+
+.contact-mobile {
+	opacity:0;
 }
 
 .name {
@@ -62,11 +70,19 @@ h3 {
 	position:fixed;
 	top:38%;
 	left:0;
-	font-size:6vw;
-	text-transform:uppercase;
-	letter-spacing:.455em;
+	font-size:10vw;
+	font-weight:700;
+	letter-spacing:0;
 	text-align:center;
 	padding:5px;
+}
+
+.nav-name {
+	display:none;
+}
+
+.half-opacity {
+	color:lightgrey;
 }
 
 .job-title {
@@ -77,11 +93,9 @@ h3 {
 	top:58%;
 	left:0;
 	text-align:center;
-	font-weight:500;
-	font-size:14px;
-	letter-spacing:.2em;
+	font-weight:400;
+	font-size:1.2em;
 	line-height:2;
-	text-transform:uppercase;
 }
 
 .scroll-prompt {
@@ -93,29 +107,23 @@ h3 {
 	text-align:center;
 }
 
-.nav-name {
-  display:none;
-}
-
 .nav {
-  text-align:right;
-  z-index:2;
-  position:fixed;
-  top:0;
-  right:inherit;
-  width:100%;
-  margin:0;
+	text-align:right;
+	z-index:99999999;
+	position:fixed;
+	top:2vw;
+	right:2vw;
 }
 
 .nav a {
-  padding:10px;
-  border-right:1px solid transparent;
-  transition: .3s ease-in-out;
+	padding:10px;
+	border-right:1px solid transparent;
+	transition: .3s ease-in-out;
 }
 
 .nav a:hover {
-  border-right:1px solid #ad9460;
-  opacity:1;
+	border-right:1px solid #ad9460;
+	opacity:1;
 }
 
 ul {
