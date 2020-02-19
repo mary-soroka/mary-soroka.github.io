@@ -158,7 +158,8 @@ li {
 .back {
   font-family: 'DM Sans', Sans-Serif;
   color:#ad9460;
-  padding:3.2vw 4.2vw 0;
+  height:40px;
+  padding:0 .7vw 0 0;
   font-weight:500;
   font-size:1em;
   letter-spacing:0;
