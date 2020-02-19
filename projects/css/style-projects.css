@@ -78,7 +78,16 @@ h4 {
 }
 
 .nav-name {
-	display:none;
+	color:#ad9460;
+	width:100%;
+	z-index:3;
+	position:relative;
+	top:2vw;
+	left:2vw;
+	font-size:1.5em;
+	font-weight:700;
+	letter-spacing:0;
+	text-align:left;
 }
 
 .half-opacity {
