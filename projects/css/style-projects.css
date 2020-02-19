@@ -22,41 +22,43 @@ a {
 	color:#ad9460;
 }
 
-h1 {
-	color:#ad9460;
-	font-size: 1.1em;
-	font-weight:400;
-	letter-spacing:-.01em;
-	line-height:1.1;
-	width:70%;
-	margin:0;
-	padding:0 0 2vw;
-}
+/*-- TINY --*/
 
-h2 {
-	color:#ad9460;
-	font-weight:400;
-	font-size:0.9em;
-	line-height:2;
+h1 {
+	font-weight:600;
+	font-size:13px;
 	margin:0;
 	padding:0;
 }
+
+/*-- MEDIUM --*/
+
+h2 {
+	font-weight:400;
+	font-size:13px;
+	margin:0;
+	padding:0;
+}
+
+/*-- HUGE --*/
 
 h3 {
 	color:#ad9460;
 	font-weight:400;
 	font-size:4em;
 	line-height:1;
-	margin:3vw 0 0;
+	margin:0 0 3vw;
 	padding:0;
 }
 
+/*-- DESCRIPTION --*/
 
 h4 {
 	font-weight:400;
+	font-size:20px;
 	line-height:1.7;
-	margin-top:3vw;
-	margin-bottom:5vw;
+	margin:0 0 5vw;
+	padding:0;
 }
 
 .contact-mobile {
@@ -72,7 +74,6 @@ h4 {
 	left:0;
 	font-size:10vw;
 	font-weight:700;
-	letter-spacing:0;
 	text-align:center;
 	padding:5px;
 }
@@ -86,7 +87,6 @@ h4 {
 	left:2vw;
 	font-size:1.5em;
 	font-weight:700;
-	letter-spacing:0;
 	text-align:left;
 }
 
@@ -122,6 +122,12 @@ h4 {
 	position:fixed;
 	top:2vw;
 	right:2vw;
+	color:#ad9460;
+	font-weight:600;
+	font-size:16px;
+	line-height:2;
+	margin:0;
+	padding:0;
 }
 
 .nav a {
@@ -162,7 +168,6 @@ li {
   padding:0 .7vw 0 0;
   font-weight:500;
   font-size:1em;
-  letter-spacing:0;
   text-transform:none;
   border:0;
   border-right:1px solid transparent;
@@ -185,21 +190,34 @@ audio {
 
 /* CREDITS TABLE */
 
-table {
-	color: #a7aaaf;
+table.main {
+	text-align:left;
+	color: black;
 	font-weight:500;
-	font-size:.7em;
 	letter-spacing:.08;
-	line-height:2;
-	border-collapse: collapse;
-	margin-bottom:5vw;}
+	line-height:1.8;
+	border-collapse:separate;
+	margin-bottom:3vw;
+}
 
 td, th {
-	padding:0 3px 3px 0;
 	vertical-align: top;
 }
 
-.credit-category {font-weight:700;margin-right:50px;}
+th {
+	padding:0 0 2vw;
+}
+
+table.credits {
+	text-align:left;
+	color: black;
+	font-weight:500;
+	letter-spacing:.08;
+	line-height:1.8;
+	border-collapse:separate;
+	margin-bottom:3vw;
+	width:50%;
+}
 
 /* --------------------------- PROJECTS */
 
