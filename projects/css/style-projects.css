@@ -29,7 +29,7 @@ h1 {
 	font-weight:600;
 	font-size:12px;
 	letter-spacing:0.008em;
-	margin:0 1.8vw 0 0;
+	margin:0 1vw 0 0;
 	padding:0;
 	color:grey;
 }
@@ -50,7 +50,7 @@ h2 {
 h3 {
 	color:#ad9460;
 	font-weight:400;
-	font-size:6vw;
+	font-size:4vw;
 	letter-spacing:0.008em;
 	line-height:1;
 	margin:0;
@@ -198,6 +198,22 @@ td, th {
 	padding:0;
 }
 
+/*-- PROJECT WRITEUP --*/
+
+ul.writeup {
+	width:100%;
+	overflow: visible;
+	padding:0;
+	margin:0;
+}
+
+.writeup li {
+	display: inline-block;
+	vertical-align:top;
+	margin:0;
+	padding:0 2vw 0 0;
+}
+
 /* --------------------------- PROJECTS */
 
 /* projects page */
@@ -329,7 +345,7 @@ img.project-photography-double {
 /* triple photos */
 
 .project-photography-triple {
-	padding:5vw 13vw 0;
+	padding:5vw 0 0;
 	margin:0;
 }
 
