@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700&display=swap');
 
 html, body {
 	scroll-behavior: smooth;
@@ -57,17 +58,18 @@ h2 {
 }
 
 .name {
+	font-size:7vw;
+	letter-spacing:12pt;
+	font-family:'Montserrat';
+	font-weight:300;
+	text-transform:uppercase;
 	color:#ad9460;
 	width:100%;
 	z-index:3;
 	position:fixed;
 	top:38%;
 	left:0;
-	font-size:10vw;
-	font-weight:700;
-	letter-spacing:0;
 	text-align:center;
-	padding:5px;
 }
 
 .nav-name {
