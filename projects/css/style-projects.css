@@ -638,7 +638,7 @@ table.credits {
 	padding:0;
 	margin:0;
 	width:100%;
-	max-height:8vw;
+	max-height:12vw;
 }
 
 .nav-bar a {
@@ -652,7 +652,7 @@ ul.nav {
 	margin:0;
 	padding:0;
 	display:table;
-	max-height:8vw;
+	max-height:12vw;
 }
 
 .nav li {
@@ -674,7 +674,7 @@ ul.nav {
 	background-size:180% auto;
 	background-repeat:no-repeat;
 	padding:0;
-	margin:8vw 0 0;
+	margin:12vw 0 0;
 }
 
 }
