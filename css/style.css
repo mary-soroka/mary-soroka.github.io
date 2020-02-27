@@ -312,6 +312,8 @@ background: #ad9460;
 background: white; 
 }
 
-
+.showcase-title-one-line, .showcase-title-two-lines, .showcase-title-three-lines {
+font-size: 12vw;
+}
 
 }
