@@ -100,23 +100,35 @@ h2 {
 	text-align:center;
 }
 
-.nav {
-	text-align:right;
-	z-index:99999999;
+/*-- NAV BAR --*/
+
+.nav-bar {
+	z-index:999999;
 	position:fixed;
-	top:2vw;
-	right:2vw;
+	top:0;
+	width:100%;
+	background-color:transparent;
+	border-bottom:1px solid #ad9460;
+	padding:0;
+	margin:0;
+	text-align:center;
 }
 
-.nav a {
-	padding:10px;
-	border-right:1px solid transparent;
-	transition: .3s ease-in-out;
+/*-- NAV LINKS --*/
+
+ul.nav {
+	list-style-type: none;
+	margin:0;
+	padding:2vw 0;
+	display:inherit;
+	float:middle;
 }
 
-.nav a:hover {
-	border-right:1px solid #ad9460;
-	opacity:1;
+.nav li {
+	display:inline-block;
+	margin:0;
+	padding:0 2vw;
+	vertical-align:middle;
 }
 
 ul {
