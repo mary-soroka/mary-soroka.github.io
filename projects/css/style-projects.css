@@ -636,31 +636,27 @@ table.credits {
 /*-- NAV BAR --*/
 
 .nav-bar {
-	z-index:999999;
-	position:fixed;
-	top:0;
-	width:100%;
-	background-color:white;
-	border-bottom:1px solid #ad9460;
 	padding:0;
 	margin:0;
-	text-align:center;
-	height:90px;
+	width:100%;
+	min-height:4vw;
 }
 
 /*-- NAV LINKS --*/
 
 ul.nav {
-	float:middle;
+	float:none;
 	margin:0;
 	padding:0;
+	display:table;
 }
 
 .nav li {
+	display:table-cell;
 	font-size:3.8vw;
 	font-weight:700;
-	display:inline-block;
-	margin:6vw 0 0;
+	vertical-align:middle;
+	margin:0;
 	padding:0 1.5vw 0;
 }
 
