@@ -29,7 +29,7 @@ h1 {
 	font-weight:600;
 	font-size:12px;
 	letter-spacing:0.008em;
-	margin:0 1vw 0 0;
+	margin:0 3vw 0 0;
 	padding:0;
 	color:grey;
 }
@@ -50,7 +50,7 @@ h2 {
 h3 {
 	color:#ad9460;
 	font-weight:400;
-	font-size:4vw;
+	font-size:7vw;
 	letter-spacing:0.008em;
 	line-height:1;
 	margin:0;
@@ -125,7 +125,6 @@ ul.nav {
 /*-- PROJECT WRITEUP --*/
 
 ul.writeup {
-	width:100%;
 	overflow: visible;
 	padding:0;
 	margin:0;
@@ -136,6 +135,7 @@ ul.writeup {
 	vertical-align:top;
 	margin:0;
 	padding:0 2vw 0 0;
+	width:45%;
 }
 
 /*-- PROJECT WRITEUP HEADERS --*/
@@ -151,6 +151,7 @@ ul.writeup-headers {
 	vertical-align:top;
 	margin:0;
 	padding:0 2vw 0 0;
+	width:45%;
 }
 
 .header-img {
@@ -190,7 +191,7 @@ table.credits {
 	line-height:1.6;
 	border-collapse:separate;
 	padding:0;
-	margin:0;
+	margin:5vw 0 0;
 }
 
 td, th {
@@ -268,7 +269,7 @@ ul.writeup {
 /* project page */
 
 .project-content {
-	padding:5vw 12.5vw 12vw;
+	padding:5vw 12.5vw 5vw;
 	margin:0;
 }
 
