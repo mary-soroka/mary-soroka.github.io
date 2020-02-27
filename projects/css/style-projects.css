@@ -633,16 +633,10 @@ table.credits {
 /*-- NAV BAR --*/
 
 .nav-bar {
-	background-color:#ad9460;
-	color:white;
 	padding:0;
 	margin:0;
 	width:100%;
 	max-height:12vw;
-}
-
-.nav-bar a {
-	color:white;
 }
 
 /*-- NAV LINKS --*/
