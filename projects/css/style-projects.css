@@ -623,9 +623,6 @@ h1,h2 {
 table.credits {
 	margin-bottom:12vw;}
 
-.img-header {
-	margin:0;padding:0;}
-
 .project-content {
 	padding: 6vw 0 0;
 	margin:2vw 0 10vw;}
@@ -641,7 +638,7 @@ table.credits {
 	padding:0;
 	margin:0;
 	width:100%;
-	min-height:3vw;
+	max-height:8vw;
 }
 
 .nav-bar a {
@@ -655,6 +652,7 @@ ul.nav {
 	margin:0;
 	padding:0;
 	display:table;
+	max-height:8vw;
 }
 
 .nav li {
@@ -676,7 +674,7 @@ ul.nav {
 	background-size:180% auto;
 	background-repeat:no-repeat;
 	padding:0;
-	margin:3vw 0 0;
+	margin:8vw 0 0;
 }
 
 }
