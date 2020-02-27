@@ -595,7 +595,7 @@ table.credits {
 
 .project-content {
 	padding:0;
-	margin:8vw 3vw 10vw;}
+	margin:25vw 3vw 10vw;}
 
 .project-content h1, .project-content h2, .project-content h3, .project-content h4 {
 	padding: 0 8vw 0;}
@@ -603,18 +603,23 @@ table.credits {
 /*-- NAV BAR --*/
 
 .nav-bar {
+	display:table;
 	padding:0;
 	margin:0;
 	width:100%;
-	max-height:12vw;
+	height:15vw;
+	max-height:15vw;
 }
 
 /*-- NAV LINKS --*/
 
 ul.nav {
+	display:table-cell;
+	vertical-align:middle;
 	margin:0;
 	padding:0;
-	max-height:12vw;
+	height:15vw;
+	max-height:15vw;
 }
 
 .nav li {
@@ -634,7 +639,8 @@ ul.nav {
 	background-size:180% auto;
 	background-repeat:no-repeat;
 	padding:0;
-	margin:12vw 0 0;
+	margin:0;
+	top:15vw;
 }
 
 }
