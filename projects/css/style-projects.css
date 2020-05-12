@@ -9,7 +9,8 @@ html, body {
 }
 
 body {
-	background-color: white;
+	color:rgba(252,223,205,1);
+	background-color: black;
 	transition: background-color 1s ease;
 	font-family: 'DM Sans', sans-serif;
 	letter-spacing:0.008em;
@@ -20,7 +21,7 @@ body {
 
 a {
 	text-decoration:none;
-	color:#ad9460;
+	color:rgba(252,223,205,1);
 	transition: .1s ease-in-out;
 
 }
@@ -37,7 +38,6 @@ h1 {
 	letter-spacing:0.008em;
 	margin:0 3vw 0 0;
 	padding:0;
-	color:grey;
 }
 
 /*-- CREDITS RIGHT --*/
@@ -54,7 +54,6 @@ h2 {
 /*-- HUGE --*/
 
 h3 {
-	color:#ad9460;
 	font-weight:400;
 	font-size:7vw;
 	letter-spacing:0.008em;
@@ -85,8 +84,8 @@ h4 {
 	position:fixed;
 	top:0;
 	width:100%;
-	background-color:white;
-	border-bottom:1px solid #ad9460;
+	background-color:black;
+	border-bottom:1px solid;
 	padding:0;
 	margin:0;
 	text-align:center;
@@ -111,9 +110,8 @@ ul.nav {
 
 .back {
   font-family: 'DM Sans', Sans-Serif;
-	color:#ad9460;
   font-weight:400;
-	font-size:16px;
+  font-size:16px;
   text-transform:none;
   border:0;
   background-color:transparent;
@@ -191,7 +189,6 @@ audio {
 
 table.credits {
 	text-align:left;
-	color: black;
 	font-weight:500;
 	letter-spacing:.08;
 	line-height:1.6;
@@ -390,12 +387,12 @@ img.project-photography-triple {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: rgba(255,255,255,1);
+  background: black;
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ad9460; 
+  background: rgba(252,223,205,1);
 }
 
 /* Handle on hover */
