@@ -9,8 +9,12 @@ svg {
 	width:45vw;
 }
 
-svg.icon {
-	width:50px;
+
+.awards {
+	width:100%;
+	z-index:1;
+	margin:0;
+	padding:0 10vw 0;
 }
 
 .row {
@@ -21,20 +25,29 @@ svg.icon {
   padding: 0;
 }
 
-/* Create four equal columns that sits next to each other */
+/* Create 3 equal columns that sit next to each other */
 .column {
-	font-size:10px;
+	color:grey;
+	font-size:8px;
+	letter-spacing:.3pt;
 	-ms-flex: 28%; /* IE10 */
 	flex: 28%;
 	max-width: 28%;
-	border-bottom:.1px solid;
-	margin:0 1.9vw 3vw;
+	border-bottom:.1px solid #272727;
+	margin:0 auto 3vw;
 	height:5vw;
 	text-align:left;
 	background-size:3.5vw;
 	background-repeat:no-repeat;
 	background-position: 100% 0%;
 	position:relative;
+}
+
+b {
+	color:white;
+	font-size:12px;
+	line-height:2;
+	letter-spacing:0;
 }
 
 .text {
@@ -52,7 +65,7 @@ svg.icon {
 .panel {
 
 /* min height incase content is higher than window height */
-	min-height: 90vh;
+	min-height: 50vh;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -86,7 +99,7 @@ h1 {
 	letter-spacing:0em;
 	line-height:1.2;
 	margin:0;
-	padding:0 0 8vw;
+	padding:0 1.9vw 8vw;
 }
 
 h2 {
@@ -146,7 +159,7 @@ h2 {
 	position:fixed;
 	top:0;
 	width:100%;
-	padding:3vw;
+	padding:5.8vw;
 	margin:0;
 	text-align:right;
 }
@@ -159,28 +172,6 @@ h2 {
 	padding:0;
 	background-color:blue;
 	width:100%;
-}
-
-.awards {
-	background-color:transparent;
-	z-index:1;
-
-	margin:0;
-	padding:5vw 12.5vw 0;
-		text-align:center;
-}
-
-.logo-container {
-	z-index:1;
-	padding:0;
-	margin:0;
-}
-
-img.logo {
-	z-index:1;
-	width:4.8vw;
-	margin:2vw 2vw;
-	padding:0;
 }
 
 img.contact {
