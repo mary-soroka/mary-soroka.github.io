@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700&display=swap');
+@font-face {
+font-family: 'mordovaregular';
+src: url("http://www.marysoroka.com/fonts/mordova-webfont.woff") format("woff"),
+    font-weight: normal;
+    font-style: normal;
+}
 
 html, body {
 	scroll-behavior: smooth;
