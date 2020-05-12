@@ -213,32 +213,6 @@ img.name_project {
 	padding:4vw;
 }
 
-.showcase-title-one-line, .showcase-title-two-lines, .showcase-title-three-lines {
-z-index:99999;
-font-size: 9vw;
-font-weight:700;
-letter-spacing:-.02em;
-line-height:1.05;
-position:relative;
-top:15vw;
-left:-3.5vw;
-}
-
-.showcase-title-one-line, {
-top:15vw;
-left:-3.5vw;
-}
-
-.showcase-title-two-lines {
-top:10vw;
-left:-3.5vw;
-}
-
-.showcase-title-three-lines {
-top:6vw;
-left:-3.5vw;
-}
-
 /* width */
 ::-webkit-scrollbar {
 width: 3px;
@@ -295,11 +269,17 @@ background: #ad9460;
 background: white; 
 }
 
+svg {
+	width:80vw;
+}
+
 .contact img {
 	width:24vw;
-	padding:0;
-	margin:0 1.2vw;
-	transition: .3s ease-in-out;
+}
+
+img.name_project {
+	width:55vw;
+	padding:5vw;
 }
 
 }
