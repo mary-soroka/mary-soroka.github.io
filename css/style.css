@@ -13,7 +13,7 @@ body {
 	margin:0;
 	padding:0;
 	overflow-x:hidden;
-	cursor:url('http://www.marysoroka.com/images/cursor.png'), auto;}
+	cursor:s-resize;}
 
 a {
 	text-decoration:none;
@@ -21,7 +21,7 @@ a {
 }
 
 a:hover {
-	cursor:url('http://www.marysoroka.com/images/cursor-hover.png'), auto;
+	cursor:e-resize;
 }
 
 .contact {
@@ -33,16 +33,11 @@ a:hover {
 	right:0;
 }
 
-.contact img{
+.contact img {
 	width:18vw;
 	padding:0;
 	margin:0 1.2vw;
-	opacity:.8;
 	transition: .3s ease-in-out;
-}
-
-.contact img:hover {
-	opacity:1;
 }
 
 .svgcolours {
@@ -112,11 +107,11 @@ b {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-		width:100%;
+	width:100%;
 }
 
 h1 {
-	font-size: 3vw;
+	font-size: 5vw;
 	font-weight:400;
 	letter-spacing:0em;
 	line-height:1.2;
@@ -130,10 +125,6 @@ h2 {
 	line-height:2;
 	margin:0;
 	padding:0;
-}
-
-.contact-mobile {
-	opacity:0;
 }
 
 .name {
@@ -194,28 +185,6 @@ svg {
 	padding:0;
 	background-color:blue;
 	width:100%;
-}
-
-img.contact {
-	width:8vw;
-	margin:0;
-	padding:0;
-	transition: .3s ease-in-out;
-}
-
-img.contact:hover {
-	transform:translate(5px,-5px);
-}
-
-.brands {
-	z-index:1;
-	margin:2vw 0 7vw;
-	padding:0 12.5vw;
-}
-
-img.brand {
-	width:9.6vw;
-	padding:2.2vw;
 }
 
 .showcase {
@@ -301,17 +270,6 @@ background: white;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* --------------------------- NARROW AND MOBILE */
 
 /* double videos middle */
@@ -335,6 +293,13 @@ background: #ad9460;
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 background: white; 
+}
+
+.contact img {
+	width:24vw;
+	padding:0;
+	margin:0 1.2vw;
+	transition: .3s ease-in-out;
 }
 
 }
