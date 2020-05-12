@@ -28,9 +28,45 @@
   text-align:center;
 }
 .vimeo-wrapper iframe {
-   width: 330vw;
-   height: 150vh;
+   width: 200vw;
+   height: 200vh;
    position: absolute;
    top: 50%;
    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 780px) {
+.vimeo-wrapper {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   pointer-events: none;
+   overflow: hidden;
+  background-color: black;
+  margin:0 auto;
+  text-align:center;
+}
+.vimeo-wrapper iframe {
+   width: 400vw;
+   height: 300vh;
+   position: absolute;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+}
+
+@media screen and (max-height: 380px) {
+
+.vimeo-wrapper iframe {
+   width: 400vw;
+   height: 500vh;
+   position: absolute;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
 }
