@@ -6,28 +6,47 @@ html, body {
 }
 
 body {
-	color:#ffe4d2;
+	color:rgba(252,223,205,1);
 	background-color: black;
 	transition: background-color 1s ease;
 	font-family: 'DM Sans', sans-serif;
 	margin:0;
 	padding:0;
 	overflow-x:hidden;
-	cursor:url('http://www.marysoroka.com/images/cursor.svg'), auto;}
+	cursor:url('http://www.marysoroka.com/images/cursor.png'), auto;}
 
 a {
 	text-decoration:none;
-	color:#ffe4d2;
+	color:rgba(252,223,205,1);
 }
 
 a:hover {
-	cursor:url('http://www.marysoroka.com/images/cursor-hover.svg'), auto;
+	cursor:url('http://www.marysoroka.com/images/cursor-hover.png'), auto;
 }
 
-.svgcolours{fill:#ffe4d2;}
+.contact {
+	width:100%;
+	text-align:center;
+	z-index:999999999;
+	padding:0;
+	margin:0;
+	right:0;
+}
 
-svg {
-	width:50vw;
+.contact img{
+	width:18vw;
+	padding:0;
+	margin:0 1.2vw;
+	opacity:.8;
+	transition: .3s ease-in-out;
+}
+
+.contact img:hover {
+	opacity:1;
+}
+
+.svgcolours {
+	fill:rgba(252,223,205,1);
 }
 
 .awards {
@@ -47,13 +66,13 @@ svg {
 
 /* Create 3 equal columns that sit next to each other */
 .column {
-	color:#343d3d;
+	color:rgba(252,223,205,.5);
 	font-size:8px;
 	letter-spacing:.3pt;
 	-ms-flex: 28%; /* IE10 */
 	flex: 28%;
 	max-width: 28%;
-	border-bottom:.1px solid #343d3d;
+	border-bottom:.1px solid rgba(252,223,205,.2);
 	margin:0 auto 3vw;
 	height:5vw;
 	text-align:left;
@@ -63,9 +82,13 @@ svg {
 	position:relative;
 }
 
+.darker {
+	color:rgba(252,223,205,.07);
+}
+
 b {
-	color:#ffe4d2;
-	font-size:12.5px;
+	color:rgba(252,223,205,1);
+	font-size:1vw;
 	line-height:2;
 	letter-spacing:0;
 }
@@ -114,21 +137,17 @@ h2 {
 }
 
 .name {
-	font-size:7vw;
-	letter-spacing:12pt;
-	font-family:'Montserrat';
-	font-weight:300;
-	text-transform:uppercase;
 	width:100%;
 	z-index:3;
 	position:fixed;
-	top:38%;
-	left:0;
+	top:37%;
 	text-align:center;
 }
 
-.nav-name {
-	display:none;
+svg {
+	width:65vw;
+	display:inline-block;
+	vertical-align:middle;
 }
 
 .job-title {
