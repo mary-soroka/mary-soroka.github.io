@@ -13,6 +13,36 @@ svg.icon {
 	width:50px;
 }
 
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+	font-size:10px;
+	-ms-flex: 28%; /* IE10 */
+	flex: 28%;
+	max-width: 28%;
+	border-bottom:.1px solid;
+	margin:0 1.9vw 3vw;
+	height:5vw;
+	text-align:left;
+	background-size:3.5vw;
+	background-repeat:no-repeat;
+	background-position: 100% 0%;
+	position:relative;
+}
+
+.text {
+	position:absolute;
+	bottom:0;
+	padding-bottom:2vw;
+	line-height:1.5;
+}
 
 .panels {
 	z-index:1;
@@ -37,7 +67,7 @@ body {
 	margin:0;
 	padding:0;
 	overflow-x:hidden;
-	cursor:url('images/cursor.svg'), auto;}
+	cursor:url('http://www.marysoroka.com/images/cursor.svg'), auto;}
 
 a {
 	text-decoration:none;
@@ -45,7 +75,7 @@ a {
 }
 
 a:hover {
-	cursor:url('images/cursor-hover.svg'), auto;
+	cursor:url('http://www.marysoroka.com/images/cursor-hover.svg'), auto;
 }
 
 .svgcolours{fill:#ffe4d2;}
@@ -56,7 +86,7 @@ h1 {
 	letter-spacing:0em;
 	line-height:1.2;
 	margin:0;
-	padding:4vw 0;
+	padding:0 0 8vw;
 }
 
 h2 {
