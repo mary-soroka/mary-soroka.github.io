@@ -26,6 +26,7 @@ svg.icon {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+		width:100%;
 }
 
 body {
@@ -36,8 +37,7 @@ body {
 	margin:0;
 	padding:0;
 	overflow-x:hidden;
-	cursor:url('file:///Volumes/MARY%20SOROKA/Projects/My%20Website/mary-soroka.github.io/images/cursor.svg'), auto;
-}
+	cursor:url('file:///Volumes/MARY%20SOROKA/Projects/My%20Website/mary-soroka.github.io/images/cursor.svg'), auto;}
 
 a {
 	text-decoration:none;
@@ -51,13 +51,12 @@ a:hover {
 .svgcolours{fill:#ffe4d2;}
 
 h1 {
-	font-size: 2.8em;
+	font-size: 4.9vw;
 	font-weight:400;
-	letter-spacing:-.01em;
-	line-height:1.1;
-	width:70%;
+	letter-spacing:0em;
+	line-height:1.2;
 	margin:0;
-	padding:0 0 2vw;
+	padding:4vw 0;
 }
 
 h2 {
@@ -105,7 +104,7 @@ h2 {
 .scroll-prompt {
 	z-index:2;
 	position:fixed;
-	bottom:5vw;
+	bottom:9vw;
 	width:100%;
 	text-align:center;
 }
@@ -128,12 +127,17 @@ h2 {
 	left:12.5vw;
 	margin:0;
 	padding:0;
+	background-color:blue;
+	width:100%;
 }
 
 .awards {
+	background-color:transparent;
 	z-index:1;
+
 	margin:0;
-	padding:0 12.5vw;
+	padding:5vw 12.5vw 0;
+		text-align:center;
 }
 
 .logo-container {
