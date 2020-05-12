@@ -37,7 +37,7 @@ body {
 	margin:0;
 	padding:0;
 	overflow-x:hidden;
-	cursor:url('file:///Volumes/MARY%20SOROKA/Projects/My%20Website/mary-soroka.github.io/images/cursor.svg'), auto;}
+	cursor:url('images/cursor.svg'), auto;}
 
 a {
 	text-decoration:none;
@@ -45,7 +45,7 @@ a {
 }
 
 a:hover {
-	cursor:url('file:///Volumes/MARY%20SOROKA/Projects/My%20Website/mary-soroka.github.io/images/cursor-hover.svg'), auto;
+	cursor:url('images/cursor-hover.svg'), auto;
 }
 
 .svgcolours{fill:#ffe4d2;}
