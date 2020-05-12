@@ -5,6 +5,15 @@ html, body {
 	scroll-behavior: smooth;
 }
 
+svg {
+	width:45vw;
+}
+
+svg.icon {
+	width:50px;
+}
+
+
 .panels {
 	z-index:1;
 }
@@ -20,21 +29,28 @@ html, body {
 }
 
 body {
+	color:#ffe4d2;
 	background-color: black;
 	transition: background-color 1s ease;
 	font-family: 'DM Sans', sans-serif;
 	margin:0;
 	padding:0;
 	overflow-x:hidden;
+	cursor:url('file:///Volumes/MARY%20SOROKA/Projects/My%20Website/mary-soroka.github.io/images/cursor.svg'), auto;
 }
 
 a {
 	text-decoration:none;
-	color:#ad9460;
+	color:#ffe4d2;
 }
 
+a:hover {
+	cursor:url('file:///Volumes/MARY%20SOROKA/Projects/My%20Website/mary-soroka.github.io/images/cursor-hover.svg'), auto;
+}
+
+.svgcolours{fill:#ffe4d2;}
+
 h1 {
-	color:#ad9460;
 	font-size: 2.8em;
 	font-weight:400;
 	letter-spacing:-.01em;
@@ -45,7 +61,6 @@ h1 {
 }
 
 h2 {
-	color:#ad9460;
 	font-weight:400;
 	font-size:0.9em;
 	line-height:2;
@@ -63,7 +78,6 @@ h2 {
 	font-family:'Montserrat';
 	font-weight:300;
 	text-transform:uppercase;
-	color:#ad9460;
 	width:100%;
 	z-index:3;
 	position:fixed;
@@ -76,12 +90,7 @@ h2 {
 	display:none;
 }
 
-.half-opacity {
-	color:lightgrey;
-}
-
 .job-title {
-	color:#ad9460;
 	width:100%;
 	z-index:3;
 	position:fixed;
@@ -94,7 +103,6 @@ h2 {
 }
 
 .scroll-prompt {
-	color:#ad9460;
 	z-index:2;
 	position:fixed;
 	bottom:5vw;
@@ -109,39 +117,9 @@ h2 {
 	position:fixed;
 	top:0;
 	width:100%;
-	background-color:transparent;
-	border-bottom:1px solid #ad9460;
-	padding:0;
+	padding:3vw;
 	margin:0;
-	text-align:center;
-}
-
-/*-- NAV LINKS --*/
-
-ul.nav {
-	list-style-type: none;
-	margin:0;
-	padding:2vw 0;
-	display:inherit;
-	float:middle;
-}
-
-.nav li {
-	display:inline-block;
-	margin:0;
-	padding:0 2vw;
-	vertical-align:middle;
-}
-
-ul {
-	list-style-type: none;
-	margin:0;
-	padding:0;
-}
-
-li {
-	margin:0;
-	padding:0 0 10px;
+	text-align:right;
 }
 
 .section {
@@ -257,7 +235,7 @@ background: rgba(0,0,0,1);
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-background: #ad9460; 
+background: #ffe4d2; 
 }
 
 /* Handle on hover */
