@@ -10,6 +10,8 @@
 
 html, body {
 	scroll-behavior: smooth;
+	margin:0;
+	padding:0;
 }
 
 body {
@@ -17,15 +19,11 @@ body {
 	color:rgba(252,223,205,1);
 	transition: background-color 1s ease;
 	font-family: 'mordovaregular', 'DM Sans', sans-serif;
-	margin:0;
-	padding:0;
 	overflow-x:hidden;
 	cursor:s-resize;
-	text-transform:lowercase;
 	font-weight:normal;
 	letter-spacing:.02pt;
 	scroll-behavior: smooth;
-
 }
 
 a {
@@ -48,6 +46,7 @@ a:hover {
 	font-size:12vw;
 	padding:0;
 	margin:0;
+	text-transform:lowercase;
 }
 
 .contact {
@@ -87,9 +86,9 @@ a:hover {
 /* Create 3 equal columns that sit next to each other */
 .column {
 	letter-spacing:.3pt;
-	-ms-flex: 40%; /* IE10 */
-	flex: 40%;
-	max-width: 40%;
+	-ms-flex: 28%; /* IE10 */
+	flex: 28%;
+	max-width: 28%;
 	border-bottom:.1px solid;
 	margin:0 auto 0;
 	height:8vw;
@@ -105,25 +104,30 @@ a:hover {
 
 }
 
-b {
+/* AWARD_TITLE */
 
-	font-size:3.1vw;
-	letter-spacing:.5pt;
+h2 {
+	font-family:'DM Sans';
+	font-weight:400;
+	font-size:1.3vw;
 }
 
-.text {
-		font-size:8px;
+/* AWARD_COUNT */
 
+h3 {
+	font-family:'DM Sans';
+	font-weight:400;
+	font-size:8px;
 	position:absolute;
 	bottom:0;
 	padding-bottom:2vw;
-
 }
 
 /* PROJECT_TITLE */
 
 h4 {
 	font-size:7vw;
+	text-transform:lowercase;
 	position:absolute;
 	top:1;
 	left:0;
@@ -151,6 +155,40 @@ h5 {
 	z-index:1;
 }
 
+.panels {
+	z-index:1;
+}
+
+/* BLANK */
+.color-1 {background-color: black;}
+
+/* VIRGIN MOBILE */
+.color-2 {background-color: #0b0c11;}
+
+/* BELL X STAR WARS */
+.color-3 {background-color: #2f3334;}
+
+/* FERRERO ROCHER */
+.color-4 {background-color: #0e0c0d;}
+
+/* TD VISA INFINITE */
+.color-7 {background-color: #3c251f;}
+
+/* SLEEPS */
+.color-5 {background-color: #1b1a1e;}
+
+/* LEO BURNETT */
+.color-11 {background-color: #04206a;}
+
+/* METROLINX */
+.color-17 {background-color: #1f2e31;}
+
+/* IKEA */
+.color-13 {background-color: #c1bfba;}
+
+/* TD INSURANCE */
+.color-16 {background-color: #221611;}
+
 /* ALL_PROJECTS */
 
 .projects {
@@ -162,8 +200,6 @@ h5 {
 /* INDIVIDUAL_PROJECT */
 
 .project_container {
-	margin:0 0 12vw;
-	width:100%;
 	width:62vw;
 	margin:0 auto 12vw;
 }
@@ -176,10 +212,11 @@ h5 {
 
 .project_content {
 	padding:0;
+	margin:0;
 	overflow-x: auto;
 	overflow-y:hidden;
 	white-space: nowrap;
-	height:64vh;
+	height:58vh;
 }
 
 /* PROJECT_ELEMENTS */
@@ -195,18 +232,20 @@ h5 {
 .project_content iframe {
 	display:inline-block;
 	width:60vw;
-	height:60vh;
+	height:54vh;
 	padding:0;
 	margin:0; 
 }
 
 /* PROJECT_IMAGES */
 
-.project_content img {
-	width:60vw;
+.project_content li img {
+	height:54vh;
 	margin:0;
 	padding:0;
 }
+
+/* NAME */
 
 h1 {
 	font-size: 5vw;
@@ -217,86 +256,10 @@ h1 {
 	padding:0 1.9vw 8vw;
 }
 
-h2 {
-	font-weight:400;
-	font-size:0.9em;
-	line-height:2;
-	margin:0;
-	padding:0;
-}
-
-
-svg {
-	width:65vw;
-	display:inline-block;
-	vertical-align:middle;
-}
-
-.job-title {
-	width:100%;
-	z-index:3;
-	position:fixed;
-	top:58%;
-	left:0;
-	text-align:center;
-	font-weight:400;
-	font-size:1.2em;
-	line-height:2;
-}
-
-/*-- NAV BAR --*/
-
-.nav-bar {
-	z-index:999999;
-	position:fixed;
-	top:0;
-	width:100%;
-	padding:4.9vw;
-	margin:0;
-	text-align:right;
-}
-
-.nav-bar img {
-	 width:30px;
-}
-
-.section {
-	position:relative;
-	top:0vw;
-	left:12.5vw;
-	margin:0;
-	padding:0;
-	background-color:blue;
-	width:100%;
-}
-
-.showcase {
-z-index:99999;
-width:300%;
-height:40vw;
-display:table;
-overflow: auto;
-  white-space: nowrap;
-}
-
-.showcase-headline {
-	display:table-cell;
-	vertical-align:middle;
-	text-align:center;
-	position:relative;
-	line-height:.7;
-}
-
-.showcase img {
-z-index:99999;
-width:20vw;
-height:auto;
-}
-
 /* width */
 ::-webkit-scrollbar {
-width: 1px;
-height: 1px;
+width: 3px;
+height: 3px;
 }
 
 /* Track */
@@ -308,7 +271,6 @@ background: transparent;
 ::-webkit-scrollbar-thumb {
 background: rgba(252,223,205,.3); 
 }
-
 
 /* --------------------------- NARROW AND MOBILE */
 
@@ -333,10 +295,6 @@ background: #ad9460;
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 background: white; 
-}
-
-svg {
-	width:80vw;
 }
 
 .contact img {
