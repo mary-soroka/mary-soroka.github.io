@@ -33,11 +33,8 @@ $(window).scroll(function() {
 
 
 $(window).scroll(function(){
-
     $(".name").css("opacity", 1 - $(window).scrollTop() / 500);
-    $(".video").css("opacity", 1 - $(window).scrollTop() / 1200);
-
-
+    $(".video").css("opacity", 1 - $(window).scrollTop() / 500);
   });
 
 /*

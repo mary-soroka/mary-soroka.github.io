@@ -2,33 +2,23 @@
 	z-index:1;
 }
 
-/* panel styles */
-.panel {
-
-/* min height incase content is higher than window height */
-	min-height: 90vh;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
-
 /* BLANK */
 .color-1 {background-color: black;}
 
 /* VIRGIN MOBILE */
-.color-2 {background-color: #0e1219;}
+.color-2 {background-color: #0b0c11;}
 
 /* BELL X STAR WARS */
 .color-3 {background-color: #2f3334;}
 
 /* FERRERO ROCHER */
-.color-4 {background-color: #2c2219;}
+.color-4 {background-color: #0e0c0d;}
 
 /* YOU DON'T OWN ME */
-.color-15 {background-color: #4e1019;}
+.color-15 {background-color: #0d1222;}
 
 /* TD VISA INFINITE */
-.color-7 {background-color: #1b2a32;}
+.color-7 {background-color: #3c251f;}
 
 /* SPECIAL K */
 .color-5 {background-color: #83533a;}
@@ -40,13 +30,13 @@
 .color-8 {background-color: #3b5b6b;}
 
 /* METROLINX */
-.color-17 {background-color: #48342f;}
+.color-17 {background-color: #1f2e31;}
 
 /* TD DIGITAL */
 .color-9 {background-color: #121214;}
 
 /* IKEA MOVING DAY */
-.color-13 {background-color: #bab7b1;}
+.color-13 {background-color: #c1bfba;}
 
 /* LOVER LETTER TO JAPAN */
 .color-14 {background-color: #0d162a;}
@@ -58,4 +48,4 @@
 .color-12 {background-color: #0b0e16;}
 
 /* TD INSURANCE */
-.color-16 {background-color: #3e332a;}
+.color-16 {background-color: #221611;}
