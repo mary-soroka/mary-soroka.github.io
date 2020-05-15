@@ -5,8 +5,10 @@
          url('mordova-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
+
+.desktop-only {display:visible;}
+.mobile-only {display:none;}
 
 html, body {
 	scroll-behavior: smooth;
