@@ -55,26 +55,75 @@ h3 {
 	font-size:2vw;
 }
 
+/* INDIVIDUAL_PROJECT */
+
+.project_container {
+	width:82vw;
+	margin:0 auto 12vw;
+}
+
+/* PROJECT_TITLE */
+
+h4 {
+	font-size:12vw;
+	position:relative;
+	top:0;
+	left:0;
+	padding:0 0 5vw;
+	transition: .3s ease-in-out;
+}
+
+.project_container:hover h4 {
+	padding:0 0 5vw;
+}
+
+/* PROJECT_CONTENT */
+
+.project_content {
+	height:40vh;
+}
+
+/* PROJECT_ELEMENTS */
+
+.project_content li {
+  margin:0 2vw 0 0;
+}
+
+/* PROJECT_VIDEOS */
+
+.project_content iframe {
+	width:82vw;
+	height:35vh;
+}
+
+/* PROJECT_IMAGES */
+
+.project_content li img {
+	height:35vh;
+	margin:0;
+	padding:0;
+}
+
 /* CONTACT_IMAGES */
 
 .contact img {
 	width:24vw;
 }
 
-/* width */
+/* SCROLLBAR_WIDTH */
 ::-webkit-scrollbar {
-width: 3px;
-height: 3px;
+	width: 3px;
+	height: 3px;
 }
 
-/* Track */
+/* SCROLLBAR_TRACK */
 ::-webkit-scrollbar-track {
-background: transparent;
+	background: transparent;
 }
 
-/* Handle */
+/* SCROLLBAR_HANDLE */
 ::-webkit-scrollbar-thumb {
-background: rgba(252,223,205,.3); 
+	background: rgba(252,223,205,.3); 
 }
 
 }

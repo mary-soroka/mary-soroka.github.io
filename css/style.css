@@ -252,18 +252,18 @@ h5 {
 	padding:0;
 }
 
-/* width */
+/* SCROLLBAR_WIDTH */
 ::-webkit-scrollbar {
-width: 3px;
-height: 3px;
+	width: 3px;
+	height: 3px;
 }
 
-/* Track */
+/* SCROLLBAR_TRACK */
 ::-webkit-scrollbar-track {
-background: transparent;
+	background: transparent;
 }
 
-/* Handle */
+/* SCROLLBAR_HANDLE */
 ::-webkit-scrollbar-thumb {
-background: rgba(252,223,205,.3); 
+	background: rgba(252,223,205,.3); 
 }
