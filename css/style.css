@@ -35,19 +35,32 @@ a:hover {
 	cursor:e-resize;
 }
 
+/* NAME_CONTAINER */
 
 .name {
 	color:rgba(252,223,205,1);
 	width:100%;
-	z-index:0;
 	position:absolute;
 	top:37%;
 	text-align:center;
-	font-size:12vw;
 	padding:0;
 	margin:0;
-	text-transform:lowercase;
+	z-index:0;
 }
+
+/* NAME */
+
+h1 {
+	font-size: 12vw;
+	font-weight:400;
+	letter-spacing:0;
+	text-transform:lowercase;
+	line-height:1.2;
+	margin:0;
+	padding:0 1.9vw 8vw;
+}
+
+/* CONTACT_CONTAINER */
 
 .contact {
 	width:100%;
@@ -57,6 +70,8 @@ a:hover {
 	margin:0;
 }
 
+/* CONTACT_IMAGES */
+
 .contact img {
 	width:18vw;
 	padding:0;
@@ -64,9 +79,7 @@ a:hover {
 	transition: .3s ease-in-out;
 }
 
-.svgcolours {
-	fill:rgba(252,223,205,1);
-}
+/* AWARDS_CONTIANER */
 
 .awards {
 	width:100%;
@@ -74,6 +87,8 @@ a:hover {
 	margin:0;
 	padding:0 8.4vw 0;
 }
+
+/* AWARDS_ROW */
 
 .row {
   display: -ms-flexbox; /* IE10 */
@@ -83,44 +98,39 @@ a:hover {
   padding: 0;
 }
 
-/* Create 3 equal columns that sit next to each other */
+/* AWARD_COLUMNS */
+
 .column {
-	letter-spacing:.3pt;
 	-ms-flex: 28%; /* IE10 */
 	flex: 28%;
 	max-width: 28%;
 	border-bottom:.1px solid;
-	margin:0 auto 0;
-	height:8vw;
+	margin:0 auto 3vw;
 	padding: 0;
 	text-align:left;
 	background-size:2.7vw;
 	background-repeat:no-repeat;
-	background-position: 100% 50%;
+	background-position: 100% 30%;
 	position:relative;
-}
-
-.darker {
-
+	height:6vw;
 }
 
 /* AWARD_TITLE */
 
 h2 {
+	letter-spacing:.3pt;
 	font-family:'DM Sans';
 	font-weight:400;
-	font-size:1.3vw;
+	font-size:1.2vw;
 }
 
 /* AWARD_COUNT */
 
 h3 {
+	letter-spacing:.3pt;
 	font-family:'DM Sans';
 	font-weight:400;
 	font-size:8px;
-	position:absolute;
-	bottom:0;
-	padding-bottom:2vw;
 }
 
 /* PROJECT_TITLE */
@@ -165,29 +175,26 @@ h5 {
 /* VIRGIN MOBILE */
 .color-2 {background-color: #0b0c11;}
 
-/* BELL X STAR WARS */
-.color-3 {background-color: #2f3334;}
+/* METROLINX */
+.color-3 {background-color: #1f2e31;}
 
-/* FERRERO ROCHER */
-.color-4 {background-color: #0e0c0d;}
+/* UNPLUG */
+.color-4 {background-color: #04206a;}
+
+/* FERRERO */
+.color-5 {background-color: #0e0c0d;}
+
+/* BELL */
+.color-6 {background-color: #2f3334;}
 
 /* TD VISA INFINITE */
 .color-7 {background-color: #3c251f;}
 
-/* SLEEPS */
-.color-5 {background-color: #1b1a1e;}
-
-/* LEO BURNETT */
-.color-11 {background-color: #04206a;}
-
-/* METROLINX */
-.color-17 {background-color: #1f2e31;}
-
 /* IKEA */
-.color-13 {background-color: #c1bfba;}
+.color-8 {background-color: #c1bfba;}
 
-/* TD INSURANCE */
-.color-16 {background-color: #221611;}
+/* SLEEPS */
+.color-9 {background-color: #1b1a1e;}
 
 /* ALL_PROJECTS */
 
@@ -243,17 +250,6 @@ h5 {
 	height:54vh;
 	margin:0;
 	padding:0;
-}
-
-/* NAME */
-
-h1 {
-	font-size: 12vw;
-	font-weight:400;
-	letter-spacing:0em;
-	line-height:1.2;
-	margin:0;
-	padding:0 1.9vw 8vw;
 }
 
 /* width */

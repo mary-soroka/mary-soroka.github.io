@@ -12,13 +12,16 @@ h1 {
 	font-size: 20vw;
 }
 
+/* AWARDS_CONTIANER */
+
 .awards {
-	margin-top:50vw;
 	width:100%;
 	z-index:1;
 	margin:0;
 	padding:0 8.4vw 0;
 }
+
+/* AWARDS_ROW */
 
 .row {
   display: -ms-flexbox; /* IE10 */
@@ -28,30 +31,28 @@ h1 {
   padding: 0;
 }
 
-/* Create 3 equal columns that sit next to each other */
+/* AWARD_COLUMNS */
+
 .column {
 	-ms-flex: 100%; /* IE10 */
 	flex: 100%;
 	max-width: 100%;
+	margin:0 auto 0;
+	background-size:10vw;
+	background-position: 100% 48%;
+	height:18vw;
 }
 
 /* AWARD_TITLE */
 
 h2 {
-	font-family:'DM Sans';
-	font-weight:400;
-	font-size:4.5vw;
+	font-size:4vw;
 }
 
 /* AWARD_COUNT */
 
 h3 {
-	font-family:'DM Sans';
-	font-weight:400;
 	font-size:2vw;
-	position:relative;
-	bottom:initial;
-	padding-bottom:0;
 }
 
 }
