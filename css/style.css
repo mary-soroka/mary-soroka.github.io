@@ -267,34 +267,3 @@ background: transparent;
 ::-webkit-scrollbar-thumb {
 background: rgba(252,223,205,.3); 
 }
-
-/* --------------------------- NARROW AND MOBILE */
-
-/* double videos middle */
-@media screen and (max-width: 699px) {
-
-/* width */
-::-webkit-scrollbar {
-width: 3px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-background: rgba(0,0,0,1); 
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-background: #ad9460; 
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-background: white; 
-}
-
-.contact img {
-	width:24vw;
-}
-
-}
