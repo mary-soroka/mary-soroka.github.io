@@ -43,10 +43,8 @@ a:hover {
 	position:absolute;
 	top:37%;
 	text-align:center;
-	font-size:12vw;
 	padding:0;
 	margin:0;
-	text-transform:lowercase;
 }
 
 .contact {
@@ -85,43 +83,36 @@ a:hover {
 
 /* Create 3 equal columns that sit next to each other */
 .column {
-	letter-spacing:.3pt;
+	font-family:'DM Sans';
 	-ms-flex: 28%; /* IE10 */
 	flex: 28%;
 	max-width: 28%;
 	border-bottom:.1px solid;
 	margin:0 auto 0;
-	height:8vw;
 	padding: 0;
 	text-align:left;
-	background-size:2.7vw;
+	background-size:2vw;
 	background-repeat:no-repeat;
 	background-position: 100% 50%;
 	position:relative;
-}
-
-.darker {
-
+	height:6.5vw;
 }
 
 /* AWARD_TITLE */
 
 h2 {
-	font-family:'DM Sans';
-	font-weight:400;
+	letter-spacing:.3pt;
 	font-size:1.3vw;
+	font-weight:400;
+
 }
 
 /* AWARD_COUNT */
 
 h3 {
-	font-family:'DM Sans';
-	font-weight:400;
+	letter-spacing:.3pt;
 	font-size:8px;
-	position:absolute;
-	bottom:0;
-	padding-bottom:2vw;
-}
+	font-weight:400;
 
 /* PROJECT_TITLE */
 
@@ -248,10 +239,11 @@ h5 {
 /* NAME */
 
 h1 {
-	font-size: 12vw;
+	font-size: 5vw;
 	font-weight:400;
 	letter-spacing:0em;
 	line-height:1.2;
+	text-transform:lowercase;
 	margin:0;
 	padding:0 1.9vw 8vw;
 }

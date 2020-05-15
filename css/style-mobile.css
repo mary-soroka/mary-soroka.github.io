@@ -2,37 +2,56 @@
 
 @import url('https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&display=swap');
 
-
 .panels {margin-top:100vw;}
-
-.disappear {
-  display:none;
-}
 
 .name {
   top:45%;
 }
 
-.awards {margin-top:60vw;}
-
-.section, .job-title {display:none;}
-
-/* panel styles */
-
-.showcase {
-  z-index:99999;
-  width:80%;
-  height:110vw;
-  background-size:cover;
-  background-position:center;
-  background-attachment:no-repeat;
-  padding:0;
+h1 {
+	font-size: 20vw;
 }
 
-.showcase:hover {
-/*-  border-right:2px solid #ad9460;*/
-padding-left:0;
+.awards {
+	margin-top:50vw;
+	width:100%;
+	z-index:1;
+	margin:0;
+	padding:0 8.4vw 0;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+/* Create 3 equal columns that sit next to each other */
+.column {
+	-ms-flex: 100%; /* IE10 */
+	flex: 100%;
+	max-width: 100%;
+}
+
+/* AWARD_TITLE */
+
+h2 {
+	font-family:'DM Sans';
+	font-weight:400;
+	font-size:4.5vw;
+}
+
+/* AWARD_COUNT */
+
+h3 {
+	font-family:'DM Sans';
+	font-weight:400;
+	font-size:2vw;
+	position:relative;
+	bottom:initial;
+	padding-bottom:0;
 }
 
 }
-
