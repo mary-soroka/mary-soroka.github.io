@@ -8,6 +8,7 @@
 }
 
 .desktop-only {display:visible;}
+.mobile-only {display:none;}
 
 html, body {
 	scroll-behavior: smooth;
