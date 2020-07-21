@@ -75,10 +75,17 @@ h1 {
 /* CONTACT_IMAGES */
 
 .contact img {
-	width:18vw;
+	width:17vw;
 	padding:0;
 	margin:0 2vw;
 	transition: .3s ease-in-out;
+	opacity:.9;
+}
+
+/* CONTACT_IMAGES */
+
+.contact img:hover {
+	opacity:1;
 }
 
 /* AWARDS_CONTIANER */
@@ -155,8 +162,8 @@ h5 {
 	text-transform:uppercase;
 	text-align:left;
 	font-family:'DM Sans';
-	font-weight:400;
-	font-size:8px;
+	font-weight:500;
+	font-size:10px;
 	letter-spacing:1pt;
 	padding:1vw 0 0;
 	margin:0;
