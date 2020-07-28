@@ -27,6 +27,12 @@ a:hover {
   top:3vw;
   right:3vw;
   text-align:right;
+  line-height:2;
+}
+
+hr {
+  height:1vw;
+  border:0px solid white;
 }
 
 h1 {
