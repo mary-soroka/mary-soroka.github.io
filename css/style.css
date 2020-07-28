@@ -22,19 +22,21 @@ body {
 	transition: background-color 1s ease;
 	font-family: 'mordovaregular', 'DM Sans', sans-serif;
 	overflow-x:hidden;
-	cursor:s-resize;
 	font-weight:normal;
 	letter-spacing:.02pt;
 	scroll-behavior: smooth;
 }
 
+.nav {
+	position:fixed;
+	top:3vw;
+	right:3vw;
+	text-align:right;
+}
+
 a {
 	text-decoration:none;
 	color:rgba(252,223,205,1);
-}
-
-a:hover {
-	cursor:e-resize;
 }
 
 /* NAME_CONTAINER */
@@ -60,32 +62,6 @@ h1 {
 	line-height:1.2;
 	margin:0;
 	padding:0 1.9vw 8vw;
-}
-
-/* CONTACT_CONTAINER */
-
-.contact {
-	width:100%;
-	text-align:center;
-	z-index:999999999;
-	padding:0;
-	margin:0;
-}
-
-/* CONTACT_IMAGES */
-
-.contact img {
-	width:17vw;
-	padding:0;
-	margin:0 2vw;
-	transition: .3s ease-in-out;
-	opacity:.9;
-}
-
-/* CONTACT_IMAGES */
-
-.contact img:hover {
-	opacity:1;
 }
 
 /* AWARDS_CONTIANER */
