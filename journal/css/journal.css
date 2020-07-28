@@ -11,13 +11,22 @@ body {
 
 a {
   text-decoration:none;
-  color:rgba(252,223,205,1);
+  color:rgba(0,0,0,1);
   transition: .3s ease-in-out;
-  opacity:.6;
+  border-bottom:1.5px solid;
+  font-weight:500;
 }
 
-.nav a:hover {
-  opacity:1;
+a:hover {
+  color:grey;
+  border-bottom:1.5px solid;
+}
+
+.nav {
+  position:fixed;
+  top:3vw;
+  right:3vw;
+  text-align:right;
 }
 
 h1 {
@@ -32,33 +41,60 @@ h1 {
   padding:5vw;
 }
 
-.nav {
-  position:fixed;
-  top:3vw;
-  right:3vw;
-  text-align:right;
-}
-
 h2 {
   letter-spacing:.3pt;
   font-family:'DM Sans';
   font-weight:400;
-  font-size:1.2vw;
+  font-size:1em;
+  padding:0;
+  margin:0;
+}
+
+h3 {
+  letter-spacing:.3pt;
+  font-family:'DM Sans';
+  font-weight:400;
+  font-size:.8em;
+  line-height:1.6;
 }
 
 .photos {
   width:100%;
-  padding:0;
+  padding:12vw 12.5vw 0;
   margin:0 auto 0;
-  text-align:center;
 }
 
 .photo {
   width:75vw;
-  margin:12vw auto;
+  margin:0 auto 0;
   height:40vw;
   background-size:cover;
   background-position:center;
+}
+
+td {
+  vertical-align:top;
+}
+
+td.title {
+  width:20vw;
+}
+
+.secondary {
+  opacity:.35;
+}
+
+.label {
+  margin:2.5vw 0 10vw;
+}
+
+.divider {
+  height:2vw;
+}
+
+.description {
+  margin:2vw 0 10vw;
+  border:1px solid red;
 }
 
 /* --------------------------- SCROLLBAR */
