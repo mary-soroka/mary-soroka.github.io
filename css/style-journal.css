@@ -42,7 +42,7 @@ a:hover {
 .name {
   width:100%;
   position:absolute;
-  top:4vw;
+  top:3.2vw;
   text-align:center;
   padding:0;
   margin:0;
@@ -70,7 +70,7 @@ h1 {
   padding:5px;
   margin:0;
   z-index:99999999;
-  opacity:.6;
+  opacity:1;
   transition: .3s ease-in-out;
   transform: rotate(-90deg);
   text-align:center;
@@ -92,9 +92,9 @@ h1 {
 
 .prompt {
   left:50%;
-  font-size:22px;
+  font-size:14px;
   position:fixed;
-  bottom:5vw;
+  bottom:2vw;
   padding:5px;
   z-index:99999999;
 }
@@ -121,7 +121,7 @@ h3 {
 
 .photos {
   width:100%;
-  padding:15vw 12.5vw 0;
+  padding:13vw 12.5vw 0;
   margin:0 auto 0;
 }
 
