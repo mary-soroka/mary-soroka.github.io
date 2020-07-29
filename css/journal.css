@@ -1,13 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&display=swap');
+@font-face {
+    font-family: 'mordovaregular';
+    src: url('mordova-webfont.woff2') format('woff2'),
+         url('mordova-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 * {
   box-sizing: border-box;
 }
 
 body {
+  font-family: 'mordovaregular', 'DM Sans', sans-serif;
+  scroll-behavior: smooth;
   margin:0;
   padding:0;
-  font-family: 'DM Sans';
 }
 
 a {
@@ -22,12 +30,29 @@ a:hover {
   border-bottom:1.5px solid;
 }
 
+/* NAME_CONTAINER */
+
 .name {
-  font-size:1.2em;
-  position:fixed;
-  top:50px;
+  color:rgba(252,223,205,1);
   width:100%;
+  position:absolute;
+  top:37%;
   text-align:center;
+  padding:0;
+  margin:0;
+  z-index:0;
+}
+
+/* NAME */
+
+h1 {
+  font-size: 12vw;
+  font-weight:400;
+  letter-spacing:0;
+  text-transform:lowercase;
+  line-height:1.2;
+  margin:0;
+  padding:0 1.9vw 8vw;
 }
 
 .nav_left, .nav_right {
@@ -60,21 +85,18 @@ a:hover {
   color:grey;
 }
 
+.prompt {
+  left:50%;
+  font-size:22px;
+  position:fixed;
+  bottom:5vw;
+  padding:5px;
+  z-index:99999999;
+}
+
 hr {
   height:1vw;
   border:0px solid white;
-}
-
-h1 {
-  color:#ad9460;
-  font-family: 'DM Sans', sans-serif;
-  font-weight:500;
-  font-size:8vw;
-  letter-spacing:0;
-  line-height:2;
-  text-transform:none;
-  margin:0;
-  padding:5vw;
 }
 
 h2 {
