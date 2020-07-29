@@ -27,32 +27,43 @@ body {
 	scroll-behavior: smooth;
 }
 
-.contact {
-  font-size:.8em;
+.nav_left, .nav_right {
   position:fixed;
   top:50%;
-  left:1vw;
+  height:0;
+  width:200px;
+  padding:5px;
+  margin:0;
+  z-index:99999999;
+  opacity:.6;
+  transition: .3s ease-in-out;
   transform: rotate(-90deg);
-  padding:5px;
-  z-index:99999999;
-  opacity:.6;
-	transition: .3s ease-in-out;
+  text-align:center;
+  letter-spacing:.3pt;
+  font-family:'DM Sans';
+  font-weight:400;
+  font-size:1em;
 }
 
-.journal {
-  font-size:.8em;
-  position:fixed;
-  top:50%;
-  right:-1vw;
-  padding:5px;
-  transform: rotate(90deg);
-  z-index:99999999;
-  opacity:.6;
-	transition: .3s ease-in-out;
+.nav_left {
+  left:-60px;
 }
 
-.contact:hover, .journal:hover {
+.nav_right {
+  right:-45px;
+}
+
+.nav_left:hover, .nav_right:hover {
   opacity:1;
+}
+
+.prompt {
+	left:50%;
+	font-size:1em;
+	position:fixed;
+	bottom:4vw;
+	padding:5px;
+	z-index:99999999;
 }
 
 a {
