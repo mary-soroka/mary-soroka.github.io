@@ -11,11 +11,18 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'mordovaregular', 'DM Sans', sans-serif;
+html, body {
   scroll-behavior: smooth;
   margin:0;
   padding:0;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  overflow-x:hidden;
+  font-weight:normal;
+  letter-spacing:.02pt;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -33,10 +40,9 @@ a:hover {
 /* NAME_CONTAINER */
 
 .name {
-  color:rgba(252,223,205,1);
   width:100%;
   position:absolute;
-  top:37%;
+  top:4vw;
   text-align:center;
   padding:0;
   margin:0;
@@ -46,7 +52,8 @@ a:hover {
 /* NAME */
 
 h1 {
-  font-size: 12vw;
+  font-family:'mordovaregular', 'DM Sans', sans-serif;
+  font-size: 5.5vw;
   font-weight:400;
   letter-spacing:0;
   text-transform:lowercase;
@@ -67,9 +74,6 @@ h1 {
   transition: .3s ease-in-out;
   transform: rotate(-90deg);
   text-align:center;
-  letter-spacing:.3pt;
-  font-family:'DM Sans';
-  font-weight:400;
   font-size:1em;
 }
 
@@ -83,6 +87,7 @@ h1 {
 
 .nav_left a:hover, .nav_right a:hover {
   color:grey;
+  border-bottom:0;
 }
 
 .prompt {
@@ -101,7 +106,6 @@ hr {
 
 h2 {
   letter-spacing:.3pt;
-  font-family:'DM Sans';
   font-weight:400;
   font-size:1em;
   padding:0;
@@ -110,7 +114,6 @@ h2 {
 
 h3 {
   letter-spacing:.3pt;
-  font-family:'DM Sans';
   font-weight:400;
   font-size:.8em;
   line-height:1.6;
@@ -118,7 +121,7 @@ h3 {
 
 .photos {
   width:100%;
-  padding:12vw 12.5vw 0;
+  padding:15vw 12.5vw 0;
   margin:0 auto 0;
 }
 

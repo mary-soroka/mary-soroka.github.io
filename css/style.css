@@ -39,9 +39,7 @@ body {
   transition: .3s ease-in-out;
   transform: rotate(-90deg);
   text-align:center;
-  letter-spacing:.3pt;
   font-family:'DM Sans';
-  font-weight:400;
   font-size:1em;
 }
 
