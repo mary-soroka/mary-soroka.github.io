@@ -18,7 +18,7 @@ html, body {
 }
 
 body {
-  background-color:rgba(252,223,205,1);
+  /*background-color:rgba(252,223,205,1);*/
   font-family: 'DM Sans', sans-serif;
   overflow-x:hidden;
   font-weight:normal;
@@ -101,7 +101,7 @@ h1 {
 }
 
 hr {
-  height:1vw;
+  height:2.5vw;
   border:0px solid white;
 }
 
@@ -122,14 +122,14 @@ h3 {
 
 .photos {
   width:100%;
-  padding:13vw 12.5vw 0;
+  padding:13vw 17vw 0;
   margin:0 auto 0;
 }
 
 .photo {
-  width:75vw;
+  width:65vw;
   margin:0 auto 0;
-  height:40vw;
+  height:37vw;
   background-size:cover;
   background-position:center;
 }
