@@ -120,10 +120,20 @@ h3 {
   line-height:1.6;
 }
 
+.date {
+  letter-spacing:.3pt;
+  font-weight:400;
+  font-size:.5em;
+  line-height:1.6;
+  opacity:.4;
+  padding-left:2px;
+  line-height:4;
+}
+
 .photos {
   width:100%;
   padding:13vw 17vw 0;
-  margin:0 auto 0;
+  margin:0 auto 11vw;
 }
 
 .photo {
@@ -134,11 +144,22 @@ h3 {
   background-position:center;
 }
 
+.label {
+  margin:10vw 0 2.5vw;
+}
+
 .label a {
   border-bottom:1.5px solid;
 }
 
+table {
+  padding:0;
+  margin:0;
+}
+
 td {
+  padding:0;
+  margin:0;
   vertical-align:top;
 }
 
@@ -150,17 +171,8 @@ td.title {
   opacity:.35;
 }
 
-.label {
-  margin:2.5vw 0 10vw;
-}
-
 .divider {
   height:2vw;
-}
-
-.description {
-  margin:2vw 0 10vw;
-  border:1px solid red;
 }
 
 /* --------------------------- SCROLLBAR */
