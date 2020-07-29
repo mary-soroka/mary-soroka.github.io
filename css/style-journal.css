@@ -18,6 +18,7 @@ html, body {
 }
 
 body {
+  background-color:rgba(252,223,205,1);
   font-family: 'DM Sans', sans-serif;
   overflow-x:hidden;
   font-weight:normal;
