@@ -13,7 +13,6 @@ a {
   text-decoration:none;
   color:rgba(0,0,0,1);
   transition: .3s ease-in-out;
-  border-bottom:1.5px solid;
   font-weight:500;
 }
 
@@ -22,12 +21,35 @@ a:hover {
   border-bottom:1.5px solid;
 }
 
-.nav {
+.name {
+  font-size:2em;
   position:fixed;
-  top:3vw;
-  right:3vw;
-  text-align:right;
-  line-height:2;
+  top:2vw;
+  width:100%;
+  text-align:center;
+}
+
+.contact {
+  font-size:.8em;
+  position:fixed;
+  top:50%;
+  left:1vw;
+  transform: rotate(-90deg);
+  padding:5px;
+}
+
+.back {
+  font-size:.8em;
+  position:fixed;
+  top:50%;
+  right:-2vw;
+  padding:5px;
+  transform: rotate(90deg);
+}
+
+.contact a:hover, .back a:hover {
+  color:grey;
+  border-bottom:0;
 }
 
 hr {
@@ -76,6 +98,10 @@ h3 {
   height:40vw;
   background-size:cover;
   background-position:center;
+}
+
+.label a {
+  border-bottom:1.5px solid;
 }
 
 td {
