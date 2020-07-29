@@ -27,11 +27,32 @@ body {
 	scroll-behavior: smooth;
 }
 
-.nav {
-	position:fixed;
-	top:3vw;
-	right:3vw;
-	text-align:right;
+.contact {
+  font-size:.8em;
+  position:fixed;
+  top:50%;
+  left:1vw;
+  transform: rotate(-90deg);
+  padding:5px;
+  z-index:99999999;
+  opacity:.6;
+	transition: .3s ease-in-out;
+}
+
+.journal {
+  font-size:.8em;
+  position:fixed;
+  top:50%;
+  right:-1vw;
+  padding:5px;
+  transform: rotate(90deg);
+  z-index:99999999;
+  opacity:.6;
+	transition: .3s ease-in-out;
+}
+
+.contact:hover, .journal:hover {
+  opacity:1;
 }
 
 a {

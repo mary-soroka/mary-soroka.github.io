@@ -42,7 +42,7 @@ a:hover {
   font-size:.8em;
   position:fixed;
   top:50%;
-  right:-2vw;
+  right:-1vw;
   padding:5px;
   transform: rotate(90deg);
 }
