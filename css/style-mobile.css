@@ -15,6 +15,18 @@ h1 {
 	font-size: 20vw;
 }
 
+.nav_left, .nav_right {
+  font-size:14px;
+}
+
+  .nav_left {
+  left:-80px;
+}
+
+.nav_right {
+  right:-65px;
+}
+
 /* AWARDS_CONTIANER */
 
 .awards {
