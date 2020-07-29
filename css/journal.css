@@ -184,3 +184,19 @@ td.title {
 ::-webkit-scrollbar-thumb:hover {
   background: white; 
 }
+
+@media screen and (max-width: 640px) {
+
+.nav_left, .nav_right {
+  font-size:14px;
+}
+
+  .nav_left {
+  left:-80px;
+}
+
+.nav_right {
+  right:-65px;
+}
+
+}
