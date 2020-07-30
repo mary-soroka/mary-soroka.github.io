@@ -61,6 +61,11 @@ h1 {
   line-height:1.2;
   margin:0;
   padding:0 1.9vw 8vw;
+  border-bottom:0;
+}
+
+.name a:hover {
+  border-bottom:0;
 }
 
 .nav_left, .nav_right {
