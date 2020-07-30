@@ -190,7 +190,7 @@ td.title {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background:rgba(252,223,205,1);
+  background:rgba(0,0,0,1);
 }
 
 /* Handle on hover */
