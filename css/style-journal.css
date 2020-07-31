@@ -43,18 +43,19 @@ a:hover {
 .name {
   width:100%;
   position:absolute;
-  top:3.2vw;
+  top:4vw;
   text-align:center;
   padding:0;
   margin:0;
-  z-index:-1;
+  z-index:1;
+  height:50px;
 }
 
 /* NAME */
 
 h1 {
   font-family:'mordovaregular', 'DM Sans', sans-serif;
-  font-size: 5.5vw;
+  font-size: 5.8vw;
   font-weight:400;
   letter-spacing:0;
   text-transform:lowercase;
@@ -101,7 +102,7 @@ h4 {
 
 .quick {
   width:100%;
-  padding:13vw 17vw 0;
+  padding:17vw 17vw 0;
   margin:0 auto 0;
 }
 
@@ -119,7 +120,7 @@ h4 {
   padding:0;
   margin:0;
   border-collapse:0;
-  line-height:1.5;
+  line-height:1.2;
 }
 
  .quick td {

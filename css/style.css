@@ -160,6 +160,7 @@ h4 {
 	margin:2vw 0 0 -4vw;
 	line-height:.8;
 	transition: .3s ease-in-out;
+	letter-spacing:0;
 }
 
 /* SCROLL_PROMPT_ARROW */
