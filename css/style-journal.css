@@ -266,11 +266,90 @@ td.title {
 }
 
   .nav_left {
-  left:-80px;
+  left:-85px;
 }
 
 .nav_right {
-  right:-65px;
+  right:-70px;
+}
+
+.label {
+	margin-bottom:5vw;
+}
+
+h2 {
+	font-size:12px;
+	font-weight:500;
+}
+
+h3 {
+	font-size:10px;
+	line-height:1.3;
+}
+
+td.title {
+  width:30vw;
+}
+
+.photos {
+  width:100%;
+  padding:0 10vw 0;
+  margin:25vw auto 11vw;
+}
+
+.photo {
+  width:80vw;
+  margin:0 auto 0;
+  height:45vw;
+  background-size:cover;
+  background-position:center;
+}
+
+.quick {
+	display:none;
+}
+
+/* NAME_CONTAINER */
+
+.name {
+  width:100%;
+  position:absolute;
+  top:5vw;
+  text-align:center;
+  padding:0;
+  margin:0;
+  z-index:1;
+  height:100px;
+}
+
+/* NAME */
+
+h1 {
+  font-family:'mordovaregular', 'DM Sans', sans-serif;
+  font-size: 12vw;
+  font-weight:400;
+  letter-spacing:0;
+  text-transform:lowercase;
+  line-height:1.2;
+  margin:0;
+  padding:0 1.9vw 8vw;
+  border-bottom:0;
+}
+
+h4 {
+	font-size:12px;
+}
+
+.backtotop {
+  position:fixed;
+  right:auto;
+  bottom:0;
+  padding-top:10px;
+  width:100%;
+  height:40px;
+  background-color:white;
+  text-align:center;
+  z-index:99999999;
 }
 
 }
