@@ -214,6 +214,11 @@ hr {
   background-position:center;
 }
 
+.cats {
+  width:8vw;
+  margin:1vw;
+}
+
 .label {
   margin:10vw 0 2.5vw;
 }
