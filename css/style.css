@@ -34,7 +34,7 @@ body {
   width:200px;
   padding:5px;
   margin:0;
-  z-index:99999999;
+  z-index:99999;
   opacity:.6;
   transition: .3s ease-in-out;
   transform: rotate(-90deg);
@@ -148,19 +148,12 @@ h3 {
 	font-size:8px;
 }
 
-/* PROJECT_TITLE */
+/* AWARD_COUNT */
 
 h4 {
-	font-size:7vw;
+	font-family: 'mordovaregular', 'DM Sans', sans-serif;
 	text-transform:lowercase;
-	position:absolute;
-	top:1;
-	left:0;
-	padding:0;
-	margin:2vw 0 0 -4vw;
-	line-height:.8;
-	transition: .3s ease-in-out;
-	letter-spacing:0;
+	font-size:7vw;
 }
 
 /* SCROLL_PROMPT_ARROW */
@@ -245,31 +238,7 @@ h5 {
 	height:58vh;
 }
 
-/* PROJECT_ELEMENTS */
 
-.project_content li {
-  display: inline-block;
-  overflow-wrap:normal;
-  margin:0 2vw 0 0;
-}
-
-/* PROJECT_VIDEOS */
-
-.project_content iframe {
-	display:inline-block;
-	width:60vw;
-	height:54vh;
-	padding:0;
-	margin:0; 
-}
-
-/* PROJECT_IMAGES */
-
-.project_content li img {
-	height:54vh;
-	margin:0;
-	padding:0;
-}
 
 /* SCROLLBAR_WIDTH */
 ::-webkit-scrollbar {
@@ -284,5 +253,5 @@ h5 {
 
 /* SCROLLBAR_HANDLE */
 ::-webkit-scrollbar-thumb {
-	background: rgba(252,223,205,.3); 
+	background: rgba(252,223,205,.5); 
 }

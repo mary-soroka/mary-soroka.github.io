@@ -5,15 +5,18 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Mary Soroka | Sr. Art Director</title>
+	<title>Mary Soroka | Senior Art Director</title>
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style-popup.css">
 	<link rel="stylesheet" href="css/style-mobile.css">
 	<link rel="stylesheet" href="css/style-video.css">
 	<link rel="stylesheet" href="font/stylesheet.css" type="text/css" charset="utf-8" />
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src='https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js'></script>
+    <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js'></script>
 
 </head>
 
@@ -44,7 +47,7 @@
 		<div class="control-cover-gradient"></div>
 		<div class="control-cover"></div>
 
-		<iframe id="embeddedVideo" src="https://player.vimeo.com/video/417640466?loop=1&autoplay=1&automute=1&autopause=0&color=ad9460&title=0&quality=1080p&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		<iframe style="opacity:.8;" id="embeddedVideo" src="https://player.vimeo.com/video/417640466?loop=1&autoplay=1&automute=1&autopause=0&color=ad9460&title=0&quality=1080p&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 	</div>
 </div>
 
@@ -174,147 +177,132 @@
 
 <!------------------------ PROJECTS ------------------------>
 
-<div class="projects">
+<!-- PROJECTS_ROW1 -->
 
-	<!-- VIRGIN_MOBILE -->
+<div class="thumbs">
 
-	<div class="panel" data-color="2">
-		<div class="project_container">
-			<h4>Virgin <span class="desktop-only"><BR></span>Mobile</h4>
-			<div class="project_content">
-				<li>
-					<iframe src="https://player.vimeo.com/video/372760454?color=ffffff&title=0&byline=0&portrait=0&sidedock=0&controls=0&quality=1080p" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-				</li>
-				<li>
-					<img src="images/virgin-mobile/virgin-mobile1.jpg">
-				</li>
-				<li>
-					<img src="images/virgin-mobile/virgin-mobile12.jpg">
-				</li>
-				<li>
-					<img src="images/virgin-mobile/virgin-mobile2.jpg">
-				</li>
-				<li>
-					<img src="images/virgin-mobile/virgin-mobile3.jpg">
-				</li>
-				<li>
-					<img src="images/virgin-mobile/virgin-mobile13.jpg">
-				</li>
-				<li>
-					<img src="images/virgin-mobile/virgin-mobile9.jpg">
-				</li>
-				<li>
-					<img src="images/virgin-mobile/virgin-mobile15.jpg">
-				</li>
-				<li>
-					<img src="images/virgin-mobile/virgin-mobile17.jpg">
-				</li>
-				<li style="margin:0;">
-					<img src="images/virgin-mobile/virgin-mobile18.jpg">
-				</li>
-			</div>
-			<span class="desktop-only"><h5>Scroll right for more &rarr;</h5></span>
-		</div>
-	</div>
+<!-- CT -->
 
-	<!-- METROLINX -->
+    <button class="thumb" style="background-image:url('images/thumbs/ct.jpg');" type="button" data-toggle="modal" data-target="#ct"><h4>Coming Soon</h4></button>
 
-	<div class="panel" data-color="3">
-		<div class="project_container">
-			<h4>Metrolinx</h4>
-			<div class="project_content">
-				<li>
-					<iframe src="https://player.vimeo.com/video/381071769?color=ffffff&title=0&byline=0&portrait=0&sidedock=0&controls=0&quality=1080p" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-				</li>
-				<li>
-					<iframe src="https://player.vimeo.com/video/381071827?color=ffffff&title=0&byline=0&portrait=0&sidedock=0&controls=0&quality=1080p" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-				</li>
-				<li style="margin:0;">
-					<iframe src="https://player.vimeo.com/video/381071698?color=ffffff&title=0&byline=0&portrait=0&sidedock=0&controls=0&quality=1080p" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-				</li>
-			</div>
-			<span class="desktop-only"><h5>Scroll right for more &rarr;</h5></span>
+<!-- METROLINX -->
 
-<span class="mobile-only">
+    <button class="thumb" style="background-image:url('images/thumbs/mx.jpg');" type="button" data-toggle="modal" data-target="#mx"><h4>Metrolinx</h4></button>
 
-			<div class="project_content" style="padding:0;margin:0;">
-				<li style="margin:0;">
+    <div id="mx" class="modal fade" role="dialog">
 
-					<iframe src="https://player.vimeo.com/video/381071827?color=ffffff&title=0&byline=0&portrait=0&sidedock=0&controls=0&quality=1080p" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></li>
-			</div>
+			<li>
+				<iframe src="https://player.vimeo.com/video/381071769?color=ffffff&title=0&byline=0&portrait=0&sidedock=0&controls=0&quality=1080p" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+			</li>
+			<li>
+				<iframe style="margin-top:4vw;" src="https://player.vimeo.com/video/381071827?color=ffffff&title=0&byline=0&portrait=0&sidedock=0&controls=0&quality=1080p" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+			</li>
+			<li>
+				<iframe style="margin-top:4vw;margin-bottom:14vw;" src="https://player.vimeo.com/video/381071698?color=ffffff&title=0&byline=0&portrait=0&sidedock=0&controls=0&quality=1080p" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+			</li>
 
-			<div class="project_content" style="padding:0;margin:0;">
-				<li style="margin:0;">
-					<iframe src="https://player.vimeo.com/video/381071698?color=ffffff&title=0&byline=0&portrait=0&sidedock=0&controls=0&quality=1080p" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-				</li>
-			</div>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
 
-</div>
-</span>
+    </div>
 
-		</div>
-	</div>
+<!-- PROJECTS_ROW2 -->
 
-	<!-- FERRERO -->
+<!-- VIRGIN_MOBILE -->
 
-	<div class="panel" data-color="5">
-		<div class="project_container">
-			<h4>Ferrero <span class="desktop-only"><BR></span>Rocher</h4>
-			<div class="project_content">
-				<li style="margin:0;">
-					<iframe src="https://player.vimeo.com/video/305250042?color=ffffff&title=0&byline=0&portrait=0&sidedock=0&quality=1080p" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-				</li>
-			</div>
-		</div>
-	</div>
+    <button class="thumb" style="background-image:url('images/thumbs/virgin.jpg');" type="button" data-toggle="modal" data-target="#virginmobile"><h4>Virgin Mobile</h4></button>
 
-	<!-- BELL -->
+    <div id="virginmobile" class="modal fade" role="dialog">
 
-	<div class="panel" data-color="6">
-		<div class="project_container">
-			<h4>Bell <span class="desktop-only"><BR></span>Canada</h4>
-			<div class="project_content">
-				<li style="margin:0;">
-					<iframe src="https://player.vimeo.com/video/372079004?color=ffffff&title=0&byline=0&portrait=0&sidedock=0&controls=0&quality=1080p" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-				</li>
-			</div>
-		</div>
-	</div>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
 
-	<!-- TD_VISA -->
+        <li>
+            <iframe src="https://player.vimeo.com/video/372760454?color=ffffff&title=0&byline=0&portrait=0&sidedock=0&controls=0&quality=1080p" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </li>
 
-	<div class="panel" data-color="7">
-		<div class="project_container">
-			<h4>TD Visa <span class="desktop-only"><BR></span>Infinite</h4>
-			<div class="project_content">
-				<li>
-					<iframe src="https://player.vimeo.com/video/347945766?color=ffffff&title=0&byline=0&portrait=0&sidedock=0&controls=0&quality=1080p" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-				</li>
-				<li style="margin:0;">
-					<iframe src="https://player.vimeo.com/video/347945809?color=ffffff&title=0&byline=0&portrait=0&sidedock=0&controls=0&quality=1080p" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-				</li>
-			</div>
-			<span class="desktop-only"><h5>Scroll right for more &rarr;</h5></span>
+		<div class="images">
 
-<span class="mobile-only">
+	        <li>
+	            <img src="images/virgin-mobile/virgin-mobile1.jpg">
+	        </li>
+	        <li>
+	            <img src="images/virgin-mobile/virgin-mobile12.jpg">
+	        </li>
+	        <li>
+	            <img src="images/virgin-mobile/virgin-mobile2.jpg">
+	        </li>
+	        <li>
+	            <img src="images/virgin-mobile/virgin-mobile3.jpg">
+	        </li>
+	        <li>
+	            <img src="images/virgin-mobile/virgin-mobile13.jpg">
+	        </li>
+	        <li>
+	            <img src="images/virgin-mobile/virgin-mobile9.jpg">
+	        </li>
+	        <li>
+	            <img src="images/virgin-mobile/virgin-mobile15.jpg">
+	        </li>
+	        <li>
+	            <img src="images/virgin-mobile/virgin-mobile17.jpg">
+	        </li>
+	        <li>
+	            <img src="images/virgin-mobile/virgin-mobile18.jpg">
+	        </li>
 
-			<div class="project_content" style="padding:0;margin:0;">
-				<li>
-					<iframe src="https://player.vimeo.com/video/347945809?color=ffffff&title=0&byline=0&portrait=0&sidedock=0&controls=0&quality=1080p" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-				</li>
-			</div>
+	    </div>
 
-</div>
-</span>
+    </div>
 
-		</div>
-	</div>
+<!-- BELL -->
 
-<!-- PROJECTS_END -->
+    <button class="thumb" style="background-image:url('images/thumbs/bell.jpg');" type="button" data-toggle="modal" data-target="#bell"><h4>Bell <span style="font-family:'DM Sans', sans-serif;font-weight:400;font-size:3vw;vertical-align:30%">&times;</span> Star Wars</h4></button>
+
+    <div id="bell" class="modal fade" role="dialog">
+
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        <li>
+        	<iframe src="https://player.vimeo.com/video/372079004?color=ffffff&title=0&byline=0&portrait=0&sidedock=0&controls=0&quality=1080p" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </li>
+
+    </div>
+
+<!-- PROJECTS_ROW3 -->
+
+<!-- TD_VISA -->
+
+    <button class="thumb" style="background-image:url('images/thumbs/td_visa.jpg');" type="button" data-toggle="modal" data-target="#td_visa"><h4>td visa infinite</h4></button>
+
+    <div id="td_visa" class="modal fade" role="dialog">
+
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        <li>
+        	<iframe src="https://player.vimeo.com/video/347945766?color=ffffff&title=0&byline=0&portrait=0&sidedock=0&controls=0&quality=1080p" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </li>
+
+    </div>
+
+<!-- FERRERO_ROCHER -->
+
+    <button class="thumb" style="background-image:url('images/thumbs/fr.jpg');" type="button" data-toggle="modal" data-target="#fr"><h4>ferrero rocher</h4></button>
+
+    <div id="fr" class="modal fade" role="dialog">
+
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        <li>
+        	<iframe src="https://player.vimeo.com/video/305250042?color=ffffff&title=0&byline=0&portrait=0&sidedock=0&quality=1080p" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </li>
+
+    </div>
 
 </div>
 
 <!------------------------ SCRIPTS ------------------------>
+
+<!-- POPUP_SCRIPT -->
+
 
 <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
 <script src="js/scripts.js"></script>
