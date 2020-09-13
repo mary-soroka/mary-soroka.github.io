@@ -5,10 +5,27 @@
 .desktop-only {display:none;}
 .mobile-only {display:visible;}
 
-.panels {margin-top:100vw;}
-
 .name {
-  top:45%;
+  top:43%;
+}
+
+.name h2, .nav h2 {
+	letter-spacing:2pt;
+	font-size:14px;
+	text-transform:uppercase;
+	line-height:1;
+	padding:1.8vw;
+	margin:0;
+}
+
+.nav {
+  top:2vw;
+  right:0;
+  bottom:0;
+  left:0;
+  height:0;
+  padding:.2vw;
+  text-align:center;
 }
 
 h1 {
