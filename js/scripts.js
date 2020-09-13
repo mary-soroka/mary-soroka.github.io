@@ -84,9 +84,11 @@ $(window).scroll(function(){
 $(document).scroll(function() {
   var y = $(this).scrollTop();
   if (y > 350) {
+    $('.nav').fadeIn(500);
     $('.nav-gradient').fadeIn(500);
     $('.nav-name').fadeIn(500);
   } else {
+    $('.nav').fadeOut();
     $('.nav-gradient').fadeOut();
     $('.nav-name').fadeOut();
   }
