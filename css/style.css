@@ -16,7 +16,7 @@ html, body {
 	padding:0;
 }
 
-a:hover {
+.thumb, .thumb:hover, a:hover {
 	cursor:url('http://mary-soroka.github.io/images/cursor/hover.svg') 0 0, auto;
 }
 
@@ -218,13 +218,11 @@ h4 {
 	float:left;
 	transition: .2s ease-in-out;
 	opacity:.7;
-	cursor:url('http://mary-soroka.github.io/images/cursor/hover.png'), auto;
 }
 
 .thumb:hover {
 	opacity:1;
 	color:rgba(252,223,205,1);
-	cursor:url('http://mary-soroka.github.io/images/cursor/hover.png'), auto;
 }
 
 .thumbs {
