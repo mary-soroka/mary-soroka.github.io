@@ -17,12 +17,11 @@ html, body {
 }
 
 a:hover {
-	cursor:url('http://mary-soroka.github.io/images/cursor/hover.png'), auto;
+	cursor:url('http://mary-soroka.github.io/images/cursor/hover.svg') 0 0, auto;
 }
 
 html,  body, video, video:hover, iframe, iframe:hover {
-	cursor:url('http://mary-soroka.github.io/images/cursor/cursor.png'), auto;
-}
+	cursor:url('http://mary-soroka.github.io/images/cursor/cursor.svg') 0 0, auto;}
 
 body {
 	background-color:black;
