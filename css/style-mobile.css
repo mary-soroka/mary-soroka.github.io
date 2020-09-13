@@ -88,11 +88,19 @@ li {
 	max-height:55vh;
 }
 
-#mx1, #mx2, #mx3 {
+#mx-vid1, #mx-vid2, #mx-vid3 {
 	height:45vh;
 }
 
-#mx3 {margin-bottom:14vw;}
+#mx-vid3 {margin-bottom:14vw;}
+
+#ferrero-vid {
+	width:100%;
+}
+
+#td-vid, #bell-vid {
+	margin-top:20vw;
+}
 
 /* POPUP_VIDEOS */
 
