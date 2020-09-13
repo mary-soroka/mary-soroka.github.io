@@ -237,7 +237,7 @@ h4:hover{
 
 /* POPUP_CONTAINER */
 
-.modal, .ct, .mx, .virgin, .bell, .td_visa, .ferrero {
+.ct, .mx, .virgin, .bell, .td_visa, .ferrero {
 	background-color:rgba(0,0,0,.9);
 	padding:0;
 	margin:0;
