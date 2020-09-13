@@ -56,7 +56,6 @@
 	<div class="vimeo-wrapper">
 		<div class="control-cover-gradient"></div>
 		<div class="control-cover"></div>
-
 		<iframe style="opacity:.6;" id="embeddedVideo" src="https://player.vimeo.com/video/417640466?loop=1&autoplay=1&automute=1&autopause=0&color=ad9460&title=0&quality=1080p&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 	</div>
 </div>
@@ -193,25 +192,29 @@
 
 <!-- CT -->
 
-    <button class="thumb" style="background-image:url('images/thumbs/ct.jpg');" type="button" data-toggle="modal" data-target="#ct"><h4>Coming Soon</h4></button>
+    <button id="open_ct" class="thumb" style="background-image:url('images/thumbs/ct.jpg');" type="button" data-toggle="modal" data-target="#ct"><h4>Coming Soon</h4></button>
 
 <!-- METROLINX -->
 
-    <button class="thumb" style="background-image:url('images/thumbs/mx.jpg');" type="button" data-toggle="modal" data-target="#mx"><h4>Metrolinx</h4></button>
+    <button id="open_mx" class="thumb" style="background-image:url('images/thumbs/mx.jpg');" type="button">
+    	<h4>
+    		Metrolinx
+    	</h4>
+    </button>
 
-    <div id="mx" class="modal fade" role="dialog">
+    <div id="mx" class="mx">
 
-			<li>
-				<iframe src="https://player.vimeo.com/video/381071769?color=ffffff&title=0&byline=0&portrait=0&sidedock=0&controls=0&quality=1080p" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-			</li>
-			<li>
-				<iframe style="margin-top:4vw;" src="https://player.vimeo.com/video/381071827?color=ffffff&title=0&byline=0&portrait=0&sidedock=0&controls=0&quality=1080p" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-			</li>
-			<li>
-				<iframe style="margin-top:4vw;margin-bottom:14vw;" src="https://player.vimeo.com/video/381071698?color=ffffff&title=0&byline=0&portrait=0&sidedock=0&controls=0&quality=1080p" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-			</li>
+        <button id="close_mx" type="button" class="close">&times;</button>
 
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		<li style="height:70vh;">
+			<iframe id="mx1" src="https://player.vimeo.com/video/381071769?color=ffffff&title=0&byline=0&portrait=0&sidedock=0&controls=0&quality=1080p" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
+		</li>
+		<li style="height:70vh;">
+			<iframe id="mx2" src="https://player.vimeo.com/video/381071827?color=ffffff&title=0&byline=0&portrait=0&sidedock=0&controls=0&quality=1080p" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
+		</li>
+		<li style="height:70vh;">
+			<iframe id="mx3" src="https://player.vimeo.com/video/381071698?color=ffffff&title=0&byline=0&portrait=0&sidedock=0&controls=0&quality=1080p" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
+		</li>
 
     </div>
 
@@ -219,68 +222,48 @@
 
 <!-- VIRGIN_MOBILE -->
 
-    <button class="thumb" style="background-image:url('images/thumbs/virgin.jpg');" type="button" data-toggle="modal" data-target="#virginmobile">
+    <button id="open_virgin" class="thumb" style="background-image:url('images/thumbs/virgin.jpg');" type="button">
     	<h4>
     		Virgin Mobile
     	</h4>
     </button>
 
-    <div id="virginmobile" class="modal fade" role="dialog">
+    <div id="virgin" class="virgin">
 
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <button id="close_virgin" type="button" class="close">&times;</button>
 
-        <li>
-            <iframe src="https://player.vimeo.com/video/372760454?color=ffffff&title=0&byline=0&portrait=0&sidedock=0&controls=0&quality=1080p" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <li style="height:85vh;">
+            <iframe src="https://player.vimeo.com/video/372760454?color=ffffff&title=0&byline=0&portrait=0&sidedock=0&controls=0&quality=1080p" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
         </li>
 
-		<div class="images">
-
-	        <li>
-	            <img src="images/virgin-mobile/virgin-mobile1.jpg">
-	        </li>
-	        <li>
-	            <img src="images/virgin-mobile/virgin-mobile12.jpg">
-	        </li>
-	        <li>
-	            <img src="images/virgin-mobile/virgin-mobile2.jpg">
-	        </li>
-	        <li>
-	            <img src="images/virgin-mobile/virgin-mobile3.jpg">
-	        </li>
-	        <li>
-	            <img src="images/virgin-mobile/virgin-mobile13.jpg">
-	        </li>
-	        <li>
-	            <img src="images/virgin-mobile/virgin-mobile9.jpg">
-	        </li>
-	        <li>
-	            <img src="images/virgin-mobile/virgin-mobile15.jpg">
-	        </li>
-	        <li>
-	            <img src="images/virgin-mobile/virgin-mobile17.jpg">
-	        </li>
-	        <li>
-	            <img src="images/virgin-mobile/virgin-mobile18.jpg">
-	        </li>
-
+		<div class="images">	       
+	       <img src="images/virgin-mobile/virgin-mobile1.jpg">
+	       <img src="images/virgin-mobile/virgin-mobile12.jpg">
+	       <img src="images/virgin-mobile/virgin-mobile2.jpg">
+	       <img src="images/virgin-mobile/virgin-mobile3.jpg">
+	       <img src="images/virgin-mobile/virgin-mobile13.jpg">
+	       <img src="images/virgin-mobile/virgin-mobile9.jpg">
+	       <img src="images/virgin-mobile/virgin-mobile15.jpg">
+	       <img src="images/virgin-mobile/virgin-mobile17.jpg">
+	       <img src="images/virgin-mobile/virgin-mobile18.jpg">
 	    </div>
 
     </div>
 
 <!-- BELL -->
 
-    <button class="thumb" style="background-image:url('images/thumbs/bell.jpg');" type="button" data-toggle="modal" data-target="#bell">
+    <button id="open_bell" class="thumb" style="background-image:url('images/thumbs/bell.jpg');" type="button">
     	<h4>
     		Bell <span style="font-family:'DM Sans', sans-serif;font-weight:400;font-size:3vw;vertical-align:30%">&times;</span> Star Wars
     	</h4>
     </button>
 
-    <div id="bell" class="modal fade" role="dialog">
+    <div id="bell" class="bell">
 
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <button id="close_bell" type="button" class="close">&times;</button>
 
         <li>
-        	<iframe src="https://player.vimeo.com/video/372079004?color=ffffff&title=0&byline=0&portrait=0&sidedock=0&controls=0&quality=1080p" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        	<iframe src="https://player.vimeo.com/video/372079004?color=ffffff&title=0&byline=0&portrait=0&sidedock=0&controls=0&quality=1080p" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
         </li>
 
     </div>
@@ -289,36 +272,36 @@
 
 <!-- TD_VISA -->
 
-    <button class="thumb" style="background-image:url('images/thumbs/td_visa.jpg');" type="button" data-toggle="modal" data-target="#td_visa">
+    <button id="open_td" class="thumb" style="background-image:url('images/thumbs/td_visa.jpg');" type="button">
     	<h4>
     		TD Visa Infinite
     	</h4>
     </button>
 
-    <div id="td_visa" class="modal fade" role="dialog">
+    <div id="td_visa" class="td_visa">
 
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <button id="close_td" type="button" class="close">&times;</button>
 
         <li>
-        	<iframe src="https://player.vimeo.com/video/347945766?color=ffffff&title=0&byline=0&portrait=0&sidedock=0&controls=0&quality=1080p" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        	<iframe src="https://player.vimeo.com/video/347945766?color=ffffff&title=0&byline=0&portrait=0&sidedock=0&controls=0&quality=1080p" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
         </li>
 
     </div>
 
 <!-- FERRERO_ROCHER -->
 
-    <button class="thumb" style="background-image:url('images/thumbs/fr.jpg');" type="button" data-toggle="modal" data-target="#fr">
+    <button id="open_ferrero" class="thumb" style="background-image:url('images/thumbs/fr.jpg');" type="button">
     	<h4>
     		Ferrero Rocher
     	</h4>
     </button>
 
-    <div id="fr" class="modal fade" role="dialog">
+    <div id="ferrero" class="ferrero">
 
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <button id="close_ferrero" type="button" class="close">&times;</button>
 
-        <li>
-        	<iframe src="https://player.vimeo.com/video/305250042?color=ffffff&title=0&byline=0&portrait=0&sidedock=0&quality=1080p" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <li style="width:50vw;">
+        	<iframe src="https://player.vimeo.com/video/305250042?color=ffffff&title=0&byline=0&portrait=0&sidedock=0&quality=1080p" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
         </li>
 
     </div>

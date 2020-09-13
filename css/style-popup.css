@@ -23,11 +23,13 @@
 	float:left;
 	transition: .2s ease-in-out;
 	opacity:.7;
+	cursor:url('http://mary-soroka.github.io/images/cursor/hover.png'), auto;
 }
 
 .thumb:hover {
 	opacity:1;
 	color:rgba(252,223,205,1);
+	cursor:url('http://mary-soroka.github.io/images/cursor/hover.png'), auto;
 }
 
 .thumbs {
@@ -36,7 +38,7 @@
 
 /* POPUP_CONTAINER */
 
-.modal {
+.modal, .ct, .mx, .virgin, .bell, .td_visa, .ferrero {
 	background-color:rgba(0,0,0,.9);
 	padding:0;
 	margin:0;
@@ -45,19 +47,20 @@
 	right:0;
 	bottom:0;
 	left:0;
-	z-index:999999;
+	z-index:9999999;
 	display:none;
 	overflow:auto;
 	overflow-y:scroll;
 	width:100%;
+	cursor:url('http://mary-soroka.github.io/images/cursor/hover.png'), auto;
 }
 
 /* CLOSE_BUTTON */
 
 .close {
 	position:fixed;
-	top:0;
-	right:0;
+	top:10vw;
+	right:10vw;
 	float:middle;
 	font-size:2em;
 	font-weight:regular;
@@ -68,9 +71,9 @@
 	cursor:pointer;
 	background:transparent;
 	border:0;
-	padding:4vw;
+	padding:3vw;
 	margin:0;
-	z-index:9999999999;
+	z-index:999999999999999;
 }
 
 .close:hover,.close:focus{
@@ -85,7 +88,7 @@ li {
   overflow-wrap:normal;
   list-style:none;
   margin:0 auto;
-  width:70vw;
+  width:60vw;
 }
 
 /* PROJECT_VIDEOS */
@@ -93,22 +96,25 @@ li {
 iframe {
 	display:inline-block;
 	padding:0;
-	margin:14vw 0 0;
+	margin:13vw auto;
 	width:100%;
 	height:60vh;
 }
 
-.images {
-	margin-top:4vw;
-}
-
 /* PROJECT_IMAGES */
 
-li img {
+.images img {
 	display: inline-block;
-	height:65vh;
-	margin:0;
+	height:60vh;
+	margin:0 auto 1vw;
 	padding:0;
+}
+
+.images {
+	text-align:center;
+	position:inline;
+	margin:4vw auto 13vw;
+	width:60vw;
 }
 
 button, html input[type="button"], input[type="reset"], input[type="submit"] {
