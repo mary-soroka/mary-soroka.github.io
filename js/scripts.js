@@ -1,21 +1,35 @@
-$(window).scroll(function(){
-    $(".name").css("opacity", 1 - $(window).scrollTop() / 500);
-    $(".video").css("opacity", 1 - $(window).scrollTop() / 500);
-    $(".prompt").css("opacity", 1 - $(window).scrollTop() / 500);
+/* OPEN_DIV_BUTTONS */
+
+$(document).ready(function(){
+
+  $("#open_mx").click(function(e){
+    $("#mx").show();
   });
 
-$(document).scroll(function() {
-  var y = $(this).scrollTop();
-  if (y > 350) {
-    $('.nav-gradient').fadeIn(500);
-    $('.nav-name').fadeIn(500);
-  } else {
-    $('.nav-gradient').fadeOut();
-    $('.nav-name').fadeOut();
-  }
+  $("#open_virgin").click(function(e){
+    $("#virgin").show();
+  });
+
+  $("#open_td").click(function(e){
+    $("#td_visa").show();
+  });
+
+  $("#open_bell").click(function(e){
+    $("#bell").show();
+  });
+
+  $("#open_ct").click(function(e){
+    $("#ct").show();
+  });
+
+  $("#open_ferrero").click(function(e){
+    $("#ferrero").show();
+  });
+
 });
 
 
+/* CLOSE_DIV_BUTTONS */
 
 $(document).ready(function(){
 
@@ -57,30 +71,23 @@ $(document).ready(function(){
 
 });
 
-  $(document).ready(function(){
+/* HIDE_ELEMENTS_ON_SCROLL_DOWN */
 
-  $("#open_mx").click(function(e){
-    $("#mx").show();
+$(window).scroll(function(){
+    $(".name").css("opacity", 1 - $(window).scrollTop() / 500);
+    $(".video").css("opacity", 1 - $(window).scrollTop() / 500);
+    $(".prompt").css("opacity", 1 - $(window).scrollTop() / 500);
   });
 
-  $("#open_virgin").click(function(e){
-    $("#virgin").show();
-  });
+/* SHOW_ELEMENTS_ON_SCROLL_DOWN */
 
-  $("#open_td").click(function(e){
-    $("#td_visa").show();
-  });
-
-  $("#open_bell").click(function(e){
-    $("#bell").show();
-  });
-
-  $("#open_ct").click(function(e){
-    $("#ct").show();
-  });
-
-  $("#open_ferrero").click(function(e){
-    $("#ferrero").show();
-  });
-
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 350) {
+    $('.nav-gradient').fadeIn(500);
+    $('.nav-name').fadeIn(500);
+  } else {
+    $('.nav-gradient').fadeOut();
+    $('.nav-name').fadeOut();
+  }
 });
