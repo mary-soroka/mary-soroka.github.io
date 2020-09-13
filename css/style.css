@@ -122,7 +122,7 @@ a {
 h1 {
 	font-size: 12vw;
 	font-weight:400;
-	letter-spacing:0;
+	letter-spacing:1.5pt;
 	text-transform:lowercase;
 	line-height:1.2;
 	margin:0;
