@@ -52,7 +52,7 @@ a {
 
 /* NAV_LINKS */
 
-.name h2, .nav h2 {
+.name h2, .nav h2, .thumb h2 {
 	letter-spacing:2pt;
 	font-size:9px;
 	text-transform:uppercase;
@@ -130,6 +130,18 @@ h1 {
 	padding:0 1.9vw 1vw;
 }
 
+/* SCROLL_PROMPT_ARROW */
+
+.arrow {
+	position:fixed;
+	bottom:8vw;
+	width:100%;
+	margin:0 auto;
+	padding:0;
+	text-align:center;
+	z-index:99999999;
+}
+
 /* AWARDS_CONTIANER */
 
 .awards {
@@ -184,26 +196,6 @@ h3 {
 	font-size:8px;
 }
 
-/* AWARD_COUNT */
-
-h4 {
-	font-family: 'mordovaregular', 'DM Sans', sans-serif;
-	text-transform:lowercase;
-	font-size:7vw;
-}
-
-/* SCROLL_PROMPT_ARROW */
-
-.prompt {
-	position:fixed;
-	bottom:8vw;
-	width:100%;
-	margin:0 auto;
-	padding:0;
-	text-align:center;
-	z-index:99999999;
-}
-
 /* THUMBNAILS */
 
 .thumb {
@@ -219,16 +211,30 @@ h4 {
 	display:inline-block;
 	float:left;
 	transition: .2s ease-in-out;
-	opacity:.7;
-}
-
-.thumb:hover {
 	opacity:1;
-	color:rgba(252,223,205,1);
 }
 
 .thumbs {
 	margin-top:15vw;
+}
+
+/* THUMB_LABEL */
+
+h4 {
+	letter-spacing:2pt;
+	font-size:9px;
+	font-weight:400;
+	text-transform:uppercase;
+	padding:0;
+	margin:0;
+	height:100%;
+	transition: .2s ease-in-out;
+	line-height:30vw;
+	}
+
+h4:hover{
+	color:rgba(252,223,205,1);
+	background-color:rgba(0,0,0,.7);
 }
 
 /* POPUP_CONTAINER */
