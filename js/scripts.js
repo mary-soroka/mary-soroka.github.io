@@ -74,10 +74,10 @@ $(document).ready(function(){
 /* HIDE_ELEMENTS_ON_SCROLL_DOWN */
 
 $(window).scroll(function(){
-    $(".name").css("opacity", 1 - $(window).scrollTop() / 500);
-    $(".video").css("opacity", 1 - $(window).scrollTop() / 500);
-    $(".prompt").css("opacity", 1 - $(window).scrollTop() / 500);
-  });
+  $(".name").css("opacity", 1 - $(window).scrollTop() / 500);
+  $(".video").css("opacity", 1 - $(window).scrollTop() / 500);
+  $(".arrow").css("opacity", 1 - $(window).scrollTop() / 500);
+});
 
 /* SHOW_ELEMENTS_ON_SCROLL_DOWN */
 
