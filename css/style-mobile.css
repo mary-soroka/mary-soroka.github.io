@@ -51,6 +51,76 @@
 	margin-bottom:15vw;
 }
 
+/* POPUP_CONTAINER */
+
+.ct, .mx, .virgin, .bell, .td_visa, .ferrero {
+	background-color:rgba(0,0,0,.8);
+}
+
+/* CLOSE_BUTTON */
+
+.close {
+	position:fixed;
+	top:3vw;
+	right:2vw;
+	float:middle;
+	font-size:2em;
+	font-weight:regular;
+	line-height:1;
+	color:rgba(252,223,205,1);
+	opacity:.5;
+	transition: .3s ease-in-out;
+	cursor:pointer;
+	background:transparent;
+	border:0;
+	padding:4vw;
+	margin:0;
+	z-index:999999999999999;
+}
+
+/* POPUP_ELEMENT_CONTAINERS */
+
+li {
+	overflow-wrap:normal;
+	list-style:none;
+	margin:0 auto;
+	width:90%;
+	max-height:55vh;
+}
+
+#mx1, #mx2, #mx3 {
+	height:45vh;
+}
+
+#mx3 {margin-bottom:14vw;}
+
+/* POPUP_VIDEOS */
+
+iframe {
+	display:inline-block;
+	padding:0;
+	margin:18vw auto 0;
+	width:100%;
+	height:38vh;
+}
+
+/* POPUP_IMAGES */
+
+.images img {
+	display: inline-block;
+	width:90%;
+	height:auto;
+	margin:1vw auto 1vw;
+	padding:0;
+}
+
+.images {
+	text-align:center;
+	position:inline;
+	margin:0 auto 13vw;
+	width:100%;
+}
+
 	.links {
 		margin:390vw 0 15vw;
 		width:auto;
