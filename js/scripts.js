@@ -1,49 +1,18 @@
-$(window).scroll(function() {
-  
-  // selectors
-  var $window = $(window),
-      $body = $('body'),
-      $panel = $('.panel');
-  
-  // Change 33% earlier than scroll position so colour is there when you arrive.
-  var scroll = $window.scrollTop() + ($window.height() / 1.9);
- 
-  $panel.each(function () {
-    var $this = $(this);
-    
-    // if position is within range of this panel.
-    // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
-    // Remember we set the scroll to 33% earlier in scroll var.
-    if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
-          
-      // Remove all classes on body with color-
-      $body.removeClass(function (index, css) {
-        return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
-      });
-       
-      // Add class of currently active div
-      $body.addClass('color-' + $(this).data('color'));
-    }
-  });    
-  
-}).scroll();
-
-
-
-
-
 $(window).scroll(function(){
     $(".name").css("opacity", 1 - $(window).scrollTop() / 500);
     $(".video").css("opacity", 1 - $(window).scrollTop() / 500);
     $(".prompt").css("opacity", 1 - $(window).scrollTop() / 500);
   });
 
-/*
-$(window).scroll(function() {
-  if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
-    $('.scroll-prompt').hide();
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 350) {
+    $('.nav-gradient').fadeIn(500);
+    $('.nav-name').fadeIn(500);
+    $('.nav').fadeIn(500);
+  } else {
+    $('.nav-gradient').fadeOut();
+    $('.nav-name').fadeOut();
+    $('.nav').fadeOut();
   }
-  else {
-    $('.scroll-prompt').show();
-  }
-});*/
+});
