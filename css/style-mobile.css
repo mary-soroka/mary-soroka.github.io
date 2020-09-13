@@ -1,9 +1,13 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
 
 	@import url('https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&display=swap');
 
+	.mobile-only {display:initial;}
 	.desktop-only {display:none;}
-	.mobile-only {display:visible;}
+
+	#last-award {
+		border-bottom:0 transparent;
+	}
 
 	.name {
 		top:40%;
@@ -20,7 +24,7 @@
 		padding:5px;
 		margin:0;
 		text-align:center;
-		display:none;
+		opacity:0;
 	}
 
 	.nav-name {
@@ -36,6 +40,33 @@
 		margin:0;
 	}
 
+	.contact {
+		margin:0;
+		padding:0;
+		text-align:center;
+		width:100%;
+	}
+
+	.thumbs {
+	margin-bottom:15vw;
+}
+
+	.links {
+		margin:390vw 0 15vw;
+		width:auto;
+	}
+
+	h5 {
+		font-family: 'DM Sans', sans-serif;
+		letter-spacing:1.5pt;
+		font-size:14px;
+		font-weight:400;
+		text-transform:uppercase;
+		padding:20px;
+		margin:0;
+		line-height:2.5;
+	}
+
 	.nav-gradient {
 		height:20vw;
 		background-image: linear-gradient(rgba(0,0,0,1) 50%, rgba(0,0,0,0));
@@ -45,6 +76,10 @@
 	h1 {
 		font-size: 20vw;
 		letter-spacing:1pt;
+	}
+
+	h4 {
+		display:none;
 	}
 
 	/* AWARDS_CONTIANER */
