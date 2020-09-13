@@ -218,6 +218,35 @@ h5 {
 	opacity:.3;
 }
 
+/* THUMBNAILS */
+
+.thumb {
+	width:50%;
+	height:30vw;
+	background-color:black;
+	background-size:cover;
+	background-position:center;
+	border:0;
+	margin:0;
+	padding:0;
+	color:transparent;
+	display:inline-block;
+	float:left;
+	transition: .2s ease-in-out;
+	opacity:.7;
+	cursor:url('http://mary-soroka.github.io/images/cursor/hover.png'), auto;
+}
+
+.thumb:hover {
+	opacity:1;
+	color:rgba(252,223,205,1);
+	cursor:url('http://mary-soroka.github.io/images/cursor/hover.png'), auto;
+}
+
+.thumbs {
+	margin-top:15vw;
+}
+
 /* SCROLLBAR_WIDTH */
 ::-webkit-scrollbar {
 	width: 3px;
