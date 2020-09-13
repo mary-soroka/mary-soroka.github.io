@@ -20,6 +20,7 @@
   padding:5px;
   margin:0;
   text-align:center;
+  display:none;
 }
 
 .nav-name {
@@ -38,6 +39,7 @@
 .nav-gradient {
   height:20vw;
   background-image: linear-gradient(rgba(0,0,0,1) 50%, rgba(0,0,0,0));
+  z-index:-99999;
 }
 
 h1 {
