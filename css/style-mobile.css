@@ -11,38 +11,33 @@
 
 .name h2, .nav h2 {
 	letter-spacing:2pt;
-	font-size:14px;
+	font-size:10px;
 	text-transform:uppercase;
 	line-height:1;
 	padding:1.8vw;
 	margin:0;
 }
 
-.nav {
-  top:2vw;
-  right:0;
-  bottom:0;
-  left:0;
-  height:0;
-  padding:.2vw;
-  text-align:center;
+.nav-name h1 {
+	padding:2vw 0 0 4vw;
+	margin:0;
+	font-size:6vw;
+	letter-spacing:.5pt;
+}
+
+.nav-gradient {
+  height:20vw;
+  background-image: linear-gradient(rgba(0,0,0,1) 50%, rgba(0,0,0,0));
 }
 
 h1 {
 	font-size: 20vw;
 }
 
-.nav_left, .nav_right {
-  font-size:14px;
+.prompt {
+display:none;
 }
 
-  .nav_left {
-  left:-80px;
-}
-
-.nav_right {
-  right:-65px;
-}
 
 /* AWARDS_CONTIANER */
 
