@@ -17,6 +17,10 @@ html, body {
 	cursor:url('http://mary-soroka.github.io/images/cursor/cursor.png'), auto;
 }
 
+a:hover {
+	cursor:url('http://mary-soroka.github.io/images/cursor/hover.png'), auto;
+}
+
 body {
 	background-color:black;
 	color:rgba(252,223,205,1);
