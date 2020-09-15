@@ -29,42 +29,43 @@ $(document).ready(function(){
 });
 
 
+
 /* CLOSE_DIV_BUTTONS */
 
 $(document).ready(function(){
 
   $('#close_mx').click(function(e) {
-    mx = $('#mx'); // Sub Div.
+    mx = $('#mx .mx-content');
     mx.html(mx.html());
     $('#mx').hide();
   });
 
   $('#close_td').click(function(e) {
-    td_visa = $('#td_visa');
+    td_visa = $('#td_visa .td_visa-content');
     td_visa.html(td_visa.html());
     $('#td_visa').hide();
   });
 
   $('#close_bell').click(function(e) {
-    bell = $('#bell');
+    bell = $('#bell .bell-content');
     bell.html(bell.html());
     $('#bell').hide();
   });
 
-  $('#close_ferrero').click(function(e) {
-    ferrero = $('#ferrero');
+ $('#close_ferrero').click(function(e) {
+    ferrero = $('#ferrero .ferrero-content');
     ferrero.html(ferrero.html());
     $('#ferrero').hide();
   });
 
-  $('#close_virgin').click(function(e) {
-    virgin = $('#virgin');
+ $('#close_virgin').click(function(e) {
+    virgin = $('#virgin .virgin-content');
     virgin.html(virgin.html());
     $('#virgin').hide();
   });
 
-  $('#close_ct').click(function(e) {
-    ct = $('#ct');
+ $('#close_ct').click(function(e) {
+    ct = $('#ct .ct-content');
     ct.html(ct.html());
     $('#ct').hide();
   });
