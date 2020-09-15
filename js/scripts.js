@@ -32,12 +32,6 @@ $(document).ready(function(){
 /* CLOSE_DIV_BUTTONS */
 
 $(document).ready(function(){
- 
-
-});
-
-
-$(document).ready(function(){
 
   $('#close_mx').click(function(e) {
     mx = $('#mx-content'); // Sub Div.
