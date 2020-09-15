@@ -34,37 +34,37 @@ $(document).ready(function(){
 $(document).ready(function(){
 
   $('#close_mx').click(function(e) {
-    mx = $('#mx-content'); // Sub Div.
+    mx = $('#mx'); // Sub Div.
     mx.html(mx.html());
     $('#mx').hide();
   });
 
   $('#close_td').click(function(e) {
-    td_visa = $('#td_visa-content');
+    td_visa = $('#td_visa');
     td_visa.html(td_visa.html());
     $('#td_visa').hide();
   });
 
   $('#close_bell').click(function(e) {
-    bell = $('#bell-content');
+    bell = $('#bell');
     bell.html(bell.html());
     $('#bell').hide();
   });
 
   $('#close_ferrero').click(function(e) {
-    ferrero = $('#ferrero-content');
+    ferrero = $('#ferrero');
     ferrero.html(ferrero.html());
     $('#ferrero').hide();
   });
 
   $('#close_virgin').click(function(e) {
-    virgin = $('#virgin-content');
+    virgin = $('#virgin');
     virgin.html(virgin.html());
     $('#virgin').hide();
   });
 
   $('#close_ct').click(function(e) {
-    ct = $('#ct-content');
+    ct = $('#ct');
     ct.html(ct.html());
     $('#ct').hide();
   });
