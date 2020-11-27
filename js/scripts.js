@@ -2,6 +2,10 @@
 
 $(document).ready(function(){
 
+  $("#open_lbc").click(function(e){
+    $("#lbc").show();
+  });
+
   $("#open_mx").click(function(e){
     $("#mx").show();
   });
@@ -33,6 +37,12 @@ $(document).ready(function(){
 /* CLOSE_DIV_BUTTONS */
 
 $(document).ready(function(){
+
+  $('#close_lbc').click(function(e) {
+    lbc = $('#lbc .lbc-content');
+    lbc.html(lbc.html());
+    $('#lbc').hide();
+  });
 
   $('#close_mx').click(function(e) {
     mx = $('#mx .mx-content');
