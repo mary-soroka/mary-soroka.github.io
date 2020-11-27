@@ -94,7 +94,7 @@ $(window).scroll(function(){
 
 $(document).scroll(function() {
   var y = $(this).scrollTop();
-  if (y > 350) {
+  if (y > 30) {
     $('.nav').fadeIn(500);
     $('.nav-gradient').fadeIn(500);
     $('.nav-name').fadeIn(500);
