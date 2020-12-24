@@ -169,15 +169,6 @@ h6 {
   border-bottom:0;
 }
 
-.prompt {
-  left:50%;
-  font-size:14px;
-  position:fixed;
-  bottom:2vw;
-  padding:5px;
-  z-index:99999999;
-}
-
 .backtotop {
   position:fixed;
   right:3vw;
