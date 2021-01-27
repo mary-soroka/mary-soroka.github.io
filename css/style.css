@@ -7,6 +7,54 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'mordovaregular';
+	src: url('mordova-webfont.woff2') format('woff2'),
+	url('mordova-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'voltebold';
+    src: url('volte_bold-webfont.woff2') format('woff2'),
+         url('volte_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'voltelight';
+    src: url('volte_light-webfont.woff2') format('woff2'),
+         url('volte_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'voltemedium';
+    src: url('volte_medium-webfont.woff2') format('woff2'),
+         url('volte_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'voltesemibold';
+    src: url('volte_semibold-webfont.woff2') format('woff2'),
+         url('volte_semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'volteregular';
+    src: url('volte-webfont.woff2') format('woff2'),
+         url('volte-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .desktop-only {display:initial;}
 .mobile-only {display:none;}
 
@@ -27,9 +75,7 @@ body {
 	background-color:black;
 	color:rgba(252,223,205,1);
 	transition: background-color 1s ease;
-	font-family: 'mordovaregular', 'DM Sans', sans-serif;
 	overflow-x:hidden;
-	font-weight:normal;
 	letter-spacing:.02pt;
 	scroll-behavior: smooth;
 }
@@ -85,17 +131,21 @@ a {
   z-index:99999999;
   opacity:1;
   transition: .3s ease-in-out;
-  transform: rotate(-90deg);
-  text-align:center;
+
   font-size:1em;
 }
 
 .nav_left {
-  left:-60px;
+	top:2vw;
+  left:2vw;
+   text-align:left;
 }
 
 .nav_right {
-  right:-45px;
+	top:2vw;
+  right:2vw;
+     text-align:right;
+
 }
 
 .nav_left a:hover, .nav_right a:hover {
@@ -109,9 +159,9 @@ a {
 	color:rgba(252,223,205,1);
 	width:100%;
 	position:absolute;
-	top:35%;
-	text-align:center;
-	padding:0;
+	top:10vw;
+	text-align:left;
+	padding:0 2vw 0;
 	margin:0 auto;
 	z-index:9999999;
 }
@@ -119,10 +169,10 @@ a {
 /* NAME */
 
 h1 {
-	font-size: 12vw;
-	font-weight:400;
-	letter-spacing:1.5pt;
-	text-transform:lowercase;
+	font-family: 'voltebold', sans-serif;
+	font-size: 4vw;
+	font-weight:bold;
+	letter-spacing:-1.5pt;
 	line-height:1.2;
 	margin:0;
 	padding:0 1.9vw 1vw;
