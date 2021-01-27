@@ -1,51 +1,39 @@
 @import url('https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&display=swap');
-@font-face {
-	font-family: 'mordovaregular';
-	src: url('mordova-webfont.woff2') format('woff2'),
-	url('mordova-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
 
 @font-face {
 	font-family: 'mordovaregular';
 	src: url('mordova-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
 }
 
 @font-face {
     font-family: 'voltebold';
-    src: url('volte_bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    src: url('volte_bold-webfont.woff2') format('woff');
 }
 
 @font-face {
     font-family: 'voltelight';
-    src: url('volte_light-webfont.woff') format('woff');
+    src: url('volte_light-webfont.woff2') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'voltemedium';
-    src: url('volte_medium-webfont.woff') format('woff');
+    src: url('volte_medium-webfont.woff2') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'voltesemibold';
-    src: url('volte_semibold-webfont.woff') format('woff');
+    src: url('volte_semibold-webfont.woff2') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'volteregular';
-    src: url('volte-webfont.woff2') format('woff2'),
-         url('volte-webfont.woff') format('woff');
+    src: url('volte-webfont.woff2') format('woff'),
     font-weight: normal;
     font-style: normal;
 }
@@ -114,7 +102,6 @@ a {
 }
 
 .nav_left, .nav_right {
-  font-family: 'DM Sans', sans-serif;
   letter-spacing:.02pt;
   font-weight:normal;
   position:fixed;
@@ -164,7 +151,7 @@ a {
 /* NAME */
 
 h1 {
-	font-family: 'voltebold', sans-serif;
+	font-family: 'voltebold';
 	font-size: 4vw;
 	font-weight:bold;
 	letter-spacing:-1.5pt;
