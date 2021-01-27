@@ -1,42 +1,48 @@
-@import url('https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&display=swap');
-
 @font-face {
-	font-family: 'mordovaregular';
-	src: url('mordova-webfont.woff') format('woff');
+    font-family: 'Volte';
+    src: url('Volte-Light.woff2') format('woff2'),
+        url('Volte-Light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'voltebold';
-    src: url('volte_bold-webfont.woff2') format('woff');
+    font-family: 'Volte';
+    src: url('Volte-Bold.woff2') format('woff2'),
+        url('Volte-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'voltelight';
-    src: url('volte_light-webfont.woff2') format('woff');
+    font-family: 'Volte';
+    src: url('Volte-Medium.woff2') format('woff2'),
+        url('Volte-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Volte';
+    src: url('Volte-Semibold.woff2') format('woff2'),
+        url('Volte-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Volte';
+    src: url('Volte.woff2') format('woff2'),
+        url('Volte.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
-@font-face {
-    font-family: 'voltemedium';
-    src: url('volte_medium-webfont.woff2') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 
-@font-face {
-    font-family: 'voltesemibold';
-    src: url('volte_semibold-webfont.woff2') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'volteregular';
-    src: url('volte-webfont.woff2') format('woff'),
-    font-weight: normal;
-    font-style: normal;
-}
 
 .desktop-only {display:initial;}
 .mobile-only {display:none;}
@@ -55,11 +61,14 @@ html,  body, video, video:hover, iframe, iframe:hover {
 	cursor:url('http://mary-soroka.github.io/images/cursor/cursor.svg') 0 0, auto;}
 
 body {
+    font-family: 'Volte', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing:1;
 	background-color:black;
 	color:rgba(252,223,205,1);
 	transition: background-color 1s ease;
 	overflow-x:hidden;
-	letter-spacing:.02pt;
 	scroll-behavior: smooth;
 }
 
@@ -71,7 +80,6 @@ a {
 /* NAV_LINKS */
 
 .name h2, .thumb h2 {
-	letter-spacing:2pt;
 	font-size:9px;
 	text-transform:uppercase;
 	padding:1.8vw;
@@ -94,7 +102,6 @@ a {
 	padding:2vw 0 0 4vw;
 	margin:0;
 	font-size:4vw;
-	letter-spacing:1pt;
 }
 
 .name a:hover {
@@ -102,7 +109,6 @@ a {
 }
 
 .nav_left, .nav_right {
-  letter-spacing:.02pt;
   font-weight:normal;
   position:fixed;
   top:50%;
@@ -119,15 +125,14 @@ a {
 
 .nav_left {
 	top:2vw;
-  left:2vw;
-   text-align:left;
+	left:2vw;
+	text-align:left;
 }
 
 .nav_right {
 	top:2vw;
-  right:2vw;
-     text-align:right;
-
+	right:2vw;
+	text-align:right;
 }
 
 .nav_left a:hover, .nav_right a:hover {
@@ -139,7 +144,7 @@ a {
 
 .name {
 	color:rgba(252,223,205,1);
-	width:100%;
+	width:80%;
 	position:absolute;
 	top:10vw;
 	text-align:left;
@@ -151,11 +156,9 @@ a {
 /* NAME */
 
 h1 {
-	font-family: 'voltebold';
-	font-size: 4vw;
-	font-weight:bold;
-	letter-spacing:-1.5pt;
-	line-height:1.2;
+	font-size: 7vw;
+	font-weight:700;
+	line-height:1;
 	margin:0;
 	padding:0 1.9vw 1vw;
 }
@@ -211,18 +214,14 @@ h1 {
 /* AWARD_TITLE */
 
 h2 {
-	letter-spacing:.3pt;
-	font-family:'DM Sans';
-	font-weight:400;
+	font-weight:600;
 	font-size:1.2vw;
 }
 
 /* AWARD_COUNT */
 
 h3 {
-	letter-spacing:.3pt;
-	font-family:'DM Sans';
-	font-weight:400;
+	font-weight:500;
 	font-size:8px;
 }
 
