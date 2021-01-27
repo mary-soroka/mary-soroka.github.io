@@ -109,7 +109,6 @@ a {
 }
 
 .nav_left, .nav_right {
-  font-weight:normal;
   position:fixed;
   top:50%;
   height:0;
@@ -119,8 +118,8 @@ a {
   z-index:99999999;
   opacity:1;
   transition: .3s ease-in-out;
-
-  font-size:1em;
+  font-size:18px;
+  font-weight:600;
 }
 
 .nav_left {
@@ -144,23 +143,27 @@ a {
 
 .name {
 	color:rgba(252,223,205,1);
-	width:80%;
+	height:30vw;
+	width:100%;
 	position:absolute;
 	top:10vw;
 	text-align:left;
-	padding:0 2vw 0;
+	padding:0 100px 0;
 	margin:0 auto;
 	z-index:9999999;
+	line-height:30vw;
+	border:1px solid red;
 }
 
 /* NAME */
 
 h1 {
+		width:80%;
 	font-size: 7vw;
 	font-weight:700;
-	line-height:1;
+	line-height:.9;
 	margin:0;
-	padding:0 1.9vw 1vw;
+	padding:0;
 }
 
 /* SCROLL_PROMPT_ARROW */
@@ -228,11 +231,13 @@ h3 {
 /* THUMBNAILS */
 
 .thumb {
-	width:50%;
-	height:30vw;
+	width:100%;
+	height:40vw;
 	background-color:black;
-	background-size:cover;
-	background-position:center;
+ background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 	border:0;
 	margin:0;
 	padding:0;
@@ -243,7 +248,7 @@ h3 {
 }
 
 .thumbs {
-	margin-top:15vw;
+	margin:8vw 0 0;
 }
 
 /* THUMB_LABEL */
@@ -255,9 +260,9 @@ h4 {
 	text-transform:uppercase;
 	padding:0;
 	margin:0;
-	height:30vw;
+	height:40vw;
 	transition: .2s ease-in-out;
-	line-height:30vw;
+	line-height:40vw;
 }
 
 h4:hover{
