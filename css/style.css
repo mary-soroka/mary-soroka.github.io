@@ -42,8 +42,6 @@
     font-display: swap;
 }
 
-
-
 .desktop-only {display:initial;}
 .mobile-only {display:none;}
 

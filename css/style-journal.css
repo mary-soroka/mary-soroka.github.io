@@ -1,10 +1,45 @@
-@import url('https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&display=swap');
 @font-face {
-    font-family: 'mordovaregular';
-    src: url('mordova-webfont.woff2') format('woff2'),
-         url('mordova-webfont.woff') format('woff');
+    font-family: 'Volte';
+    src: url('Volte-Light.woff2') format('woff2'),
+        url('Volte-Light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Volte';
+    src: url('Volte-Bold.woff2') format('woff2'),
+        url('Volte-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Volte';
+    src: url('Volte-Medium.woff2') format('woff2'),
+        url('Volte-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Volte';
+    src: url('Volte-Semibold.woff2') format('woff2'),
+        url('Volte-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Volte';
+    src: url('Volte.woff2') format('woff2'),
+        url('Volte.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 * {
@@ -19,9 +54,8 @@ html, body {
 
 body {
   /*background-color:rgba(252,223,205,1);*/
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Volte', sans-serif;
   overflow-x:hidden;
-  font-weight:normal;
   letter-spacing:.02pt;
   scroll-behavior: smooth;
 }
@@ -30,7 +64,7 @@ a {
   text-decoration:none;
   color:rgba(0,0,0,1);
   transition: .1s ease-in-out;
-  font-weight:500;
+  font-weight:600;
 }
 
 a:hover {
@@ -43,7 +77,7 @@ a:hover {
 .name {
   width:100%;
   position:absolute;
-  top:4vw;
+  top:12vw;
   text-align:center;
   padding:0;
   margin:0;
@@ -54,10 +88,10 @@ a:hover {
 /* NAME */
 
 h1 {
-  font-family:'mordovaregular', 'DM Sans', sans-serif;
+  font-family:'Volte', sans-serif;
   font-size: 5.8vw;
-  font-weight:400;
-  letter-spacing:0;
+  font-weight:700;
+  letter-spacing:-1.5;
   text-transform:lowercase;
   line-height:1.2;
   margin:0;
@@ -66,26 +100,26 @@ h1 {
 }
 
 h2 {
-  letter-spacing:.3pt;
-  font-weight:400;
-  font-size:1em;
+  letter-spacing:.1pt;
+  font-weight:600;
+  font-size:1.3em;
   padding:0;
   margin:0;
 }
 
 h3 {
   letter-spacing:.3pt;
-  font-weight:400;
+  font-weight:500;
   font-size:.8em;
-  padding:0;
+  padding:3px;
   margin:0;
   line-height:1.5;
 }
 
 h5 {
   letter-spacing:.3pt;
-  font-weight:400;
-  font-size:.1em;
+  font-weight:500;
+  font-size:.2em;
   opacity:.4;
   padding:0 0 1vw;
   margin:0;
@@ -93,7 +127,7 @@ h5 {
 
 h4 {
   letter-spacing:.3pt;
-  font-weight:400;
+  font-weight:500;
   font-size:.1em;
   z-index:99999999;
   padding:0 0 .5vw;
@@ -102,7 +136,7 @@ h4 {
 
 h6 {
   font-size:2vw;
-  font-weight:400;
+  font-weight:500;
   letter-spacing:0;
   line-height:1.5;
   margin:0;
@@ -111,13 +145,13 @@ h6 {
 
 .quick {
   width:100%;
-  padding:17vw 17vw 0;
+  padding:24vw 13.5vw 0 17vw;
   margin:0 auto 0;
 }
 
 .quick a {
   border:0;
-  font-weight:400;
+  font-weight:500;
 }
 
 .quick a:hover {
@@ -141,38 +175,58 @@ h6 {
   border-bottom:0;
 }
 
-.nav_left, .nav_right {
+.nav_top_left, .nav_top_right, .nav_bottom_left, .nav_bottom_right {
   position:fixed;
-  top:50%;
-  height:0;
-  width:200px;
-  padding:5px;
   margin:0;
   z-index:99999999;
-  opacity:1;
   transition: .3s ease-in-out;
-  transform: rotate(-90deg);
+  font-size:18px;
+  font-weight:600;
+  padding:5px;
+}
+
+.nav_top_left a, .nav_top_right a, .nav_bottom_left a, .nav_bottom_right a {
+  transition: .2s ease-in-out;
+  padding-bottom:2px;
+  border-bottom:3px solid transparent;
+}
+
+.nav_top_left {
+  top:4vw;
+  left:4vw;
+  text-align:left;
+}
+
+.nav_bottom_left {
+  bottom:4vw;
+  left:4vw;
+  text-align:left;
+}
+
+.nav_bottom_right {
+  bottom:10vw;
+  width:100%;
   text-align:center;
-  font-size:1em;
 }
 
-.nav_left {
-  left:-60px;
+.nav_top_right {
+  top:4vw;
+  right:4vw;
+  text-align:right;
 }
 
-.nav_right {
-  right:-45px;
+.nav_top_right a {
+  margin-left:2.5vw;
 }
 
-.nav_left a:hover, .nav_right a:hover {
-  color:grey;
-  border-bottom:0;
+.nav_bottom_left a:hover, .nav_top_left a:hover, .nav_top_right a:hover, .nav_bottom_right a:hover {
+  border-bottom:3px solid;
 }
 
 .backtotop {
   position:fixed;
-  right:3vw;
-  bottom:3vw;
+  right:4vw;
+  bottom:4vw;
   padding:5px;
   z-index:99999999;
 }
@@ -184,8 +238,8 @@ hr {
 
 .date {
   letter-spacing:.3pt;
-  font-weight:400;
-  font-size:.5em;
+  font-weight:500;
+  font-size:.6em;
   opacity:.4;
   padding-left:2px;
   line-height:4;
@@ -203,11 +257,6 @@ hr {
   height:37vw;
   background-size:cover;
   background-position:center;
-}
-
-.cats {
-  width:9.4vw;
-  margin:.3vw;
 }
 
 .label {
@@ -330,9 +379,8 @@ td.title {
 /* NAME */
 
 h1 {
-  font-family:'mordovaregular', 'DM Sans', sans-serif;
   font-size: 12vw;
-  font-weight:400;
+  font-weight:500;
   letter-spacing:0;
   text-transform:lowercase;
   line-height:1.2;
@@ -342,7 +390,7 @@ h1 {
 }
 
 h4 {
-	font-size:12px;
+	font-size:14px;
 }
 
 .backtotop {
