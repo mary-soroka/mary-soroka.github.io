@@ -87,7 +87,10 @@ $(document).ready(function(){
 $(window).scroll(function(){
   $(".name").css("opacity", 1 - $(window).scrollTop() / 500);
   $(".video").css("opacity", 1 - $(window).scrollTop() / 500);
-  $(".arrow").css("opacity", 1 - $(window).scrollTop() / 500);
+  $(".nav_top_left").css("opacity", 1 - $(window).scrollTop() / 200);
+  $(".nav_top_right").css("opacity", 1 - $(window).scrollTop() / 200);
+  $(".nav_bottom_left").css("opacity", 1 - $(window).scrollTop() / 200);
+  $(".nav_bottom_right").css("opacity", 1 - $(window).scrollTop() / 500);
 });
 
 /* SHOW_ELEMENTS_ON_SCROLL_DOWN */
