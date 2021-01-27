@@ -9,40 +9,35 @@
 
 @font-face {
 	font-family: 'mordovaregular';
-	src: url('mordova-webfont.woff2') format('woff2'),
-	url('mordova-webfont.woff') format('woff');
+	src: url('mordova-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
     font-family: 'voltebold';
-    src: url('volte_bold-webfont.woff2') format('woff2'),
-         url('volte_bold-webfont.woff') format('woff');
+    src: url('volte_bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'voltelight';
-    src: url('volte_light-webfont.woff2') format('woff2'),
-         url('volte_light-webfont.woff') format('woff');
+    src: url('volte_light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'voltemedium';
-    src: url('volte_medium-webfont.woff2') format('woff2'),
-         url('volte_medium-webfont.woff') format('woff');
+    src: url('volte_medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'voltesemibold';
-    src: url('volte_semibold-webfont.woff2') format('woff2'),
-         url('volte_semibold-webfont.woff') format('woff');
+    src: url('volte_semibold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
