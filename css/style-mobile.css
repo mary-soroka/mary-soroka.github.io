@@ -13,6 +13,12 @@
 		top:40%;
 	}
 
+	.name img {
+		width:60vw;
+	}
+
+	.nav_top_left, .nav_top_right {font-size:14px;}
+
 	.nav {
 		position:fixed;
 		top:2vw;
