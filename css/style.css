@@ -64,7 +64,7 @@ body {
     font-style: normal;
     letter-spacing:1;
 	background-color:black;
-	color:rgba(252,223,205,1);
+	color:rgba(255,255,255,1);
 	transition: background-color 1s ease;
 	overflow-x:hidden;
 	scroll-behavior: smooth;
@@ -72,17 +72,10 @@ body {
 
 a {
 	text-decoration:none;
-	color:rgba(252,223,205,1);
+	color:rgba(255,255,255,.5);
 }
 
 /* NAV_LINKS */
-
-.name h2, .thumb h2 {
-	font-size:9px;
-	text-transform:uppercase;
-	padding:1.8vw;
-	margin:0;
-}
 
 .nav-name {
 	position:fixed;
@@ -106,17 +99,18 @@ a {
   border-bottom:0;
 }
 
-.nav_top_left, .nav_top_right, .nav_bottom_left, .nav_bottom_right {
+.nav_top_left, .nav_top_right, .nav_bottom_left, .nav_scroll {
   position:fixed;
   margin:0;
   z-index:99999999;
   transition: .3s ease-in-out;
-  font-size:18px;
-  font-weight:600;
+  font-size:12px;
+  font-weight:500;
+  letter-spacing: .5px;
   padding:5px;
 }
 
-.nav_top_left a, .nav_top_right a, .nav_bottom_left a, .nav_bottom_right a {
+.nav_top_left a, .nav_top_right a, .nav_bottom_left a, .nav_scroll a {
   transition: .2s ease-in-out;
   padding-bottom:2px;
   border-bottom:3px solid transparent;
@@ -127,17 +121,17 @@ a {
 	left:4vw;
 	text-align:left;
 }
-
 .nav_bottom_left {
 	bottom:4vw;
 	left:4vw;
 	text-align:left;
 }
 
-.nav_bottom_right {
-	bottom:10vw;
+.nav_scroll {
 	width:100%;
-	text-align:center;
+	bottom:4vw;
+	right:4vw;
+	text-align:right;
 }
 
 .nav_top_right {
@@ -147,12 +141,23 @@ a {
 }
 
 .nav_top_right a {
-	margin-left:2.5vw;
+	margin-left:1vw;
 }
 
-.nav_bottom_left a:hover, .nav_top_left a:hover, .nav_top_right a:hover, .nav_bottom_right a:hover {
+.nav_bottom_left a:hover, .nav_top_left a:hover, .nav_top_right a:hover, .nav_scroll a:hover {
   border-bottom:3px solid;
 }
+
+.showcase {
+	height:50vw;
+	background-image: url('images/dex.gif');
+	width: 100%;
+	z-index: 999999999999;
+	border: 1px solid red;
+	padding: 0;
+	margin: 0;
+}
+
 
 /* NAME_CONTAINER */
 
@@ -169,6 +174,7 @@ a {
 	z-index:9999999;
 }
 
+
 /* NAME */
 
 h1 {
@@ -179,7 +185,47 @@ h1 {
 	text-transform:lowercase;
 }
 
-/* AWARDS_CONTIANER */
+
+/* ABOUT_CONTAINER */
+
+.about {
+	width:100%;
+	z-index:1;
+	margin:0;
+	padding:0 8.4vw 0;
+}
+
+/* ABOUT_COLUMNS */
+
+.about_column {
+	-ms-flex: 28%; /* IE10 */
+	flex: 28%;
+	max-width: 28%;
+	border:0;
+	margin:0 auto 3vw;
+	padding: 0;
+	text-align:left;
+	background-size:2.7vw;
+	background-repeat:no-repeat;
+	background-position: 100% 30%;
+	position:relative;
+	height:6vw;
+}
+
+.about p {
+	font-weight:600;
+	font-size:1.25vw;
+	line-height: 1.25;
+}
+
+.about h3 {
+	letter-spacing: 1px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+
+/* AWARDS_CONTAINER */
 
 .awards {
 	width:100%;
@@ -228,6 +274,7 @@ h3 {
 	font-weight:500;
 	font-size:10px;
 }
+
 
 /* BEHANCE */
 

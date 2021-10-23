@@ -90,7 +90,7 @@ $(window).scroll(function(){
   $(".nav_top_left").css("opacity", 1 - $(window).scrollTop() / 200);
   $(".nav_top_right").css("opacity", 1 - $(window).scrollTop() / 200);
   $(".nav_bottom_left").css("opacity", 1 - $(window).scrollTop() / 200);
-  $(".nav_bottom_right").css("opacity", 1 - $(window).scrollTop() / 500);
+  $(".nav_scroll").css("opacity", 1 - $(window).scrollTop() / 500);
 });
 
 /* SHOW_ELEMENTS_ON_SCROLL_DOWN */
