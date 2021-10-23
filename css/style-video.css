@@ -4,69 +4,20 @@
   box-sizing: border-box;
 }
 
-.video {
-  z-index:-99999;
-  top:-100;
-  padding:0;
-  margin:0;
-  max-width:100vw;
-  height: 100vh;
-  pointer-events: none;
-}
-
-.vimeo-wrapper {
+.video_new{
    position: fixed;
    top: 0;
-   left: 0;
+
    width: 100%;
-   height: 100%;
+   height: 100vh;
+   margin: 0 0 100vh;
    z-index: -1;
    pointer-events: none;
-   overflow: hidden;
-  background-color: transparent;
-  margin:0 auto;
-  text-align:center;
-}
-.vimeo-wrapper iframe {
-   width: 200vw;
-   height: 150vh;
-   position: absolute;
-   top: 50%;
-   transform: translate(-50%, -50%);
-}
+         background-image: url('http://mary-soroka.github.io/images/dex.gif');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-@media screen and (max-width: 780px) {
-.vimeo-wrapper {
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   z-index: -1;
-   pointer-events: none;
-   overflow: hidden;
-  background-color: black;
-  margin:0 auto;
-  text-align:center;
-}
-.vimeo-wrapper iframe {
-   width: 400vw;
-   height: 300vh;
-   position: absolute;
-   top: 50%;
-   transform: translate(-50%, -50%);
-}
-
-}
-
-@media screen and (max-height: 380px) {
-
-.vimeo-wrapper iframe {
-   width: 400vw;
-   height: 500vh;
-   position: absolute;
-   top: 50%;
-   transform: translate(-50%, -50%);
-}
 
 }

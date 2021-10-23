@@ -54,7 +54,7 @@ html, body {
 body {
     font-family: 'Volte', sans-serif;
     font-weight: 600;
-	background-color:black;
+	background-color:#000000;
 	color:#fae5d4;
 	transition: background-color 1s ease;
 	overflow-x:hidden;
@@ -80,6 +80,7 @@ button {
 	padding: 1vw;
 	margin: 0;
 }
+
 
 a:hover, button:hover {
 	cursor: pointer;
@@ -109,6 +110,7 @@ a:hover, button:hover {
 	bottom:4vw;
 	left:4vw;
 	text-align:left;
+	line-height: 2;
 }
 
 .nav_bottom_left a:hover, .nav_top_left a:hover, .nav_top_right a:hover, .nav_scroll a:hover {
@@ -116,22 +118,47 @@ a:hover, button:hover {
 }
 
 .showcase {
-	height:50vw;
-	background-image: url('images/dex.gif');
+	height:30vw;
+	background-image: url('http://mary-soroka.github.io/images/gifs/vm1.gif');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 	width: 100%;
-	z-index: 999999999999;
-	border: 1px solid red;
-	padding: 0;
-	margin: 0;
+	margin:0 0 8.4vw;
+padding: 0;
+}
+
+
+
+
+
+
+
+.video_new{
+   position: fixed;
+   top: 0;
+   width: 100%;
+   height: 100vh;
+   margin: 0 0 100vh;
+   z-index: -1;
+   pointer-events: none;
+   background-image: url('http://mary-soroka.github.io/images/gifs/dex.gif');
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 /* ABOUT_CONTAINER */
 
 .about {
 	width:100%;
-	z-index:1;
-	margin:0 0 20vw;
-	padding:0 8.4vw 0;
+	z-index:9999;
+	margin:100vh 0 0;
+	padding:0 1.75vw 10vw;
+	background-color: transparent;
+	height: 40vh;
 }
 
 /* ABOUT_COLUMNS */
@@ -153,12 +180,13 @@ a:hover, button:hover {
 
 .about p {
 	font-weight:600;
-	font-size:1.25vw;
+	font-size:18px;
 	line-height: 1.4;
 }
 
-.about h3 {
+h3 {
 	letter-spacing: 1px;
+	font-size: 10px;
 	font-weight: 500;
 	text-transform: uppercase;
 }
@@ -206,15 +234,6 @@ h2 {
 	font-weight:600;
 	font-size:1.25vw;
 }
-
-/* AWARD_COUNT */
-
-h3 {
-	font-weight:500;
-	font-size:10px;
-}
-
-
 
 /* SCROLLBAR_WIDTH */
 ::-webkit-scrollbar {
