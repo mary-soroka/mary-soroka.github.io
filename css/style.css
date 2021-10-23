@@ -191,7 +191,7 @@ h1 {
 .about {
 	width:100%;
 	z-index:1;
-	margin:0;
+	margin:0 0 20vw;
 	padding:0 8.4vw 0;
 }
 
