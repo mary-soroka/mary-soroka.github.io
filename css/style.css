@@ -42,6 +42,44 @@
     font-display: swap;
 }
 
+
+
+@font-face {
+    font-family: 'cosi_azureblack';
+    src: url('Cosicosiazure-black-webfont.woff2') format('woff2'),
+         url('cosiazure-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'cosi_azureblack_stencil';
+    src: url('cosiazure-blackstencil-webfont.woff2') format('woff2'),
+         url('cosiazure-blackstencil-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'cosi_azurebold';
+    src: url('cosiazure-bold-webfont.woff2') format('woff2'),
+         url('cosiazure-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'cosi_azureultra';
+    src: url('cosiazure-ultra-webfont.woff2') format('woff2'),
+         url('cosiazure-ultra-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 .desktop-only {display:initial;}
 .mobile-only {display:none;}
 
@@ -98,6 +136,8 @@ a:hover, button:hover {
 	top:4vw;
 	left:4vw;
 	text-align:left;
+	font-family: 'cosi_azurebold', sans-serif;
+	font-size: 2vw;
 }
 
 .nav_top_right {
@@ -124,18 +164,12 @@ a:hover, button:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-	width: 100%;
-	margin:0 0 8.4vw;
-padding: 0;
+  width: 100%;
+  margin:0 0 8.4vw;
+  padding: 0;
 }
 
-
-
-
-
-
-
-.video_new{
+.video {
    position: fixed;
    top: 0;
    width: 100%;
@@ -143,7 +177,7 @@ padding: 0;
    margin: 0 0 100vh;
    z-index: -1;
    pointer-events: none;
-   background-image: url('http://mary-soroka.github.io/images/gifs/dex.gif');
+   background-image: url('http://mary-soroka.github.io/images/dex.gif');
    background-attachment: fixed;
    background-position: center;
    background-repeat: no-repeat;

@@ -2,7 +2,7 @@
 
 $(window).scroll(function(){
   $(".name").css("opacity", 1 - $(window).scrollTop() / 500);
-  $(".video_new").css("opacity", 1 - $(window).scrollTop() / 400);
+  $(".video").css("opacity", 1 - $(window).scrollTop() / 400);
   $(".nav_top_left").css("opacity", 1 - $(window).scrollTop() / 200);
   $(".nav_top_right").css("opacity", 1 - $(window).scrollTop() / 200);
   $(".nav_bottom_left").css("opacity", 1 - $(window).scrollTop() / 50);
