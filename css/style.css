@@ -51,7 +51,7 @@ html, body {
 	padding:0;
 }
 
-.thumb, .thumb:hover, a:hover {
+a:hover {
 	cursor:url('http://mary-soroka.github.io/images/cursor/hover.svg') 0 0, auto;
 }
 
@@ -60,7 +60,6 @@ html,  body, video, video:hover, iframe, iframe:hover {
 
 body {
     font-family: 'Volte', sans-serif;
-    font-weight: bold;
     font-style: normal;
     letter-spacing:1;
 	background-color:black;
@@ -68,36 +67,27 @@ body {
 	transition: background-color 1s ease;
 	overflow-x:hidden;
 	scroll-behavior: smooth;
+	line-height: 1;
 }
 
 a {
 	text-decoration:none;
 	color:rgba(255,255,255,.5);
+	border: 1px solid red;
+}
+
+.nav_top_right ul {
+	list-style: none;
+	list-style-type: none;
+	display: inline;
+}
+
+.nav_top_right li {
+	display: inline;
+	margin-left: 1vw;
 }
 
 /* NAV_LINKS */
-
-.nav-name {
-	position:fixed;
-	top:0;
-	left:0;
-	height:20vw;
-	width:100%;
-	padding:0;
-	margin:0;
-	z-index:999999;
-	display: none;
-}
-
-.nav-name h1 {
-	padding:2vw 0 0 4vw;
-	margin:0;
-	font-size:4vw;
-}
-
-.name a:hover {
-  border-bottom:0;
-}
 
 .nav_top_left, .nav_top_right, .nav_bottom_left, .nav_scroll {
   position:fixed;
@@ -107,13 +97,11 @@ a {
   font-size:12px;
   font-weight:500;
   letter-spacing: .5px;
-  padding:5px;
+  padding:0;
 }
 
 .nav_top_left a, .nav_top_right a, .nav_bottom_left a, .nav_scroll a {
   transition: .2s ease-in-out;
-  padding-bottom:2px;
-  border-bottom:3px solid transparent;
 }
 
 .nav_top_left {
@@ -132,6 +120,7 @@ a {
 	bottom:4vw;
 	right:4vw;
 	text-align:right;
+	font-size: 18px;
 }
 
 .nav_top_right {
@@ -140,12 +129,8 @@ a {
 	text-align:right;
 }
 
-.nav_top_right a {
-	margin-left:1vw;
-}
-
 .nav_bottom_left a:hover, .nav_top_left a:hover, .nav_top_right a:hover, .nav_scroll a:hover {
-  border-bottom:3px solid;
+  color: rgba(255,255,255,.5);
 }
 
 .showcase {
@@ -157,34 +142,6 @@ a {
 	padding: 0;
 	margin: 0;
 }
-
-
-/* NAME_CONTAINER */
-
-.name {
-	color:rgba(252,223,205,1);
-	width:100%;
-	position:absolute;
-	top:25vw;
-	height:auto;
-	transition: .2s ease-in-out;
-	text-align:center;
-	padding:0;
-	margin:0 auto;
-	z-index:9999999;
-}
-
-
-/* NAME */
-
-h1 {
-	font-size: 12vw;
-	font-weight:700;
-	margin:0;
-	padding:0;
-	text-transform:lowercase;
-}
-
 
 /* ABOUT_CONTAINER */
 
