@@ -74,6 +74,8 @@ a:hover, button:hover {
 	bottom:4vw;
 	right:4vw;
 	text-align:right;
+	position: fixed;
+	z-index: 99999999999999;
 }
 
 .nav_bottom_left a:hover, .nav_top_left a:hover, .nav_top_right a:hover, .nav_scroll a:hover {

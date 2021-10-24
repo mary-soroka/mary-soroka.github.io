@@ -14,8 +14,8 @@ $(window).scroll(function(){
 $(document).scroll(function() {
   var y = $(this).scrollTop();
   if (y > 100) {
-    $('.nav_on_scroll').fadeIn(500);
+    $('.back').fadeIn(500);
   } else {
-    $('.nav_on_scroll').fadeOut();
+    $('.back').fadeOut();
   }
 });
