@@ -11,7 +11,7 @@ body {
     font-family: 'Volte', sans-serif;
 	font-weight: 500;
 	background-color:#000000;
-	color:#fae5d4;
+	color:#fae5d4; 
 	transition: background-color 1s ease;
 	overflow-x:hidden;
 	scroll-behavior: smooth;
@@ -196,6 +196,10 @@ height: 60vh;
 	text-align: center;
 }
 
+.about a {
+	color: white;
+}
+
 .about2 {
 	z-index:999999;
 	margin:0;
@@ -307,9 +311,10 @@ h3 {
 
 .awards {
 	width:100%;
-z-index: 999999;
+	z-index: 999999;
 	margin:0;
 	padding:10vw 0vw 0;
+	height: 100vh;
 }
 
 /* AWARDS_ROW */
@@ -356,4 +361,219 @@ z-index: 999999;
 /* SCROLLBAR_HANDLE */
 ::-webkit-scrollbar-thumb {
 	background: rgba(252,223,205,.5); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 720px) {
+
+	@import url('https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&display=swap');
+
+	.mobile-only {display:initial;}
+	.desktop-only {display:none;}
+
+
+a {
+	transition: none;
+}
+
+button {
+    font-family: 'Volte', sans-serif;
+    font-weight: 500;
+    height: 100%;
+	background-color: transparent;
+	border: 0;
+	color: #fae5d4;
+	opacity: .5;
+	transition: none;
+	padding: 1vw;
+	margin: 0;
+}
+
+.back {
+	dislpay: none;
+}
+
+/* NAV_LINKS */
+
+.nav_top_left, .nav_top_right, .nav_bottom_left, .nav_bottom_right {
+  position:fixed;
+  z-index:99999999;
+	padding: 0;
+	margin: 0;
+}
+
+.nav_top_left {
+	top:4vw;
+	left:0;
+	text-align:left;
+	font-size: 6vw;
+	width: 100%;
+	text-align: center;
+}
+
+.nav_top_right {
+	top:12vw;
+	right:0;
+	width: 100%;
+	text-align: center;
+	font-size: 3.5vw;
+}
+
+.nav_bottom_right {
+	bottom:4vw;
+	right:4vw;
+	text-align:right;
+	font-size: 3vw;
+	z-index: 9999;
+}
+
+/* ABOUT_CONTAINER */
+
+.about {
+	padding:0 14vw 0;
+	height: 70vh;
+	font-size:4vw;
+}
+
+.about2 {
+	padding:0 14vw 0;
+	height: 60vh;
+	font-size:4vw;
+}
+
+.about3 {
+	padding:0 14vw 0;
+	height: 50vh;
+	font-size:4vw;
+}
+
+h2 {
+	font-weight:500;
+	font-size:1.2vw;
+	padding: 0;
+	margin: 0;
+	padding-bottom: .5vw;
+}
+
+h3 {
+	font-size: .9vw;
+	font-weight: 500;
+	letter-spacing: 1px;
+	padding: 0;
+	margin: 0;
+}
+
+.credits {
+	padding: 28vw 0 0;
+	position: absolute;
+	left: 4vw;
+	text-align: left;
+	z-index: 999999999999;
+	font-size: .8vw;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+
+.credits_category {
+	width: 9vw;
+}
+
+/* AWARDS_CONTAINER */
+
+.awards {
+	width:100%;
+z-index: 999999;
+	margin:0;
+	padding:10vw 0vw 0;
+}
+
+/* AWARDS_ROW */
+
+.row {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+	z-index: 999999;
+}
+
+/* AWARD_COLUMNS */
+
+.column {
+	-ms-flex: 25%; /* IE10 */
+	flex: 25%;
+	max-width: 25%;
+	border-bottom:.1px solid;
+	margin:0 4vw 3vw;
+	padding: 0;
+	text-align:left;
+	background-size:2.7vw;
+	background-repeat:no-repeat;
+	background-position: 100% 30%;
+	position:relative;
+	height:6vw;
+	z-index: 999999;
+}
+
+
+
+
+
+
+
+
+
+
+	/* SCROLLBAR_WIDTH */
+	::-webkit-scrollbar {
+		width: 3px;
+		height: 3px;
+	}
+
+	/* SCROLLBAR_TRACK */
+	::-webkit-scrollbar-track {
+		background: transparent;
+	}
+
+	/* SCROLLBAR_HANDLE */
+	::-webkit-scrollbar-thumb {
+		background: rgba(252,223,205,.3); 
+	}
+
 }
