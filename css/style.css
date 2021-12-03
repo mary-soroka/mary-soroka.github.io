@@ -568,20 +568,6 @@ button {
 	margin: 0;
 }
 
-.loading {
-   top: 0;
-   width: 100%;
-   height: 50vh;
-   margin: 0;
-   z-index: -1;
-   background-image: none;
-   background-color: transparent;
-   color: grey;
-   text-align: center;
-   line-height: 0;
-}
-
-
 /* NAV_LINKS */
 
 .nav_top_left, .nav_top_right, .nav_bottom_left, .nav_bottom_right {
@@ -592,36 +578,37 @@ button {
 }
 
 .nav_top_left {
-	top:8vw;
+	top:9vw;
 	left:0;
 	text-align:left;
-	font-size: 24px;
+	font-size: 28px;
 	width: 100%;
 	text-align: center;
 }
 
 .nav_top_right {
-	top:15vw;
+	top:18vw;
 	right:0;
 	width: 100%;
 	text-align: center;
-	font-size: 14px;
+	font-size: 15px;
+	letter-spacing: .5px;
 }
 
 .nav_bottom_right {
 	bottom:4vw;
 	right:4vw;
 	text-align:right;
-	font-size: 10px;
+	font-size: 12px;
 	z-index: 9999;
+	letter-spacing: .5px;
 }
 
 .nav_bottom_left {
 	bottom:4vw;
 	left:4vw;
 	text-align:left;
-	font-size: 10px;
-	letter-spacing: 1px;
+	font-size: 12px;
 	line-height: 1.5;
 }
 
@@ -630,19 +617,8 @@ button {
 .about {
 	padding:0 14vw 0;
 	height: 70vh;
-	font-size:14px;
-}
-
-.about2 {
-	padding:0 14vw 0;
-	height: 60vh;
-	font-size:4vw;
-}
-
-.about3 {
-	padding:0 14vw 0;
-	height: 50vh;
-	font-size:4vw;
+	font-size:22px;
+	letter-spacing: .5px;
 }
 
 .credits {
@@ -652,8 +628,8 @@ button {
 	text-align: left;
 	z-index: 999999999999;
 	font-size: .8vw;
-	letter-spacing: 1px;
 	line-height: 1.5;
+	letter-spacing: .5px;
 }
 
 .credits_category {
@@ -664,9 +640,9 @@ button {
 
 .awards {
 	width:100%;
-z-index: 999999;
+	z-index: 999999;
 	margin:0;
-	padding:10vw 0vw 0;
+	padding:0vw 0vw 0;
 }
 
 /* AWARDS_ROW */
@@ -691,25 +667,24 @@ z-index: 999999;
 	margin:0 4vw 3vw;
 	padding: 0;
 	text-align:left;
-	background-size:6vw;
+	background-size:10.7vw;
 	background-repeat:no-repeat;
 	background-position: 100% 0%;
 	position:relative;
-	height:9vw;
+	height:14vw;
 	z-index: 999999;
 }
 
 h2 {
-	font-size:14px;
+	font-size:20px;
 	font-weight:500;
 	letter-spacing: .5px;
-	padding: 0;
+	padding: 1.5vw 0 1.5vw;
 	margin: 0;
-	padding-bottom: 1.5vw;
 }
 
 h3 {
-	font-size: 10px;
+	font-size: 14px;
 	font-weight: 500;
 	letter-spacing: .5px;
 	padding: 0;
