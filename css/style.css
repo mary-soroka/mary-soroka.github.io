@@ -578,7 +578,7 @@ button {
 }
 
 .nav_top_left {
-	top:9vw;
+	top:12vw;
 	left:0;
 	text-align:left;
 	font-size: 28px;
@@ -587,11 +587,11 @@ button {
 }
 
 .nav_top_right {
-	top:18vw;
+	top:22vw;
 	right:0;
 	width: 100%;
 	text-align: center;
-	font-size: 15px;
+	font-size: 14px;
 	letter-spacing: .5px;
 }
 
@@ -633,7 +633,7 @@ button {
 }
 
 .credits_category {
-	width: 9vw;
+	width: 12vw;
 }
 
 /* AWARDS_CONTAINER */
@@ -676,7 +676,7 @@ button {
 }
 
 h2 {
-	font-size:20px;
+	font-size:18px;
 	font-weight:500;
 	letter-spacing: .5px;
 	padding: 1.5vw 0 1.5vw;
@@ -684,7 +684,7 @@ h2 {
 }
 
 h3 {
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: 500;
 	letter-spacing: .5px;
 	padding: 0;
