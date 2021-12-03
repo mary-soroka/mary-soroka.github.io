@@ -520,8 +520,6 @@ display: none;
 display: none;
 }
 
-
-
 /* ABOUT_CONTAINER */
 
 .about {
@@ -550,11 +548,11 @@ display: none;
 	margin:0 6vw 3vw;
 	padding: 0;
 	text-align:left;
-	background-size:20vw;
+	background-size:19vw;
 	background-repeat:no-repeat;
-	background-position: 100% 30%;
+	background-position: 100% 0%;
 	position:relative;
-	height:28vw;
+	height:22vw;
 }
 
 h2 {
