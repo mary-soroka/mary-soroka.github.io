@@ -478,15 +478,22 @@ h3 {
 }
 
 .mobile_nav button {
+	font-weight: 600;
 	display:block;
 	color: black;
 	background-color: #fae5d4;
-	padding: 3vw 4vw;
+	padding: 2vw 3vw;
 	margin: 0;
 	width: 100%;
 	font-size: 20px;
 	opacity: 1;
 	border-radius: 50px;
+}
+
+button.alt_button {
+	color: #fae5d4;
+	background-color: transparent;
+	border: 3px solid #fae5d4;
 }
 
 .mobile_nav button:hover {
