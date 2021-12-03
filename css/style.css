@@ -635,10 +635,11 @@ button {
 /* ABOUT_CONTAINER */
 
 .about {
-	padding:0 8vw 0;
+	padding:0 6vw 0;
 	height: 70vh;
-	font-size:22px;
+	font-size:24px;
 	letter-spacing: .5px;
+	text-align: left;
 }
 
 .credits {
@@ -662,7 +663,7 @@ button {
 	width:100%;
 	z-index: 999999;
 	margin:0;
-	padding:0vw 0vw 3vw;
+	padding:0vw 0vw 5vw;
 }
 
 /* AWARDS_ROW */
@@ -691,7 +692,7 @@ button {
 	background-repeat:no-repeat;
 	background-position: 100% 0%;
 	position:relative;
-	height:14vw;
+	height:15vw;
 	z-index: 999999;
 }
 
