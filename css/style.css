@@ -463,7 +463,7 @@ h3 {
 
 /* -------------------- PHONE -------------------- */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
 
 .mobile_nav {
 	display:block;
@@ -537,7 +537,7 @@ display: none;
 /* AWARDS_CONTAINER */
 
 .awards {
-	padding:0vw 0vw 10vw;
+	padding:10vw 0vw 10vw;
 }
 
 /* AWARD_COLUMNS */
@@ -550,18 +550,18 @@ display: none;
 	margin:0 6vw 3vw;
 	padding: 0;
 	text-align:left;
-	background-size:10.7vw;
+	background-size:25vw;
 	background-repeat:no-repeat;
 	background-position: 100% 0%;
 	position:relative;
-	height:18vw;
+	height:28vw;
 }
 
 h2 {
 	font-size:16px;
 	font-weight:500;
 	letter-spacing: .5px;
-	padding: 1.5vw 0 1.5vw;
+	padding: 5vw 0 1.5vw;
 	margin: 0;
 }
 
@@ -582,23 +582,20 @@ h3 {
 	border-bottom: 0;
 }
 
+/* SCROLLBAR_WIDTH */
+::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+}
 
+/* SCROLLBAR_TRACK */
+::-webkit-scrollbar-track {
+	background: transparent;
+}
 
-
-	/* SCROLLBAR_WIDTH */
-	::-webkit-scrollbar {
-		width: 0;
-		height: 0;
-	}
-
-	/* SCROLLBAR_TRACK */
-	::-webkit-scrollbar-track {
-		background: transparent;
-	}
-
-	/* SCROLLBAR_HANDLE */
-	::-webkit-scrollbar-thumb {
-		background: transparent; 
-	}
+/* SCROLLBAR_HANDLE */
+::-webkit-scrollbar-thumb {
+	background: transparent; 
+}
 
 }
