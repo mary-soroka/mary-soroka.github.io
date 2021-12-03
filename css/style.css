@@ -518,7 +518,7 @@ h3 {
    background-attachment: fixed;
    background-position: center;
    background-repeat: no-repeat;
-   background-size: 100%;
+	background-size: auto 100vh;
    background-color: transparent;
 }
 
@@ -536,6 +536,10 @@ h3 {
 
 .awards {
 	padding:0vw 0vw 10vw;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto 100vh;
 }
 
 /* AWARD_COLUMNS */
