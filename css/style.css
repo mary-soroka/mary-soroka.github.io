@@ -1,3 +1,4 @@
+.mobile_only {display:none;}
 .mobile_nav {display:none;}
 
 html, body {
@@ -465,6 +466,10 @@ h3 {
 
 @media screen and (max-width: 600px) {
 
+	.mobile_only {
+		display: block;
+	}
+
 .mobile_nav {
 	display:block;
 	padding: 8vw 6vw 0;
@@ -524,12 +529,19 @@ display: none;
 
 .about {
 	margin: 10vw 0 50vw;
-	padding:0 6vw 50vw;
+	padding:0 6vw 0;
 	height: 0;
 	font-size:24px;
 	letter-spacing: .5px;
 	text-align: left;
 	z-index: 999999999;
+}
+
+.showcase {
+	height: 50vh;
+	padding: 0;
+	margin: 6vw;
+	border-radius: 20px;
 }
 
 /* AWARDS_CONTAINER */
