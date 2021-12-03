@@ -532,40 +532,10 @@ h3 {
 	text-align: left;
 }
 
-.credits {
-	padding: 28vw 0 0;
-	position: absolute;
-	left: 4vw;
-	text-align: left;
-	z-index: 999999999999;
-	font-size: .8vw;
-	line-height: 1.5;
-	letter-spacing: .5px;
-}
-
-.credits_category {
-	width: 16vw;
-}
-
 /* AWARDS_CONTAINER */
 
 .awards {
-	width:100%;
-	z-index: 999999;
-	margin:0;
-	padding:0vw 0vw 5vw;
-}
-
-/* AWARDS_ROW */
-
-.row {
-	display: -ms-flexbox; /* IE10 */
-	display: flex;
-	-ms-flex-wrap: wrap; /* IE10 */
-	flex-wrap: wrap;
-	padding: 0;
-	margin: 0;
-	z-index: 999999;
+	padding:0vw 0vw 10vw;
 }
 
 /* AWARD_COLUMNS */
@@ -582,8 +552,7 @@ h3 {
 	background-repeat:no-repeat;
 	background-position: 100% 0%;
 	position:relative;
-	height:15vw;
-	z-index: 999999;
+	height:18vw;
 }
 
 h2 {
