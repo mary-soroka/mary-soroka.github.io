@@ -464,7 +464,7 @@ h3 {
 
 /* -------------------- PHONE -------------------- */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
 
 .mobile_only {
 	display: block;
