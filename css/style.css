@@ -466,9 +466,9 @@ h3 {
 
 @media screen and (max-width: 600px) {
 
-	.mobile_only {
-		display: block;
-	}
+.mobile_only {
+	display: block;
+}
 
 .mobile_nav {
 	display:block;
@@ -496,11 +496,11 @@ h3 {
 /* NAV_LINKS */
 
 .nav_top_left {
-display: none;
+	display: none;
 }
 
 .nav_top_right {
-display: none;
+	display: none;
 }
 
 .nav_bottom_right {
@@ -522,7 +522,7 @@ display: none;
 /* VIDEO */
 
 .video {
-display: none;
+	display: none;
 }
 
 /* ABOUT_CONTAINER */
@@ -538,7 +538,7 @@ display: none;
 }
 
 .showcase {
-	height: 50vh;
+	height: 30vh;
 	padding: 0;
 	margin: 6vw;
 	border-radius: 20px;
