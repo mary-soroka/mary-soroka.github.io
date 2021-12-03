@@ -622,12 +622,13 @@ button {
    margin: 0;
    padding: 0 0 50vh;
    z-index: 0;
+   border: 1px solid red;
    pointer-events: none;
    background-image: url('http://mary-soroka.github.io/images/dex.gif');
    background-attachment: fixed;
    background-position: center;
    background-repeat: no-repeat;
-   background-size: cover;
+   background-size: 200%;
    background-color: transparent;
 }
 
