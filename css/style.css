@@ -338,46 +338,15 @@ h3 {
 
 
 
-
+/* -------------------- MEDIUM_WIDTH -------------------- */
 
 @media screen and (max-width: 800px) {
 
-	@import url('https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&display=swap');
-
-	.mobile-only {display:initial;}
-	.desktop-only {display:none;}
-
-
-a {
-	transition: none;
-}
-
-button {
-    font-family: 'Volte', sans-serif;
-    font-weight: 500;
-    height: 100%;
-	background-color: transparent;
-	border: 0;
-	color: #fae5d4;
-	opacity: .5;
-	transition: none;
-	padding: 1vw;
-	margin: 0;
-}
-
 /* NAV_LINKS */
-
-.nav_top_left, .nav_top_right, .nav_bottom_left, .nav_bottom_right {
-  position:fixed;
-  z-index:99999999;
-	padding: 0;
-	margin: 0;
-}
 
 .nav_top_left {
 	top:6vw;
 	left:0;
-	text-align:left;
 	font-size: 5vw;
 	width: 100%;
 	text-align: center;
@@ -392,17 +361,10 @@ button {
 }
 
 .nav_bottom_right {
-	bottom:4vw;
-	right:4vw;
-	text-align:right;
 	font-size: 2.5vw;
-	z-index: 9999;
 }
 
 .nav_bottom_left {
-	bottom:4vw;
-	left:4vw;
-	text-align:left;
 	font-size: 1.5vw;
 	letter-spacing: 1px;
 	line-height: 1.5;
@@ -411,7 +373,6 @@ button {
 /* ABOUT_CONTAINER */
 
 .about {
-	padding:0 14vw 0;
 	height: 70vh;
 	font-size:3.5vw;
 }
@@ -420,27 +381,6 @@ button {
 
 .credits_category {
 	width: 8vw;
-}
-
-/* AWARDS_CONTAINER */
-
-.awards {
-	width:100%;
-z-index: 999999;
-	margin:0;
-	padding:10vw 0vw 0;
-}
-
-/* AWARDS_ROW */
-
-.row {
-	display: -ms-flexbox; /* IE10 */
-	display: flex;
-	-ms-flex-wrap: wrap; /* IE10 */
-	flex-wrap: wrap;
-	padding: 0;
-	margin: 0;
-	z-index: 999999;
 }
 
 /* AWARD_COLUMNS */
@@ -487,25 +427,6 @@ h3 {
 	border-bottom: 0;
 }
 
-
-
-
-	/* SCROLLBAR_WIDTH */
-	::-webkit-scrollbar {
-		width: 3px;
-		height: 3px;
-	}
-
-	/* SCROLLBAR_TRACK */
-	::-webkit-scrollbar-track {
-		background: transparent;
-	}
-
-	/* SCROLLBAR_HANDLE */
-	::-webkit-scrollbar-thumb {
-		background: rgba(252,223,205,.3); 
-	}
-
 }
 
 
@@ -541,41 +462,11 @@ h3 {
 
 
 
-
+/* -------------------- PHONE -------------------- */
 
 @media screen and (max-width: 575px) {
 
-	@import url('https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&display=swap');
-
-	.mobile-only {display:initial;}
-	.desktop-only {display:none;}
-
-
-a {
-	transition: none;
-}
-
-button {
-    font-family: 'Volte', sans-serif;
-    font-weight: 500;
-    height: 100%;
-	background-color: transparent;
-	border: 0;
-	color: #fae5d4;
-	opacity: .5;
-	transition: none;
-	padding: 1vw;
-	margin: 0;
-}
-
 /* NAV_LINKS */
-
-.nav_top_left, .nav_top_right, .nav_bottom_left, .nav_bottom_right {
-  position:fixed;
-  z-index:99999999;
-	padding: 0;
-	margin: 0;
-}
 
 .nav_top_left {
 	top:12vw;
@@ -596,20 +487,19 @@ button {
 }
 
 .nav_bottom_right {
-	bottom:4vw;
-	right:4vw;
-	text-align:right;
-	font-size: 12px;
-	z-index: 9999;
-	letter-spacing: .5px;
+	font-size: 22px;
+	width: 100%;
+	text-align: center;
+	right: 0;
+	bottom: 12vw;
 }
 
 .nav_bottom_left {
-	bottom:4vw;
-	left:4vw;
-	text-align:left;
-	font-size: 12px;
-	line-height: 1.5;
+	display: none;
+}
+
+.hide {
+	display: none;
 }
 
 /* VIDEO */
@@ -628,7 +518,7 @@ button {
    background-attachment: fixed;
    background-position: center;
    background-repeat: no-repeat;
-   background-size: 200%;
+   background-size: 100%;
    background-color: transparent;
 }
 
@@ -726,8 +616,8 @@ h3 {
 
 	/* SCROLLBAR_WIDTH */
 	::-webkit-scrollbar {
-		width: 3px;
-		height: 3px;
+		width: 0;
+		height: 0;
 	}
 
 	/* SCROLLBAR_TRACK */
@@ -737,7 +627,7 @@ h3 {
 
 	/* SCROLLBAR_HANDLE */
 	::-webkit-scrollbar-thumb {
-		background: rgba(252,223,205,.3); 
+		background: transparent; 
 	}
 
 }
