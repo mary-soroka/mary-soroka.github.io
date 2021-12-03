@@ -463,7 +463,7 @@ h3 {
 
 /* -------------------- PHONE -------------------- */
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 480px) {
 
 .mobile_nav {
 	display:block;
