@@ -186,7 +186,7 @@ button {
   transition: .2s ease-in-out;
   padding: 1vw;
   margin: 0;
-  font-size: 1.45vw;
+  font-size: 1.2vw;
 }
 
 a:hover, button:hover {
@@ -316,29 +316,21 @@ td.title {
   height:2vw;
 }
 
-/* --------------------------- SCROLLBAR */
-
-
-/* width */
+/* SCROLLBAR_WIDTH */
 ::-webkit-scrollbar {
   width: 3px;
+  height: 3px;
 }
 
-/* Track */
+/* SCROLLBAR_TRACK */
 ::-webkit-scrollbar-track {
-  background: rgba(255,255,255,1);
+  background: rgba(0,0,0,.1);
 }
- 
-/* Handle */
+
+/* SCROLLBAR_HANDLE */
 ::-webkit-scrollbar-thumb {
-  background:rgba(0,0,0,1);
+  background: rgba(0,0,0,1); 
 }
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: white; 
-}
-
 
 
 
