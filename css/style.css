@@ -112,10 +112,10 @@ a:hover, button:hover {
 .about {
 	z-index:9999;
 	margin:100vh 0 0;
-	padding:0 14vw 0;
+	padding:0 22vw 0;
 	background-color: transparent;
 	height: 50vh;
-	font-size:3vw;
+	font-size:2.5vw;
 	line-height: 1.4;
 	text-align: center;
 }
@@ -191,6 +191,53 @@ a:hover, button:hover {
 	background-image: url('http://mary-soroka.github.io/images/gifs/vm2.gif');
 }
 
+/* PRESS_CONTAINER */
+
+.press {
+	width: 100%;
+	z-index: 999999;
+	margin: 0;
+	padding: 9vw 0 0;
+}
+
+p {
+	text-align: left;
+	padding: 0 0 2vw 4vw;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 1pt;
+	font-size: 10pt;
+}
+
+/* PRESS_ROW */
+
+.row_press {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0 3vw 0;
+	z-index: 999999;
+}
+
+/* PRESS_COLUMNS */
+
+.column_press {
+	-ms-flex: 7%; /* IE10 */
+	flex: 7%;
+	max-width: 7%;
+	margin:0 0 0 0;
+	padding: 0 2.6vw 0 0;
+	text-align:left;
+	background-size:5vw;
+	background-repeat:no-repeat;
+	background-position: 50% 50%;
+	position:relative;
+	height:7.5vw;
+	z-index: 999999;
+}
+
 /* AWARDS_ROW */
 
 .row {
@@ -222,7 +269,7 @@ a:hover, button:hover {
 }
 
 h2 {
-	font-size:1.3vw;
+	font-size:1.2vw;
 	font-weight:500;
 	letter-spacing: .5px;
 	padding: 0;
@@ -231,7 +278,7 @@ h2 {
 }
 
 h3 {
-	font-size: .5vw;
+	font-size: 7pt;
 	font-weight: 500;
 	letter-spacing: .5px;
 	padding: 0;
@@ -337,7 +384,6 @@ h3 {
 
 .about {
 	height: 70vh;
-	font-size:3.5vw;
 }
 
 /* CREDITS */
