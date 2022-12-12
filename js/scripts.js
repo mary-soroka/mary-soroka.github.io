@@ -10,8 +10,8 @@ $(window).scroll(function(){
 
   $(".detail_text_bottom_middle").css("opacity", 1 - $(window).scrollTop() / 50);
 
-  $(".detail_text_bottom_left").css("opacity", 1 - $(window).scrollTop() / 4600);
-  $(".detail_text_bottom_right").css("opacity", 1 - $(window).scrollTop() / 4600);
+  $(".detail_text_bottom_left").css("opacity", 1 - $(window).scrollTop() / 1250);
+  $(".detail_text_bottom_right").css("opacity", 1 - $(window).scrollTop() / 1250);
 });
 
 /* SHOW_ELEMENTS_ON_SCROLL_DOWN 
