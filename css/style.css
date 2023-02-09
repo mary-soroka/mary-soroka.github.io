@@ -48,26 +48,26 @@ a:hover {
 }
 
 .detail_text_top_left {
-	top:4vw;
-	left:3vw;
+	top:4.8vw;
+	left:4.8vw;
 	text-align:left;
 }
 
-.detail_text_top_right {
-	top:4vw;
-	right:3vw;
+/* .detail_text_top_right {
+	top:4.8vw;
+	right:4.8vw;
 	text-align:right;
-}
+} */
 
 .detail_text_bottom_left {
-	bottom:4vw;
-	left:4vw;
+	bottom:4.8vw;
+	left:4.8vw;
 	text-align:left;
 }
 
 .detail_text_bottom_right {
-	bottom:4vw;
-	right:4vw;
+	bottom:4.8vw;
+	right:4.8vw;
 	text-align:right;
 }
 
@@ -79,10 +79,50 @@ a:hover {
 }
 
 .detail_text_bottom_middle {
-	bottom:4vw;
+	bottom:4.5vw;
 	text-align:center;
 	width:100%;
 	line-height:2vw;
+}
+
+.nav_top_right {
+  top:4vw;
+  right:3.8vw;
+  text-align:right;
+  position:fixed;
+  z-index:99999999;
+  padding: 0;
+  margin: 0;
+}
+
+.nav_top_right a:hover {
+  border-bottom:3px solid;
+}
+
+.nav_top_right a {
+  margin-left:2.5vw;
+  transition: .2s ease-in-out;
+  padding-bottom:2px;
+  border-bottom:3px solid transparent;
+}
+
+button {
+  font-family: 'Volte', sans-serif;
+  font-weight: 500;
+  height: 100%;
+  background-color: transparent;
+  border: 0;
+  color: #fae5d4;
+  opacity: 1;
+  transition: .2s ease-in-out;
+  padding: 1vw;
+  margin: 0;
+  font-size: 1.2vw;
+}
+
+a:hover, button:hover {
+  cursor: pointer;
+  opacity: .5;
 }
 
 /* ------------------------ NAME_HEADER ------------------------ */

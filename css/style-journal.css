@@ -193,7 +193,7 @@ a:hover, button:hover {
   opacity: .5;
 }
 
-.nav_top_left a, .nav_top_right a, .nav_bottom_left a, .nav_bottom_right a {
+.nav_top_left a, .nav_top_right a {
   transition: .2s ease-in-out;
   padding-bottom:2px;
   border-bottom:3px solid transparent;
@@ -205,7 +205,7 @@ a:hover, button:hover {
 
 /* NAV_LINKS */
 
-.nav_top_left, .nav_top_right, .nav_bottom_left, .nav_bottom_right {
+.nav_top_left, .nav_top_right {
   position:fixed;
   z-index:99999999;
   padding: 0;
@@ -213,37 +213,26 @@ a:hover, button:hover {
 }
 
 .nav_top_left {
-  top:4vw;
+  top:3.8vw;
   left:4vw;
   text-align:left;
   font-size: 3vw;
   font-weight: 500;
+  height:18vw;
+  width:18vw;
 }
 
 .nav_top_right {
   top:4vw;
-  right:3vw;
+  right:3.8vw;
   text-align:right;
+  position:fixed;
+  z-index:99999999;
+  padding: 0;
+  margin: 0;
 }
 
-.nav_bottom_left {
-  bottom:4vw;
-  left:4vw;
-  text-align:left;
-  font-size: .8vw;
-  letter-spacing: 1px;
-  line-height: 1.5;
-}
-
-.nav_bottom_right {
-  bottom:4vw;
-  right:4vw;
-  text-align:right;
-  font-size: 1.2vw;
-  z-index: 9999;
-}
-
-.nav_bottom_left a:hover, .nav_top_left a:hover, .nav_top_right a:hover, .nav_bottom_right a:hover {
+.nav_top_left a:hover, .nav_top_right a:hover, .backtotop a:hover {
   border-bottom:3px solid;
 }
 
