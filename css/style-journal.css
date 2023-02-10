@@ -159,15 +159,16 @@ h6 {
 }
 
 .quick table {
-  width:90%;
+  width:93%;
   padding:0;
   margin:0;
   line-height:1.2;
 }
 
  .quick td {
-  width:7.7%;
   padding-bottom:0;
+  padding:0;
+  margin:0;
 }
 
 .name a:hover {
@@ -293,7 +294,7 @@ td {
 }
 
 td.title {
-  width:20vw;
+  width:22vw;
 }
 
 .secondary {
