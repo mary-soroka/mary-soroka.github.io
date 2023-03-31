@@ -364,3 +364,27 @@ display:none;
 }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------ NARROW_WIDTH ------------------------ */
+
+@media screen and (max-width: 500px)
+
+{
+
+.blurb {
+	font-size:12px;
+}
+
+}
