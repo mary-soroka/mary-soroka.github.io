@@ -283,6 +283,7 @@ a:hover, button:hover {
 	padding:0;
 	margin:0;
 	z-index:999999999;
+	text-align:center;
 }
 
 .mobile-only a {
@@ -293,7 +294,7 @@ a:hover, button:hover {
 .mobile-only ul {
 	display:inline-block;
 	padding:0;
-	margin:5vh 0 0;
+	margin:3vh 0 0;
 	text-align:center;
 }
 
@@ -302,9 +303,9 @@ a:hover, button:hover {
 	font-size:14px;
 	text-decoration:none;
 	border:2px solid;
-	padding:15px;
+	padding:5px 0;
 	margin:15px 0 0;
-	width:70%;
+	width:50vw;
 	border-radius:50px;
 }
 
