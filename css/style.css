@@ -172,13 +172,13 @@ a:hover, button:hover {
 
 .blurb {
 	padding:0 9.9vw 0;
-	margin:50vw 0 10vw 0;
+	margin:50vw 0 0 0;
 	z-index:9999999999999999;
 	text-align:left;
-	height:25vw;
+	height:80vh;
 	background-color:transparent;
 	text-transform:none;
-	font-size:23px;
+	font-size:2.15vw;
 	line-height:1.6;
 	letter-spacing:.1pt;
 }
@@ -322,11 +322,21 @@ button, .detail_text_top_left, .detail_text_top_right, .detail_text_bottom_left,
 	font-size:12px;
 }
 
+/* ------------------------ BLURB ------------------------ */
 
-
-
-
-
+.blurb {
+	padding:0 9.9vw 0;
+	margin:50vw 0 0 0;
+	z-index:9999999999999999;
+	text-align:left;
+	height:100vh;
+	background-color:transparent;
+	text-transform:none;
+	font-size:2.9vw;
+	line-height:1.6;
+	letter-spacing:.1pt;
+}
+}
 
 /* ------------------------ NARROW_WIDTH ------------------------ */
 
@@ -335,6 +345,18 @@ button, .detail_text_top_left, .detail_text_top_right, .detail_text_bottom_left,
 	display:none;
 }
 
+.blurb {
+	padding:0 9.9vw 0;
+	margin:100vw 0 0 0;
+	z-index:9999999999999999;
+	text-align:left;
+	height:100vh;
+	background-color:transparent;
+	text-transform:none;
+	font-size:18px;
+	line-height:1.6;
+	letter-spacing:.1pt;
+}
 
 /* ------------------------ DETAIL_TEXT ------------------------ */
 
@@ -350,19 +372,12 @@ button, .detail_text_top_left, .detail_text_top_right, .detail_text_bottom_left,
 	display:none;
 }
 
-/* .detail_text_top_right {
-	top:4.8vw;
-	right:4.8vw;
-	text-align:right;
-} */
+.detail_text_top_right {
+display:none;
+}
 
 .detail_text_bottom_left {
-width:100%;
-text-align:center;
-margin:0;
-padding:0;
-left:0;
-top:15vw;
+display:none;
 }
 
 .detail_text_bottom_right {
