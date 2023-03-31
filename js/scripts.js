@@ -3,7 +3,6 @@
 $(window).scroll(function(){
   $(".header").css("opacity", 1 - $(window).scrollTop() / 400);
   $(".video").css("opacity", 1 - $(window).scrollTop() / 400);
-  $(".loading").css("opacity", 1 - $(window).scrollTop() / 10);
   $(".detail_text_top_left").css("opacity", 1 - $(window).scrollTop() / 200);
   $(".detail_text_top_right").css("opacity", 1 - $(window).scrollTop() / 200);
   $(".detail_text_top_middle").css("opacity", 1 - $(window).scrollTop() / 200);

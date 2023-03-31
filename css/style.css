@@ -22,12 +22,18 @@ body {
 
 /* ------------------------ LINKS ------------------------ */
 
-a {
+p {
+	color:#fae5d4;
+}
+
+	a {
 	text-decoration:none;
 	color: #ffffff;
 	transition: .2s ease-in-out;
 	opacity: 1;
 	z-index:999999999;
+	border-bottom:1.5px solid;
+	padding-bottom:3px;
 }
 
 a:hover {
@@ -162,40 +168,19 @@ a:hover, button:hover {
 	background-color: transparent;
 }
 
-/* ------------------------ VIDEO_SHOWCASE ------------------------ */
+/* ------------------------ BLURB ------------------------ */
 
-.videos {
-	text-align:center;
-	height:61.5vw;
+.blurb {
+	padding:0 9.9vw 0;
+	margin:50vw 0 10vw 0;
+	z-index:9999999999999999;
+	text-align:left;
+	height:25vw;
 	background-color:transparent;
-}
-
-.video1 {
-	z-index:99999;
-	margin:120vh 0 0 12.5vw;
-	padding:0 auto 0;
-	background-color: transparent;
-	text-align:center;
-	height: 41.5vw;
-	width: 75vw;
-}
-
-.video2 {
-	z-index:9999;
-	margin: 20vh 0 0 12.5vw;
-	background-color: transparent;
-	padding:0 0 0;
-	height: 41.5vw;
-	width: 75vw;
-	position: relative;
-	text-align: center;
-}
-
-.video1 iframe, .video2 iframe {
-	width: 75vw;
-	height: 41.5vw;
-	margin:0;
-	padding:0;
+	text-transform:none;
+	font-size:23px;
+	line-height:1.6;
+	letter-spacing:.1pt;
 }
 
 /* ------------------------ PRESS ------------------------ */
