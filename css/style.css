@@ -166,6 +166,8 @@ a:hover, button:hover {
 
 .videos {
 	text-align:center;
+	height:61.5vw;
+	background-color:transparent;
 }
 
 .video1 {
@@ -341,13 +343,13 @@ button, .detail_text_top_left, .detail_text_top_right, .detail_text_bottom_left,
 
 
 
-/* ------------------------ MEDIUM_WIDTH ------------------------ */
+/* ------------------------ NARROW_WIDTH ------------------------ */
 
 @media screen and (max-width: 770px)
 {.press {
 	display:none;
 }
-}
+
 
 /* ------------------------ DETAIL_TEXT ------------------------ */
 
@@ -370,7 +372,12 @@ button, .detail_text_top_left, .detail_text_top_right, .detail_text_bottom_left,
 } */
 
 .detail_text_bottom_left {
-display:none;
+width:100%;
+text-align:center;
+margin:0;
+padding:0;
+left:0;
+top:15vw;
 }
 
 .detail_text_bottom_right {
@@ -381,6 +388,10 @@ display:none;
 display:none;
 }
 
+.detail_text_bottom_middle {
+top:15vw;
+}
+
 .nav_top_right {
 display:none;
 }
@@ -388,11 +399,15 @@ display:none;
 /* ------------------------ NAME_HEADER ------------------------ */
 
 .header img {
-	width:70vw;
+	width:80vw;
+}
+
+.video {
+	background-size: auto 100%;
 }
 
 .video1 {
-	z-index:99999;
+	z-index:9999999999999;
 	margin:120vh 0 0 12.5vw;
 	padding:0 auto 0;
 	background-color: transparent;
@@ -406,6 +421,7 @@ display:none;
 	height: 41.5vw;
 	margin:0;
 	padding:0;
+	z-index:999999999999999999;
 }
 
 /* ------------------------ PRESS ------------------------ */
@@ -418,6 +434,8 @@ display:none;
 	display:initial;
 	z-index:99999999999;
 	position:relative;
+	margin:0;
+	padding:0;
 }
 
 button {
