@@ -384,7 +384,11 @@ display:none;
 {
 
 .blurb {
-	font-size:12px;
+	font-size:16px;
+}
+
+.mobile-only li {
+	padding:1px 0;
 }
 
 }
