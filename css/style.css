@@ -90,7 +90,7 @@ a:hover {
 
 .nav_top_right {
   top:4vw;
-  right:3.8vw;
+  right:4vw;
   text-align:right;
   position:fixed;
   z-index:99999999;
@@ -98,15 +98,15 @@ a:hover {
   margin: 0;
 }
 
-.nav_top_right a:hover {
-  border-bottom:3px solid;
-}
-
 .nav_top_right a {
   margin-left:2.5vw;
   transition: .2s ease-in-out;
   padding-bottom:2px;
   border-bottom:3px solid transparent;
+}
+
+.nav_top_right a:hover {
+  border-bottom:3px solid;
 }
 
 button {
@@ -132,7 +132,7 @@ a:hover, button:hover {
 
 .header {
   position: fixed;
-  top: 50%;
+  top: 43%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
@@ -143,6 +143,7 @@ a:hover, button:hover {
 
 .header img {
 	width:80vw;
+	margin-right:1vw;
 }
 
 .header h1 {
@@ -171,33 +172,27 @@ a:hover, button:hover {
 /* ------------------------ BLURB ------------------------ */
 
 .blurb {
-	padding:0 9.9vw 0;
-	margin:50vw 0 0 0;
+	padding: 9vw 0 0;
+	width:80%;
+	margin:50vw 9.9vw 18vw;
 	z-index:9999999999999999;
 	text-align:left;
-	height:80vh;
 	background-color:transparent;
 	text-transform:none;
-	font-size:2.15vw;
+	font-size:1.7vw;
 	line-height:1.6;
 	letter-spacing:.1pt;
+  column-count: 2;
+  column-gap: 5.5vw;
 }
 
 /* ------------------------ PRESS ------------------------ */
-
-.gradient {
-	position: absolute;
-	background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
-	z-index: 9;
-	width: 100%;
-	height: 60vh;
-}
 
 .press {
 	width: 100%;
 	z-index: 999999;
 	margin: 0;
-	padding: 15vh 0;
+	padding: 10vw 0 13vw;
 	text-align:center;
 	background-attachment: fixed;
 	background-position: center;
@@ -214,7 +209,7 @@ a:hover, button:hover {
 	-ms-flex-wrap: wrap; /* IE10 */
 	flex-wrap: wrap;
 	padding: 0;
-	margin: 0 4vw 0;
+	margin: 0 7.6vw 0;
 	z-index: 999999;
 	text-align:center;
 }
@@ -222,38 +217,18 @@ a:hover, button:hover {
 /* ------------------------ PRESS_CONTAINERS ------------------------ */
 
 .container_border_normal, .container_border_bottom_none, .container_border_right_none, .container_border_right_bottom_none {
-	-ms-flex: 7.1%; /* IE10 */
-	flex: 7.1%;
-	max-width: 7.1%;
+	-ms-flex: 8%; /* IE10 */
+	flex: 8%;
+	max-width: 8%;
 	margin: 0;
-	padding: 0 1.3vw 0;
+	padding: 0 1.2vw 0;
 	text-align:left;
-	background-size:4.5vw;
+	background-size:5.3vw;
 	background-repeat:no-repeat;
 	background-position: 50% 50%;
 	position:relative;
-	height:9vw;
+	height:8.5vw;
 	z-index: 999999;
-}
-
-.container_border_normal {
-	border-right:.5px solid rgba(252,223,205,.3);
-	border-bottom: .5px solid rgba(252,223,205,.3); 
-}
-
-.container_border_bottom_none {
-	border-right: .5px solid rgba(252,223,205,.3);
-	border-bottom: 0;
-}
-
-.container_border_right_none {
-	border-bottom: .5px solid rgba(252,223,205,.3);
-	border-right: 0;
-}
-
-.container_border_right_bottom_none {
-	border-bottom: 0;
-	border-right: 0;
 }
 
 /* ------------------------ SCROLLBAR ------------------------ */
