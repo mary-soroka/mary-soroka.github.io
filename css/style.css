@@ -176,14 +176,18 @@ a:hover, button:hover {
 	width:80%;
 	margin:50vw 9.9vw 18vw;
 	z-index:9999999999999999;
-	text-align:left;
 	background-color:transparent;
+	text-align:left;
 	text-transform:none;
 	font-size:1.7vw;
 	line-height:1.6;
 	letter-spacing:.1pt;
   column-count: 2;
   column-gap: 5.5vw;
+}
+
+.blurb img {
+	width:0;
 }
 
 /* ------------------------ PRESS ------------------------ */
