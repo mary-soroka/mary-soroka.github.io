@@ -196,7 +196,7 @@ a:hover, button:hover {
 	width: 100%;
 	z-index: 999999;
 	margin: 0;
-	padding: 10vw 0 13vw;
+	padding: 70vw 0 13vw;
 	text-align:center;
 	background-attachment: fixed;
 	background-position: center;
@@ -304,6 +304,30 @@ a:hover, button:hover {
 
 /* ------------------------ MEDIUM_WIDTH ------------------------ */
 
+@media screen and (max-width: 950px)
+
+{
+
+/* ------------------------ PRESS ------------------------ */
+
+.press {
+	width: 100%;
+	z-index: 999999;
+	margin: 0;
+	padding: 85vw 0 30vw;
+	text-align:center;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('http://mary-soroka.github.io/images/gifs/mary-soroka-vm2.gif');
+}
+}
+
+
+
+/* ------------------------ MEDIUM_WIDTH ------------------------ */
+
 @media screen and (max-width: 800px)
 
 {
@@ -318,16 +342,7 @@ display:none;
 
 .detail_text_bottom_middle {
 	bottom:initial;
-	top:15vw;
-}
-
-.blurb {
-	z-index:999999999999999999999999999999;
-	height:100vh;
-	font-size:3.4vw;
-	padding:0 8vw 0;
-	margin:100vh 0 0;
-	background-color:black;
+	top:13vw;
 }
 
 .gradient {
