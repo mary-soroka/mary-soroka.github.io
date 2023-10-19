@@ -63,9 +63,9 @@ html, body {
   letter-spacing: -.5px;
 }
 
-a {
+.bottom_left a {
 	text-decoration:none;
-	color:rgba(255,255,255,1);
+	color:rgba(255,255,255,.5);
   transition: .2s ease-in-out;
   padding:0 0 0.4vw;
   margin:0;
@@ -73,10 +73,10 @@ a {
 
 }
 
-a:hover {
-	  padding:0 0 0.4vw;
+.bottom_left a:hover {
+	padding:0 0 0.4vw;
   margin:0;
-	color:rgba(200,200,200,.5);
+	color:rgba(255,255,255,1);
   border-bottom:.17vw solid;
 }
 
@@ -85,24 +85,42 @@ a:hover {
 }
 
 ::selection {
-	background-color: black;
+	background-color: rgba(0,0,0,0);
+	color: rgba(0,0,0,.5);
 }
 
-/* ------------------------ CONTENT ------------------------ */
+/* ------------------------ top_left ------------------------ */
 
-.top_left, .bottom_left {
-  position:fixed;
+.top_left {
+	position:fixed;
+	top:0;
+	left:0;
+	width:10%;
  	padding:1.7vw;
 }
 
-/* ------------------------ TOP_LEFT ------------------------ */
+/* ------------------------ bottom_left ------------------------ */
 
-.top_left {
-	top:0;
+.bottom_left {
+	  position:fixed;
+	bottom:0;
 	left:0;
 	width:40%;
 	font-weight:400;
+ 	padding:1.7vw;
 }
+
+.fade {
+	opacity:.5;
+	  transition: .4s ease-in-out;
+	  cursor:default;
+}
+
+.fade:hover {
+	opacity:1;
+}
+
+
 
 .star {
 	font-size:.25em;
@@ -110,35 +128,36 @@ a:hover {
 	top:-.8em;
 }
 
-/* ------------------------ BOTTOM_LEFT ------------------------ */
+/* ------------------------ top_right ------------------------ */
 
-.bottom_left {
+.top_right {
+		  position:fixed;
 	width:65vw;
-	margin:0 1.9vw;
-	bottom:1.9vw;
-	left:0;
-	padding:.7vw 0 0;
-	text-align:left;
+	margin:0 0 0 .9vw;
+	top:0.6vw;
+	right:0;
+	padding:0;
+	text-align:right;
 }
 
-.bottom_left a {
+.top_right a {
+	font-weight:500;
+	text-transform:uppercase;
 	text-decoration:none;
 	color:rgba(255,255,255,.5);
   transition: .2s ease-in-out;
-  padding:1vw 0 0;
+  padding:0 0 .7vw;
   margin:0 2vw 0 0;
   border:0;
-  letter-spacing: -.1px;;
-	font-size: calc(1vw + .5vw);
-  border-top:.15vw solid transparent;
+  letter-spacing: 1px;
+	font-size: calc(.4vw + .5vw);
+  border-bottom:.13vw solid transparent;
 }
 
-.bottom_left a:hover {
-  border-top:.15vw solid;
+.top_right a:hover {
+  border-bottom:.13vw solid;
 	color:rgba(255,255,255,1);
 }
-
-
 
 
 * { box-sizing: border-box; }
