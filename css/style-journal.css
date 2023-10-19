@@ -50,14 +50,13 @@ html, body {
   scroll-behavior: smooth;
   margin:0;
   padding:0;
-}
-
-body {
-  /*background-color:rgba(252,223,205,1);*/
   font-family: 'Volte', sans-serif;
   overflow-x:hidden;
-  letter-spacing:.02pt;
   scroll-behavior: smooth;
+  font-size: calc(1.37vw + .5vw);
+  font-weight:400;
+  line-height:1.15;
+  letter-spacing: -.5px;
 }
 
 a {
@@ -68,39 +67,14 @@ a {
 }
 
 a:hover {
-  color:grey;
+  color:rgba(0,0,0,.5);
   border-bottom:1.5px solid;
 }
 
-/* NAME_CONTAINER */
 
-.name {
-  width:100%;
-  position:absolute;
-  top:12vw;
-  text-align:center;
-  padding:0;
-  margin:0;
-  z-index:1;
-  height:50px;
-}
-
-/* NAME */
-
-h1 {
-  font-family:'Volte', sans-serif;
-  font-size: 5.8vw;
-  font-weight:700;
-  letter-spacing:-1.5;
-  text-transform:lowercase;
-  line-height:1.2;
-  margin:0;
-  padding:0 1.9vw 8vw;
-  border-bottom:0;
-}
 
 h2 {
-  letter-spacing:.1pt;
+  letter-spacing:.05px;
   font-weight:500;
   font-size:1.3em;
   padding:0;
@@ -108,7 +82,7 @@ h2 {
 }
 
 h3 {
-  letter-spacing:.3pt;
+  letter-spacing:.1pt;
   font-weight:500;
   font-size:.8em;
   padding:3px;
@@ -127,11 +101,12 @@ h5 {
 
 h4 {
   letter-spacing:.3pt;
-  font-weight:500;
+  font-weight:400;
   font-size:.1em;
   z-index:99999999;
   padding:0 0 .5vw;
   margin:0;
+  line-height:.9;
 }
 
 h6 {
@@ -147,6 +122,7 @@ h6 {
   width:100%;
   padding:12vw 10vw 0 17vw;
   margin:0 auto 0;
+
 }
 
 .quick a {
@@ -171,37 +147,46 @@ h6 {
   margin:0;
 }
 
-.name a:hover {
-  border-bottom:0;
+/* ------------------------ top_left ------------------------ */
+
+.top_left {
+  position:fixed;
+  top:0;
+  left:0;
+  width:10%;
+  padding:1.7vw;
+  z-index:9999999;
 }
 
-button {
-  font-family: 'Volte', sans-serif;
-  font-weight: 500;
-  height: 100%;
-  background-color: transparent;
-  border: 0;
-  color: black;
-  opacity: 1;
+/* ------------------------ top_right ------------------------ */
+
+.top_right {
+      position:fixed;
+  width:65vw;
+  margin:0 0 0 .9vw;
+  top:0.6vw;
+  right:0;
+  padding:0;
+  text-align:right;
+}
+
+.top_right a {
+  font-weight:500;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:rgba(0,0,0,1);
   transition: .2s ease-in-out;
-  padding: 1vw;
-  margin: 0;
-  font-size: 1.2vw;
+  padding:0 0 .7vw;
+  margin:0 2vw 0 0;
+  border:0;
+  letter-spacing: 1px;
+  font-size: calc(.4vw + .5vw);
+  border-bottom:.13vw solid transparent;
 }
 
-a:hover, button:hover {
-  cursor: pointer;
-  opacity: .5;
-}
-
-.nav_top_left a, .nav_top_right a {
-  transition: .2s ease-in-out;
-  padding-bottom:2px;
-  border-bottom:3px solid transparent;
-}
-
-.nav_top_right a {
-  margin-left:2.5vw;
+.top_right a:hover {
+  border-bottom:.13vw solid;
+  color:rgba(0,0,0,1);
 }
 
 /* NAV_LINKS */
@@ -305,140 +290,4 @@ td.title {
   height:2vw;
 }
 
-/* SCROLLBAR_WIDTH */
-::-webkit-scrollbar {
-  width: 3px;
-  height: 3px;
-}
 
-/* SCROLLBAR_TRACK */
-::-webkit-scrollbar-track {
-  background: rgba(0,0,0,.1);
-}
-
-/* SCROLLBAR_HANDLE */
-::-webkit-scrollbar-thumb {
-  background: rgba(0,0,0,1); 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 640px) {
-
-.nav_left, .nav_right {
-  font-size:14px;
-}
-
-  .nav_left {
-  left:-85px;
-}
-
-.nav_right {
-  right:-70px;
-}
-
-.label {
-	margin-bottom:5vw;
-}
-
-h2 {
-	font-size:12px;
-	font-weight:500;
-}
-
-h3 {
-	font-size:10px;
-	line-height:1.3;
-}
-
-td.title {
-  width:30vw;
-}
-
-.photos {
-  width:100%;
-  padding:0 10vw 0;
-  margin:25vw auto 11vw;
-}
-
-.photo {
-  width:80vw;
-  margin:0 auto 0;
-  height:45vw;
-  background-size:cover;
-  background-position:center;
-}
-
-.quick {
-	display:none;
-}
-
-/* NAME_CONTAINER */
-
-.name {
-  width:100%;
-  position:absolute;
-  top:5vw;
-  text-align:center;
-  padding:0;
-  margin:0;
-  z-index:1;
-  height:100px;
-}
-
-/* NAME */
-
-h1 {
-  font-size: 12vw;
-  font-weight:500;
-  letter-spacing:0;
-  text-transform:lowercase;
-  line-height:1.2;
-  margin:0;
-  padding:0 1.9vw 8vw;
-  border-bottom:0;
-}
-
-h4 {
-	font-size:14px;
-}
-
-.backtotop {
-  position:fixed;
-  right:auto;
-  bottom:0;
-  padding-top:10px;
-  width:100%;
-  height:40px;
-  background-color:white;
-  text-align:center;
-  z-index:99999999;
-}
-
-}

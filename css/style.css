@@ -54,7 +54,6 @@ html, body {
 	padding:0;
 	overflow-x:hidden;
 	font-family: 'Volte', sans-serif;
-	letter-spacing: -2px;
 	text-transform:none;
 	font-size: calc(1.37vw + .5vw);
 	font-weight:400;
