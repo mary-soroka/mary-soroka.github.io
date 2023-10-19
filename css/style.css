@@ -64,7 +64,10 @@ html, body {
 	line-height:1.02;
 	color:#ffffff;
 	background-image: url('http://mary-soroka.github.io/images/gifs/mary-soroka-vm2.gif');
-	background-size:cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	background-color:rgba(0,0,0,0);
 }
 
@@ -85,6 +88,10 @@ a:hover {
 
 .portrait {
 	width:0;
+}
+
+::selection {
+	background-color: white;
 }
 
 /* ------------------------ CONTENT ------------------------ */
