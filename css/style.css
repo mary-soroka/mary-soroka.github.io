@@ -53,31 +53,24 @@ html, body {
 	margin:0;
 	padding:0;
 	overflow-x:hidden;
-	background-color:#000000;
-	transition: background-color 1s ease;
 	font-family: 'Volte', sans-serif;
 	letter-spacing: -2px;
 	text-transform:none;
-	font-size:3.5vw;
+	font-size: calc(1.7vw + .5vw);
 	font-weight:400;
-	line-height:1.05;
+	line-height:1.1;
 	color:#ffffff;
-	background-image: url('http://mary-soroka.github.io/images/gifs/mary-soroka-vm2.gif');
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-color:rgba(0,0,0,0);
+  letter-spacing: -.5px;
 }
 
 a {
 	text-decoration:none;
 	color:rgba(255,255,255,1);
   transition: .2s ease-in-out;
-  padding:0;
+  padding:0 0 0.4vw;
   margin:0;
-  border-bottom:.25vw solid;
-  letter-spacing: -.5px;
+  border-bottom:.17vw solid;
+
 }
 
 a:hover {
@@ -85,12 +78,12 @@ a:hover {
   border-bottom:.25vw solid;
 }
 
-.portrait {
+.keyframes {
 	width:0;
 }
 
 ::selection {
-	background-color: white;
+	background-color: black;
 }
 
 /* ------------------------ CONTENT ------------------------ */
@@ -105,12 +98,12 @@ a:hover {
 .top_left {
 	top:0;
 	left:0;
-	width:70%;
+	width:35%;
 	font-weight:400;
 }
 
 .star {
-	font-size:.23em;
+	font-size:.25em;
 	position:relative;
 	top:-.8em;
 }
@@ -133,12 +126,61 @@ a:hover {
   padding:1vw 0 0;
   margin:0 2vw 0 0;
   border:0;
-  letter-spacing: -.5px;;
-  font-size:1.5vw;
+  letter-spacing: -.1px;;
+	font-size: calc(1vw + .5vw);
   border-top:.15vw solid transparent;
 }
 
 .bottom_left a:hover {
   border-top:.15vw solid;
 	color:rgba(255,255,255,1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+* { box-sizing: border-box; }
+.video-background {
+	background-color:black;
+  opacity:1;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+#vidtop-content {
+	top: 0;
+	color: #fff;
+}
+.vid-info { position: absolute; top: 0; right: 0; width: 33%; background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
+.vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
+.vid-info a { display: block; color: #fff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+.vid-info { width: 50%; padding: .5rem; }
+.vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+.vid-info .acronym { display: none; }
 }
