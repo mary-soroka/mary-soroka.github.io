@@ -4,385 +4,70 @@ html, body {
 	scroll-behavior: smooth;
 	margin:0;
 	padding:0;
-}
-
-body {
-	font-family: 'Volte', sans-serif;
-	text-transform:uppercase;
-	font-weight: 500;
-	letter-spacing: 1.5px;
-	font-size: 12px;
-	line-height:1.8;
-	background-color:#000000;
-	color:#fae5d4; 
-	transition: background-color 1s ease;
 	overflow-x:hidden;
-	scroll-behavior: smooth;
-	}
-
-/* ------------------------ LINKS ------------------------ */
-
-p {
-	color:#fae5d4;
+	background-color:#000000;
+	transition: background-color 1s ease;
+	font-family: 'Volte', sans-serif;
+	font-weight: 500;
+	letter-spacing: -2.2px;
+	text-transform:none;
+	font-size:4.5vw;
+	font-weight:400;
+	line-height:1;
+	color:#ffffff;
 }
 
-	a {
+a {
 	text-decoration:none;
-	color: #ffffff;
-	transition: .2s ease-in-out;
-	opacity: 1;
-	z-index:999999999;
-	border-bottom:1.5px solid;
-	padding-bottom:3px;
+	color:#ffffff;
+  transition: .2s ease-in-out;
+  padding:1vw 1vw 0;
+  border-top:.3vw solid;
 }
 
 a:hover {
-	opacity:.5;
-}
-
-/* ------------------------ DETAIL_TEXT ------------------------ */
-
-.detail_text_top_left, .detail_text_top_right, .detail_text_bottom_left, .detail_text_bottom_right, .detail_text_top_middle, .detail_text_bottom_middle, .header {
-	position:fixed;
-	z-index:99999999999999999999;
-	padding: 0;
-	margin: 0;
-	font-size:10px;
-}
-
-.detail_text_top_left {
-	top:4.8vw;
-	left:4.8vw;
-	text-align:left;
-}
-
-/* .detail_text_top_right {
-	top:4.8vw;
-	right:4.8vw;
-	text-align:right;
-} */
-
-.detail_text_bottom_left {
-	bottom:4.8vw;
-	left:4.8vw;
-	text-align:left;
-}
-
-.detail_text_bottom_right {
-	bottom:4.8vw;
-	right:4.8vw;
-	text-align:right;
-}
-
-.detail_text_top_middle {
-	top:4vw;
-	text-align:center;
-	width:100%;
-	line-height:2.25vw;
-}
-
-.detail_text_bottom_middle {
-	bottom:4.5vw;
-	text-align:center;
-	width:100%;
-	line-height:2vw;
-}
-
-.nav_top_right {
-  top:4vw;
-  right:4vw;
-  text-align:right;
-  position:fixed;
-  z-index:99999999;
-  padding: 0;
-  margin: 0;
-}
-
-.nav_top_right a {
-  margin-left:2.5vw;
-  transition: .2s ease-in-out;
-  padding-bottom:2px;
-  border-bottom:3px solid transparent;
-}
-
-.nav_top_right a:hover {
-  border-bottom:3px solid;
-}
-
-button {
-  font-family: 'Volte', sans-serif;
-  font-weight: 500;
-  height: 100%;
-  background-color: transparent;
-  border: 0;
-  color: #fae5d4;
-  opacity: 1;
-  transition: .2s ease-in-out;
-  padding: 1vw;
-  margin: 0;
-  font-size: 1.2vw;
-}
-
-a:hover, button:hover {
-  cursor: pointer;
-  opacity: .5;
-}
-
-/* ------------------------ NAME_HEADER ------------------------ */
-
-.header {
-  position: fixed;
-  top: 43%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
-.header img {
-	width:80vw;
-	margin-right:1vw;
-}
-
-.header h1 {
-	display:none;
-}
-
-/* ------------------------ BG_VIDEO ------------------------ */
-
-.video {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	height: 100vh;
-	margin: 0;
-	padding: 0 0 100vh;
-	z-index: 0;
-
-	background-image: url('http://mary-soroka.github.io/images/dex.jpg');
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-color: transparent;
-}
-
-/* ------------------------ BLURB ------------------------ */
-
-.blurb {
-	padding: 9vw 0 0;
-	width:80%;
-	margin:50vw 9.9vw 18vw;
-	z-index:9999999999999999;
-	background-color:transparent;
-	text-align:left;
-	text-transform:none;
-	font-size:1.7vw;
-	line-height:1.6;
-	letter-spacing:.1pt;
-  column-count: 2;
-  column-gap: 5.5vw;
+  border-top:.3vw solid transparent;
 }
 
 .portrait {
 	width:0;
 }
 
-/* ------------------------ PRESS ------------------------ */
+/* ------------------------ CONTENT ------------------------ */
 
-.press {
-	width: 100%;
-	z-index: 999999;
-	margin: 0;
-	padding: 70vw 0 13vw;
-	text-align:center;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-image: url('http://mary-soroka.github.io/images/gifs/mary-soroka-vm2.gif');
+.top_left, .bottom_left {
+  position:fixed;
+ 	padding:1.5vw;
 }
 
-/* ------------------------ PRESS_ROW ------------------------ */
+/* ------------------------ TOP_LEFT ------------------------ */
 
-.row_press {
-	display: -ms-flexbox; /* IE10 */
-	display: flex;
-	-ms-flex-wrap: wrap; /* IE10 */
-	flex-wrap: wrap;
-	padding: 0;
-	margin: 0 7.6vw 0;
-	z-index: 999999;
-	text-align:center;
+.top_left {
+	top:0;
+	left:0;
 }
 
-/* ------------------------ PRESS_CONTAINERS ------------------------ */
-
-.container_border_normal, .container_border_bottom_none, .container_border_right_none, .container_border_right_bottom_none {
-	-ms-flex: 8%; /* IE10 */
-	flex: 8%;
-	max-width: 8%;
-	margin: 0;
-	padding: 0 1.2vw 0;
-	text-align:left;
-	background-size:5.3vw;
-	background-repeat:no-repeat;
-	background-position: 50% 50%;
+.star {
+	font-size:.23em;
 	position:relative;
-	height:8.5vw;
-	z-index: 999999;
+	top:-.8em;
 }
 
-/* ------------------------ SCROLLBAR ------------------------ */
+/* ------------------------ BOTTOM_LEFT ------------------------ */
 
-/* SCROLLBAR_WIDTH */
-::-webkit-scrollbar {
-	width: 3px;
-	height: 3px;
+.bottom_left {
+	bottom:0;
+	left:0;
+	text-align:left;
 }
 
-/* SCROLLBAR_TRACK */
-::-webkit-scrollbar-track {
-	background: transparent;
-}
-
-/* SCROLLBAR_HANDLE */
-::-webkit-scrollbar-thumb {
-	background: rgba(252,223,205,.5); 
-}
-
-.header {
-	margin:7vh 0 0;
-}
-
-.mobile-only {
-	display:none;
+ul {
 	padding:0;
 	margin:0;
-	z-index:999999999;
-	text-align:center;
-}
+	list-style:none;}
 
-.mobile-only a {
-	border:0;
-	color:#fae5d4;
-}
-
-.mobile-only ul {
+li {
 	display:inline-block;
-	padding:0;
-	margin:3vh 0 0;
-	text-align:center;
-}
-
-.mobile-only li {
-	display:inline-block;
-	font-size:14px;
-	text-decoration:none;
-	border:2px solid;
-	padding:5px 0;
-	margin:15px 0 0;
-	width:50vw;
-	border-radius:50px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ------------------------ MEDIUM_WIDTH ------------------------ */
-
-@media screen and (max-width: 950px)
-
-{
-
-/* ------------------------ PRESS ------------------------ */
-
-.press {
-	width: 100%;
-	z-index: 999999;
-	margin: 0;
-	padding: 85vw 0 30vw;
-	text-align:center;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-image: url('http://mary-soroka.github.io/images/gifs/mary-soroka-vm2.gif');
-}
-}
-
-
-
-/* ------------------------ MEDIUM_WIDTH ------------------------ */
-
-@media screen and (max-width: 800px)
-
-{
-
-.mobile-only {display:initial;}
-
-.nav_top_right {display:none;}
-
-.detail_text_top_left, .detail_text_top_right, .detail_text_bottom_left, .detail_text_bottom_right, .detail_text_top_middle {
-display:none;
-}
-
-.detail_text_bottom_middle {
-	bottom:initial;
-	top:13vw;
-}
-
-.gradient {
-	height:0;
 	padding:0;
 	margin:0;
-	display:none;
-}
-
-.press {
-	height:0;
-	display:none;
-}
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ------------------------ NARROW_WIDTH ------------------------ */
-
-@media screen and (max-width: 500px)
-
-{
-
-.blurb {
-	font-size:16px;
-}
-
-.mobile-only li {
-	padding:2px 0;
-}
-
 }
