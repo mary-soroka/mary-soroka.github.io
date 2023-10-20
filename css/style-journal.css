@@ -53,7 +53,6 @@ html, body {
   font-family: 'Volte', sans-serif;
   overflow-x:hidden;
   scroll-behavior: smooth;
-  font-size: calc(1.37vw + .5vw);
   font-weight:400;
   line-height:1.15;
   letter-spacing: -.5px;
@@ -69,8 +68,6 @@ a {
 a:hover {
   color:rgba(0,0,0,.5);
 }
-
-
 
 h2 {
   letter-spacing:.05px;
@@ -150,9 +147,9 @@ h6 {
 
 .top_left {
   position:fixed;
-  top:0;
-  left:0;
-  width:22%;
+  top:.5vw;
+  left:2.1vw;
+  width:24%;
   padding:1.7vw;
   z-index:9999999;
 }
@@ -166,8 +163,8 @@ h6 {
   letter-spacing:0;
   text-align:right;
   width:100%;
-  top:2vw;
-  right:3vw;
+  top:4.5vw;
+  right:4.5vw;
 }
 
 .top a {
