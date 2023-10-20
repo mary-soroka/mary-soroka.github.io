@@ -55,27 +55,25 @@ html, body {
 	overflow-x:hidden;
 	font-family: 'Volte', sans-serif;
 	text-transform:none;
-	font-weight:400;
-	line-height:1.4;
+	font-weight:300;
 	color:#ffffff;
-  letter-spacing: -.5px;
 }
 
 .bottom_left a {
 	text-decoration:none;
-	color:rgba(255,255,255,.5);
+	color:rgba(255,255,255,.7);
   transition: .2s ease-in-out;
-  padding:0 0 0.4vw;
+  padding:0 0 0.3vw;
   margin:0;
-  border-bottom:.17vw solid;
+  border-bottom:.1vw solid;
 
 }
 
 .bottom_left a:hover {
-	padding:0 0 0.4vw;
+	padding:0 0 0.3vw;
   margin:0;
 	color:rgba(255,255,255,1);
-  border-bottom:.17vw solid;
+  border-bottom:.1vw solid;
 }
 
 .keyframes {
@@ -94,12 +92,26 @@ html, body {
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 11%;
+	background-size: 30%;
 	background-image: url('http://mary-soroka.github.io/images/ms.svg');
 	z-index:999999;
 }
 
 
+
+/* ------------------------ top_left ------------------------ */
+
+.top_left {
+	  position:fixed;
+		top:0;
+		left:0;
+		width:36%;
+		font-weight:400;
+	 	padding:1.7vw;
+	 	font-size: 34px;
+	 		font-weight:500;
+	 	letter-spacing:0;
+}
 
 /* ------------------------ bottom_left ------------------------ */
 
@@ -107,24 +119,12 @@ html, body {
 	  position:fixed;
 		bottom:0;
 		left:0;
-		width:30%;
+		width:25%;
 		font-weight:400;
 	 	padding:1.7vw;
 	 	font-size: 14px;
 	 	letter-spacing:0;
 }
-
-.fade {
-	opacity:.5;
-	  transition: .4s ease-in-out;
-	  cursor:default;
-}
-
-.fade:hover {
-	opacity:1;
-}
-
-
 
 .star {
 	font-size:.25em;
@@ -145,7 +145,7 @@ html, body {
 }
 
 .top_right a {
-	font-weight:500;
+
 	text-transform:uppercase;
 	text-decoration:none;
 	color:rgba(255,255,255,.5);
