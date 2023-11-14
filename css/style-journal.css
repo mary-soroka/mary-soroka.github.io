@@ -61,12 +61,23 @@ html, body {
 a {
   text-decoration:none;
   color:rgba(0,0,0,1);
-  transition: .1s ease-in-out;
+  transition: .15s ease-in-out;
   font-weight:600;
 }
 
 a:hover {
   color:rgba(0,0,0,.5);
+}
+
+.menu {
+  width:1.85vw;
+  height:1.85vw;
+  opacity:.3;
+  transition: .15s ease-in-out;
+}
+
+.menu:hover {
+opacity:1;
 }
 
 h2 {
@@ -171,7 +182,7 @@ h6 {
   text-transform:uppercase;
   text-decoration:none;
   color:rgba(0,0,0,1);
-  transition: .2s ease-in-out;
+  transition: .15s ease-in-out;
   padding:1vw;
   margin:0 0 0 1vw;
   letter-spacing: 1px;
@@ -195,7 +206,7 @@ h6 {
   text-decoration:none;
   text-transform:uppercase;
   color:rgba(0,0,0,1);
-  transition: .2s ease-in-out;
+  transition: .15s ease-in-out;
   letter-spacing: 1px;
   font-size: 11px;
   font-weight:500;
