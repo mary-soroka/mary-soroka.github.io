@@ -2,7 +2,7 @@
 
 $(window).scroll(function(){
   $(".video-background").css("opacity", 1 - $(window).scrollTop() / 200);
-  $(".top_light").css("opacity", 1 - $(window).scrollTop() / 200);
+  $(".top_right_light").css("opacity", 1 - $(window).scrollTop() / 200);
   $(".top_left_light").css("opacity", 1 - $(window).scrollTop() / 200);
 });
 
@@ -11,12 +11,8 @@ $(window).scroll(function(){
 $(document).scroll(function() {
   var y = $(this).scrollTop();
   if (y > 200) {
-    $('.top_dark').fadeIn(200);
-    $('.top_left_dark').fadeIn(200);
     $('.bottom_right').fadeIn(200);
   } else {
-    $('.top_dark').fadeOut();
-    $('.top_left_dark').fadeOut();
     $('.bottom_right').fadeOut();
   }
 });

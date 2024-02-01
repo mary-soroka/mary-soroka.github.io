@@ -177,7 +177,7 @@ h6 {
   left:2.3vw;
   width:24%;
   padding:1.7vw;
-  z-index:9999999;
+  z-index:999999;
 }
 
 /* ------------------------ bottom_left ------------------------ */
@@ -199,7 +199,7 @@ h6 {
 
   /* ------------------------ NAV ------------------------ */
 
-.top_light, .top_dark {
+.top_right_light, .top_right_dark {
   position:fixed;
   margin:0;
   padding:0;
@@ -210,10 +210,19 @@ h6 {
   right:3.5vw;
 }
 
-.top_light a {
+.top_right_light {
+z-index:99999;
+}
+
+.top_right_dark {
+z-index:9999;
+}
+
+.top_right_light a {
   text-transform:uppercase;
   text-decoration:none;
-  color:rgba(255,255,255,.5);
+  color:rgb(255,255,255);
+  opacity:.5;
   transition: .15s ease-in-out;
   padding:0 0 .5vw 0;
   margin:1vw 1vw 0 1vw;
@@ -222,10 +231,11 @@ h6 {
   font-weight:500;
 }
 
-.top_dark a {
+.top_right_dark a {
   text-transform:uppercase;
   text-decoration:none;
-  color:rgba(0,0,0,1);
+  color:rgb(0,0,0);
+  opacity:.5;
   transition: .15s ease-in-out;
   padding:0 0 .5vw 0;
   margin:1vw;
@@ -234,8 +244,8 @@ h6 {
   font-weight:500;
 }
 
-.top_light a:hover, .top_dark a:hover {
-  border-bottom:1px solid;
+.top_right_light a:hover, .top_right_dark a:hover {
+  opacity:1;
 }
 
 .bottom_right {
@@ -243,7 +253,6 @@ h6 {
   right:4.3vw;
   bottom:4.3vw;
   text-align:right;
-  z-index:99999999;
 }
 
 .bottom_right_link {
