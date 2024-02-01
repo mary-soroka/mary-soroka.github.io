@@ -411,13 +411,12 @@ iframe {
 }
 
 hr {
-  height:.5vw;
-  border:0px solid white;
+  height:.3vw;
 }
 
 .photos {
   width:100%;
-  padding:0 2.75vw 0;
+  padding:0 2.5vw 0;
 }
 
 .photo {
@@ -427,7 +426,7 @@ hr {
 }
 
 td.title {
-  width:50%;
+  width:100%;
 }
 
 }
