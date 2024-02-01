@@ -369,3 +369,65 @@ iframe {
 @media all and (max-width: 500px) {
 .vid-info .acronym { display: none; }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------ SMALL_SCREEN ------------------------ */
+
+
+@media only screen and (max-width: 650px) {
+
+.quick {
+  width:100%;
+  padding:0 2.75vw 0;
+}
+
+.quick table {
+  width:100%;
+}
+
+hr {
+  height:.5vw;
+  border:0px solid white;
+}
+
+.photos {
+  width:100%;
+  padding:0 2.75vw 0;
+}
+
+.photo {
+  width:100%;
+  margin:0 auto 0;
+  height:auto;
+}
+
+td.title {
+  width:50%;
+}
+
+}
