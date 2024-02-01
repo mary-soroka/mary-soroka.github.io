@@ -180,6 +180,16 @@ h6 {
   z-index:999999;
 }
 
+.top_left_dark_mobile {
+  position:fixed;
+  top:.5vw;
+  left:2.3vw;
+  width:24%;
+  padding:1.7vw;
+  z-index:999999;
+  display:none;
+}
+
 /* ------------------------ bottom_left ------------------------ */
 
 .bottom_left {
@@ -396,7 +406,7 @@ iframe {
 
 
 
-/* ------------------------ SMALL_SCREEN ------------------------ */
+/* ------------------------ MED_SCREEN ------------------------ */
 
 
 @media only screen and (max-width: 650px) {
@@ -417,6 +427,78 @@ display:none;
 }
 .top_left_light img {
   padding:10vw;
+}
+
+hr {
+  height:.3vw;
+}
+
+.photos {
+  width:100%;
+  padding:140vw 2.5vw 0;
+}
+
+.photo {
+  width:100%;
+  margin:0 auto 0;
+  height:auto;
+}
+
+td.title {
+  width:100%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------ MED_SCREEN ------------------------ */
+
+
+@media only screen and (max-width: 500px) {
+
+/* ------------------------ top_left ------------------------ */
+
+.video-background, .top_left_light, .top_right_light, .top_right_dark, .bottom_left, .bottom_right, .bottom_right_link, .quick, .top_left_dark {
+display:none;
+}
+
+.top_left_dark_mobile {
+  position:fixed;
+  top:40%;
+  left:0;
+  width:100%;
+  height:100%;
+  padding:0;
+  display:initial;
+  text-align:center;
+  font-size:24pt;
+}
+
+.top_left_dark_mobile img {
+  padding:5vw 5vw 13vw;
 }
 
 hr {
