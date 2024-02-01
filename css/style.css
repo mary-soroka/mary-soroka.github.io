@@ -238,7 +238,7 @@ h6 {
   border-bottom:1px solid;
 }
 
-.backtotop {
+.bottom_right {
   position:fixed;
   right:4.3vw;
   bottom:4.3vw;
@@ -246,7 +246,7 @@ h6 {
   z-index:99999999;
 }
 
-.backtotoplink {
+.bottom_right_link {
   text-decoration:none;
   text-transform:uppercase;
   color:rgba(0,0,0,1);
@@ -256,7 +256,7 @@ h6 {
   font-weight:500;
 }
 
-.backtotoplink:hover {
+.bottom_right_link:hover {
   color:rgba(0,0,0,0.5);
 }
 
