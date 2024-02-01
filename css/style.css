@@ -401,13 +401,22 @@ iframe {
 
 @media only screen and (max-width: 650px) {
 
-.quick {
-  width:100%;
-  padding:0 2.75vw 0;
+/* ------------------------ top_left ------------------------ */
+
+.top_right_light, .top_right_dark, .bottom_left, .bottom_right, .bottom_right_link, .quick, .top_left_dark {
+display:none;
 }
 
-.quick table {
+.top_left_light {
+  position:fixed;
+  top:40%;
+  left:0;
   width:100%;
+  height:100%;
+  padding:0;
+}
+.top_left_light img {
+  padding:10vw;
 }
 
 hr {
@@ -416,7 +425,7 @@ hr {
 
 .photos {
   width:100%;
-  padding:0 2.5vw 0;
+  padding:140vw 2.5vw 0;
 }
 
 .photo {
