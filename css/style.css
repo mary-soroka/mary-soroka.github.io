@@ -96,10 +96,9 @@ html, body {
   scroll-behavior: smooth;
   margin:0;
   padding:0;
-  font-family: 'ApfelGrotezk', sans-serif;
+  font-family: 'Apfel Grotezk', sans-serif;
   overflow-x:hidden;
   scroll-behavior: smooth;
-  font-size:18px;
   line-height:1.15;
   letter-spacing: -.5px;
   color:white;
@@ -109,33 +108,43 @@ html, body {
   background-position:center;
   background-repeat: no-repeat;
   text-align:center;
+  text-rendering: optimizeLegibility;
+  letter-spacing:.5pt;
 }
 
 .logo {
-    width:22vw;
+    width:60vw;
     padding:0;
     margin:0;
-    margin:0 0 20vw;
+    margin:0 0 2vw;
 }
 
 .lock {
-    width:16px;
+    width:15px;
     padding:0;
-    margin:0 0 2vw;
+    margin-right:15px;
   }
+
+p {
+    font-weight:300;
+    font-size:calc(7px + 1vw);
+}
 
 a {
   text-decoration:none;
   color:rgba(255,255,255,1);
   transition: .15s ease-in-out;
   font-weight:500;
-  border-bottom:1.4px solid;
-  padding-bottom:2px;
 }
 
 a:hover {
   color:rgba(255,255,255,.5);
   cursor:pointer;
+}
+
+.arrow {
+    margin-left:8px;
+    vertical-align: -.5;
 }
 
 .main {
@@ -145,7 +154,6 @@ a:hover {
   width:100%;
   z-index:9999999;
   text-decoration:none;
-  transition: .15s ease-in-out;
   position: absolute;
   top: 50%;
   left: 50%;
