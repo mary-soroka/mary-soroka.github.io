@@ -10,6 +10,8 @@
 
 <body>
 
+
+
   <a name="head"></a>
 
       <!------------------------ NAV ------------------------>
@@ -47,7 +49,7 @@
 <!------------------------ PROJECT_1 ------------------------>
 
   <div class="project_wide">
-    <h2>'Upside Down'</h2>
+    <h2>Upside Down</h2>
     <h3>Music Video</h3>
     <div class="video_container"><iframe src="https://player.vimeo.com/video/873590172?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Dex Donoe - Upside Down"></iframe><script src="https://player.vimeo.com/api/player.js"></script></div>
   </div>
@@ -55,7 +57,7 @@
   <!------------------------ PROJECT_2 ------------------------>
 
 <div class="project_wide">
-    <h2>'Cradle'</h2>
+    <h2>Cradle</h2>
     <h3>AI Film</h3>
     <div class="video_container"><iframe src="https://player.vimeo.com/video/873590172?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Dex Donoe - Upside Down"></iframe><script src="https://player.vimeo.com/api/player.js"></script></div>
   </div>
@@ -63,27 +65,27 @@
     <!------------------------ PROJECT_3 ------------------------>
 
 <div class="project_wide">
-    <h2>'Atmospheres'</h2>
+    <h2>Atmospheres, Japan</h2>
     <h3>Film Experiments</h3>
     <div class="video_container"><iframe src="https://player.vimeo.com/video/873590172?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Dex Donoe - Upside Down"></iframe><script src="https://player.vimeo.com/api/player.js"></script></div>
   </div>
 
-    <!----------------------------------------------------------->
-
-    <!------------------------ PROJECT_3 ------------------------>
+    <!------------------------ PROJECT_4 ------------------------>
 
 <div class="project_wide">
-  <div class="project_split">
-    <h2>'Atmospheres'</h2>
-    <h3>Film Experiments</h3>
+    <h2>Manoir</h2>
+    <h3>Short Film</h3>
     <div class="video_container"><iframe src="https://player.vimeo.com/video/873590172?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Dex Donoe - Upside Down"></iframe><script src="https://player.vimeo.com/api/player.js"></script></div>
   </div>
+
+
+  <div class="footer">
+    <a href="mailto:maryintro@icloud.com"><h1>Get in touch.</h1></a>
+  </div>
+
+
 </div>
-
-    <!----------------------------------------------------------->
-
 </div>
-
 
 
 <!------------------------ SCRIPTS ------------------------>
@@ -91,6 +93,74 @@
 <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
 <script src="js/scripts.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+
+
+
+
+
+
+
+
+
+<script>
+/* ===== BACKGROUND PARALLAX – 4 IMAGES PER CLUSTER (FULL JS REPLACEMENT) ===== */
+(()=>{const $$=s=>[...document.querySelectorAll(s)];
+const projects=$$('.project_wide'); if(!projects.length) return;
+
+/* build field + one cluster per project (4 tiles each) */
+let field=document.querySelector('.bg-field');
+if(!field){field=document.createElement('div');field.className='bg-field';document.body.prepend(field);}
+let clusters=[...field.querySelectorAll('.bg-cluster')];
+if(clusters.length!==projects.length){
+  clusters.forEach(c=>c.remove()); clusters=[];
+  for(let ci=0;ci<projects.length;ci++){
+    const c=document.createElement('div'); c.className='bg-cluster'; c.dataset.idx=ci;
+    for(let i=1;i<=4;i++){
+      const t=document.createElement('div'); t.className='tile t'+i;
+      t.dataset.speed=(0.09 + 0.02*((i%4))).toFixed(2);   // subtle vertical parallax
+      t.dataset.hdx=((i%3)-1)*0.07;                       // tiny horizontal drift
+      c.appendChild(t);
+    }
+    field.appendChild(c); clusters.push(c);
+  }
+}
+
+/* helpers */
+const SPD=t=>parseFloat(t.dataset.speed), HDX=t=>parseFloat(t.dataset.hdx);
+let H=innerHeight; addEventListener('resize',()=>{H=innerHeight;},{passive:true});
+let y=scrollY, tgt=scrollY; addEventListener('scroll',()=>tgt=scrollY,{passive:true});
+
+function projTop(el){const r=el.getBoundingClientRect();return scrollY+r.top;}
+const E=0.12, WOB_A=6, WOB_F=0.0012;
+
+function frame(){
+  y += (tgt - y) * E;
+
+  for(let i=0;i<clusters.length;i++){
+    const c=clusters[i], p=projects[i];
+    const baseTop = projTop(p);
+    const shift   = parseFloat(getComputedStyle(c).getPropertyValue('--shiftVH'))||50;
+    const baseY   = baseTop - H*(shift/100);            // anchor cluster to its project
+    c.style.setProperty('--baseY', baseY+'px');
+
+    const rel = y - baseY;
+    const tiles=[...c.children];
+    for(let k=0;k<tiles.length;k++){
+      const t=tiles[k], s=SPD(t);
+      const wob = Math.sin((y*WOB_F)+(k*0.7))*WOB_A;
+      const dy  = rel*s + wob;
+      const dx  = ((y*0.002)+k*0.3)*HDX(t)*10;
+      t.style.transform=`translate3d(${dx}px,${dy}px,0)`;
+    }
+  }
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+})();
+</script>
+
+
 
 </body>
 </html>
