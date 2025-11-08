@@ -109,12 +109,12 @@ a:hover {
 
 .welcome_img {
   position:relative;
-  top:-10.5vw;
+  top:-10.55vw;
   left:25%;
   height:35vw;
-  width:71%;
+  width:70.76%;
   padding:0;
-  margin:2vw 0 0 2vw;
+  margin:2.1vw 0 -.2vw 2vw;
   background-color:black;
   background-image:url('https://www.marysoroka.com/images/gif/cradle/cradle6.gif');
   background-size:125%;
@@ -136,7 +136,7 @@ h2 {
   letter-spacing:-0.03em;
   font-weight:normal;
   font-size:3vw;
-  margin:1vw 0 0;
+  margin:.5vw 0 0;
   padding:0;
   color:rgba(0,0,0,1);
 }
@@ -161,11 +161,12 @@ p {
   position: absolute;
   width:100%;
   background-color:white;
-  height:55vw;
+  height:45vw;
   padding:0 2vw;
   margin:0;
   z-index:999999;
   border-top:1px solid;
+  border-bottom:1px solid red;
 }
 
 .video_container {
@@ -173,7 +174,7 @@ p {
   padding:0;
   left:26%;
   top:0;
-  width:74%;
+  width:73.75%;
   height:40.3vw;
   margin:-4.4vw 0 0 0;
 }
