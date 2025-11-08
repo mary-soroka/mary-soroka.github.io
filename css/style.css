@@ -86,7 +86,7 @@ a:hover {
   left:0;
   height:43.25vw;
   width:100%;
-  padding:0 0 0 1vw;
+  padding:0 0 0 .7vw;
   margin:0;
   border-top:1px solid;
   border-bottom:1px solid;
@@ -102,9 +102,9 @@ a:hover {
   padding:0;
   margin:2vw 0 0 2vw;
   background-color:black;
-  background-image:url('https://www.marysoroka.com/images/2.jpg');
+  background-image:url('https://www.marysoroka.com/images/mary-soroka-art-creative-film-director.jpg');
   background-size:cover;
-  background-position:0 -120;
+  background-position:0 -70;
 }
 
 h1 {
@@ -112,7 +112,7 @@ h1 {
   font-weight:normal;
   font-size:16vw;
   padding:0;
-  margin:-6.75vw 0 0;
+  margin:-6.75vw 0 0 0;
   color:rgba(0,0,0,1);
   letter-spacing:-.025em;
   line-height:.9;
@@ -121,40 +121,26 @@ h1 {
 
 /* ------------------------ VIDEO ------------------------ */
 
-* { box-sizing: border-box; }
 
-.video-background {
-  background-color:black;
-  opacity:1;
-  position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0;
-  z-index: -999999;
+
+.container {
+  position:absolute;
+  background-color:transparent;
+  width:100%;
+  padding:2vw;
+  margin:0 0 2vw;
+  top:54.2vw;
+  height:auto;
+  z-index:999999;
+
+.video_container {
+    position:relative;
+  padding:56.25% 0 0 0;
 }
 
 iframe {
-  opacity:.65;
-}
+  position:absolute;top:0;left:0;
+  width:100%;
+  height:100%;
 
-.video-foreground, .video-background iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  background-color:black;
-  }
-
-@media (min-aspect-ratio: 16/9) {
-  .video-foreground { height: 300%; top: -100%; }
-}
-@media (max-aspect-ratio: 16/9) {
-  .video-foreground { width: 300%; left: -100%; }
-}
-@media all and (max-width: 600px) {
-.vid-info { width: 50%; padding: .5rem; }
-.vid-info h1 { margin-bottom: .2rem; }
-}
-@media all and (max-width: 500px) {
-.vid-info .acronym { display: none; }
 }
