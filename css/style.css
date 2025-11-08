@@ -1,76 +1,12 @@
-@font-face {
-    font-family: 'Monument Grotesk';
-    src: url('MonumentGrotesk-MediumItalic.woff2') format('woff2'),
-        url('MonumentGrotesk-MediumItalic.woff') format('woff');
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
-}
 
 @font-face {
     font-family: 'Monument Grotesk';
-    src: url('MonumentGrotesk-Regular.woff2') format('woff2'),
-        url('MonumentGrotesk-Regular.woff') format('woff');
-    font-weight: normal;
+    src: url('https://www.marysoroka.com/font/MonumentGrotesk-Regular.woff2') format('woff2'),
+        url('https://www.marysoroka.com/font/MonumentGrotesk-Regular.woff') format('woff');
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
-
-@font-face {
-    font-family: 'Monument Grotesk';
-    src: url('MonumentGrotesk-Italic.woff2') format('woff2'),
-        url('MonumentGrotesk-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Monument Grotesk Semi-Mono';
-    src: url('MonumentGrotesk-Semi-Mono.woff2') format('woff2'),
-        url('MonumentGrotesk-Semi-Mono.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Monument Grotesk';
-    src: url('MonumentGrotesk-BoldItalic.woff2') format('woff2'),
-        url('MonumentGrotesk-BoldItalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Monument Grotesk';
-    src: url('MonumentGrotesk-Bold.woff2') format('woff2'),
-        url('MonumentGrotesk-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Monument Grotesk Mono';
-    src: url('MonumentGrotesk-Mono.woff2') format('woff2'),
-        url('MonumentGrotesk-Mono.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Monument Grotesk';
-    src: url('MonumentGrotesk-Medium.woff2') format('woff2'),
-        url('MonumentGrotesk-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-
 
 * {
   box-sizing: border-box;
@@ -83,17 +19,15 @@ html, body {
   font-family: 'Monument Grotesk', sans-serif;
   overflow-x:hidden;
   scroll-behavior: smooth;
-  font-weight:400;
-  line-height:1.15;
-  letter-spacing: -.5px;
-  color:pink;
+  line-height:1;
 }
 
 a {
   text-decoration:none;
-  color:rgba(0,0,0,1);
   transition: .15s ease-in-out;
-  font-weight:600;
+  color:rgba(0,0,0,1);
+  padding:0;
+  margin:0;
 }
 
 a:hover {
@@ -101,277 +35,68 @@ a:hover {
   cursor:pointer;
 }
 
-.menu {
-  width:1.85vw;
-  height:1.85vw;
-  opacity:.3;
-  transition: .15s ease-in-out;
-}
+/* ------------------------ NAV ------------------------ */
 
-.menu:hover {
-opacity:1;
-}
-
-h2 {
-  letter-spacing:.05px;
-  font-weight:500;
-  font-size:1.3em;
+.top_left_nav {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
   padding:0;
   margin:0;
-  color:rgba(0,0,0,1);
+  z-index:9999999;
+  text-align:left;
+  height:32px;
+  font-size:16px;
+  letter-spacing:-0.01em;
+  padding:0;
+  margin:0 0 0 16px;
 }
 
-h3 {
-  letter-spacing:.1pt;
-  font-weight:500;
-  font-size:.8em;
-  padding:3px;
+.top_right_nav {
+  position:fixed;
+  top:0;
+  right:0;
+
+  width:100%;
+  padding:0;
   margin:0;
-  line-height:1.5;
-  color:rgba(0,0,0,1);
+  border:1px solid;
+  z-index:9999999;
+  text-align:right;
+  height:32px;
 }
 
-h5 {
-  letter-spacing:.3pt;
-  font-weight:500;
-  font-size:.2em;
-  opacity:.4;
-  padding:0 0 1vw;
-  margin:0;
-  color:rgba(0,0,0,1);
+.top_right_nav a {
+  font-size:16px;
+  letter-spacing:-0.01em;
+  padding:0;
+  margin:0 16px 0 0;
 }
 
-h4 {
-  letter-spacing:.3pt;
-  font-weight:400;
-  font-size:8em;
+/* ------------------------ WELCOME ------------------------ */
+
+
+.welcome {
+  position:fixed;
+  top:0;
+  left:0;
+  height:30vw;
+  width:100%;
+  padding:8vw 0 0 8px;
+  z-index:999999;
+}
+
+h1 {
+  letter-spacing:-0.01em;
+  font-weight:300;
+  font-size:100px;
   z-index:99999999;
-  padding:0 0 .5vw;
+  padding:0;
   margin:0;
-  line-height:.7;
-  color:rgba(225,225,225,1);
-  letter-spacing:-.05em;
-}
-
-h6 {
-  font-size:2vw;
-  font-weight:500;
-  letter-spacing:0;
-  line-height:1.5;
-  margin:0;
-  width:90%;
   color:rgba(0,0,0,1);
-}
-
-.quick {
-  width:100%;
-  padding:0 10vw 0 17vw;
-  margin:100vh auto 0;
-
-}
-
-.quick a {
-  border:0;
-  font-weight:500;
-  padding:2px;
-}
-
-.quick a:hover {
-  border:0;
-}
-
-.quick table {
-  width:93%;
-  padding:0;
-  margin:0;
-  line-height:1.2;
-}
-
- .quick td {
-  padding-bottom:0;
-  padding:0;
-  margin:0;
-}
-
-/* ------------------------ top_left ------------------------ */
-
-.top_left_light {
-  position:fixed;
-  top:.5vw;
-  left:2.3vw;
-  width:24%;
-  padding:1.7vw;
-  z-index:9999999;
-}
-
-.top_left_dark {
-  position:fixed;
-  top:.5vw;
-  left:2.3vw;
-  width:24%;
-  padding:1.7vw;
-  z-index:999999;
-}
-
-.top_left_dark_mobile {
-  position:fixed;
-  top:.5vw;
-  left:2.3vw;
-  width:24%;
-  padding:1.7vw;
-  z-index:999999;
-  display:none;
-}
-
-/* ------------------------ bottom_left ------------------------ */
-
-.bottom_left {
-  position:fixed;
-  bottom:4.3vw;
-  width:100%;
-  z-index:9999999;
-  text-decoration:none;
-  text-transform:uppercase;
-  color:rgba(255,255,255,1);
-  transition: .15s ease-in-out;
-  letter-spacing: 1px;
-  font-size: 11px;
-  font-weight:500;
-  text-align:center;
-}
-
-  /* ------------------------ NAV ------------------------ */
-
-.top_right_light, .top_right_dark {
-  position:fixed;
-  margin:0;
-  padding:0;
-  letter-spacing:0;
-  text-align:right;
-  width:100%;
-  top:4.5vw;
-  right:3.5vw;
-}
-
-.top_right_light {
-z-index:99999;
-}
-
-.top_right_dark {
-z-index:9999;
-}
-
-.top_right_light a {
-  text-transform:uppercase;
-  text-decoration:none;
-  color:rgb(255,255,255);
-  opacity:1;
-  transition: .15s ease-in-out;
-  padding:0 0 .5vw 0;
-  margin:1vw 1vw 0 1vw;
-  letter-spacing: 1px;
-  font-size: 11px;
-  font-weight:500;
-}
-
-.top_right_dark a {
-  text-transform:uppercase;
-  text-decoration:none;
-  color:rgb(0,0,0);
-  opacity:1;
-  transition: .15s ease-in-out;
-  padding:0 0 .5vw 0;
-  margin:1vw;
-  letter-spacing: 1px;
-  font-size: 11px;
-  font-weight:500;
-}
-
-.top_right_light a:hover, .top_right_dark a:hover {
-  opacity:.5;
-}
-
-/*.bottom_right {
-  position:fixed;
-  right:4.3vw;
-  bottom:4.3vw;
-  text-align:right;
-  z-index:999999;
-  display:none;
-}*/
-
-.bottom_right_link {
-  text-decoration:none;
-  text-transform:uppercase;
-  color:rgba(0,0,0,1);
-  transition: .15s ease-in-out;
-  letter-spacing: 1px;
-  font-size: 11px;
-  font-weight:500;
-}
-
-.bottom_right_link:hover {
-  color:rgba(0,0,0,0.5);
-}
-
-hr {
-  height:2.5vw;
-  border:0px solid white;
-}
-
-.date {
-  letter-spacing:.3pt;
-  font-weight:500;
-  font-size:.6em;
-  opacity:.4;
-  padding-left:2px;
-  line-height:4;
-  color:rgba(0,0,0,1);
-}
-
-.photos {
-  width:100%;
-  padding:0 17vw 0;
-  margin:0 auto 11vw;
-}
-
-.photo {
-  width:65vw;
-  margin:0 auto 0;
-  height:37vw;
-  background-size:cover;
-  background-position:center;
-}
-
-.label {
-  margin:10vw 0 2.5vw;
-}
-
-.label a {
-  border-bottom:1.5px solid;
-}
-
-table {
-  padding:0;
-  margin:0;
-}
-
-td {
-  padding:0;
-  margin:0;
-  vertical-align:top;
-}
-
-td.title {
-  width:22vw;
-}
-
-.secondary {
-  opacity:.35;
-}
-
-.divider {
-  height:2vw;
+  letter-spacing:-.02em;
+  line-height:.8;
 }
 
 
@@ -414,145 +139,3 @@ iframe {
 @media all and (max-width: 500px) {
 .vid-info .acronym { display: none; }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ------------------------ MED_SCREEN ------------------------ */
-
-
-@media only screen and (max-width: 650px) {
-
-/* ------------------------ top_left ------------------------ */
-
-.top_right_light, .top_right_dark, .bottom_left, .bottom_right, .bottom_right_link, .quick, .top_left_dark {
-display:none;
-}
-
-.top_left_light {
-  position:fixed;
-  top:40%;
-  left:0;
-  width:100%;
-  height:100%;
-  padding:0;
-}
-.top_left_light img {
-  padding:10vw;
-}
-
-hr {
-  height:.3vw;
-}
-
-.photos {
-  width:100%;
-  padding:140vw 2.5vw 0;
-}
-
-.photo {
-  width:100%;
-  margin:0 auto 0;
-  height:auto;
-}
-
-td.title {
-  width:100%;
-}
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ------------------------ MED_SCREEN ------------------------ */
-
-
-@media only screen and (max-width: 500px) {
-
-/* ------------------------ top_left ------------------------ */
-
-.video-background, .top_left_light, .top_right_light, .top_right_dark, .bottom_left, .bottom_right, .bottom_right_link, .quick, .top_left_dark {
-display:none;
-}
-
-.top_left_dark_mobile {
-  position:fixed;
-  top:40%;
-  left:0;
-  width:100%;
-  height:100%;
-  padding:0;
-  display:initial;
-  text-align:center;
-  font-size:24pt;
-}
-
-.top_left_dark_mobile img {
-  padding:5vw 5vw 13vw;
-}
-
-hr {
-  height:.3vw;
-}
-
-.photos {
-  width:100%;
-  padding:140vw 2.5vw 0;
-}
-
-.photo {
-  width:100%;
-  margin:0 auto 0;
-  height:auto;
-}
-
-td.title {
-  width:100%;
-}
-
-}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
