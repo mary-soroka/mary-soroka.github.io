@@ -19,7 +19,7 @@ html, body {
   font-family: 'Monument Grotesk', sans-serif;
   overflow-x:hidden;
   scroll-behavior: smooth;
-  line-height:1;
+  line-height:1.12;
 }
 
 a {
@@ -35,35 +35,46 @@ a:hover {
   cursor:pointer;
 }
 
+
+.bold {
+    font-family: 'Monument Grotesk Bold', sans-serif;
+    font-weight:bold;
+    line-height:0;
+  }
+
 /* ------------------------ NAV ------------------------ */
 
-.top_left_nav {
-  position:fixed;
-  top:1vw;
-  left:1vw;
-  width:100%;
-  padding:0;
-  margin:0 0 0 1vw;
-  z-index:9999999;
-  text-align:left;
-  font-size:1.5vw;
-}
 
-.top_right_nav {
+.nav_col1, .nav_col2, .nav_col3, .nav_col4 {
   position:fixed;
   top:1vw;
-  left:50%;
-  width:100%;
-  padding:0;
+  width:25%;
+  height:9.1vw;
+  padding:0 4vw 0 2vw;
   margin:0;
-  z-index:9999999;
   text-align:left;
-  font-size:1.5vw;
+  font-size:1vw;
+  z-index:999999;
 }
 
-.top_right_nav a {
-  padding:0;
-  margin:0 2vw 0 0;
+.nav_col1 {
+  left:0%;
+}
+
+.nav_col2 {
+  left:25%;
+}
+
+.nav_col3 {
+  left:50%;
+}
+
+.nav_col4 {
+  left:75%;
+}
+
+.nav_col4 a {
+  margin-right:2vw;
 }
 
 /* ------------------------ WELCOME ------------------------ */
@@ -71,39 +82,40 @@ a:hover {
 
 .welcome_left {
   position:fixed;
-  top:4.25vw;
+  top:11vw;
   left:0;
-  height:43.5vw;
+  height:43.25vw;
   width:100%;
   padding:0 0 0 1vw;
   margin:0;
   border-top:1px solid;
   border-bottom:1px solid;
+  z-index:99999;
 }
 
 .welcome_right {
   position:fixed;
-  top:6.5vw;
+  top:11vw;
   left:50%;
   height:39vw;
-  width:48%;
-  padding:2vw 1vw 0 1.4vw;
-  margin:0;
+  width:46%;
+  padding:0;
+  margin:2vw 0 0 2vw;
   background-color:black;
-  background-image:url('images/2.jpg');
+  background-image:url('https://www.marysoroka.com/images/2.jpg');
   background-size:cover;
-  background-position:0 -70;
+  background-position:0 -120;
 }
 
 h1 {
   letter-spacing:-0.01em;
-  font-weight:300;
-  font-size:10vw;
+  font-weight:normal;
+  font-size:16vw;
   padding:0;
-  margin:-3vw 0 0;
+  margin:-6.75vw 0 0;
   color:rgba(0,0,0,1);
-  letter-spacing:-.02em;
-  line-height:.8;
+  letter-spacing:-.025em;
+  line-height:.9;
 }
 
 
