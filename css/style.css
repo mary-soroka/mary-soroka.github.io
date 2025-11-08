@@ -237,13 +237,20 @@ p {
 .bg-cluster[data-idx="2"] .t4{left:78vw;  top:92vh;background-image:url('/Volumes/MARY SOROKA 2025/Creative/Website 2025/mary-soroka.github.io/images/bg/project3/bg18.png')}
 
 /* CLUSTER 4 – project4/bg25–bg28 (Manoir) */
-.bg-cluster[data-idx="3"] .t1{left:6vw;   top:62vh;background-image:url('/Volumes/MARY SOROKA 2025/Creative/Website 2025/mary-soroka.github.io/images/bg/project4/bg25.png')}
-.bg-cluster[data-idx="3"] .t2{left:10vw;  top:85vh;background-image:url('/Volumes/MARY SOROKA 2025/Creative/Website 2025/mary-soroka.github.io/images/bg/project4/bg26.png')}
-.bg-cluster[data-idx="3"] .t3{left:88vw;  top:50vh;background-image:url('/Volumes/MARY SOROKA 2025/Creative/Website 2025/mary-soroka.github.io/images/bg/project4/bg27.png')}
-.bg-cluster[data-idx="3"] .t4{left:90vw;  top:88vh;background-image:url('/Volumes/MARY SOROKA 2025/Creative/Website 2025/mary-soroka.github.io/images/bg/project4/bg28.png')}
+.bg-cluster[data-idx="3"] .t1{left:6vw;   top:62vh;background-image:url('/Volumes/MARY SOROKA 2025/Creative/Website 2025/mary-soroka.github.io/images/bg/project4/bg28.png')}
+.bg-cluster[data-idx="3"] .t2{left:10vw;  top:80vh;background-image:url('/Volumes/MARY SOROKA 2025/Creative/Website 2025/mary-soroka.github.io/images/bg/project4/bg25.png')}
+.bg-cluster[data-idx="3"] .t3{left:88vw;  top:50vh;background-image:url('/Volumes/MARY SOROKA 2025/Creative/Website 2025/mary-soroka.github.io/images/bg/project4/bg30.png')}
+.bg-cluster[data-idx="3"] .t4{left:90vw;  top:88vh;background-image:url('/Volumes/MARY SOROKA 2025/Creative/Website 2025/mary-soroka.github.io/images/bg/project4/bg26.png')}
 
 
+/* CLUSTER 5 anchor */
+.bg-cluster[data-idx="4"]{--shiftVH:48;}
 
+/* CLUSTER 5 – project5/bg29–bg32 */
+.bg-cluster[data-idx="4"] .t1{left:-12vw; top:64vh; background-image:url('/Volumes/MARY SOROKA 2025/Creative/Website 2025/mary-soroka.github.io/images/bg/project5/bg29.png')}
+.bg-cluster[data-idx="4"] .t2{left:17vw;  top:68vh; background-image:url('/Volumes/MARY SOROKA 2025/Creative/Website 2025/mary-soroka.github.io/images/bg/project5/bg30.png')}
+.bg-cluster[data-idx="4"] .t3{left:24vw;  top:76vh; background-image:url('/Volumes/MARY SOROKA 2025/Creative/Website 2025/mary-soroka.github.io/images/bg/project5/bg30.png')}
+.bg-cluster[data-idx="4"] .t4{left:90vw;  top:68vh; background-image:url('/Volumes/MARY SOROKA 2025/Creative/Website 2025/mary-soroka.github.io/images/bg/project5/bg30.png')}
 
 
 
