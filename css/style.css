@@ -39,61 +39,69 @@ a:hover {
 
 .top_left_nav {
   position:fixed;
-  top:0;
-  left:0;
+  top:1vw;
+  left:1vw;
+  width:100%;
+  padding:0;
+  margin:0 0 0 1vw;
+  z-index:9999999;
+  text-align:left;
+  font-size:1.5vw;
+}
+
+.top_right_nav {
+  position:fixed;
+  top:1vw;
+  left:50%;
   width:100%;
   padding:0;
   margin:0;
   z-index:9999999;
   text-align:left;
-  height:32px;
-  font-size:16px;
-  letter-spacing:-0.01em;
-  padding:0;
-  margin:0 0 0 16px;
-}
-
-.top_right_nav {
-  position:fixed;
-  top:0;
-  right:0;
-
-  width:100%;
-  padding:0;
-  margin:0;
-  border:1px solid;
-  z-index:9999999;
-  text-align:right;
-  height:32px;
+  font-size:1.5vw;
 }
 
 .top_right_nav a {
-  font-size:16px;
-  letter-spacing:-0.01em;
   padding:0;
-  margin:0 16px 0 0;
+  margin:0 2vw 0 0;
 }
 
 /* ------------------------ WELCOME ------------------------ */
 
 
-.welcome {
+.welcome_left {
   position:fixed;
-  top:0;
+  top:4.25vw;
   left:0;
-  height:30vw;
+  height:43.5vw;
   width:100%;
-  padding:8vw 0 0 8px;
-  z-index:999999;
+  padding:0 0 0 1vw;
+  margin:0;
+  border-top:1px solid;
+  border-bottom:1px solid;
+}
+
+.welcome_right {
+  position:fixed;
+  top:6.5vw;
+  left:50%;
+  height:39vw;
+  width:48%;
+  padding:2vw 1vw 0 1.4vw;
+  margin:0;
+  border:1px solid red;
+  background-color:black;
+  background-image:url('https://www.marysoroka.com/images/mary-soroka-art-creative-film-director.jpg');
+  background-size:cover;
+  background-position:0 -70;
 }
 
 h1 {
   letter-spacing:-0.01em;
   font-weight:300;
-  font-size:100px;
-  z-index:99999999;
+  font-size:10vw;
   padding:0;
-  margin:0;
+  margin:-3vw 0 0;
   color:rgba(0,0,0,1);
   letter-spacing:-.02em;
   line-height:.8;
