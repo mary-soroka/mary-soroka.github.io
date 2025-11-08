@@ -113,7 +113,7 @@ a:hover {
   padding:0;
   margin:2.1vw 0 -.2vw 2vw;
   background-color:black;
-  background-image:url('https://www.marysoroka.com/images/gif/cradle/cradle6.gif');
+  background-image:url('https://www.marysoroka.com/images/bg/bg1.png');
   background-size:125%;
   background-position:center;
 }
@@ -189,3 +189,23 @@ iframe {
   margin:0;
   z-index:999999;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Add to CSS */
+.parallax{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.parallax .layer{position:absolute;inset:-10vh;background-size:cover;background-position:center;opacity:.15;will-change:transform}
+.parallax .l1{background-image:url('https://www.marysoroka.com/images/gif/cradle/cradle6.gif')}
+.parallax .l2{background-image:url('https://www.marysoroka.com/images/gif/cradle/cradle6.gif')}
+.parallax .l3{background-image:url('https://www.marysoroka.com/images/gif/cradle/cradle6.gif')}
+

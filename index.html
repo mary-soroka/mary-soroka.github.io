@@ -10,6 +10,13 @@
 
 <body>
 
+  <!-- Add just inside <body> -->
+<div class="parallax" aria-hidden="true"><div class="layer l1"></div><div class="layer l2"></div><div class="layer l3"></div></div>
+
+<!-- Add before </body> -->
+<script>(()=>{const l=document.querySelectorAll('.parallax .layer'),s=[.05,.1,.18],f=()=>{const y=scrollY;l.forEach((e,i)=>e.style.transform=`translate3d(0,${y*s[i]}px,0)`)};
+f();addEventListener('scroll',f,{passive:1});})();</script>
+
   <a name="head"></a>
 
       <!------------------------ NAV ------------------------>
