@@ -111,7 +111,7 @@ a:hover {
   position:relative;
   top:-10.55vw;
   left:25%;
-  height:35vw;
+  height:39.8vw;
   width:70.76%;
   padding:0;
   margin:2.1vw 0 -.2vw 2vw;
@@ -147,7 +147,7 @@ h3 {
   font-size:3vw;
   margin:0;
   padding:0;
-  color:rgba(0,0,0,.2);
+  color:rgba(0,0,0,.13);
 }
 
 p {
@@ -157,7 +157,7 @@ p {
 
 /* ------------------------ VIDEO ------------------------ */
 
-.project_1 {
+.project {
   position: absolute;
   width:100%;
   background-color:white;
