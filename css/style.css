@@ -1,92 +1,76 @@
 @font-face {
-    font-family: 'Apfel Grotezk Brukt';
-    src: url('ApfelGrotezk-Brukt.woff2') format('woff2'),
-        url('ApfelGrotezk-Brukt.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
+    font-family: 'Monument Grotesk';
+    src: url('MonumentGrotesk-MediumItalic.woff2') format('woff2'),
+        url('MonumentGrotesk-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Apfel Grotezk';
-    src: url('ApfelGrotezk-Fett.woff2') format('woff2'),
-        url('ApfelGrotezk-Fett.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Apfel Grotezk Brukt';
-    src: url('ApfelGrotezk-Brukt.woff2') format('woff2'),
-        url('ApfelGrotezk-Brukt.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Apfel Grotezk';
-    src: url('ApfelGrotezk-Regular.woff2') format('woff2'),
-        url('ApfelGrotezk-Regular.woff') format('woff');
+    font-family: 'Monument Grotesk';
+    src: url('MonumentGrotesk-Regular.woff2') format('woff2'),
+        url('MonumentGrotesk-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Apfel Grotezk Mittel';
-    src: url('ApfelGrotezk-Mittel.woff2') format('woff2'),
-        url('ApfelGrotezk-Mittel.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
+    font-family: 'Monument Grotesk';
+    src: url('MonumentGrotesk-Italic.woff2') format('woff2'),
+        url('MonumentGrotesk-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Apfel Grotezk Mittel';
-    src: url('ApfelGrotezk-Mittel.woff2') format('woff2'),
-        url('ApfelGrotezk-Mittel.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Apfel Grotezk';
-    src: url('ApfelGrotezk-Fett.woff2') format('woff2'),
-        url('ApfelGrotezk-Fett.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Apfel Grotezk';
-    src: url('ApfelGrotezk-Regular.woff2') format('woff2'),
-        url('ApfelGrotezk-Regular.woff') format('woff');
+    font-family: 'Monument Grotesk Semi-Mono';
+    src: url('MonumentGrotesk-Semi-Mono.woff2') format('woff2'),
+        url('MonumentGrotesk-Semi-Mono.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Apfel Grotezk Satt';
-    src: url('ApfelGrotezk-Satt.woff2') format('woff2'),
-        url('ApfelGrotezk-Satt.woff') format('woff');
-    font-weight: 900;
+    font-family: 'Monument Grotesk';
+    src: url('MonumentGrotesk-BoldItalic.woff2') format('woff2'),
+        url('MonumentGrotesk-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monument Grotesk';
+    src: url('MonumentGrotesk-Bold.woff2') format('woff2'),
+        url('MonumentGrotesk-Bold.woff') format('woff');
+    font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Apfel Grotezk Satt';
-    src: url('ApfelGrotezk-Satt.woff2') format('woff2'),
-        url('ApfelGrotezk-Satt.woff') format('woff');
-    font-weight: 900;
+    font-family: 'Monument Grotesk Mono';
+    src: url('MonumentGrotesk-Mono.woff2') format('woff2'),
+        url('MonumentGrotesk-Mono.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Monument Grotesk';
+    src: url('MonumentGrotesk-Medium.woff2') format('woff2'),
+        url('MonumentGrotesk-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 
 * {
   box-sizing: border-box;
@@ -96,65 +80,479 @@ html, body {
   scroll-behavior: smooth;
   margin:0;
   padding:0;
-  font-family: 'Apfel Grotezk', sans-serif;
+  font-family: 'Monument Grotesk', sans-serif;
   overflow-x:hidden;
   scroll-behavior: smooth;
+  font-weight:400;
   line-height:1.15;
   letter-spacing: -.5px;
-  color:white;
-  background-color:black;
-  background-image:url('http://mary-soroka.github.io/images/girl-fullscreen.gif');
-  background-size:cover;
-  background-position:center;
-  background-repeat: no-repeat;
-  text-align:center;
-  text-rendering: optimizeLegibility;
-  letter-spacing:.5pt;
-}
-
-.logo {
-    width:60vw;
-    padding:0;
-    margin:0;
-    margin:0 0 2vw;
-}
-
-.lock {
-    width:15px;
-    padding:0;
-    margin-right:15px;
-  }
-
-p {
-    font-weight:300;
-    font-size:calc(7px + 1vw);
+  color:pink;
 }
 
 a {
   text-decoration:none;
-  color:rgba(255,255,255,1);
+  color:rgba(0,0,0,1);
   transition: .15s ease-in-out;
-  font-weight:500;
+  font-weight:600;
 }
 
 a:hover {
-  color:rgba(255,255,255,.5);
+  color:rgba(0,0,0,.5);
   cursor:pointer;
 }
 
-.arrow {
-    margin-left:8px;
-    vertical-align: -.5;
+.menu {
+  width:1.85vw;
+  height:1.85vw;
+  opacity:.3;
+  transition: .15s ease-in-out;
 }
 
-.main {
-  margin:auto;
-  height:auto;
+.menu:hover {
+opacity:1;
+}
+
+h2 {
+  letter-spacing:.05px;
+  font-weight:500;
+  font-size:1.3em;
   padding:0;
+  margin:0;
+  color:rgba(0,0,0,1);
+}
+
+h3 {
+  letter-spacing:.1pt;
+  font-weight:500;
+  font-size:.8em;
+  padding:3px;
+  margin:0;
+  line-height:1.5;
+  color:rgba(0,0,0,1);
+}
+
+h5 {
+  letter-spacing:.3pt;
+  font-weight:500;
+  font-size:.2em;
+  opacity:.4;
+  padding:0 0 1vw;
+  margin:0;
+  color:rgba(0,0,0,1);
+}
+
+h4 {
+  letter-spacing:.3pt;
+  font-weight:400;
+  font-size:8em;
+  z-index:99999999;
+  padding:0 0 .5vw;
+  margin:0;
+  line-height:.7;
+  color:rgba(225,225,225,1);
+  letter-spacing:-.05em;
+}
+
+h6 {
+  font-size:2vw;
+  font-weight:500;
+  letter-spacing:0;
+  line-height:1.5;
+  margin:0;
+  width:90%;
+  color:rgba(0,0,0,1);
+}
+
+.quick {
+  width:100%;
+  padding:0 10vw 0 17vw;
+  margin:100vh auto 0;
+
+}
+
+.quick a {
+  border:0;
+  font-weight:500;
+  padding:2px;
+}
+
+.quick a:hover {
+  border:0;
+}
+
+.quick table {
+  width:93%;
+  padding:0;
+  margin:0;
+  line-height:1.2;
+}
+
+ .quick td {
+  padding-bottom:0;
+  padding:0;
+  margin:0;
+}
+
+/* ------------------------ top_left ------------------------ */
+
+.top_left_light {
+  position:fixed;
+  top:.5vw;
+  left:2.3vw;
+  width:24%;
+  padding:1.7vw;
+  z-index:9999999;
+}
+
+.top_left_dark {
+  position:fixed;
+  top:.5vw;
+  left:2.3vw;
+  width:24%;
+  padding:1.7vw;
+  z-index:999999;
+}
+
+.top_left_dark_mobile {
+  position:fixed;
+  top:.5vw;
+  left:2.3vw;
+  width:24%;
+  padding:1.7vw;
+  z-index:999999;
+  display:none;
+}
+
+/* ------------------------ bottom_left ------------------------ */
+
+.bottom_left {
+  position:fixed;
+  bottom:4.3vw;
   width:100%;
   z-index:9999999;
   text-decoration:none;
+  text-transform:uppercase;
+  color:rgba(255,255,255,1);
+  transition: .15s ease-in-out;
+  letter-spacing: 1px;
+  font-size: 11px;
+  font-weight:500;
+  text-align:center;
+}
+
+  /* ------------------------ NAV ------------------------ */
+
+.top_right_light, .top_right_dark {
+  position:fixed;
+  margin:0;
+  padding:0;
+  letter-spacing:0;
+  text-align:right;
+  width:100%;
+  top:4.5vw;
+  right:3.5vw;
+}
+
+.top_right_light {
+z-index:99999;
+}
+
+.top_right_dark {
+z-index:9999;
+}
+
+.top_right_light a {
+  text-transform:uppercase;
+  text-decoration:none;
+  color:rgb(255,255,255);
+  opacity:1;
+  transition: .15s ease-in-out;
+  padding:0 0 .5vw 0;
+  margin:1vw 1vw 0 1vw;
+  letter-spacing: 1px;
+  font-size: 11px;
+  font-weight:500;
+}
+
+.top_right_dark a {
+  text-transform:uppercase;
+  text-decoration:none;
+  color:rgb(0,0,0);
+  opacity:1;
+  transition: .15s ease-in-out;
+  padding:0 0 .5vw 0;
+  margin:1vw;
+  letter-spacing: 1px;
+  font-size: 11px;
+  font-weight:500;
+}
+
+.top_right_light a:hover, .top_right_dark a:hover {
+  opacity:.5;
+}
+
+/*.bottom_right {
+  position:fixed;
+  right:4.3vw;
+  bottom:4.3vw;
+  text-align:right;
+  z-index:999999;
+  display:none;
+}*/
+
+.bottom_right_link {
+  text-decoration:none;
+  text-transform:uppercase;
+  color:rgba(0,0,0,1);
+  transition: .15s ease-in-out;
+  letter-spacing: 1px;
+  font-size: 11px;
+  font-weight:500;
+}
+
+.bottom_right_link:hover {
+  color:rgba(0,0,0,0.5);
+}
+
+hr {
+  height:2.5vw;
+  border:0px solid white;
+}
+
+.date {
+  letter-spacing:.3pt;
+  font-weight:500;
+  font-size:.6em;
+  opacity:.4;
+  padding-left:2px;
+  line-height:4;
+  color:rgba(0,0,0,1);
+}
+
+.photos {
+  width:100%;
+  padding:0 17vw 0;
+  margin:0 auto 11vw;
+}
+
+.photo {
+  width:65vw;
+  margin:0 auto 0;
+  height:37vw;
+  background-size:cover;
+  background-position:center;
+}
+
+.label {
+  margin:10vw 0 2.5vw;
+}
+
+.label a {
+  border-bottom:1.5px solid;
+}
+
+table {
+  padding:0;
+  margin:0;
+}
+
+td {
+  padding:0;
+  margin:0;
+  vertical-align:top;
+}
+
+td.title {
+  width:22vw;
+}
+
+.secondary {
+  opacity:.35;
+}
+
+.divider {
+  height:2vw;
+}
+
+
+/* ------------------------ VIDEO ------------------------ */
+
+* { box-sizing: border-box; }
+
+.video-background {
+  background-color:black;
+  opacity:1;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -999999;
+}
+
+iframe {
+  opacity:.65;
+}
+
+.video-foreground, .video-background iframe {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);}
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-color:black;
+  }
+
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+.vid-info { width: 50%; padding: .5rem; }
+.vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+.vid-info .acronym { display: none; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------ MED_SCREEN ------------------------ */
+
+
+@media only screen and (max-width: 650px) {
+
+/* ------------------------ top_left ------------------------ */
+
+.top_right_light, .top_right_dark, .bottom_left, .bottom_right, .bottom_right_link, .quick, .top_left_dark {
+display:none;
+}
+
+.top_left_light {
+  position:fixed;
+  top:40%;
+  left:0;
+  width:100%;
+  height:100%;
+  padding:0;
+}
+.top_left_light img {
+  padding:10vw;
+}
+
+hr {
+  height:.3vw;
+}
+
+.photos {
+  width:100%;
+  padding:140vw 2.5vw 0;
+}
+
+.photo {
+  width:100%;
+  margin:0 auto 0;
+  height:auto;
+}
+
+td.title {
+  width:100%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------ MED_SCREEN ------------------------ */
+
+
+@media only screen and (max-width: 500px) {
+
+/* ------------------------ top_left ------------------------ */
+
+.video-background, .top_left_light, .top_right_light, .top_right_dark, .bottom_left, .bottom_right, .bottom_right_link, .quick, .top_left_dark {
+display:none;
+}
+
+.top_left_dark_mobile {
+  position:fixed;
+  top:40%;
+  left:0;
+  width:100%;
+  height:100%;
+  padding:0;
+  display:initial;
+  text-align:center;
+  font-size:24pt;
+}
+
+.top_left_dark_mobile img {
+  padding:5vw 5vw 13vw;
+}
+
+hr {
+  height:.3vw;
+}
+
+.photos {
+  width:100%;
+  padding:140vw 2.5vw 0;
+}
+
+.photo {
+  width:100%;
+  margin:0 auto 0;
+  height:auto;
+}
+
+td.title {
+  width:100%;
+}
+
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
