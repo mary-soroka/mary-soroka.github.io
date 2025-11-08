@@ -46,11 +46,11 @@ a:hover {
   h1 {
   font-weight:normal;
   font-size:7vw;
-  margin:-5.5vw 0 0 0;
+  margin:-4.9vw 0 0 0;
   padding:3.6vw 0 0 1.5vw;
   color:rgba(0,0,0,1);
   letter-spacing:-.028em;
-  line-height:.9;
+  line-height:.8;
 }
 
 h2 {
@@ -147,7 +147,7 @@ p {
   height:39.8vw;
   width:70.76%;
   padding:0;
-  margin:2.1vw 0 -.2vw 2vw;
+  margin:3.1vw 0 -.2vw 2vw;
   background-color:black;
   background-image:url('http://mary-soroka.github.io/images/me.jpg');
   background-size:125%;
