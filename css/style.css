@@ -252,10 +252,10 @@ p {
 
 .footer h1 {
   position: relative;
-  z-index: 13
+  z-index: 13;
   color: black;
   transition: color .3s ease;
-  font-size:4vw;
+  font-size:3.48vw;
 }
 
 .footer:hover {
