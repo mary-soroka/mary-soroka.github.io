@@ -29,12 +29,27 @@ a {
   color:rgba(0,0,0,1);
   padding:0;
   margin:0;
+  line-height:1;
+  display:inline-flex;
+  position:relative;
+}
+
+.nav_col3 a {
+height:auto;
 }
 
 a:hover {
   color:rgba(0,0,0,.3);
   cursor:pointer;
 }
+
+.icon {
+  position: relative;
+  height:15px;
+  width:15px;
+  top:2.5;
+  margin:0 .2vw 0 .2vw;
+display:;}
 
 
 .bold {
@@ -45,12 +60,12 @@ a:hover {
 
   h1 {
   font-weight:normal;
-  font-size:7vw;
-  margin:-4.9vw 0 0 0;
+  font-size:6vw;
+  margin:-4.35vw 0 0 0;
   padding:3.6vw 0 0 1.5vw;
   color:rgba(0,0,0,1);
   letter-spacing:-.028em;
-  line-height:.8;
+  line-height:.82;
 }
 
 h2 {
@@ -87,7 +102,7 @@ p {
   z-index:99999999;
   background-color:rgba(255,255,255,0);
   text-align:left;
-  font-size:.94vw;
+  font-size:.85vw;
 }
 
 .nav_col1, .nav_col2, .nav_col3, .nav_col4 {
@@ -95,7 +110,7 @@ p {
   width:25%;
   padding:0 2vw 0;
   line-height:1.37;
-  letter-spacing:.03em;
+  letter-spacing:.02em;
 }
 
 #slash {margin-left:1vw;}
@@ -114,7 +129,6 @@ p {
 
 .nav_col4 {
   left:75%;
-  text-align:right;
 }
 
 /* ------------------------ CONTENT ------------------------ */
@@ -123,6 +137,7 @@ p {
   position:absolute;
   width:100%;
   height:auto;
+  top:2vw;
 }
 
 /* ------------------------ WELCOME ------------------------ */
@@ -130,29 +145,29 @@ p {
 
 .welcome {
   position: relative;
-  top:8.5vw;
+  top:6.15vw;
   left:0;
   height:auto;
   width:100%;
-  padding:0 0 0 0;
-  margin:0;
+  padding:0;
+  margin:0 0 -16.5vw;
   z-index:99999;
   background-color:rgba(255,255,255,0);
   border-top:1px solid;
-
 }
 
 .welcome_img {
   position:relative;
-  top:-10.55vw;
+  top:-24.9vw;
   left:25%;
   height:39.8vw;
   width:70.76%;
   padding:0;
   margin:3.1vw 0 0vw 2vw;
   background-color:black;
-  background-image:url('http://mary-soroka.github.io/images/me.jpg');
-  background-size:125%;
+  background-image:url('/Users/e057540/Mary/Website 2025/mary-soroka.github.io/images/me2.png');
+  background-size:cover;
+  background-size:100%;
   background-position:center;
 }
 
@@ -170,9 +185,9 @@ p {
 
 .video_container {
   position:absolute;
-  padding:0;
+  padding:0 0 .5vw 0;
   left:25%;
-  top:0;
+  top:.2vw;
   width:70.76%;
   height:40.3vw;
   margin:2.1vw 0 0 2vw;
@@ -187,7 +202,7 @@ p {
   display:inline-block;
   padding:0;
   left:25%;
-  top:-5.5vw;
+  top:-8vw;
   width:22vw;
   height:40.3vw;
   margin:0 1.15vw 0 1vw;
