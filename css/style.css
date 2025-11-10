@@ -259,7 +259,7 @@ p {
   background-color: white;
   overflow: hidden;
   transition: background-color .3s ease;
-}*/
+}
 
 .footer h1 {
   position: relative;
@@ -282,11 +282,12 @@ p {
   color: white;
 }
 
+*/
 
 
 
+/* ===== PROJECTS ===== */
 
-/* ===== BACKGROUND CLUSTERS – 4 IMAGES PER CLUSTER ===== */
 .bg-field {
   position: absolute;
   inset: 0;
@@ -321,49 +322,49 @@ p {
 .bg-cluster[data-idx="5"] { --shiftVH: 58; }
 .bg-cluster[data-idx="6"] { --shiftVH: 50; }
 
-/* ===== CLUSTER 1 – project4/bg25–bg28 (Self) SELF PORTRAIT ===== */
+/* ===== 1 - SELF ===== */
 .bg-cluster[data-idx="0"] .t1 { left: 6vw; top: 62vh; background-image: url('http://mary-soroka.github.io/images/art/self/h/mary_soroka_self_h1.png'); }
 .bg-cluster[data-idx="0"] .t2 { left: 10vw; top: 80vh; background-image: url('http://mary-soroka.github.io/images/art/self/h/mary_soroka_self_h2.png'); }
 .bg-cluster[data-idx="0"] .t4 { left: 33.65vw; top: 70vh; background-image: url('http://mary-soroka.github.io/images/art/self/h/mary_soroka_self_h3.png'); }
 .bg-cluster[data-idx="0"] .t3 { left: 88vw; top: 56vh; background-image: url('http://mary-soroka.github.io/images/art/self/h/mary_soroka_self_h4.png'); }
 
-/* ===== CLUSTER 2 – project2/bg9–bg12 ===== CRADLE */
+/* ===== 2 - CRADLE */
 .bg-cluster[data-idx="1"] .t1 { left: 8vw; top: 58vh; background-image: url('http://mary-soroka.github.io/images/art/cradle/h/mary_soroka_cradle_h1.png'); }
 .bg-cluster[data-idx="1"] .t2 { left: 13vw; top: 85.5vh; background-image: url('http://mary-soroka.github.io/images/art/cradle/h/mary_soroka_cradle_h2.png'); }
 .bg-cluster[data-idx="1"] .t3 { left: -15vw; top: 70vh; background-image: url('http://mary-soroka.github.io/images/art/cradle/h/mary_soroka_cradle_h3.png'); }
 .bg-cluster[data-idx="1"] .t4 { left: 88vw; top: 82vh; background-image: url('http://mary-soroka.github.io/images/art/cradle/h/mary_soroka_cradle_h4.png'); }
 
-/* ===== CLUSTER 6 – project6 (storm) ===== CANTICLE */
+/* ===== 3 - CANTICLE */
 .bg-cluster[data-idx="2"] .t1 { left: 9vw; top: 72vh; background-image: url('http://mary-soroka.github.io/images/art/canticle/h/mary_soroka_canticle_h1.png'); }
 .bg-cluster[data-idx="2"] .t2 { left: -12vw; top: 86vh; background-image: url('http://mary-soroka.github.io/images/art/canticle/h/mary_soroka_canticle_h2.png'); }
 .bg-cluster[data-idx="2"] .t3 { left: 20vw; top: 92vh; background-image: url('http://mary-soroka.github.io/images/art/canticle/h/mary_soroka_canticle_h3.png'); }
 .bg-cluster[data-idx="2"] .t4 { left: 90vw; top: 74vh; background-image: url('http://mary-soroka.github.io/images/art/canticle/h/mary_soroka_canticle_h4.png'); }
 
-/* ===== CLUSTER 5 – project5/bg29–bg32 ===== MEMORY BROKER */
+/* ===== 4 - THE MEMORY BROKER */
 .bg-cluster[data-idx="3"] .t1 { left: -5vw; top: 58vh; background-image: url('http://mary-soroka.github.io/images/art/memory_broker/h/mary_soroka_memory_broker_h1.png'); }
 .bg-cluster[data-idx="3"] .t2 { left: 9vw; top: 64vh; background-image: url('http://mary-soroka.github.io/images/art/memory_broker/h/mary_soroka_memory_broker_h2.png'); }
 .bg-cluster[data-idx="3"] .t3 { left: 13vw; top: 82vh; background-image: url('http://mary-soroka.github.io/images/art/memory_broker/h/mary_soroka_memory_broker_h3.png'); }
 .bg-cluster[data-idx="3"] .t4 { left: 90vw; top: 64vh; background-image: url('http://mary-soroka.github.io/images/art/memory_broker/h/mary_soroka_memory_broker_h4.png'); }
 
-/* ===== CLUSTER 4 – project1/bg1–bg4 ===== UPSIDE DOWN */
+/* ===== 5 - UPSIDE DOWN */
 .bg-cluster[data-idx="4"] .t1 { left: 10vw; top: 80vh; background-image: url('http://mary-soroka.github.io/images/bg/project1/bg6.png'); }
 .bg-cluster[data-idx="4"] .t2 { left: 18vw; top: 60vh; background-image: url('http://mary-soroka.github.io/images/bg/project1/bg4.png'); }
 .bg-cluster[data-idx="4"] .t3 { left: 80vw; top: 40vh; background-image: url('http://mary-soroka.github.io/images/bg/project1/bg7.png'); }
 .bg-cluster[data-idx="4"] .t4 { left: 85vw; top: 74vh; background-image: url('http://mary-soroka.github.io/images/bg/project1/bg5.png'); }
 
-/* ===== CLUSTER 7 – project7 (storm) ===== MINER */
+/* ===== 6 - MINER'S RELIQUARY */
 .bg-cluster[data-idx="5"] .t1 { left: 10vw; top: 70vh; background-image: url('http://mary-soroka.github.io/images/art/miners_reliquary/h/mary_soroka_miners_reliquary_h1.png'); }
 .bg-cluster[data-idx="5"] .t2 { left: 2vw; top: 92vh; background-image: url('http://mary-soroka.github.io/images/art/miners_reliquary/h/mary_soroka_miners_reliquary_h2.png'); }
 .bg-cluster[data-idx="5"] .t3 { left: 70vw; top: 92vh; background-image: url('http://mary-soroka.github.io/images/art/miners_reliquary/h/mary_soroka_miners_reliquary_h3.png'); }
 .bg-cluster[data-idx="5"] .t4 { left: 96vw; top: 76vh; background-image: url('http://mary-soroka.github.io/images/art/miners_reliquary/h/mary_soroka_miners_reliquary_h4.png'); }
 
-/* ===== CLUSTER 3 – project3/bg17–bg20 ===== JAPAN */
+/* ===== 7 - JAPAN */
 .bg-cluster[data-idx="6"] .t1 { left: 12vw; top: 63vh; background-image: url('http://mary-soroka.github.io/images/art/japan/h/mary_soroka_japan_h1.png'); }
 .bg-cluster[data-idx="6"] .t2 { left: 8vw; top: 83vh; background-image: url('http://mary-soroka.github.io/images/art/japan/h/mary_soroka_japan_h2.png'); }
 .bg-cluster[data-idx="6"] .t3 { left: -22vw; top: 70vh; background-image: url('http://mary-soroka.github.io/images/art/japan/h/mary_soroka_japan_h3.png'); }
 .bg-cluster[data-idx="6"] .t4 { left: 78vw; top: 80vh; background-image: url('http://mary-soroka.github.io/images/art/japan/h/mary_soroka_japan_h4.png'); }
 
-/* ===== CLUSTER 3 – project3/bg17–bg20 ===== PROTOCOL */
+/* ===== 8 - HALF-LIGHT PROTOCOL */
 
 .bg-cluster[data-idx="7"]{--shiftVH:54;}
 .bg-cluster[data-idx="7"] .t1{left:-12vw;top:78vh;background-image:url('http://mary-soroka.github.io/images/art/half_light_protocol/h/mary_soroka_half_light_protocol_h1.png')}
