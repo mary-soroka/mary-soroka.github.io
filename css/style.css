@@ -43,6 +43,15 @@ a:hover {
   cursor:pointer;
 }
 
+.logo {
+  width: 2.8vw;        /* adjust size as needed */
+  height: auto;
+  display: block;
+  fill: #000;           /* ensures SVG renders black if using currentColor */
+  filter: brightness(0) saturate(100%); /* forces black tone for external SVGs */
+  cursor: pointer;
+}
+
 .icon {
   position: relative;
   height:15px;
@@ -102,15 +111,15 @@ p {
   z-index:99999999;
   background-color:rgba(255,255,255,0);
   text-align:left;
-  font-size:.9vw;
+  font-size:.86vw;
 }
 
 .nav_col1, .nav_col2, .nav_col3, .nav_col4 {
   position:absolute;
   width:25%;
   padding:0 2vw 0;
-  line-height:1.37;
-  letter-spacing:.03em;
+  line-height:1.3;
+  letter-spacing:.02em;
 }
 
 #slash {margin-left:1vw;}
@@ -147,7 +156,7 @@ p {
   position: relative;
   top:6.15vw;
   left:0;
-  height:auto;
+  height:67vw;
   width:100%;
   padding:0;
   margin:0 0 -16.5vw;
@@ -158,14 +167,14 @@ p {
 
 .welcome_img {
   position:relative;
-  top:-24.9vw;
+  top:-10vw;
   left:25%;
   height:39.8vw;
   width:70.76%;
   padding:0;
   margin:3.1vw 0 0vw 2vw;
   background-color:black;
-  background-image:url('http://mary-soroka.github.io/images/me2.png');
+  background-image:url('http://mary-soroka.github.io/images/marysoroka_art1.png');
   background-size:cover;
   background-size:100%;
   background-position:center;
@@ -277,11 +286,6 @@ p {
 
 
 
-
-
-
-
-
 /* ===== BACKGROUND CLUSTERS – 4 IMAGES PER CLUSTER ===== */
 .bg-field {
   position: absolute;
@@ -320,8 +324,8 @@ p {
 /* ===== CLUSTER 1 – project4/bg25–bg28 (Self) SELF PORTRAIT ===== */
 .bg-cluster[data-idx="0"] .t1 { left: 6vw; top: 62vh; background-image: url('http://mary-soroka.github.io/images/art/storm.png'); }
 .bg-cluster[data-idx="0"] .t2 { left: 10vw; top: 80vh; background-image: url('http://mary-soroka.github.io/images/art/sand.png'); }
-.bg-cluster[data-idx="0"] .t3 { left: 88vw; top: 50vh; background-image: url('http://mary-soroka.github.io/images/art/marysoroka_art24.png'); }
 .bg-cluster[data-idx="0"] .t4 { left: 33.65vw; top: 70vh; background-image: url('http://mary-soroka.github.io/images/art/rocks.png'); }
+.bg-cluster[data-idx="0"] .t3 { left: 88vw; top: 56vh; background-image: url('http://mary-soroka.github.io/images/art/marysoroka_art24.png'); }
 
 /* ===== CLUSTER 2 – project2/bg9–bg12 ===== CRADLE */
 .bg-cluster[data-idx="1"] .t1 { left: 8vw; top: 58vh; background-image: url('http://mary-soroka.github.io/images/bg/project2/bg9.png'); }
@@ -335,33 +339,34 @@ p {
 .bg-cluster[data-idx="2"] .t3 { left: 20vw; top: 92vh; background-image: url('http://mary-soroka.github.io/images/art/mountain.png'); }
 .bg-cluster[data-idx="2"] .t4 { left: 90vw; top: 74vh; background-image: url('http://mary-soroka.github.io/images/art/sand2.png'); }
 
-/* ===== CLUSTER 3 – project3/bg17–bg20 ===== JAPAN */
-.bg-cluster[data-idx="5"] .t1 { left: 12vw; top: 70vh; background-image: url('http://mary-soroka.github.io/images/bg/project3/bg24.png'); }
-.bg-cluster[data-idx="5"] .t2 { left: 8vw; top: 90vh; background-image: url('http://mary-soroka.github.io/images/bg/project3/bg17.png'); }
-.bg-cluster[data-idx="5"] .t3 { left: 50vw; top: 90vh; background-image: url('http://mary-soroka.github.io/images/bg/project3/bg19.png'); }
-.bg-cluster[data-idx="5"] .t4 { left: 78vw; top: 92vh; background-image: url('http://mary-soroka.github.io/images/bg/project3/bg18.png'); }
-
-/* ===== CLUSTER 4 – project1/bg1–bg4 ===== UPSIDE DOWN */
-.bg-cluster[data-idx="4"] .t1 { left: 10vw; top: 80vh; background-image: url('http://mary-soroka.github.io/images/bg/project1/bg1.png'); }
-.bg-cluster[data-idx="4"] .t2 { left: 18vw; top: 60vh; background-image: url('http://mary-soroka.github.io/images/bg/project1/bg4.png'); }
-.bg-cluster[data-idx="4"] .t3 { left: 80vw; top: 40vh; background-image: url('http://mary-soroka.github.io/images/bg/project1/bg6.png'); }
-.bg-cluster[data-idx="4"] .t4 { left: 85vw; top: 74vh; background-image: url('http://mary-soroka.github.io/images/bg/project1/bg7.png'); }
-
 /* ===== CLUSTER 5 – project5/bg29–bg32 ===== MEMORY BROKER */
 .bg-cluster[data-idx="3"] .t1 { left: -5vw; top: 58vh; background-image: url('http://mary-soroka.github.io/images/bg/project5/bg32.png'); }
 .bg-cluster[data-idx="3"] .t2 { left: 9vw; top: 64vh; background-image: url('http://mary-soroka.github.io/images/bg/project5/bg33.png'); }
 .bg-cluster[data-idx="3"] .t3 { left: 13vw; top: 82vh; background-image: url('http://mary-soroka.github.io/images/bg/project5/bg31.png'); }
 .bg-cluster[data-idx="3"] .t4 { left: 90vw; top: 64vh; background-image: url('http://mary-soroka.github.io/images/bg/project5/bg34.png'); }
 
+/* ===== CLUSTER 4 – project1/bg1–bg4 ===== UPSIDE DOWN */
+.bg-cluster[data-idx="4"] .t1 { left: 10vw; top: 80vh; background-image: url('http://mary-soroka.github.io/images/bg/project1/bg6.png'); }
+.bg-cluster[data-idx="4"] .t2 { left: 18vw; top: 60vh; background-image: url('http://mary-soroka.github.io/images/bg/project1/bg4.png'); }
+.bg-cluster[data-idx="4"] .t3 { left: 80vw; top: 40vh; background-image: url('http://mary-soroka.github.io/images/bg/project1/bg7.png'); }
+.bg-cluster[data-idx="4"] .t4 { left: 85vw; top: 74vh; background-image: url('http://mary-soroka.github.io/images/bg/project1/bg5.png'); }
 
 /* ===== CLUSTER 7 – project7 (storm) ===== MINER */
-.bg-cluster[data-idx="6"] .t1 { left: 10vw; top: 62vh; background-image: url('http://mary-soroka.github.io/images/art/red.png'); }
-.bg-cluster[data-idx="6"] .t2 { left: 2vw; top: 84vh; background-image: url('http://mary-soroka.github.io/images/art/figures.png'); }
-.bg-cluster[data-idx="6"] .t3 { left: 70vw; top: 90vh; background-image: url('http://mary-soroka.github.io/images/art/cave2.png'); }
-.bg-cluster[data-idx="6"] .t4 { left: 96vw; top: 68vh; background-image: url('http://mary-soroka.github.io/images/art/cyborg.png'); }
+.bg-cluster[data-idx="5"] .t1 { left: 10vw; top: 70vh; background-image: url('http://mary-soroka.github.io/images/art/red.png'); }
+.bg-cluster[data-idx="5"] .t2 { left: 2vw; top: 92vh; background-image: url('http://mary-soroka.github.io/images/art/figures.png'); }
+.bg-cluster[data-idx="5"] .t3 { left: 70vw; top: 92vh; background-image: url('http://mary-soroka.github.io/images/art/cave2.png'); }
+.bg-cluster[data-idx="5"] .t4 { left: 96vw; top: 76vh; background-image: url('http://mary-soroka.github.io/images/art/cyborg.png'); }
+
+/* ===== CLUSTER 3 – project3/bg17–bg20 ===== JAPAN */
+.bg-cluster[data-idx="6"] .t1 { left: 12vw; top: 63vh; background-image: url('http://mary-soroka.github.io/images/bg/project3/bg24.png'); }
+.bg-cluster[data-idx="6"] .t2 { left: 8vw; top: 83vh; background-image: url('http://mary-soroka.github.io/images/bg/project3/bg17.png'); }
+.bg-cluster[data-idx="6"] .t3 { left: -22vw; top: 70vh; background-image: url('http://mary-soroka.github.io/images/bg/project3/bg19.png'); }
+.bg-cluster[data-idx="6"] .t4 { left: 78vw; top: 80vh; background-image: url('http://mary-soroka.github.io/images/bg/project3/bg18.png'); }
+
+/* ===== CLUSTER 3 – project3/bg17–bg20 ===== THE PROTOCOL */
 
 .bg-cluster[data-idx="7"]{--shiftVH:54;}
-.bg-cluster[data-idx="7"] .t1{left:-12vw;top:78vh;background-image:url('http://mary-soroka.github.io/images/art/red.png')}
-.bg-cluster[data-idx="7"] .t2{left:10vw; top:66vh;background-image:url('http://mary-soroka.github.io/images/art/red.png')}
-.bg-cluster[data-idx="7"] .t3{left:22vw; top:92vh;background-image:url('http://mary-soroka.github.io/images/art/red.png')}
-.bg-cluster[data-idx="7"] .t4{left:92vw; top:72vh;background-image:url('http://mary-soroka.github.io/images/art/red.png')}
+.bg-cluster[data-idx="7"] .t1{left:-12vw;top:78vh;background-image:url('/Users/e057540/Mary/Website 2025/mary-soroka.github.io/images/art/marysoroka_art42.png')}
+.bg-cluster[data-idx="7"] .t2{left:10vw; top:66vh;background-image:url('/Users/e057540/Mary/Website 2025/mary-soroka.github.io/images/art/marysoroka_art42.png')}
+.bg-cluster[data-idx="7"] .t3{left:22vw; top:92vh;background-image:url('/Users/e057540/Mary/Website 2025/mary-soroka.github.io/images/art/marysoroka_art42.png')}
+.bg-cluster[data-idx="7"] .t4{left:92vw; top:72vh;background-image:url('/Users/e057540/Mary/Website 2025/mary-soroka.github.io/images/art/marysoroka_art42.png')}
