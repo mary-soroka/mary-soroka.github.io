@@ -352,10 +352,10 @@ p {
 .bg-cluster[data-idx="4"] .t4 { left: 85vw; top: 74vh; background-image: url('http://mary-soroka.github.io/images/bg/project1/bg5.png'); }
 
 /* ===== CLUSTER 7 – project7 (storm) ===== MINER */
-.bg-cluster[data-idx="5"] .t1 { left: 10vw; top: 70vh; background-image: url('http://mary-soroka.github.io/images/art/red.png'); }
-.bg-cluster[data-idx="5"] .t2 { left: 2vw; top: 92vh; background-image: url('http://mary-soroka.github.io/images/art/figures.png'); }
-.bg-cluster[data-idx="5"] .t3 { left: 70vw; top: 92vh; background-image: url('http://mary-soroka.github.io/images/art/cave2.png'); }
-.bg-cluster[data-idx="5"] .t4 { left: 96vw; top: 76vh; background-image: url('http://mary-soroka.github.io/images/art/cyborg.png'); }
+.bg-cluster[data-idx="5"] .t1 { left: 10vw; top: 70vh; background-image: url('http://mary-soroka.github.io/images/art/miners_reliquary/h/mary_soroka_miners_reliquary_h1.png'); }
+.bg-cluster[data-idx="5"] .t2 { left: 2vw; top: 92vh; background-image: url('http://mary-soroka.github.io/images/art/miners_reliquary/h/mary_soroka_miners_reliquary_h2.png'); }
+.bg-cluster[data-idx="5"] .t3 { left: 70vw; top: 92vh; background-image: url('http://mary-soroka.github.io/images/art/miners_reliquary/h/mary_soroka_miners_reliquary_h3.png'); }
+.bg-cluster[data-idx="5"] .t4 { left: 96vw; top: 76vh; background-image: url('http://mary-soroka.github.io/images/art/miners_reliquary/h/mary_soroka_miners_reliquary_h4.png'); }
 
 /* ===== CLUSTER 3 – project3/bg17–bg20 ===== JAPAN */
 .bg-cluster[data-idx="6"] .t1 { left: 12vw; top: 63vh; background-image: url('http://mary-soroka.github.io/images/bg/project3/bg24.png'); }
