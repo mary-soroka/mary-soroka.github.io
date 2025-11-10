@@ -245,10 +245,10 @@ h3 {
 .bg-cluster[data-idx="10"] { --shiftVH: 50; } /* Japan last */
 
 /* 1 Self */
-.bg-cluster[data-idx="0"] .t1 { left: 6vw;  top: 62vh; background-image: url('http://mary-soroka.github.io/images/art/self/h/mary_soroka_self_h1.png'); }
-.bg-cluster[data-idx="0"] .t2 { left: 10vw; top: 80vh; background-image: url('http://mary-soroka.github.io/images/art/self/h/mary_soroka_self_h2.png'); }
-.bg-cluster[data-idx="0"] .t3 { left: 88vw; top: 56vh; background-image: url('http://mary-soroka.github.io/images/art/self/h/mary_soroka_self_h4.png'); }
-.bg-cluster[data-idx="0"] .t4 { left: 33.65vw; top: 70vh; background-image: url('http://mary-soroka.github.io/images/art/self/h/mary_soroka_self_h3.png'); }
+.bg-cluster[data-idx="0"] .t1 { left: 6vw;  top: 62vh; background-image: url('http://mary-soroka.github.io/images/art/self/h/mary_soroka_self_h2.png'); }
+.bg-cluster[data-idx="0"] .t2 { left: 10vw; top: 80vh; background-image: url('http://mary-soroka.github.io/images/art/self/h/mary_soroka_self_h3.png'); }
+.bg-cluster[data-idx="0"] .t3 { left: 88vw; top: 56vh; background-image: url('http://mary-soroka.github.io/images/art/self/h/mary_soroka_self_h1.png'); }
+.bg-cluster[data-idx="0"] .t4 { left: 33.65vw; top: 70vh; background-image: url('http://mary-soroka.github.io/images/art/self/h/mary_soroka_self_h4.png'); }
 
 /* 2 Cradle */
 .bg-cluster[data-idx="1"] .t1 { left: 8vw;  top: 58vh; background-image: url('http://mary-soroka.github.io/images/art/cradle/h/mary_soroka_cradle_h1.png'); }
