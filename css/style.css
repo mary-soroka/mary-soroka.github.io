@@ -102,7 +102,7 @@ p {
   z-index:99999999;
   background-color:rgba(255,255,255,0);
   text-align:left;
-  font-size:.85vw;
+  font-size:.9vw;
 }
 
 .nav_col1, .nav_col2, .nav_col3, .nav_col4 {
@@ -110,7 +110,7 @@ p {
   width:25%;
   padding:0 2vw 0;
   line-height:1.37;
-  letter-spacing:.02em;
+  letter-spacing:.03em;
 }
 
 #slash {margin-left:1vw;}
