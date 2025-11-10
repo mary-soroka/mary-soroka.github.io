@@ -206,43 +206,31 @@ p {
   margin:5vw 0 0;
 }
 
-.video_row_inline {
-  position: absolute;
-  top: 50%;
-  left: 25%;
-  width: 72%;
-  margin-left:1.5vw;
-  transform: translateY(-50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2.3vw;
+/* Project 9 – Deactivated */
+.project_wide.deactivated{
+  position:relative;
+  height:130vw;
+  margin-top:0;
+  z-index:5;
 }
-
-/* Crop box — this sets the visible frame size */
-.video_row_inline .cell {
-  position: relative;
-  width: 22vw;     /* change to crop width */
-  height: 40.5vw;    /* change to crop height */
-  overflow: hidden;
-  --zoom: 1;       /* default scale factor */
-  --tx: 0px;       /* horizontal offset */
-  --ty: 0px;       /* vertical offset */
+.project_wide.deactivated .video_row_inline{
+  position:absolute; left:25%; width:72%; margin-left:1.5vw;
+  display:flex; justify-content:center; align-items:center; gap:2.3vw;
 }
-
-/* Iframe fills box, scaled and positioned by variables */
-.video_row_inline .cell iframe {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  border: none;
-  display: block;
-  transform: translate(calc(-50% + var(--tx)), calc(-50% + var(--ty)))
-             scale(var(--zoom));
-  transform-origin: center;
+.project_wide.deactivated .cell{
+  position:relative; width:22vw; height:40.5vw; overflow:hidden;
+  --zoom:1; --tx:0px; --ty:0px;
 }
+.project_wide.deactivated .cell iframe{
+  position:absolute; top:50%; left:50%; width:100%; height:100%;
+  border:0; display:block;
+  transform:translate(calc(-50% + var(--tx)),calc(-50% + var(--ty))) scale(var(--zoom));
+  transform-origin:center;
+}
+/* Rows – moved up by using fixed vw instead of translateY */
+.project_wide.deactivated .row1 { top: 1.6vw; }
+.project_wide.deactivated .row2 { top: 43vw; }
+.project_wide.deactivated .row3 { top: 84.5vw; }
 
 .video_container_narrow {
   position:relative;
