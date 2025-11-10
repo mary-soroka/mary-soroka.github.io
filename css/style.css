@@ -347,10 +347,10 @@ p {
 .bg-cluster[data-idx="3"] .t4 { left: 90vw; top: 64vh; background-image: url('http://mary-soroka.github.io/images/art/memory_broker/h/mary_soroka_memory_broker_h4.png'); }
 
 /* ===== 5 - UPSIDE DOWN */
-.bg-cluster[data-idx="4"] .t1 { left: 10vw; top: 80vh; background-image: url('http://mary-soroka.github.io/images/bg/project1/bg6.png'); }
-.bg-cluster[data-idx="4"] .t2 { left: 18vw; top: 60vh; background-image: url('http://mary-soroka.github.io/images/bg/project1/bg4.png'); }
-.bg-cluster[data-idx="4"] .t3 { left: 80vw; top: 40vh; background-image: url('http://mary-soroka.github.io/images/bg/project1/bg7.png'); }
-.bg-cluster[data-idx="4"] .t4 { left: 85vw; top: 74vh; background-image: url('http://mary-soroka.github.io/images/bg/project1/bg5.png'); }
+.bg-cluster[data-idx="4"] .t1 { left: 10vw; top: 80vh; background-image: url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h1.png'); }
+.bg-cluster[data-idx="4"] .t2 { left: 18vw; top: 60vh; background-image: url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h2.png'); }
+.bg-cluster[data-idx="4"] .t3 { left: 80vw; top: 40vh; background-image: url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h3.png'); }
+.bg-cluster[data-idx="4"] .t4 { left: 85vw; top: 74vh; background-image: url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h4.png'); }
 
 /* ===== 6 - MINER'S RELIQUARY */
 .bg-cluster[data-idx="5"] .t1 { left: 10vw; top: 70vh; background-image: url('http://mary-soroka.github.io/images/art/miners_reliquary/h/mary_soroka_miners_reliquary_h1.png'); }
