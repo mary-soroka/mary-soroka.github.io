@@ -381,8 +381,8 @@ h3 {
 .project_wide.active,.bg-cluster.active{filter:none}
 
 /* slow Atmospheres */
-.project_wide.atmospheres{--blur:100px;--dur:1s}
-.bg-cluster[data-idx="0"]{--blur:100px;--dur:1s}
+.project_wide.atmospheres{--blur:100px;--dur:4s}
+.bg-cluster[data-idx="0"]{--blur:100px;--dur:4s}
 
 .drama-done .project_wide.atmospheres{--blur:20px;--dur:.3s}
 .drama-done .bg-cluster[data-idx="0"]{--blur:20px;--dur:.3s}
