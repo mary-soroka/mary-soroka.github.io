@@ -1,334 +1,118 @@
-@font-face {
-  font-family: 'Monument Grotesk';
-  src: url('https://www.marysoroka.com/font/MonumentGrotesk-Regular.woff2') format('woff2'),
-       url('https://www.marysoroka.com/font/MonumentGrotesk-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
+@font-face{font-family:'Monument Grotesk';src:url('https://www.marysoroka.com/font/MonumentGrotesk-Regular.woff2') format('woff2'),url('https://www.marysoroka.com/font/MonumentGrotesk-Regular.woff') format('woff');font-weight:400;font-style:normal;font-display:swap}
+*{box-sizing:border-box}
+html,body{scroll-behavior:smooth;margin:0;padding:0;font-family:'Monument Grotesk',sans-serif;overflow-x:hidden;line-height:1;color:rgba(0,0,0,1)}
+a{text-decoration:none;transition:.15s ease-in-out;color:rgba(0,0,0,1);padding:0;margin:0;line-height:1;display:inline-flex;position:relative}
+.nav_col3 a{height:auto}
+a:hover{color:rgba(0,0,0,.3);cursor:pointer}
+h1{font-weight:normal;font-size:6vw;margin:-4.35vw 0 0 0;padding:3.6vw 0 0 1.5vw;color:rgba(0,0,0,1);letter-spacing:-.019em;line-height:.82}
+h2{letter-spacing:-.03em;font-weight:normal;font-size:2vw;margin:1.2vw 0 0;padding:0;color:rgba(0,0,0,1)}
+h3{letter-spacing:-.03em;font-weight:normal;font-size:2vw;margin:0;padding:0;color:rgba(0,0,0,.1)}
+.nav{position:absolute;width:100%;height:auto;padding:1.4vw 0;margin:0;z-index:99999999;background-color:rgba(255,255,255,0);text-align:left;font-size:.86vw}
+.nav_col1,.nav_col2,.nav_col3,.nav_col4{position:absolute;width:25%;padding:0 2vw 0;line-height:1.3;letter-spacing:.02em}
+.nav_col1{left:0%}.nav_col2{left:25%}.nav_col3{left:50%}.nav_col4{left:75%}
+.content{position:absolute;width:100%;height:auto;top:2vw}
+.welcome{position:relative;top:6.15vw;left:0;height:67vw;width:100%;margin:0 0 -16.5vw;z-index:99999;background-color:rgba(255,255,255,0);border-top:1px solid}
+.welcome_img{position:relative;top:-10vw;left:25%;height:39.8vw;width:70.76%;margin:3.1vw 0 0 2vw;background-color:black;background-image:url('http://mary-soroka.github.io/images/art/miners_reliquary/v/mary_soroka_miners_reliquary_v2b.png');background-size:cover;background-position:center}
+.scroll{position:absolute;top:36.1vw;left:0;width:100%;padding:2vw;color:red}
+.video_container{position:absolute;left:25%;top:.2vw;width:70.76%;height:40.3vw;margin:2.1vw 0 0 2vw}
+.video_row{margin:5vw 0 0}
+.video_container_narrow{position:relative;display:inline-block;left:25%;top:-8vw;width:22vw;height:40.3vw;margin:0 1.15vw 0 1vw;background-color:transparent;background-position:center;background-size:cover}
+.video_container iframe{width:100%;height:100%;padding:0}
+.project_wide{position:relative;width:100%;height:45vw;padding:0 2vw;margin:0;z-index:999999;border-top:1px solid}
 
-* { box-sizing: border-box; }
+/* Optional narrow iframe crop – use by adding class="video_container_narrow narrow-cell" */
+.video_container_narrow.narrow-cell{overflow:hidden;--zoom:1;--tx:0px;--ty:0px}
+.video_container_narrow.narrow-cell iframe{position:absolute;top:50%;left:50%;width:100%;height:100%;border:0;display:block;transform:translate(calc(-50% + var(--tx)),calc(-50% + var(--ty))) scale(var(--zoom));transform-origin:center}
 
-html, body {
-  scroll-behavior: smooth;
-  margin: 0;
-  padding: 0;
-  font-family: 'Monument Grotesk', sans-serif;
-  overflow-x: hidden;
-  line-height: 1;
-  color: rgba(0,0,0,1);
-}
+/* Two-row atmospheres layout */
+.project_wide.atmospheres{position:relative;height:85.1vw;margin-top:0;z-index:5}
+.project_wide.atmospheres .video_row_inline{position:absolute;left:25%;width:72%;margin-left:1.5vw;display:flex;justify-content:center;align-items:center;gap:2.3vw}
+.project_wide.atmospheres .row1{top:1.6vw}
+.project_wide.atmospheres .row2{top:43vw}
+.project_wide.atmospheres .cell{position:relative;width:22vw;height:40.5vw;overflow:hidden;--zoom:1;--tx:0px;--ty:0px}
+.project_wide.atmospheres .cell iframe{position:absolute;top:50%;left:50%;width:100%;height:100%;border:0;display:block;transform:translate(calc(-50% + var(--tx)),calc(-50% + var(--ty))) scale(var(--zoom));transform-origin:center}
+.project_wide.atmospheres--two{height:44vw}
 
-a {
-  text-decoration: none;
-  transition: .15s ease-in-out;
-  color: rgba(0,0,0,1);
-  padding: 0;
-  margin: 0;
-  line-height: 1;
-  display: inline-flex;
-  position: relative;
-}
-
-.nav_col3 a { height: auto; }
-a:hover { color: rgba(0,0,0,.3); cursor: pointer; }
-
-h1 {
-  font-weight: normal;
-  font-size: 6vw;
-  margin: -4.35vw 0 0 0;
-  padding: 3.6vw 0 0 1.5vw;
-  color: rgba(0,0,0,1);
-  letter-spacing: -.019em;
-  line-height: .82;
-}
-
-h2 {
-  letter-spacing: -0.03em;
-  font-weight: normal;
-  font-size: 2vw;
-  margin: 1.2vw 0 0;
-  padding: 0;
-  color: rgba(0,0,0,1);
-}
-
-h3 {
-  letter-spacing: -0.03em;
-  font-weight: normal;
-  font-size: 2vw;
-  margin: 0;
-  padding: 0;
-  color: rgba(0,0,0,.1);
-}
-
-.nav {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  padding: 1.4vw 0;
-  margin: 0;
-  z-index: 99999999;
-  background-color: rgba(255,255,255,0);
-  text-align: left;
-  font-size: .86vw;
-}
-
-.nav_col1, .nav_col2, .nav_col3, .nav_col4 {
-  position: absolute;
-  width: 25%;
-  padding: 0 2vw 0;
-  line-height: 1.3;
-  letter-spacing: .02em;
-}
-
-.nav_col1 { left: 0%; }
-.nav_col2 { left: 25%; }
-.nav_col3 { left: 50%; }
-.nav_col4 { left: 75%; }
-
-.content { position: absolute; width: 100%; height: auto; top: 2vw; }
-
-.welcome {
-  position: relative;
-  top: 6.15vw;
-  left: 0;
-  height: 67vw;
-  width: 100%;
-  margin: 0 0 -16.5vw;
-  z-index: 99999;
-  background-color: rgba(255,255,255,0);
-  border-top: 1px solid;
-}
-
-.welcome_img {
-  position: relative;
-  top: -10vw;
-  left: 25%;
-  height: 39.8vw;
-  width: 70.76%;
-  margin: 3.1vw 0 0vw 2vw;
-  background-color: black;
-  background-image: url('http://mary-soroka.github.io/images/art/miners_reliquary/v/mary_soroka_miners_reliquary_v2b.png');
-  background-size: cover;
-  background-position: center;
-}
-
-.scroll {
-  position: absolute;
-  top: 36.1vw;
-  left: 0;
-  width: 100%;
-  padding: 2vw;
-  color: red;
-}
-
-.video_container {
-  position: absolute;
-  left: 25%;
-  top: .2vw;
-  width: 70.76%;
-  height: 40.3vw;
-  margin: 2.1vw 0 0 2vw;
-}
-
-.video_row { margin: 5vw 0 0; }
-
-.video_container_narrow {
-  position: relative;
-  display: inline-block;
-  left: 25%;
-  top: -8vw;
-  width: 22vw;
-  height: 40.3vw;
-  margin: 0 1.15vw 0 1vw;
-  background-color: transparent;
-  background-position: center;
-  background-size: cover;
-}
-
-.video_container iframe { width: 100%; height: 100%; padding: 0; }
-
-/* Fix embedded video height in Miner's Reliquary */
-.video_container_narrow iframe {
-  height: 40.3vw;  /* same as container */
-  object-fit: cover;
-}
-
-.project_wide {
-  position: relative;
-  width: 100%;
-  height: 45vw;
-  padding: 0 2vw;
-  margin: 0;
-  z-index: 999999;
-  border-top: 1px solid;
-}
-
-/* atmospheres layout – 2 rows, keep crop sizes */
-.project_wide.atmospheres {
-  position: relative;
-  height: 85.1vw;
-  margin-top: 0;
-  z-index: 5;
-}
-
-.project_wide.atmospheres .video_row_inline {
-  position: absolute;
-  left: 25%;
-  width: 72%;
-  margin-left: 1.5vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2.3vw;
-}
-
-.project_wide.atmospheres .row1 { top: 1.6vw; }
-.project_wide.atmospheres .row2 { top: 43vw; }
-
-.project_wide.atmospheres .cell {
-  position: relative;
-  width: 22vw;
-  height: 40.5vw;
-  overflow: hidden;
-  --zoom: 1;
-  --tx: 0px;
-  --ty: 0px;
-}
-
-.cell{
-  position:relative;
-  width:22vw;
-  height:40.5vw;
-  overflow:hidden;
-  --zoom:1;--tx:0px;--ty:0px}
-
-.cell iframe {position:absolute;
-  top:50%;
-  left:50%;
-  width:100%;
-  height:100%;
-  border:0;
-  display:block;
-  transform:translate(calc(-50% + var(--tx)),calc(-50% + var(--ty))) scale(var(--zoom));
-  transform-origin:center}
-
-.project_wide.atmospheres .cell iframe {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  border: 0;
-  display: block;
-  transform: translate(calc(-50% + var(--tx)), calc(-50% + var(--ty))) scale(var(--zoom));
-  transform-origin: center;
-}
-
-/* atmospheres II shares same sizing */
-.project_wide.atmospheres--two { height: 44vw; }
-
-/* ========= Parallax clusters ========= */
-.bg-field {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-}
-
-.bg-cluster {
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform: translate3d(0, var(--baseY, 0px), 0);
-}
-
-.bg-cluster .tile {
-  position: absolute;
-  width: 26vw;
-  height: 14.5vw;
-  background-size: cover;
-  background-position: center;
-  will-change: transform;
-  backface-visibility: hidden;
-  contain: paint;
-}
+/* Parallax clusters */
+.bg-field{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.bg-cluster{position:absolute;left:0;top:0;transform:translate3d(0,var(--baseY,0px),0)}
+.bg-cluster .tile{position:absolute;width:26vw;height:14.5vw;background-size:cover;background-position:center;will-change:transform;backface-visibility:hidden;contain:paint}
 
 /* Anchors */
-.bg-cluster[data-idx="0"]  { --shiftVH: 42; }
-.bg-cluster[data-idx="1"]  { --shiftVH: 48; }
-.bg-cluster[data-idx="2"]  { --shiftVH: 60; }
-.bg-cluster[data-idx="3"]  { --shiftVH: 46; }
-.bg-cluster[data-idx="4"]  { --shiftVH: 52; } /* atmospheres */
-.bg-cluster[data-idx="5"]  { --shiftVH: 48; } /* Upside Down */
-.bg-cluster[data-idx="6"]  { --shiftVH: 58; } /* Miner's */
-.bg-cluster[data-idx="7"]  { --shiftVH: 50; } /* Half-Light */
-.bg-cluster[data-idx="8"]  { --shiftVH: 54; } /* Deep in Red */
-.bg-cluster[data-idx="9"]  { --shiftVH: 52; } /* atmospheres II */
-.bg-cluster[data-idx="10"] { --shiftVH: 50; } /* Japan last */
+.bg-cluster[data-idx="0"]{--shiftVH:42}
+.bg-cluster[data-idx="1"]{--shiftVH:48}
+.bg-cluster[data-idx="2"]{--shiftVH:60}
+.bg-cluster[data-idx="3"]{--shiftVH:46}
+.bg-cluster[data-idx="4"]{--shiftVH:52} /* Atmospheres */
+.bg-cluster[data-idx="5"]{--shiftVH:48} /* Upside Down */
+.bg-cluster[data-idx="6"]{--shiftVH:58} /* Miner's */
+.bg-cluster[data-idx="7"]{--shiftVH:50} /* Half-Light */
+.bg-cluster[data-idx="8"]{--shiftVH:54} /* Silk */
+.bg-cluster[data-idx="9"]{--shiftVH:52} /* REMOVED */
+.bg-cluster[data-idx="10"]{--shiftVH:50} /* Japan */
 
 /* 1 Self */
-.bg-cluster[data-idx="0"] .t1 { left: 6vw;  top: 62vh; background-image: url('http://mary-soroka.github.io/images/art/self/h/mary_soroka_self_h2.png'); }
-.bg-cluster[data-idx="0"] .t2 { left: 10vw; top: 80vh; background-image: url('http://mary-soroka.github.io/images/art/self/h/mary_soroka_self_h3.png'); }
-.bg-cluster[data-idx="0"] .t3 { left: 88vw; top: 56vh; background-image: url('http://mary-soroka.github.io/images/art/self/h/mary_soroka_self_h1.png'); }
-.bg-cluster[data-idx="0"] .t4 { left: 33.65vw; top: 70vh; background-image: url('http://mary-soroka.github.io/images/art/self/h/mary_soroka_self_h4.png'); }
+.bg-cluster[data-idx="0"] .t1{left:6vw;top:62vh;background-image:url('http://mary-soroka.github.io/images/art/self/h/mary_soroka_self_h2.png')}
+.bg-cluster[data-idx="0"] .t2{left:10vw;top:80vh;background-image:url('http://mary-soroka.github.io/images/art/self/h/mary_soroka_self_h3.png')}
+.bg-cluster[data-idx="0"] .t3{left:88vw;top:56vh;background-image:url('http://mary-soroka.github.io/images/art/self/h/mary_soroka_self_h1.png')}
+.bg-cluster[data-idx="0"] .t4{left:33.65vw;top:70vh;background-image:url('http://mary-soroka.github.io/images/art/self/h/mary_soroka_self_h4.png')}
 
 /* 2 Cradle */
-.bg-cluster[data-idx="1"] .t1 { left: 8vw;  top: 58vh; background-image: url('http://mary-soroka.github.io/images/art/cradle/h/mary_soroka_cradle_h1.png'); }
-.bg-cluster[data-idx="1"] .t2 { left: 13vw; top: 88vh; background-image: url('http://mary-soroka.github.io/images/art/cradle/h/mary_soroka_cradle_h2.png'); }
-.bg-cluster[data-idx="1"] .t3 { left: -15vw; top: 70vh; background-image: url('http://mary-soroka.github.io/images/art/cradle/h/mary_soroka_cradle_h3.png'); }
-.bg-cluster[data-idx="1"] .t4 { left: 88vw; top: 82vh; background-image: url('http://mary-soroka.github.io/images/art/cradle/h/mary_soroka_cradle_h4.png'); }
+.bg-cluster[data-idx="1"] .t1{left:8vw;top:58vh;background-image:url('http://mary-soroka.github.io/images/art/cradle/h/mary_soroka_cradle_h1.png')}
+.bg-cluster[data-idx="1"] .t2{left:13vw;top:88vh;background-image:url('http://mary-soroka.github.io/images/art/cradle/h/mary_soroka_cradle_h2.png')}
+.bg-cluster[data-idx="1"] .t3{left:-15vw;top:70vh;background-image:url('http://mary-soroka.github.io/images/art/cradle/h/mary_soroka_cradle_h3.png')}
+.bg-cluster[data-idx="1"] .t4{left:88vw;top:82vh;background-image:url('http://mary-soroka.github.io/images/art/cradle/h/mary_soroka_cradle_h4.png')}
 
 /* 3 Canticle */
-.bg-cluster[data-idx="2"] .t1 { left: 9vw;  top: 72vh; background-image: url('http://mary-soroka.github.io/images/art/canticle/h/mary_soroka_canticle_h1.png'); }
-.bg-cluster[data-idx="2"] .t2 { left: -12vw; top: 86vh; background-image: url('http://mary-soroka.github.io/images/art/canticle/h/mary_soroka_canticle_h2.png'); }
-.bg-cluster[data-idx="2"] .t3 { left: 20vw; top: 92vh; background-image: url('http://mary-soroka.github.io/images/art/canticle/h/mary_soroka_canticle_h3.png'); }
-.bg-cluster[data-idx="2"] .t4 { left: 90vw; top: 74vh; background-image: url('http://mary-soroka.github.io/images/art/canticle/h/mary_soroka_canticle_h4.png'); }
+.bg-cluster[data-idx="2"] .t1{left:9vw;top:72vh;background-image:url('http://mary-soroka.github.io/images/art/canticle/h/mary_soroka_canticle_h1.png')}
+.bg-cluster[data-idx="2"] .t2{left:-12vw;top:86vh;background-image:url('http://mary-soroka.github.io/images/art/canticle/h/mary_soroka_canticle_h2.png')}
+.bg-cluster[data-idx="2"] .t3{left:20vw;top:92vh;background-image:url('http://mary-soroka.github.io/images/art/canticle/h/mary_soroka_canticle_h3.png')}
+.bg-cluster[data-idx="2"] .t4{left:90vw;top:74vh;background-image:url('http://mary-soroka.github.io/images/art/canticle/h/mary_soroka_canticle_h4.png')}
 
 /* 4 Memory Broker */
-.bg-cluster[data-idx="3"] .t1 { left: -5vw; top: 58vh; background-image: url('http://mary-soroka.github.io/images/art/memory_broker/h/mary_soroka_memory_broker_h1.png'); }
-.bg-cluster[data-idx="3"] .t2 { left: 9vw;  top: 64vh; background-image: url('http://mary-soroka.github.io/images/art/memory_broker/h/mary_soroka_memory_broker_h2.png'); }
-.bg-cluster[data-idx="3"] .t3 { left: 13vw; top: 82vh; background-image: url('http://mary-soroka.github.io/images/art/memory_broker/h/mary_soroka_memory_broker_h3.png'); }
-.bg-cluster[data-idx="3"] .t4 { left: 90vw; top: 64vh; background-image: url('http://mary-soroka.github.io/images/art/memory_broker/h/mary_soroka_memory_broker_h4.png'); }
+.bg-cluster[data-idx="3"] .t1{left:-5vw;top:58vh;background-image:url('http://mary-soroka.github.io/images/art/memory_broker/h/mary_soroka_memory_broker_h1.png')}
+.bg-cluster[data-idx="3"] .t2{left:9vw;top:64vh;background-image:url('http://mary-soroka.github.io/images/art/memory_broker/h/mary_soroka_memory_broker_h2.png')}
+.bg-cluster[data-idx="3"] .t3{left:13vw;top:82vh;background-image:url('http://mary-soroka.github.io/images/art/memory_broker/h/mary_soroka_memory_broker_h3.png')}
+.bg-cluster[data-idx="3"] .t4{left:90vw;top:64vh;background-image:url('http://mary-soroka.github.io/images/art/memory_broker/h/mary_soroka_memory_broker_h4.png')}
 
-/* 5 atmospheres (dead_instagram) */
-.bg-cluster[data-idx="4"] .t1 { left: 6vw;  top: 66vh; background-image: url('http://mary-soroka.github.io/images/art/dead_instagram/h/di1.png'); }
-.bg-cluster[data-idx="4"] .t2 { left: 18vw; top: 85vh; background-image: url('http://mary-soroka.github.io/images/art/dead_instagram/h/di2.png'); }
-.bg-cluster[data-idx="4"] .t3 { left: 74vw; top: 58vh; background-image: url('http://mary-soroka.github.io/images/art/dead_instagram/h/di3.png'); }
-.bg-cluster[data-idx="4"] .t4 { left: 90vw; top: 78vh; background-image: url('http://mary-soroka.github.io/images/art/dead_instagram/h/di4.png'); }
+/* 5 Atmospheres */
+.bg-cluster[data-idx="4"] .t1{left:6vw;top:66vh;background-image:url('http://mary-soroka.github.io/images/art/dead_instagram/h/di1.png')}
+.bg-cluster[data-idx="4"] .t2{left:18vw;top:85vh;background-image:url('http://mary-soroka.github.io/images/art/dead_instagram/h/di2.png')}
+.bg-cluster[data-idx="4"] .t3{left:74vw;top:58vh;background-image:url('http://mary-soroka.github.io/images/art/dead_instagram/h/di3.png')}
+.bg-cluster[data-idx="4"] .t4{left:90vw;top:78vh;background-image:url('http://mary-soroka.github.io/images/art/dead_instagram/h/di4.png')}
 
 /* 6 Upside Down */
-.bg-cluster[data-idx="5"] .t1 { left: 10vw; top: 80vh; background-image: url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h1.png'); }
-.bg-cluster[data-idx="5"] .t2 { left: 18vw; top: 60vh; background-image: url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h2.png'); }
-.bg-cluster[data-idx="5"] .t3 { left: 80vw; top: 40vh; background-image: url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h3.png'); }
-.bg-cluster[data-idx="5"] .t4 { left: 85vw; top: 74vh; background-image: url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h4.png'); }
+.bg-cluster[data-idx="5"] .t1{left:10vw;top:80vh;background-image:url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h1.png')}
+.bg-cluster[data-idx="5"] .t2{left:18vw;top:60vh;background-image:url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h2.png')}
+.bg-cluster[data-idx="5"] .t3{left:80vw;top:40vh;background-image:url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h3.png')}
+.bg-cluster[data-idx="5"] .t4{left:85vw;top:74vh;background-image:url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h4.png')}
 
 /* 7 Miner's Reliquary */
-.bg-cluster[data-idx="6"] .t1 { left: 10vw; top: 70vh; background-image: url('http://mary-soroka.github.io/images/art/miners_reliquary/h/mary_soroka_miners_reliquary_h1.png'); }
-.bg-cluster[data-idx="6"] .t2 { left: 2vw;  top: 92vh; background-image: url('http://mary-soroka.github.io/images/art/miners_reliquary/h/mary_soroka_miners_reliquary_h2.png'); }
-.bg-cluster[data-idx="6"] .t3 { left: 70vw; top: 92vh; background-image: url('http://mary-soroka.github.io/images/art/miners_reliquary/h/mary_soroka_miners_reliquary_h3.png'); }
-.bg-cluster[data-idx="6"] .t4 { left: 96vw; top: 76vh; background-image: url('http://mary-soroka.github.io/images/art/miners_reliquary/h/mary_soroka_miners_reliquary_h4.png'); }
+.bg-cluster[data-idx="6"] .t1{left:10vw;top:70vh;background-image:url('http://mary-soroka.github.io/images/art/miners_reliquary/h/mary_soroka_miners_reliquary_h1.png')}
+.bg-cluster[data-idx="6"] .t2{left:2vw;top:92vh;background-image:url('http://mary-soroka.github.io/images/art/miners_reliquary/h/mary_soroka_miners_reliquary_h2.png')}
+.bg-cluster[data-idx="6"] .t3{left:70vw;top:92vh;background-image:url('http://mary-soroka.github.io/images/art/miners_reliquary/h/mary_soroka_miners_reliquary_h3.png')}
+.bg-cluster[data-idx="6"] .t4{left:96vw;top:76vh;background-image:url('http://mary-soroka.github.io/images/art/miners_reliquary/h/mary_soroka_miners_reliquary_h4.png')}
 
 /* 8 Half-Light Protocol */
-.bg-cluster[data-idx="7"] .t1 { left: -12vw; top: 78vh; background-image: url('http://mary-soroka.github.io/images/art/half_light_protocol/h/mary_soroka_half_light_protocol_h1.png'); }
-.bg-cluster[data-idx="7"] .t2 { left: 10vw;  top: 66vh; background-image: url('http://mary-soroka.github.io/images/art/half_light_protocol/h/mary_soroka_half_light_protocol_h2.png'); }
-.bg-cluster[data-idx="7"] .t3 { left: 62vw;  top: 108vh; background-image: url('http://mary-soroka.github.io/images/art/half_light_protocol/h/mary_soroka_half_light_protocol_h3.png'); }
-.bg-cluster[data-idx="7"] .t4 { left: 92vw;  top: 72vh; background-image: url('http://mary-soroka.github.io/images/art/half_light_protocol/h/mary_soroka_half_light_protocol_h4.png'); }
+.bg-cluster[data-idx="7"] .t1{left:-12vw;top:78vh;background-image:url('http://mary-soroka.github.io/images/art/half_light_protocol/h/mary_soroka_half_light_protocol_h1.png')}
+.bg-cluster[data-idx="7"] .t2{left:10vw;top:66vh;background-image:url('http://mary-soroka.github.io/images/art/half_light_protocol/h/mary_soroka_half_light_protocol_h2.png')}
+.bg-cluster[data-idx="7"] .t3{left:62vw;top:108vh;background-image:url('http://mary-soroka.github.io/images/art/half_light_protocol/h/mary_soroka_half_light_protocol_h3.png')}
+.bg-cluster[data-idx="7"] .t4{left:92vw;top:72vh;background-image:url('http://mary-soroka.github.io/images/art/half_light_protocol/h/mary_soroka_half_light_protocol_h4.png')}
 
-/* 9 Deep in Red */
-.bg-cluster[data-idx="8"] .t1 { left: 8vw;  top: 70vh; background-image: url('http://mary-soroka.github.io/images/art/silk/h/mary_soroka_silk_h1.png'); }
-.bg-cluster[data-idx="8"] .t2 { left: 60vw; top: 85vh; background-image: url('http://mary-soroka.github.io/images/art/silk/h/mary_soroka_silk_h2.png'); }
-.bg-cluster[data-idx="8"] .t3 { left: 12vw;  top: 89vh; background-image: url('http://mary-soroka.github.io/images/art/silk/h/mary_soroka_silk_h3.png'); }
-.bg-cluster[data-idx="8"] .t4 { display:none; left: 67vw; top: 78vh; background-image: url('http://mary-soroka.github.io/images/art/silk/h/mary_soroka_silk_h4.png'); }
+/* 9 Silk */
+.bg-cluster[data-idx="8"] .t1{left:8vw;top:70vh;background-image:url('http://mary-soroka.github.io/images/art/silk/h/mary_soroka_silk_h1.png')}
+.bg-cluster[data-idx="8"] .t2{left:60vw;top:85vh;background-image:url('http://mary-soroka.github.io/images/art/silk/h/mary_soroka_silk_h2.png')}
+.bg-cluster[data-idx="8"] .t3{left:12vw;top:89vh;background-image:url('http://mary-soroka.github.io/images/art/silk/h/mary_soroka_silk_h3.png')}
+.bg-cluster[data-idx="8"] .t4{display:none;left:67vw;top:78vh;background-image:url('http://mary-soroka.github.io/images/art/silk/h/mary_soroka_silk_h4.png')}
 
-/* 10 atmospheres II (dead_instagram) */
-.bg-cluster[data-idx="9"] .t1 { left: 6vw;  top: 66vh; background-image: url('http://mary-soroka.github.io/images/art/dead_instagram/h/di1.png'); }
-.bg-cluster[data-idx="9"] .t2 { left: 18vw; top: 85vh; background-image: url('http://mary-soroka.github.io/images/art/dead_instagram/h/di2.png'); }
-.bg-cluster[data-idx="9"] .t3 { left: 74vw; top: 58vh; background-image: url('http://mary-soroka.github.io/images/art/dead_instagram/h/di3.png'); }
-.bg-cluster[data-idx="9"] .t4 { left: 90vw; top: 78vh; background-image: url('http://mary-soroka.github.io/images/art/dead_instagram/h/di4.png'); }
+/* 10 REMOVED */
+.bg-cluster[data-idx="9"] .t1{left:6vw;top:66vh;background-image:url('http://mary-soroka.github.io/images/art/dead_instagram/h/di1.png')}
+.bg-cluster[data-idx="9"] .t2{left:18vw;top:85vh;background-image:url('http://mary-soroka.github.io/images/art/dead_instagram/h/di2.png')}
+.bg-cluster[data-idx="9"] .t3{left:74vw;top:58vh;background-image:url('http://mary-soroka.github.io/images/art/dead_instagram/h/di3.png')}
+.bg-cluster[data-idx="9"] .t4{left:90vw;top:78vh;background-image:url('http://mary-soroka.github.io/images/art/dead_instagram/h/di4.png')}
 
-/* 11 Japan last */
-.bg-cluster[data-idx="10"] .t1 { left: 12vw; top: 63vh; background-image: url('http://mary-soroka.github.io/images/art/japan/h/mary_soroka_japan_h1.png'); }
-.bg-cluster[data-idx="10"] .t2 { left: 8vw;  top: 83vh; background-image: url('http://mary-soroka.github.io/images/art/japan/h/mary_soroka_japan_h2.png'); }
-.bg-cluster[data-idx="10"] .t3 { left: -22vw; top: 70vh; background-image: url('http://mary-soroka.github.io/images/art/japan/h/mary_soroka_japan_h3.png'); }
-.bg-cluster[data-idx="10"] .t4 { left: 78vw; top: 80vh; background-image: url('http://mary-soroka.github.io/images/art/japan/h/mary_soroka_japan_h4.png'); }
+/* 11 Japan */
+.bg-cluster[data-idx="10"] .t1{left:12vw;top:63vh;background-image:url('http://mary-soroka.github.io/images/art/japan/h/mary_soroka_japan_h1.png')}
+.bg-cluster[data-idx="10"] .t2{left:8vw;top:83vh;background-image:url('http://mary-soroka.github.io/images/art/japan/h/mary_soroka_japan_h2.png')}
+.bg-cluster[data-idx="10"] .t3{left:-22vw;top:70vh;background-image:url('http://mary-soroka.github.io/images/art/japan/h/mary_soroka_japan_h3.png')}
+.bg-cluster[data-idx="10"] .t4{left:78vw;top:80vh;background-image:url('http://mary-soroka.github.io/images/art/japan/h/mary_soroka_japan_h4.png')}
