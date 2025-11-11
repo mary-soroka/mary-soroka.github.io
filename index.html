@@ -8,7 +8,10 @@
 </head>
 <body>
   <div class="site-desktop">
-  <nav class="nav">
+
+  <main class="content">
+    <section class="welcome">
+        <nav class="nav">
     <div class="nav_col1">NYC &#8594; TO</div>
     <div class="nav_col2">Mary Soroka is an internationally award-winning Creative Director, filmmaker, and digital artist.</div>
     <div class="nav_col3">Mary’s work combines film, self-portraiture, procedural effects, and generative models to imagine metaphysical states of being in posthuman realms.</div>
@@ -17,9 +20,6 @@
       <a href="https://www.linkedin.com/in/marysoroka" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </div>
   </nav>
-
-  <main class="content">
-    <section class="welcome">
       <h1>Mary<br />Soroka</h1>
       <div class="welcome_img"></div>
       <div class="scroll"><h2>Work <span class="slash" style="margin:0 .8vw">&#8595;</span></h2></div>
@@ -73,16 +73,15 @@
     <section class="project_wide atmospheres">
       <h2>Atmospheres</h2>
       <h3>Photo + Film + Digital Video</h3>
-      <div class="video_row_inline row1">
-        <div class="cell"><iframe src="https://player.vimeo.com/video/1135480037?background=1&autoplay=1&muted=1&loop=1&autopause=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Atmospheres 1"></iframe></div>
-        <div class="cell"><iframe src="https://player.vimeo.com/video/1135477684?background=1&autoplay=1&muted=1&loop=1&autopause=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Atmospheres 2"></iframe></div>
-        <div class="cell"><iframe src="https://player.vimeo.com/video/1135478920?background=1&autoplay=1&muted=1&loop=1&autopause=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Atmospheres 3"></iframe></div>
+      <div class="video_row_inline row">
+        <div class="cell">
+          <iframe src="https://player.vimeo.com/video/1135480037?background=1&autoplay=1&muted=1&loop=1&autopause=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Atmospheres 1"></iframe></div>
+        <div class="cell">
+          <iframe src="https://player.vimeo.com/video/1135477684?background=1&autoplay=1&muted=1&loop=1&autopause=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Atmospheres 2"></iframe></div>
+        <div class="cell">
+          <iframe src="https://player.vimeo.com/video/1135478920?background=1&autoplay=1&muted=1&loop=1&autopause=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Atmospheres 3"></iframe></div>
       </div>
-      <div class="video_row_inline row2">
-        <div class="cell"><iframe src="https://player.vimeo.com/video/1135476720?background=1&autoplay=1&muted=1&loop=1&autopause=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Atmospheres 4"></iframe></div>
-        <div class="cell"><iframe src="https://player.vimeo.com/video/1135464461?background=1&autoplay=1&muted=1&loop=1&autopause=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Atmospheres 5"></iframe></div>
-        <div class="cell"><iframe src="https://player.vimeo.com/video/1135478046?background=1&autoplay=1&muted=1&loop=1&autopause=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Atmospheres 6"></iframe></div>
-      </div>
+
     </section>
 
     <section class="project_wide">
@@ -131,12 +130,6 @@
         <div class="video_container_narrow" style="background-image:url('http://mary-soroka.github.io/images/art/silk/v/mary_soroka_silk_v3.png')"></div>
       </div>
     </section>
-
-<a class="footer-link" href="mailto:maryintro@icloud.com">
-  <div class="footer">
-    <h1>Say hello <span class="slash" style="margin-left:1vw;">&#8594;</span></h1>
-  </div>
-</a>
 
   </main>
 </div>
@@ -197,6 +190,7 @@
       if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) e.preventDefault();
     });
   </script>
+
 </body>
 
 
