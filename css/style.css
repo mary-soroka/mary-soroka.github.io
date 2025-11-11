@@ -12,7 +12,7 @@ h3{letter-spacing:-.03em;font-weight:normal;font-size:2vw;margin:0;padding:0;col
 .nav_col1{left:0%}.nav_col2{left:25%}.nav_col3{left:50%}.nav_col4{left:75%}
 .content{position:absolute;width:100%;height:auto;top:2vw}
 .welcome{position:relative;top:6.15vw;left:0;height:67vw;width:100%;margin:0 0 -16.5vw;z-index:99999;background-color:rgba(255,255,255,0);border-top:1px solid}
-.welcome_img{position:relative;top:-10vw;left:25%;height:39.8vw;width:70.76%;margin:3.1vw 0 0 2vw;background-color:black;background-image:url('http://mary-soroka.github.io/images/art/miners_reliquary/v/mary_soroka_miners_reliquary_v2b.png');background-size:cover;background-position:center}
+.welcome_img{position:relative;top:-10vw;left:25%;height:39.8vw;width:70.76%;margin:3.1vw 0 0 2vw;background-color:black;background-image:url('http://mary-soroka.github.io/images/art/miners_reliquary/v/mary_soroka_miners_reliquary_v2.png');background-size:cover;background-position:center}
 .scroll{position:absolute;top:36.1vw;left:0;width:100%;padding:2vw;color:red}
 .video_container{position:absolute;left:25%;top:.2vw;width:70.76%;height:40.3vw;margin:2.1vw 0 0 2vw}
 .video_row{margin:5vw 0 0}
