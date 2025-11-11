@@ -193,7 +193,7 @@ h3{letter-spacing:-.03em;font-weight:normal;font-size:2vw;margin:0;padding:0;col
     padding:0 13px 13px;
     border-radius:50px;
     margin-left:1.5vw;
-    margin-top:2vw;
+    margin-top:2.5vw;
   }
 
   .h1 {
@@ -204,12 +204,11 @@ h3{letter-spacing:-.03em;font-weight:normal;font-size:2vw;margin:0;padding:0;col
   }
   
   .mobile_bio {
-    font-size:13px;
+    font-size:15px;
     color:rgba(0,0,0,1);
-    margin:0 0 10vw 4vw;
-    line-height:1.25;
-    text-align:left;
-    width:80%;
+    margin:10vw 10vw;
+    line-height:1.7;
+    text-align:center;
   }
 
   .mobile_titles {
