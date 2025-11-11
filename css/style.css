@@ -401,15 +401,13 @@ h3 {
 
 /* (1) */ .bg-cluster[data-idx="5"] .t1{left:10vw;top:80vh;background-image:url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h1.png')}
 /* (2) */ .bg-cluster[data-idx="5"] .t2{left:18vw;top:60vh;background-image:url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h2.png')}
-/* (3) */ .bg-cluster[data-idx="5"] .t3{left:88vw;top:60vh;background-image:url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h3.png')}
+/* (3) */ .bg-cluster[data-idx="5"] .t3{left:86vw;top:60vh;background-image:url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h3.png')}
 /* (4) */ .bg-cluster[data-idx="5"] .t4{left:80vw;top:84vh;background-image:url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h4.png')}
 
 /* 7 Miner's Reliquary */
 
-/* (1) */ .bg-cluster[data-idx="6"] .t2{left:2vw;top:89vh;background-image:url('http://mary-soroka.github.io/images/art/miners_reliquary/h/mary_soroka_miners_reliquary_h1.png')}
-/* (2) */ .bg-cluster[data-idx="6"] .t1{left:10vw;top:70vh;background-image:url('http://mary-soroka.github.io/images/art/miners_reliquary/h/mary_soroka_miners_reliquary_h3.png')}
-/* (3) */ .bg-cluster[data-idx="6"] .t3{left:66.8vw;top:92vh;background-image:url('http://mary-soroka.github.io/images/art/miners_reliquary/h/mary_soroka_miners_reliquary_h2.png')}
-/* (4) */ .bg-cluster[data-idx="6"] .t4{left:96vw;top:76vh;background-image:url('http://mary-soroka.github.io/images/art/miners_reliquary/h/mary_soroka_miners_reliquary_h4.png')}
+/* (1) */ .bg-cluster[data-idx="6"] .t2{left:2vw;top:89vh;background-image:url('http://mary-soroka.github.io/images/art/miners_reliquary/h/mary_soroka_miners_reliquary_h2.png')}
+/* (2) */ .bg-cluster[data-idx="6"] .t1{left:10vw;top:70vh;background-image:url('http://mary-soroka.github.io/images/art/miners_reliquary/h/mary_soroka_miners_reliquary_h4.png')}
 
 /* 8 Half-Light Protocol */
 
