@@ -25,7 +25,21 @@
       <div class="scroll"><h2>Work <span class="slash" style="margin:0 .8vw">&#8595;</span></h2></div>
     </section>
 
-        <section class="project_wide">
+    <section class="project_wide atmospheres">
+      <h2>Atmospheres</h2>
+      <h3>Photo + Film + Digital Video</h3>
+      <div class="video_row_inline row">
+        <div class="cell">
+          <iframe style="background-image:url('http://mary-soroka.github.io/images/art/mary_soroka_atmospheres_v1.png');" src="https://player.vimeo.com/video/1135478046?background=1&autoplay=1&muted=1&loop=1&autopause=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Atmospheres 1"></iframe></div>
+        <div class="cell">
+          <iframe style="background-image:url('http://mary-soroka.github.io/images/art/mary_soroka_atmospheres_v2.png');" src="https://player.vimeo.com/video/1135480037?background=1&autoplay=1&muted=1&loop=1&autopause=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Atmospheres 2"></iframe></div>
+        <div class="cell">
+          <iframe style="background-image:url('http://mary-soroka.github.io/images/art/mary_soroka_atmospheres_v3.png');" src="https://player.vimeo.com/video/1135478920?background=1&autoplay=1&muted=1&loop=1&autopause=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Atmospheres 3"></iframe></div>
+      </div>
+
+    </section>
+
+    <section class="project_wide">
       <h2>Canticle</h2>
       <h3>Digital Image + Video</h3>
       <div class="video_Row">
@@ -70,20 +84,6 @@
       </div>
     </section>
 
-    <section class="project_wide atmospheres">
-      <h2>Atmospheres</h2>
-      <h3>Photo + Film + Digital Video</h3>
-      <div class="video_row_inline row">
-        <div class="cell" style="background-color:black;">
-          <iframe src="https://player.vimeo.com/video/1135480037?background=1&autoplay=1&muted=1&loop=1&autopause=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Atmospheres 1"></iframe></div>
-        <div class="cell" style="background-color:black;">
-          <iframe src="https://player.vimeo.com/video/1135477684?background=1&autoplay=1&muted=1&loop=1&autopause=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Atmospheres 2"></iframe></div>
-        <div class="cell" style="background-color:black;">
-          <iframe src="https://player.vimeo.com/video/1135478920?background=1&autoplay=1&muted=1&loop=1&autopause=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Atmospheres 3"></iframe></div>
-      </div>
-
-    </section>
-
     <section class="project_wide">
       <h2>Upside Down</h2>
       <h3>Music Video</h3>
@@ -98,7 +98,7 @@
       <div class="video_Row">
                 <div class="video_container_narrow" style="background-image:url('http://mary-soroka.github.io/images/art/miners_reliquary/v/mary_soroka_miners_reliquary_v3.png')"></div>
         <div class="video_container_narrow narrow-cell"
-     style="--zoom:1.15; --tx:0px; --ty:-10px; width:22vw; height:40.3vw;">
+     style="--zoom:1.15; --tx:0px; --ty:-10px; width:22vw; height:40.3vw;background-image:url('http://mary-soroka.github.io/images/art/miners_reliquary/v/mary_soroka_miners_reliquary_v4.png')">
           <iframe
             src="https://player.vimeo.com/video/1135556799?background=1&autoplay=1&muted=1&loop=1&autopause=0"
             frameborder="0"
@@ -121,7 +121,7 @@
       </div>
     </section>
 
-    <section class="project_wide" style="height:31.4vw;">
+    <section class="project_wide">
       <h2>Silk</h2>
       <h3>Digital Image</h3>
       <div class="video_Row">
@@ -190,6 +190,31 @@
       if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) e.preventDefault();
     });
   </script>
+
+<script>
+let firstPlayed=false;
+const projects=[...document.querySelectorAll('.project_wide')];
+const clusters=[...document.querySelectorAll('.bg-cluster')];
+
+const io=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    const i=projects.indexOf(e.target);
+    if(e.isIntersecting){
+      projects.forEach(p=>p.classList.remove('active'));
+      clusters.forEach(c=>c.classList.remove('active'));
+      projects[i]?.classList.add('active');
+      clusters[i]?.classList.add('active');
+
+      if(!firstPlayed && projects[i].classList.contains('atmospheres')){
+        firstPlayed=true;
+        setTimeout(()=>document.documentElement.classList.add('drama-done'),4000);
+      }
+    }
+  });
+},{threshold:0.75});
+
+projects.forEach(p=>io.observe(p));
+</script>
 
 </body>
 
