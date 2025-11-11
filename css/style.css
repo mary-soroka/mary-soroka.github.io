@@ -177,48 +177,59 @@ h3{letter-spacing:-.03em;font-weight:normal;font-size:2vw;margin:0;padding:0;col
     background:#fff;}
 
   .m {
-    padding:3vw;
+    padding:0;
   }
 
   .mobile_header {
     display:flex;
     justify-content:space-between;
-    gap:12px;
-    font-size:16px;
-    margin:8px 0;
-    padding:2vw;
+    margin:1vw 1vw 5vw;
+    padding:3vw;
+    font-size:18px;
   }
 
-    .mobile_bio {
-    font-size:28px;
-    color:rgba(0,0,0,1);
-    margin:0 2vw 10vw;
-    line-height:1.25;
-    text-align:left;
+  .mobile_header a {
+    border:1px solid black;
+    padding:0 15px 15px;
+    border-radius:50px;
+    margin-left:10px;
   }
 
   .h1 {
-    font-size:12vw;
+    font-size:34px;
     line-height:.9;
     margin:0;
     text-align:left;
-    padding:0 0 10vw 1vw;
+    padding:0 0 6vw 3vw;
+  }
+  
+  .mobile_bio {
+    font-size:20px;
+    color:rgba(0,0,0,1);
+    margin:0 0 10vw 3vw;
+    line-height:1.25;
+    text-align:left;
+    width:70%;
   }
 
   .mobile_titles {
-    font-size:28px;
-    margin:24px 0 6px;
+    font-size:22px;
+    margin:2vw 0 1vw 2vw;
     text-align:left;
+    x-index:999999999;
   }
 
-  .s {font-size:28px;
+  .s {
+    font-size:22px;
     color:rgba(0,0,0,.3);
-    margin:0 0 10px;
+    margin:0 0 4vw 2vw;
     text-align:left;
   }
 
   .block {
     margin:3vw 0;
+    border-bottom:1px solid black;
+    width:100%;
   }
 
   /* Uniform 9:16 frame */
