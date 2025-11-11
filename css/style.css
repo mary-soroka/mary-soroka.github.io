@@ -381,8 +381,8 @@ h3 {
 .project_wide.active,.bg-cluster.active{filter:none}
 
 /* slow Atmospheres */
-.project_wide.atmospheres{--blur:100px;--dur:4s}
-.bg-cluster[data-idx="0"]{--blur:100px;--dur:4s}
+.project_wide.atmospheres{--blur:100px;--dur:1s}
+.bg-cluster[data-idx="0"]{--blur:100px;--dur:1s}
 
 .drama-done .project_wide.atmospheres{--blur:20px;--dur:.3s}
 .drama-done .bg-cluster[data-idx="0"]{--blur:20px;--dur:.3s}
@@ -404,9 +404,9 @@ h3 {
 
 /* 0_ATMOSPHERES */
 
-/* (1) */ .bg-cluster[data-idx="0"] .t1{left:8vw;top:80vh;background-image:url('http://mary-soroka.github.io/images/art/atmospheres/h/mary_soroka_atmospheres_h1.png')}
-/* (2) */ .bg-cluster[data-idx="0"] .t3{left:12vw;top:90vh;background-image:url('http://mary-soroka.github.io/images/art/atmospheres/h/mary_soroka_atmospheres_h2.png')}
-/* (3) */ .bg-cluster[data-idx="0"] .t2{left:60vw;top:85vh;background-image:url('http://mary-soroka.github.io/images/art/atmospheres/h/mary_soroka_atmospheres_h3.png')}
+/* (1) */ .bg-cluster[data-idx="0"] .t1{left:8vw;top:80vh;background-image:url('/Users/e057540/Mary/Website 2025/mary-soroka.github.io/images/art/atmospheres/h/mary_soroka_atmospheres_h3.png')}
+/* (2) */ .bg-cluster[data-idx="0"] .t3{left:12vw;top:90vh;background-image:url('/Users/e057540/Mary/Website 2025/mary-soroka.github.io/images/art/atmospheres/h/mary_soroka_atmospheres_h2.png')}
+/* (3) */ .bg-cluster[data-idx="0"] .t2{left:60vw;top:85vh;background-image:url('/Users/e057540/Mary/Website 2025/mary-soroka.github.io/images/art/atmospheres/h/mary_soroka_atmospheres_h1.png')}
 
 /* 1_CANTICLE */
 
