@@ -392,13 +392,13 @@ h3 {
 
 .bg-cluster[data-idx="0"] { --shiftVH: 60; } /* 0_ATMOSPHERES */
 .bg-cluster[data-idx="1"] { --shiftVH: 52; } /* 1 CANTICLE */
-.bg-cluster[data-idx="2"] { --shiftVH: 42; } /* 3_SELF */
-.bg-cluster[data-idx="4"] { --shiftVH: 48; } /* 2_CRADLE */
-.bg-cluster[data-idx="3"] { --shiftVH: 46; } /* 4_MEMORY_BROKER */
-.bg-cluster[data-idx="5"] { --shiftVH: 48; } /* UPSIDE_DOWN */
-.bg-cluster[data-idx="6"] { --shiftVH: 58; } /* Miner's */
-.bg-cluster[data-idx="7"] { --shiftVH: 50; } /* 8_HALF_LIGHT_PROTOCOL */
-.bg-cluster[data-idx="8"] { --shiftVH: 54; } /* Silk */
+.bg-cluster[data-idx="2"] { --shiftVH: 42; } /* 2_CRADLE */
+.bg-cluster[data-idx="3"] { --shiftVH: 46; } /* 3_SELF */
+.bg-cluster[data-idx="4"] { --shiftVH: 48; } /* 4_MEMORY_BROKER */
+.bg-cluster[data-idx="5"] { --shiftVH: 48; } /* 5_UPSIDE_DOWN */
+.bg-cluster[data-idx="6"] { --shiftVH: 58; } /* 6_MINERS_RELIQUARY */
+.bg-cluster[data-idx="7"] { --shiftVH: 50; } /* 7_HALF_LIGHT_PROTOCOL */
+.bg-cluster[data-idx="8"] { --shiftVH: 54; } /* 8_SILK */
 .bg-cluster[data-idx="9"] { --shiftVH: 52; } /* REMOVED */
 .bg-cluster[data-idx="10"] { --shiftVH: 50; } /* Japan */
 
@@ -435,29 +435,29 @@ h3 {
 /* (2) */ .bg-cluster[data-idx="4"] .t3{left:13vw;top:80vh;background-image:url('http://mary-soroka.github.io/images/art/memory_broker/h/mary_soroka_memory_broker_h3.png')}
 /* (3) */ .bg-cluster[data-idx="4"] .t4{left:90vw;top:64vh;background-image:url('http://mary-soroka.github.io/images/art/memory_broker/h/mary_soroka_memory_broker_h4.png')}
 
-/* 6_UPSIDE_DOWN */
+/* 5_UPSIDE_DOWN */
 
 /* (1) */ .bg-cluster[data-idx="5"] .t1{left:10vw;top:80vh;background-image:url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h1.png')}
 /* (2) */ .bg-cluster[data-idx="5"] .t2{left:18vw;top:60vh;background-image:url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h2.png')}
 /* (3) */ .bg-cluster[data-idx="5"] .t3{left:86vw;top:60vh;background-image:url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h3.png')}
 /* (4) */ .bg-cluster[data-idx="5"] .t4{left:-19.5vw;top:85vh;background-image:url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h4.png')}
 
-/* 7_MINERS_RELIQUARY */
+/* 6_MINERS_RELIQUARY */
 
 /* (1) */ .bg-cluster[data-idx="6"] .t2{left:2vw;top:89vh;background-image:url('http://mary-soroka.github.io/images/art/miners_reliquary/h/mary_soroka_miners_reliquary_h2.png')}
 /* (2) */ .bg-cluster[data-idx="6"] .t1{left:10vw;top:70vh;background-image:url('http://mary-soroka.github.io/images/art/miners_reliquary/h/mary_soroka_miners_reliquary_h4.png')}
 
-/* 8_HALF_LIGHT_PROTOCOL */
+/* 7_HALF_LIGHT_PROTOCOL */
 
 /* (1) */ .bg-cluster[data-idx="7"] .t1{left:-12vw;top:78vh;background-image:url('http://mary-soroka.github.io/images/art/half_light_protocol/h/mary_soroka_half_light_protocol_h3.png')}
 /* (2) */ .bg-cluster[data-idx="7"] .t2{left:10vw;top:66vh;background-image:url('http://mary-soroka.github.io/images/art/half_light_protocol/h/mary_soroka_half_light_protocol_h2.png')}
 /* (3) */ .bg-cluster[data-idx="7"] .t4{left:92vw;top:72vh;background-image:url('http://mary-soroka.github.io/images/art/half_light_protocol/h/mary_soroka_half_light_protocol_h4.png')}
 
-/* 9_SILK */
+/* 8_SILK */
 
-.bg-cluster[data-idx="8"] .t1{left:8vw;top:70vh;background-image:url('http://mary-soroka.github.io/images/art/silk/h/mary_soroka_silk_h1.png')}
-.bg-cluster[data-idx="8"] .t2{left:60vw;top:85vh;background-image:url('http://mary-soroka.github.io/images/art/silk/h/mary_soroka_silk_h2.png')}
-.bg-cluster[data-idx="8"] .t3{left:12vw;top:87vh;background-image:url('http://mary-soroka.github.io/images/art/silk/h/mary_soroka_silk_h3.png')}
+/* (1) */ .bg-cluster[data-idx="8"] .t1{left:8vw;top:70vh;background-image:url('http://mary-soroka.github.io/images/art/silk/h/mary_soroka_silk_h1.png')}
+/* (2) */ .bg-cluster[data-idx="8"] .t2{left:60vw;top:85vh;background-image:url('http://mary-soroka.github.io/images/art/silk/h/mary_soroka_silk_h2.png')}
+/* (3) */ .bg-cluster[data-idx="8"] .t3{left:12vw;top:87vh;background-image:url('http://mary-soroka.github.io/images/art/silk/h/mary_soroka_silk_h3.png')}
 
 
 
