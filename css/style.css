@@ -41,16 +41,16 @@ body {
 }
 
 /* Hide scrollbar but keep scrolling */
-html,
+/*html,
 body {
-  scrollbar-width: none;          /* Firefox */
-  -ms-overflow-style: none;       /* IE and Edge */
+  scrollbar-width: none;          
+  -ms-overflow-style: none;       
 }
 
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
-  display: none;                  /* Chrome, Safari, Opera */
-}
+  display: none;                  
+}*/
 
 a {
   text-decoration: none;
@@ -74,9 +74,9 @@ a:hover {
 
 h1 {
   font-weight: normal;
-  font-size: 7.7vw;
-  margin: 5.1vw 0 0 0;
-  padding: 0 0 0 1.5vw;
+  font-size: 7vw;
+  margin: 0 0 0 0;
+  padding: 5.55vw 0 0 1.5vw;
   color: rgba(0, 0, 0, 1);
   letter-spacing: -.019em;
   line-height: .82;
@@ -110,7 +110,7 @@ h3 {
   background-color: rgba(255, 255, 255, 0);
   text-align: left;
   font-size: .86vw;
-  border-bottom:1px solid;
+  border-bottom:1px solid rgba(0,0,0,.1);
 }
 
 .nav_col1,
@@ -145,8 +145,8 @@ h3 {
   margin: 0 0 6.05vw;
   z-index: 99999;
   background-color: rgba(255, 255, 255, 0);
-  border-top: 1px solid;
-  border-bottom:1px solid;
+  /*border-top: 1px solid rgba(0,0,0,.1);*/
+  border-bottom:1px solid rgba(0,0,0,.1);
 }
 
 .welcome_img {
@@ -209,9 +209,10 @@ h3 {
   padding: 0 2vw;
   margin: 0;
   z-index: 999999;
-  border-top: 1px solid;
-  border-bottom:1px solid;
+  border-top: 1px solid rgba(0,0,0,.1);
+  border-bottom:1px solid rgba(0,0,0,.1);
 }
+
 
 /* Optional narrow iframe crop – use by adding class="video_container_narrow narrow-cell" */
 .video_container_narrow.narrow-cell {
@@ -231,8 +232,6 @@ h3 {
   display: block;
   transform: translate(calc(-50% + var(--tx)), calc(-50% + var(--ty))) scale(var(--zoom));
   transform-origin: center;
-
-  border: 1px solid red;
 }
 
 /* 3 NARROW VIDEOS LAYOUT */
@@ -297,7 +296,7 @@ h3 {
   text-align: right;
 }
 
-.footer {
+/*.footer {
   width: 100%;
   height: 5.5vw;
   margin: 0;
@@ -324,14 +323,7 @@ h3 {
 
 .footer:hover h1 {
   color: #fff;
-}
-
-
-
-
-
-
-
+}*/
 
 
 
@@ -370,14 +362,6 @@ h3 {
 
 
 
-
-
-
-
-
-
-
-
 /* Parallax clusters */
 .bg-field {
   position: absolute;
@@ -406,16 +390,29 @@ h3 {
 
 
 /* fast default */
-:root{--blur:10px;--dur:.2s}
+:root{--blur:60px;--dur:.3s}
 .project_wide,.bg-cluster{filter:blur(var(--blur));transition:filter var(--dur) ease-out}
 .project_wide.active,.bg-cluster.active{filter:none}
 
 /* slow Atmospheres */
-.project_wide.atmospheres{--blur:100px;--dur:4s}
-.bg-cluster[data-idx="0"]{--blur:100px;--dur:4s}
+.project_wide.atmospheres{--blur:100px;--dur:3s}
+.bg-cluster[data-idx="0"]{--blur:100px;--dur:5s}
 
 .drama-done .project_wide.atmospheres{--blur:20px;--dur:.3s}
 .drama-done .bg-cluster[data-idx="0"]{--blur:20px;--dur:.3s}
+
+/* White overlay on projects until they become active */
+.project_wide{position:relative}
+.project_wide::before{
+  content:"";
+  position:absolute;inset:0;
+  background:#fff;
+  opacity:.4;           /* preview peek */
+  pointer-events:none;   /* never block clicks */
+  transition:opacity var(--dur,.3s) ease-out;
+  z-index:3;             /* above content */
+}
+.project_wide.active::before{opacity:0}
 
 
 /* Anchors */
@@ -490,7 +487,33 @@ h3 {
 /* (3) */ .bg-cluster[data-idx="8"] .t3{left:12vw;top:87vh;background-image:url('http://mary-soroka.github.io/images/art/silk/h/mary_soroka_silk_h3.png')}
 
 
+#backToTop {
+  width:100%;
+  position: fixed;
+  text-align:center;
+  bottom: 0;
+  padding: 1vw 0 1.5vw;
+  font-size: 1.1vw;
+  font-family: 'Monument Grotesk', sans-serif;
+  border-top:1px solid rgba(0,0,0,.1);
+  background: transparent;
+  color: black;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: .15s ease-in-out;
+  z-index: 9999999;
+}
 
+#backToTop:hover {
+  background: black;
+  color: white;
+}
+
+#backToTop.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
 
 
 
@@ -594,7 +617,7 @@ h3 {
 
   .block {
     margin: 3vw 0;
-    border-bottom: 1px solid black;
+    /*border-bottom: 1px solid black;*/
     width: 100%;
   }
 
@@ -645,7 +668,7 @@ h3 {
   .mf {
     padding: 20px 0;
     text-align: center;
-    border-top: 1px solid #000;
+    /*border-top: 1px solid #000;*/
     margin-top: 40px;
   }
 

@@ -134,7 +134,7 @@
       </div>
     </section>
 
-    <section class="project_wide">
+    <section class="project_wide" style="border-bottom:0;">
       <h2>Silk</h2>
       <h3>Digital Image</h3>
       <div class="video_Row">
@@ -146,7 +146,6 @@
 
   </main>
 </div>
-
 
   <script>
     (() => {
@@ -229,10 +228,6 @@ const io=new IntersectionObserver(entries=>{
 projects.forEach(p=>io.observe(p));
 </script>
 
-
-
-
-
 <script src="https://player.vimeo.com/api/player.js"></script>
 <script>
 document.querySelectorAll('iframe.show-volume').forEach(f => {
@@ -257,7 +252,27 @@ document.querySelectorAll('iframe.show-volume').forEach(f => {
 });
 </script>
 
+<button id="backToTop">Back to Top <span style="margin-left:4px;">&uarr;</span></button>
+<script>
+const topBtn = document.getElementById('backToTop');
+const lastProject = document.querySelector('.project_wide:last-of-type');
 
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      topBtn.classList.add('visible');
+    } else {
+      topBtn.classList.remove('visible');
+    }
+  });
+}, { threshold: 0.6 });
+
+if (lastProject) observer.observe(lastProject);
+
+topBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
 
 </body>
 
