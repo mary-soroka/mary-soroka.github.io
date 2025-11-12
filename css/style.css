@@ -543,54 +543,27 @@ h3 {
 
 
 
-
-#backToTop {
-  width: 100%;
-  position: fixed;
-  height: 14vw;
-  text-align: center;
-  bottom: -0.5px;
-  left: 0;
-  padding: 8vw 0 2.8vw;
-  cursor: pointer;
-  opacity: 0;
-  pointer-events: none;
-  z-index: 2147483647;
-  background: transparent;
-  transition: .3s ease-in-out;
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 70%, black 100%);
-  mask-image: linear-gradient(to bottom, transparent 0%, black 70%, black 100%);
+#backToTop{
+  position:fixed;left:0;right:0;bottom:-.5px;height:44vw;
+  display:flex;align-items:flex-end;justify-content:center;
+  padding:10vw 0 3vw;opacity:0;pointer-events:none;z-index:2147483647;
 }
-
-#backToTop.visible {
-  opacity: 1;
-  pointer-events: auto;
+#backToTop.visible{opacity:1;pointer-events:auto}
+#backToTop h2{margin:0;padding:0;color:rgba(0,0,0,.3);transition:color .2s}
+#backToTop h2:hover{color:#000}
+#backToTop .btp-overlay{
+  position:absolute;inset:0;pointer-events:none;cursor:pointer;
+  ;z-index:-1;
+  background:rgba(255,255,255,.001);
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0,black 65%);
+          mask-image:linear-gradient(to bottom,transparent 0,black 65%);
+  -webkit-backdrop-filter:blur(0);backdrop-filter:blur(0);
+  transition:backdrop-filter .2s,-webkit-backdrop-filter .2s,background .2s;
 }
-
-#backToTop h2 {
-  display: inline-block;
-  color: rgba(0,0,0,.3);
-  transition: color .3s ease-in-out, backdrop-filter .3s ease-in-out;
-  padding: .5vw 1vw;
-  border-radius: 10px;
+#backToTop:has(h2:hover) .btp-overlay{
+  background:rgba(255,255,255,.22);
+  -webkit-backdrop-filter:blur(5vw);backdrop-filter:blur(5vw);
 }
-
-#backToTop h2:hover {
-  color: rgba(0,0,0,1);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 

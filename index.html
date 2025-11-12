@@ -252,7 +252,10 @@ document.querySelectorAll('iframe.show-volume').forEach(f => {
 });
 </script>
 
-<div id="backToTop"><h2>Back <span class="slash">&uarr;</span></h2></div>
+<div id="backToTop">
+  <h2>Back <span class="slash">↑</span></h2>
+  <span class="btp-overlay" aria-hidden="true"></span>
+</div>
 <script>
 const topBtn = document.getElementById('backToTop');
 const lastProject = document.querySelector('.project_wide:last-of-type');
@@ -273,6 +276,8 @@ topBtn.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 </script>
+
+
 
 </body>
 
