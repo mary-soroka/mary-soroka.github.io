@@ -82,13 +82,23 @@ h1 {
   line-height: .82;
 }
 
+@font-face {
+  font-family: 'Batang';
+  src: url('http://mary-soroka.github.io/font/batang.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 h2 {
+  font-family: 'Batang', serif;
   letter-spacing: -.03em;
   font-weight: normal;
   font-size: 2vw;
   margin: 1.2vw 0 0;
   padding: 0;
   color: rgba(0, 0, 0, 1);
+  text-transform:uppercase;
 }
 
 h3 {
@@ -335,7 +345,37 @@ h3 {
 
 
 
+.vimeo-wrap {
+  position: relative;
+}
 
+.vimeo-ctl {
+  position: absolute;
+  right: 1.2vw;
+  bottom: 1.2vw;
+  z-index: 3;
+  padding: 5px 15px 15px;
+  background: rgba(255, 255, 255, 0.35);
+  color: rgba(0, 0, 0, 1);
+  height:2vw;
+  border: none;
+  border-radius: 25px;
+  font: .8vw 'Monument Grotesk', sans-serif;
+  letter-spacing: 0.04em;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: all 0.25s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vimeo-ctl:hover {
+  background: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.9);
+  opacity: 1;
+}
 
 
 
