@@ -166,126 +166,129 @@
 
 
 
-<!-- Self‑contained mobile layout with snap scrolling. Paste inside <body> alongside desktop; CSS is scoped to <=800px and hides desktop. -->
+<!-- MOBILE-ONLY MARKUP: paste anywhere inside <body> after your desktop markup -->
+
 <div class="site-mobile" aria-hidden="false">
-  <header class="m-header">
-    <h1 class="m-title">Mary Soroka</h1>
-    <nav class="m-nav"><a href="mailto:maryintro@icloud.com">Email</a><a href="https://www.linkedin.com/in/marysoroka" target="_blank" rel="noopener">LinkedIn</a></nav>
-  </header>
+  <div class="m">
+    <header class="mobile_header">
+      <h1 class="h1">Mary Soroka</h1>
+      <span><a href="mailto:maryintro@icloud.com">Email</a> <a href="https://www.linkedin.com/in/marysoroka" target="_blank" rel="noopener">LinkedIn</a></span>
+    </header>
 
-  <main class="m-snap">
-    <!-- Intro / hero -->
-    <section class="m-section hero" id="start">
-      <p class="m-bio">Mary is an internationally award‑winning Creative Director, filmmaker, and digital artist. Her work combines film, self‑portraiture, procedural effects, and generative models to imagine metaphysical states of being in posthuman realms.</p>
-      <div class="m-media m-img" style="--img:url('http://mary-soroka.github.io/images/art/miners_reliquary/v/mary_soroka_miners_reliquary_v2.png')"></div>
-      <div class="m-hint">Swipe ↓</div>
-    </section>
+```
+<!-- Intro -->
+<section class="block">
+  <p class="mobile_bio">Mary is an internationally award-winning Creative Director, filmmaker, and digital artist.
+    Her work combines film, self-portraiture, procedural effects, and generative models to imagine metaphysical states of being in posthuman realms.</p>
+  <div class="media img" style="background-image:url('http://mary-soroka.github.io/images/art/miners_reliquary/v/mary_soroka_miners_reliquary_v2.png')"></div>
+</section>
 
-    <!-- 1. Atmospheres (videos) -->
-    <section class="m-section" id="atmospheres">
-      <h2 class="m-h2">Atmospheres</h2><h3 class="m-h3">Photo · Film · Digital Video</h3>
-      <div class="m-media m-video"><iframe src="https://player.vimeo.com/video/1135480037?background=1&autoplay=0&muted=1&loop=1&autopause=0" title="Atmospheres 1" allow="autoplay; fullscreen; picture-in-picture"></iframe></div>
-      <div class="m-media m-video"><iframe src="https://player.vimeo.com/video/1135477684?background=1&autoplay=0&muted=1&loop=1&autopause=0" title="Atmospheres 2" allow="autoplay; fullscreen; picture-in-picture"></iframe></div>
-      <div class="m-media m-video"><iframe src="https://player.vimeo.com/video/1135478920?background=1&autoplay=0&muted=1&loop=1&autopause=0" title="Atmospheres 3" allow="autoplay; fullscreen; picture-in-picture"></iframe></div>
-    </section>
+<!-- Atmospheres -->
+<section class="block">
+  <h2 class="mobile_titles">Atmospheres</h2><h3 class="s">Photo + Film + Digital Video</h3>
+  <div class="media v"><iframe src="https://player.vimeo.com/video/1135480037?background=1&autoplay=1&muted=1&loop=1&autopause=0" title="Atmospheres 1"></iframe></div>
+  <div class="media v"><iframe src="https://player.vimeo.com/video/1135477684?background=1&autoplay=1&muted=1&loop=1&autopause=0" title="Atmospheres 2"></iframe></div>
+  <div class="media v"><iframe src="https://player.vimeo.com/video/1135478920?background=1&autoplay=1&muted=1&loop=1&autopause=0" title="Atmospheres 3"></iframe></div>
+</section>
 
-    <!-- 2. Canticle -->
-    <section class="m-section" id="canticle">
-      <h2 class="m-h2">Canticle</h2><h3 class="m-h3">Digital Image · Video</h3>
-      <div class="m-media m-video wide-zoom" style="--zoom:1.6; --tx:0px; --ty:-10px"><iframe src="https://player.vimeo.com/video/1135570330?background=1&autoplay=0&muted=1&loop=1&autopause=0" title="Canticle video" allow="autoplay; fullscreen; picture-in-picture"></iframe></div>
-      <div class="m-media m-img" style="--img:url('http://mary-soroka.github.io/images/art/canticle/v/mary_soroka_canticle_v2.png')"></div>
-      <div class="m-media m-img" style="--img:url('http://mary-soroka.github.io/images/art/canticle/v/mary_soroka_canticle_v3.png')"></div>
-    </section>
+<!-- Canticle -->
+<section class="block">
+  <h2 class="mobile_titles">Canticle</h2><h3 class="s">Digital Image + Video</h3>
+  <div class="media v zoom" style="--zoom:1.6; --tx:0px; --ty:-10px;"><iframe src="https://player.vimeo.com/video/1135570330?background=1&autoplay=1&muted=1&loop=1&autopause=0" title="Canticle video"></iframe></div>
+  <div class="media img" style="background-image:url('http://mary-soroka.github.io/images/art/canticle/v/mary_soroka_canticle_v2.png')"></div>
+  <div class="media img" style="background-image:url('http://mary-soroka.github.io/images/art/canticle/v/mary_soroka_canticle_v3.png')"></div>
+</section>
 
-    <!-- 3. Cradle -->
-    <section class="m-section" id="cradle">
-      <h2 class="m-h2">Cradle</h2><h3 class="m-h3">Short Film</h3>
-      <div class="m-media m-video"><iframe src="https://www.youtube.com/embed/cUYS2USfZ-c?rel=0" title="Cradle" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></div>
-    </section>
+<!-- Cradle -->
+<section class="block">
+  <h2 class="mobile_titles">Cradle</h2><h3 class="s">Short Film</h3>
+  <div class="media v"><iframe src="https://www.youtube.com/embed/cUYS2USfZ-c?si=MJ7TbnQmhVIZZClL" title="Cradle"></iframe></div>
+</section>
 
-    <!-- 4. Self -->
-    <section class="m-section" id="self">
-      <h2 class="m-h2">Self</h2><h3 class="m-h3">Digital Image · Video</h3>
-      <div class="m-media m-img" style="--img:url('http://mary-soroka.github.io/images/art/self/v/mary_soroka_self_v1.png')"></div>
-      <div class="m-media m-img" style="--img:url('http://mary-soroka.github.io/images/art/self/v/mary_soroka_self_v2.png')"></div>
-      <div class="m-media m-img" style="--img:url('http://mary-soroka.github.io/images/art/self/v/mary_soroka_self_v3.png')"></div>
-    </section>
+<!-- Self -->
+<section class="block">
+  <h2 class="mobile_titles">Self</h2><h3 class="s">Digital Image + Video</h3>
+  <div class="media img" style="background-image:url('http://mary-soroka.github.io/images/art/self/v/mary_soroka_self_v1.png')"></div>
+  <div class="media img" style="background-image:url('http://mary-soroka.github.io/images/art/self/v/mary_soroka_self_v2.png')"></div>
+  <div class="media img" style="background-image:url('http://mary-soroka.github.io/images/art/self/v/mary_soroka_self_v3.png')"></div>
+</section>
 
-    <!-- 5. The Memory Broker -->
-    <section class="m-section" id="memory-broker">
-      <h2 class="m-h2">The Memory Broker</h2><h3 class="m-h3">Coming Soon</h3>
-      <div class="m-media m-video"><iframe src="https://player.vimeo.com/video/000000000?badge=0&autopause=0" title="The Memory Broker" allow="autoplay; fullscreen; picture-in-picture"></iframe></div>
-    </section>
+<!-- The Memory Broker -->
+<section class="block">
+  <h2 class="mobile_titles">The Memory Broker</h2><h3 class="s">Coming Soon</h3>
+  <div class="media img" style="background:#000"></div>
+</section>
 
-    <!-- 6. Upside Down -->
-    <section class="m-section" id="upside-down">
-      <h2 class="m-h2">Upside Down</h2><h3 class="m-h3">Music Video</h3>
-      <div class="m-media m-video"><iframe src="https://www.youtube.com/embed/-9MWBZO40UM" title="Upside Down" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></div>
-    </section>
+<!-- Upside Down -->
+<section class="block">
+  <h2 class="mobile_titles">Upside Down</h2><h3 class="s">Music Video</h3>
+  <div class="media v"><iframe src="https://www.youtube.com/embed/-9MWBZO40UM?si=W08tcMnTnGgrryL7" title="Upside Down"></iframe></div>
+</section>
 
-    <!-- 7. Miner’s Reliquary -->
-    <section class="m-section" id="miners-reliquary">
-      <h2 class="m-h2">Miner’s Reliquary</h2><h3 class="m-h3">Digital Image · Video</h3>
-      <div class="m-media m-video wide-zoom" style="--zoom:1.3; --tx:0px; --ty:-10px"><iframe src="https://player.vimeo.com/video/1135556799?background=1&autoplay=0&muted=1&loop=1&autopause=0" title="Miner’s video" allow="autoplay; fullscreen; picture-in-picture"></iframe></div>
-      <div class="m-media m-img" style="--img:url('http://mary-soroka.github.io/images/art/miners_reliquary/v/mary_soroka_miners_reliquary_v2.png')"></div>
-      <div class="m-media m-img" style="--img:url('http://mary-soroka.github.io/images/art/miners_reliquary/v/mary_soroka_miners_reliquary_v3.png')"></div>
-    </section>
+<!-- Miner’s Reliquary -->
+<section class="block">
+  <h2 class="mobile_titles">Miner’s Reliquary</h2><h3 class="s">Digital Image + Video</h3>
+  <div class="media img" style="background-image:url('http://mary-soroka.github.io/images/art/miners_reliquary/v/mary_soroka_miners_reliquary_v3.png')"></div>
+  <div class="media v zoom" style="--zoom:1.15; --tx:0px; --ty:-10px;"><iframe src="https://player.vimeo.com/video/1135556799?background=1&autoplay=1&muted=1&loop=1&autopause=0" title="Miner’s video"></iframe></div>
+  <div class="media img" style="background-image:url('http://mary-soroka.github.io/images/art/miners_reliquary/v/mary_soroka_miners_reliquary_v2.png')"></div>
+</section>
 
-    <!-- 8. Half‑Light -->
-    <section class="m-section" id="half-light">
-      <h2 class="m-h2">Half‑Light</h2><h3 class="m-h3">Digital Image</h3>
-      <div class="m-media m-img" style="--img:url('http://mary-soroka.github.io/images/art/half_light_protocol/v/mary_soroka_half_light_protocol_v1.png')"></div>
-      <div class="m-media m-img" style="--img:url('http://mary-soroka.github.io/images/art/half_light_protocol/v/mary_soroka_half_light_protocol_v2.png')"></div>
-      <div class="m-media m-img" style="--img:url('http://mary-soroka.github.io/images/art/half_light_protocol/v/mary_soroka_half_light_protocol_v3.png')"></div>
-    </section>
+<!-- Half-Light -->
+<section class="block">
+  <h2 class="mobile_titles">Half-Light Protocol</h2><h3 class="s">Digital Image</h3>
+  <div class="media img" style="background-position-x:30%;background-image:url('http://mary-soroka.github.io/images/art/half_light_protocol/v/mary_soroka_half_light_protocol_v1.png')"></div>
+  <div class="media img" style="background-image:url('http://mary-soroka.github.io/images/art/half_light_protocol/v/mary_soroka_half_light_protocol_v2.png')"></div>
+  <div class="media img" style="background-image:url('http://mary-soroka.github.io/images/art/half_light_protocol/v/mary_soroka_half_light_protocol_v3.png')"></div>
+</section>
 
-    <!-- 9. Silk -->
-    <section class="m-section" id="silk">
-      <h2 class="m-h2">Silk</h2><h3 class="m-h3">Digital Image</h3>
-      <div class="m-media m-img" style="--img:url('http://mary-soroka.github.io/images/art/silk/v/mary_soroka_silk_v1.png')"></div>
-      <div class="m-media m-img" style="--img:url('http://mary-soroka.github.io/images/art/silk/v/mary_soroka_silk_v2.png')"></div>
-      <div class="m-media m-img" style="--img:url('http://mary-soroka.github.io/images/art/silk/v/mary_soroka_silk_v3.png')"></div>
-    </section>
+<!-- Silk -->
+<section class="block" style="border:0;">
+  <h2 class="mobile_titles">Silk</h2><h3 class="s">Digital Image</h3>
+  <div class="media img" style="background-image:url('http://mary-soroka.github.io/images/art/silk/v/mary_soroka_silk_v1.png')"></div>
+  <div class="media img" style="background-image:url('http://mary-soroka.github.io/images/art/silk/v/mary_soroka_silk_v2.png')"></div>
+  <div class="media img" style="background-image:url('http://mary-soroka.github.io/images/art/silk/v/mary_soroka_silk_v3.png')"></div>
+</section>
 
-    <footer class="m-footer"><a href="mailto:maryintro@icloud.com">Say hello →</a></footer>
-  </main>
+<footer class="mf"><a href="mailto:maryintro@icloud.com">Say hello →</a></footer>
+```
+
+  </div>
 </div>
 
+<!-- MOBILE CSS: add to your stylesheet -->
+
 <style>
-/* Hide desktop on small screens */
-@media (max-width:800px){.site-desktop{display:none}}
-/* Show mobile only on small screens */
+/* Hide mobile by default */
 .site-mobile{display:none}
-@media (max-width:800px){
-  :root{--pad:4vw;--text:15px;--title:28px}
-  html,body{margin:0;padding:0;overflow:hidden;background:#fff;font-family:'Monument Grotesk',system-ui,sans-serif}
+
+@media(max-width:800px){
+  .site-desktop{display:none}
   .site-mobile{display:block}
-  .m-header{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:calc(var(--pad)*.75) var(--pad);background:#fffcc0cc;backdrop-filter:saturate(120%) blur(6px);border-bottom:1px solid rgba(0,0,0,.08)}
-  .m-title{font-size:22px;margin:0}
-  .m-nav a{font-size:13px;color:#000;text-decoration:none;border:1px solid #000;border-radius:999px;padding:6px 12px;margin-left:8px}
+  html,body{margin:0;padding:0;overflow-x:hidden;background:#fff;scroll-snap-type:y mandatory;scroll-padding-top:0}
+  .m{padding:0}
+  .mobile_header{display:flex;justify-content:space-between;gap:12px;margin:0 2vw;padding:4vw 2vw 2vw;font-size:14px;position:sticky;top:0;background:#fff;z-index:2}
+  .mobile_header a{border:1px solid #000;padding:4px 12px;border-radius:999px}
+  .h1{font:600 28px 'Monument Grotesk',sans-serif;margin:0}
+  .mobile_bio{font:15px/1.5 'Monument Grotesk',sans-serif;color:#000;margin:10vw 8vw;text-align:center}
+  .mobile_titles{font:500 22px 'Monument Grotesk',sans-serif;margin:4vw 0 2vw 4vw}
+  .s{font:300 16px 'Monument Grotesk',sans-serif;color:rgba(0,0,0,.45);margin:0 0 2vw 4vw}
 
-  /* Snap container */
-  .m-snap{height:100svh;overflow:auto;scroll-snap-type:y mandatory;-webkit-overflow-scrolling:touch}
-  .m-section{scroll-snap-align:start;padding:var(--pad) var(--pad) calc(var(--pad)*1.5);border-bottom:1px solid rgba(0,0,0,.08);min-height:100svh;display:flex;flex-direction:column;gap:3.5vw}
-  .m-section.hero{justify-content:flex-end}
-  .m-bio{font-size:var(--text);line-height:1.5;margin:10svh 0 0;text-align:center}
-  .m-hint{opacity:.35;text-align:center;padding:6px 0}
+  /* Snap points: section first, then every media */
+  .block{margin:4vw 0;scroll-snap-align:start;scroll-snap-stop:always}
+  .media{--w:min(92vw,480px);position:relative;width:var(--w);height:calc(var(--w)*16/9);margin:6vw auto 8vw;box-shadow:0 0 0 12px #fff;scroll-snap-align:start;scroll-snap-stop:always}
 
-  /* Headings */
-  .m-h2{font-size:var(--title);margin:2vw 0 0}
-  .m-h3{font-size:16px;font-weight:300;opacity:.5;margin:0}
+  /* Images */
+  .media.img{background:#fff center/cover no-repeat}
 
-  /* Media blocks */
-  .m-media{position:relative;width:100%;aspect-ratio:9/16;background:#fff;overflow:hidden;box-shadow:0 0 0 12px #fff}
-  .m-img{background-position:center center;background-repeat:no-repeat;background-size:cover}
-  .m-img{background-image:var(--img)}
-  .m-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0;background:#fff}
-  .wide-zoom iframe{transform:translate(var(--tx,0),var(--ty,0)) scale(var(--zoom,1));transform-origin:center;will-change:transform}
+  /* Videos */
+  .media.v iframe{position:absolute;inset:0;width:100%;height:100%;border:0;background:#000}
+  .media.v.zoom iframe{top:50%;left:50%;transform:translate(-50%,-50%) scale(var(--zoom,1)) translate(var(--tx,0),var(--ty,0));transform-origin:center}
 
-  .m-footer{padding:20px 0;text-align:center}
-  .m-footer a{color:#000;text-decoration:none;font-size:24px}
+  .mf{padding:28px 0;text-align:center;margin-top:30px}
+  .mf a{color:#000;font:600 24px 'Monument Grotesk',sans-serif;text-decoration:none}
 }
 </style>
+
 
 
 
