@@ -386,26 +386,26 @@ h3 {
   right: 1.2vw;
   bottom: 1.2vw;
   z-index: 3;
-  padding: 5px 15px 15px;
-  background: rgba(255, 255, 255, 0.35);
-  color: rgba(0, 0, 0, 1);
+  padding: 15px 15px 15px;
+  background: rgba(0, 0, 0, 0);
+  color: white;
   height:2vw;
-  border: none;
+  border: 1px solid white;
   border-radius: 25px;
   font: .8vw 'Monument Grotesk', sans-serif;
   letter-spacing: 0.04em;
   text-align: center;
   cursor: pointer;
-  opacity: 0.9;
   transition: all 0.25s ease-in-out;
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity:.4;
 }
 
 .vimeo-ctl:hover {
-  background: rgba(255, 255, 255, 0.6);
-  color: rgba(0, 0, 0, 0.9);
+  background: white;
+  color: black;
   opacity: 1;
 }
 

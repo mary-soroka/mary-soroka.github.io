@@ -235,7 +235,7 @@ document.querySelectorAll('iframe.show-volume').forEach(f => {
   const player = new Vimeo.Player(f);
   const btn = document.createElement('button');
   btn.className = 'vimeo-ctl';
-  btn.textContent = 'Volume On';
+  btn.textContent = 'Unmute';
   f.parentElement.appendChild(btn);
 
   btn.onclick = async () => {
@@ -243,10 +243,10 @@ document.querySelectorAll('iframe.show-volume').forEach(f => {
     if (muted) {
       await player.setMuted(false);
       await player.setVolume(1);
-      btn.textContent = 'Volume Off';
+      btn.textContent = 'Mute';
     } else {
       await player.setMuted(true);
-      btn.textContent = 'Volume On';
+      btn.textContent = 'Unmute';
     }
   };
 });
