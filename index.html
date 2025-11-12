@@ -180,57 +180,6 @@
 
 
 
-<!-- MOBILE VERSION -->
-<div class="site-mobile" aria-hidden="false">
-  <div class="stack">
-
-    <!-- Welcome Slide -->
-    <section class="slide welcome">
-      <h1>Mary Soroka</h1>
-      <p class="bio">Mary is an internationally award-winning Creative Director, filmmaker, and digital artist exploring metaphysical states of being in posthuman realms.</p>
-      <p class="links"><a href="mailto:maryintro@icloud.com">Email</a><span class="slash"> / </span><a href="https://www.linkedin.com/in/marysoroka" target="_blank">LinkedIn</a></p>
-      <span class="scrollhint">Scroll ↓</span>
-    </section>
-
-    <!-- Example Project Slides -->
-    <section class="slide" style="background-image:url('http://mary-soroka.github.io/images/art/atmospheres/v/mary_soroka_atmospheres_v1.png')">
-      <div class="overlay"><h2>Atmospheres</h2><h3>Photo + Film + Digital Video</h3></div>
-    </section>
-
-    <section class="slide">
-      <iframe src="https://player.vimeo.com/video/1135480037?background=1&autoplay=1&muted=1&loop=1" allow="autoplay; fullscreen"></iframe>
-      <div class="overlay"><h2>Atmospheres</h2><h3>Photo + Film + Digital Video</h3></div>
-    </section>
-
-    <section class="slide" style="background-image:url('http://mary-soroka.github.io/images/art/silk/v/mary_soroka_silk_v1.png')">
-      <div class="overlay"><h2>Silk</h2><h3>Digital Image</h3></div>
-    </section>
-
-  </div>
-  <nav class="dots"></nav>
-</div>
-
-
-<script>
-const slides=[...document.querySelectorAll('.site-mobile .slide')];
-const dots=document.querySelector('.site-mobile .dots');
-slides.forEach((s,i)=>{const d=document.createElement('a');d.href=`#`;dots.appendChild(d)});
-const dotEls=[...dots.querySelectorAll('a')];
-const io=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting){
-      dotEls.forEach(d=>d.classList.remove('active'));
-      dotEls[slides.indexOf(e.target)]?.classList.add('active');
-    }
-  });
-},{threshold:.6});
-slides.forEach(s=>io.observe(s));
-</script>
-
-
-
-
-
 
 
 
