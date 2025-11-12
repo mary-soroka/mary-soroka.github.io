@@ -74,31 +74,21 @@ a:hover {
 
 h1 {
   font-weight: normal;
-  font-size: 5.80vw;
-  margin: 6.19vw 0 0 0;
+  font-size: 7.7vw;
+  margin: 5.1vw 0 0 0;
   padding: 0 0 0 1.5vw;
   color: rgba(0, 0, 0, 1);
   letter-spacing: -.019em;
   line-height: .82;
 }
 
-@font-face {
-  font-family: 'Batang';
-  src: url('http://mary-soroka.github.io/font/batang.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 h2 {
-  font-family: 'Batang', serif;
   letter-spacing: -.03em;
   font-weight: normal;
   font-size: 2vw;
   margin: 1.2vw 0 0;
   padding: 0;
   color: rgba(0, 0, 0, 1);
-  text-transform:uppercase;
 }
 
 h3 {
