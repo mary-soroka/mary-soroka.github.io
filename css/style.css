@@ -558,10 +558,8 @@ h3 {
   z-index: 2147483647;
   background: transparent;
   transition: .3s ease-in-out;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 100%);
-  mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 70%, black 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 70%, black 100%);
 }
 
 #backToTop.visible {
@@ -570,19 +568,18 @@ h3 {
 }
 
 #backToTop h2 {
+  display: inline-block;
   color: rgba(0,0,0,.3);
-  transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out, backdrop-filter .3s ease-in-out;
+  padding: .5vw 1vw;
+  border-radius: 10px;
 }
 
-#backToTop:hover h2 {
+#backToTop h2:hover {
   color: rgba(0,0,0,1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
-
-
-
-
-
-
 
 
 
