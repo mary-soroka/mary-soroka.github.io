@@ -146,7 +146,12 @@ h3 {
   font-size: 2vw;
   margin: 0 0 0;
   padding: .3vw 0 0;
-  color: rgba(0, 0, 0, .3);
+  color: rgba(0, 0, 0, .2);
+}
+
+.slash {
+  margin:0 0 0 .8vw;
+  font-weight:200;
 }
 
 .nav {
@@ -537,27 +542,26 @@ h3 {
 /* (3) */ .bg-cluster[data-idx="8"] .t3{left:12vw;top:87vh;background-image:url('http://mary-soroka.github.io/images/art/silk/h/mary_soroka_silk_h3.png')}
 
 
+
+
 #backToTop {
   width: 100%;
   position: fixed;
-  height:8vw;
+  height: 14vw;
   text-align: center;
-  bottom: -0.5px; /* pulls it just inside viewport to kill alias edge */
+  bottom: -0.5px;
   left: 0;
-  padding: 2vw 0 2.8vw;
-  background: transparent;
-  color: black;
+  padding: 8vw 0 2.8vw;
   cursor: pointer;
   opacity: 0;
   pointer-events: none;
-  z-index: 2147483647; /* max safe z-index */
+  z-index: 2147483647;
   background: transparent;
-  transition: .15s ease-in-out;
-}
-
-#backToTop:hover {
-  color: rgba(0,0,0,.3);
+  transition: .3s ease-in-out;
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 100%);
 }
 
 #backToTop.visible {
@@ -565,9 +569,14 @@ h3 {
   pointer-events: auto;
 }
 
+#backToTop h2 {
+  color: rgba(0,0,0,.3);
+  transition: color .3s ease-in-out;
+}
 
-
-
+#backToTop:hover h2 {
+  color: rgba(0,0,0,1);
+}
 
 
 
