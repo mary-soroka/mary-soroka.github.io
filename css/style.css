@@ -530,27 +530,25 @@ h3 {
 #backToTop {
   width: 100%;
   position: fixed;
+  height:8vw;
   text-align: center;
   bottom: -0.5px; /* pulls it just inside viewport to kill alias edge */
   left: 0;
   padding: 2vw 0 2.8vw;
-  font-size: 1.1vw;
-  font-weight:500;
-  letter-spacing:.03em;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
   background: transparent;
-  backdrop-filter: blur(8px);
   color: black;
   cursor: pointer;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.2s ease, background 0.3s ease, color 0.3s ease;
   z-index: 2147483647; /* max safe z-index */
+  background: transparent;
+  transition: .15s ease-in-out;
 }
 
 #backToTop:hover {
-  background: rgba(0,0,0,.3);
-  color: white;
+  color: rgba(0,0,0,.3);
+
+  backdrop-filter: blur(8px);
 }
 
 #backToTop.visible {
