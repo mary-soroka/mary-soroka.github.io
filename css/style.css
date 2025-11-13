@@ -146,7 +146,7 @@ h3 {
   font-size: 2vw;
   margin: 0 0 0;
   padding: .3vw 0 0;
-  color: rgba(0, 0, 0, .2);
+  color: rgba(0, 0, 0, 0);
 }
 
 .slash {
