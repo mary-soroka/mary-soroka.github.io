@@ -1,347 +1,600 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 :root {
-  --blur: 60px;
-  --dur: .3s;
+    --blur: 60px;
+    --dur: .3s;
 }
 
-html,
-body {
-  scroll-behavior: smooth;
-  margin: 0;
-  padding: 0;
-  font-family: 'Monument Grotesk', sans-serif;
-  font-synthesis: none;
-  overflow-x: hidden;
-  line-height: 1;
-  color: #000;
-  height: 100%;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  scroll-padding-top: 0;
+html, body {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: 'Monument Grotesk', sans-serif;
+    font-synthesis: none;
+    overflow-x: hidden;
+    line-height: 1;
+    color: #000;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 0;
 }
 
-.site-desktop {}
+.site-desktop {
+}
 
 .content {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  top: 2vw;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 2vw;
 }
 
 .welcome {
-  position: relative;
-  top: 6.15vw;
-  left: 0;
-  height: 52.2vw;
-  width: 100%;
-  margin: 0 0 6.05vw;
-  z-index: 99999;
-  background: transparent;
-  border-bottom: 1px solid rgba(0, 0, 0, .1);
-  scroll-snap-align: start;
+    position: relative;
+    top: 6.15vw;
+    left: 0;
+    height: 52.2vw;
+    width: 100%;
+    margin: 0 0 6.05vw;
+    z-index: 99999;
+    background: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    scroll-snap-align: start;
 }
 
 .nav {
-  font-weight: 400;
-  position: absolute;
-  width: 100%;
-  height: 6.9vw;
-  padding: 1.4vw 0;
-  margin: 0;
-  z-index: 99999999;
-  background: transparent;
-  text-align: left;
-  font-size: .86vw;
-  border-bottom: 1px solid rgba(0, 0, 0, .1);
+    font-weight: 400;
+    position: absolute;
+    width: 100%;
+    height: 6.9vw;
+    padding: 1.4vw 0;
+    margin: 0;
+    z-index: 99999999;
+    background: transparent;
+    text-align: left;
+    font-size: .86vw;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 
-.nav_col1,
-.nav_col2,
-.nav_col3,
-.nav_col4 {
-  position: absolute;
-  width: 25%;
-  padding: 0 2vw 0;
-  line-height: 1.3;
-  letter-spacing: .02em;
+.nav_col1, .nav_col2, .nav_col3, .nav_col4 {
+    position: absolute;
+    width: 25%;
+    padding: 0 2vw 0;
+    line-height: 1.3;
+    letter-spacing: .02em;
 }
 
 .nav_col1 {
-  left: 0%;
+    left: 0%;
 }
 
 .nav_col2 {
-  left: 25%;
+    left: 25%;
 }
 
 .nav_col3 {
-  left: 50%;
+    left: 50%;
 }
 
 .nav_col4 {
-  left: 75%;
+    left: 75%;
 }
 
 h1 {
-  font-weight: 400;
-  font-size: 7vw;
-  margin: 0;
-  padding: 8.75vw 0 0 1.5vw;
-  color: #000;
-  letter-spacing: -.019em;
-  line-height: .82;
+    font-weight: 400;
+    font-size: 7vw;
+    margin: 0;
+    padding: 8.75vw 0 0 1.5vw;
+    color: #000;
+    letter-spacing: -.019em;
+    line-height: .82;
 }
 
 h2 {
-  font-weight: 400;
+    font-weight: 400;
 }
 
 .slash {
-  margin: 0 0 0 .8vw;
-  font-weight: 200;
+    margin: 0 0 0 .8vw;
+    font-weight: 200;
 }
 
 a {
-  font-family: 'Monument Grotesk', sans-serif;
-  text-decoration: none;
-  transition: .15s ease-in-out;
-  color: #000;
-  padding: 0;
-  margin: 0;
-  line-height: 1;
-  display: inline-flex;
-  position: relative;
+    font-family: 'Monument Grotesk', sans-serif;
+    text-decoration: none;
+    transition: .15s ease-in-out;
+    color: #000;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    display: inline-flex;
+    position: relative;
 }
 
 a:hover {
-  color: rgba(0, 0, 0, .3);
-  cursor: pointer;
+    color: rgba(0, 0, 0, .3);
+    cursor: pointer;
 }
 
 .nav_col3 a {
-  height: auto;
+    height: auto;
 }
 
 .welcome_img {
-  position: absolute;
-  top: 5.98vw;
-  left: 25%;
-  height: 40.4vw;
-  width: 70.76%;
-  margin: 3.1vw 0 0 2vw;
-  background: #000 url('http://mary-soroka.github.io/images/art/miners_reliquary/v/mary_soroka_miners_reliquary_v2.png') center/cover no-repeat;
+    position: absolute;
+    top: 5.98vw;
+    left: 25%;
+    height: 40.4vw;
+    width: 70.76%;
+    margin: 3.1vw 0 0 2vw;
+    background: #000 url('http://mary-soroka.github.io/images/art/miners_reliquary/v/mary_soroka_miners_reliquary_v2.png') center/cover no-repeat;
 }
 
 .scroll {
-  position: absolute;
-  top: 43.8vw;
-  left: 0;
-  width: 100%;
-  padding: 2vw;
+    position: absolute;
+    top: 43.8vw;
+    left: 0;
+    width: 100%;
+    padding: 2vw;
 }
 
 .project {
-  position: relative;
-  width: 100%;
-  height: 45vw;
-  padding: 0 2vw;
-  margin: 0;
-  z-index: 999999;
-  border-top: 1px solid rgba(0, 0, 0, .1);
-  border-bottom: 1px solid rgba(0, 0, 0, .1);
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
-  min-height: 100%;
+    position: relative;
+    width: 100%;
+    height: 45vw;
+    padding: 0 2vw;
+    margin: 0;
+    z-index: 999999;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    min-height: 100%;
 }
 
-.project h2,
-.project h3 {
-  position: absolute;
-  left: 2vw;
-  margin: 0;
-  pointer-events: none;
-  z-index: 4;
-  letter-spacing: -.03em;
+.project h2, .project h3 {
+    position: absolute;
+    left: 2vw;
+    margin: 0;
+    pointer-events: none;
+    z-index: 4;
+    letter-spacing: -.03em;
 }
 
 .project h2 {
-  font-weight: 400;
-  font-size: 2vw;
-  top: 2vw;
-  color: #000;
+    font-weight: 400;
+    font-size: 2vw;
+    top: 2vw;
+    color: #000;
 }
 
 .project h3 {
-  font-weight: 300;
-  font-size: 2vw;
-  top: 4.6vw;
-  color: transparent;
+    font-weight: 300;
+    font-size: 2vw;
+    top: 4.6vw;
+    color: transparent;
 }
 
 .content-row {
-  position: absolute;
-  left: 25%;
-  top: 0;
-  width: 72%;
-  display: flex;
-  gap: 2.3vw;
-  margin-top: 2vw;
+    position: absolute;
+    left: 25%;
+    top: 0;
+    width: 72%;
+    display: flex;
+    gap: 2.3vw;
+    margin-top: 2vw;
 }
 
 .content-row.full .item {
-  flex: 1 1 100%;
+    flex: 1 1 100%;
 }
 
 .content-row.two .item {
-  flex: 1 1 50%;
+    flex: 1 1 50%;
 }
 
 .content-row.three .item {
-  flex: 1 1 33.333%;
+    flex: 1 1 33.333%;
 }
 
 .item {
-  position: relative;
-  height: 40.3vw;
-  background-position: center;
-  background-size: cover;
+    position: relative;
+    height: 40.3vw;
+    background-position: center;
+    background-size: cover;
 }
 
-.item>img,
-.item>video,
-.item>iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border: 0;
-  display: block;
+.item > img, .item > video, .item > iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 0;
+    display: block;
 }
 
-.item.embedded_video {
-  overflow: hidden;
-  --zoom: 1;
-  --tx: 0px;
-  --ty: 0px;
+.item.narrow {
+    overflow: hidden;
+    --zoom: 1;
+    --tx: 0px;
+    --ty: 0px;
 }
 
-.item.embedded_video>iframe {
-  top: 50%;
-  left: 50%;
-  transform: translate(calc(-50% + var(--tx)), calc(-50% + var(--ty))) scale(var(--zoom));
-  transform-origin: center;
+.item.narrow > iframe {
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(-50% + var(--tx)), calc(-50% + var(--ty))) scale(var(--zoom));
+    transform-origin: center;
 }
-
-.project.atmospheres .item iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-  object-fit: cover;
-  display: block;
-}
-
-.project.atmospheres .item{overflow:hidden;background:#000;}
-.project.atmospheres .item iframe{
-  position:absolute;inset:-1px; /* bleed 1px all sides */
-  width:calc(100% + 2px);height:calc(100% + 2px);
-  display:block;border:0;object-fit:cover;transform:translateZ(0);
-}
-/* If a line still appears, add a tiny zoom: */
-.project.atmospheres .item iframe{transform:scale(1.008);}
 
 .vimeo-wrap {
-  position: relative;
+    position: relative;
 }
 
 .vimeo-ctl {
-  position: absolute;
-  right: 1.2vw;
-  bottom: 1.2vw;
-  z-index: 3;
-  padding: 15px;
-  background: transparent;
-  color: #fff;
-  height: 2vw;
-  border: 1px solid #fff;
-  border-radius: 25px;
-  font: .8vw 'Monument Grotesk', sans-serif;
-  letter-spacing: .04em;
-  text-align: center;
-  cursor: pointer;
-  transition: .25s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: .4;
+    position: absolute;
+    right: 1.2vw;
+    bottom: 1.2vw;
+    z-index: 3;
+    padding: 15px;
+    background: transparent;
+    color: #fff;
+    height: 2vw;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    font: .8vw 'Monument Grotesk', sans-serif;
+    letter-spacing: .04em;
+    text-align: center;
+    cursor: pointer;
+    transition: .25s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .4;
 }
 
 .vimeo-ctl:hover {
-  background: #fff;
-  color: #000;
-  opacity: 1;
+    background: #fff;
+    color: #000;
+    opacity: 1;
 }
 
 .bg-field {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: -1;
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
 }
 
 .bg-cluster {
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform: translate3d(0, var(--pinY, 0px), 0) scale(var(--s, 1));
-  transform-origin: left top;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate3d(0, var(--pinY, 0px), 0) scale(var(--s, 1));
+    transform-origin: left top;
 }
 
 .bg-cluster .tile {
-  position: absolute;
-  width: var(--w, 26vw);
-  height: var(--h, 14.5vw);
-  background-size: cover;
-  background-position: center;
-  will-change: transform;
-  backface-visibility: hidden;
-  contain: paint;
+    position: absolute;
+    width: var(--w, 26vw);
+    height: var(--h, 14.5vw);
+    background-size: cover;
+    background-position: center;
+    will-change: transform;
+    backface-visibility: hidden;
+    contain: paint;
 }
 
-.project,
-.bg-cluster {
-  filter: blur(var(--blur));
-  transition: filter var(--dur) ease-out;
-  z-index: 1;
+.project, .bg-cluster {
+    filter: blur(var(--blur));
+    transition: filter var(--dur) ease-out;
+    z-index: 1;
 }
 
-.project.active,
-.bg-cluster.active {
-  filter: none;
-  z-index: 9999;
+.project.active, .bg-cluster.active {
+    filter: none;
+    z-index: 9999;
 }
 
 .project.atmospheres {
-  --blur: 100px;
-  --dur: 3s;
+    --blur: 100px;
+    --dur: 3s;
 }
 
 .bg-cluster[data-idx="0"] {
-  --blur: 100px;
-  --dur: 5s;
+    --blur: 100px;
+    --dur: 5s;
 }
 
 .drama-done .project.atmospheres {
-  --blur: 20px;
-  --dur: .3s;
+    --blur: 20px;
+    --dur: .3s;
 }
 
 .drama-done .bg-cluster[data-idx="0"] {
-  --
+    --blur: 20px;
+    --dur: .3s;
+}
+
+.project::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #fff;
+    opacity: .4;
+    pointer-events: none;
+    transition: opacity var(--dur, .3s);
+    z-index: 3;
+}
+
+.project.active::before {
+    opacity: 0;
+}
+
+/* --- GRID just for Miner's Reliquary row --- */
+.content-row.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.3vw;
+}
+
+.content-row.grid .item {
+    height: 40.3vw;
+}
+
+.item.span-2 {
+    grid-column: span 2;
+}
+
+/* 0_ATMOSPHERES */
+.bg-cluster[data-idx="0"] .t1 {
+    left: 8vw;
+    top: 40vh;
+    background-size: cover;
+    background-image: url('http://mary-soroka.github.io/images/art/atmospheres/h/mary_soroka_atmospheres_h3.png');
+}
+
+.bg-cluster[data-idx="0"] .t3 {
+    left: 12vw;
+    top: 60vh;
+    background-size: cover;
+    background-image: url('http://mary-soroka.github.io/images/art/atmospheres/h/mary_soroka_atmospheres_h2.png');
+}
+
+.bg-cluster[data-idx="0"] .t2 {
+    left: 63vw;
+    top: 35vh;
+    background-size: cover;
+    background-image: url('http://mary-soroka.github.io/images/art/atmospheres/h/mary_soroka_atmospheres_h1.png');
+}
+
+/* 1_CANTICLE */
+.bg-cluster[data-idx="1"] .t2 {
+    left: -14vw;
+    top: 50vh;
+    background-size: cover;
+    background-image: url('http://mary-soroka.github.io/images/art/canticle/h/mary_soroka_canticle_h2.png');
+}
+
+.bg-cluster[data-idx="1"] .t1 {
+    left: 8vw;
+    top: 40vh;
+    background-size: cover;
+    background-image: url('http://mary-soroka.github.io/images/art/canticle/h/mary_soroka_canticle_h1.png');
+}
+
+.bg-cluster[data-idx="1"] .t3 {
+    display: none;
+    left: 18vw;
+    top: 55vh;
+    background-size: cover;
+    background-image: url('http://mary-soroka.github.io/images/art/canticle/h/mary_soroka_canticle_h3.png');
+}
+
+.bg-cluster[data-idx="1"] .t4 {
+    left: 70vw;
+    top: 50vh;
+    background-size: cover;
+    background-image: url('http://mary-soroka.github.io/images/art/canticle/h/mary_soroka_canticle_h4.png');
+}
+
+/* 2_CRADLE */
+.bg-cluster[data-idx="2"] .t3 {
+    left: -15vw;
+    top: 47vh;
+    background-size: cover;
+    background-image: url('http://mary-soroka.github.io/images/art/cradle/h/mary_soroka_cradle_h3.png');
+}
+
+.bg-cluster[data-idx="2"] .t1 {
+    left: 8vw;
+    top: 36vh;
+    background-size: cover;
+    background-image: url('http://mary-soroka.github.io/images/art/cradle/h/mary_soroka_cradle_h1.png');
+}
+
+.bg-cluster[data-idx="2"] .t2 {
+    left: 13.5vw;
+    top: 56vh;
+    background-size: cover;
+    background-image: url('http://mary-soroka.github.io/images/art/cradle/h/mary_soroka_cradle_h2.png');
+}
+
+.bg-cluster[data-idx="2"] .t4 {
+    left: 88vw;
+    top: 50vh;
+    background-size: cover;
+    background-image: url('http://mary-soroka.github.io/images/art/cradle/h/mary_soroka_cradle_h4.png');
+}
+
+/* 3_SELF */
+.bg-cluster[data-idx="3"] .t2 {
+    left: 4vw;
+    top: 55vh;
+    background-size: cover;
+    background-image: url('http://mary-soroka.github.io/images/art/self/h/mary_soroka_self_h3.png');
+}
+
+.bg-cluster[data-idx="3"] .t1 {
+    display: none;
+    left: 6vw;
+    top: 62vh;
+    background-size: cover;
+    background-image: url('http://mary-soroka.github.io/images/art/self/h/mary_soroka_self_h2.png');
+}
+
+.bg-cluster[data-idx="3"] .t3 {
+    left: 32vw;
+    top: 30vh;
+    background-size: cover;
+    background-image: url('http://mary-soroka.github.io/images/art/self/h/mary_soroka_self_h1.png');
+}
+
+.bg-cluster[data-idx="3"] .t4 {
+    left: 87vw;
+    top: 40vh;
+    background-size: cover;
+    background-image: url('http://mary-soroka.github.io/images/art/self/h/mary_soroka_self_h4.png');
+}
+
+/* 5_UPSIDE_DOWN */
+.bg-cluster[data-idx="4"] .t4 {
+    left: -19.5vw;
+    top: 55vh;
+    background-size: cover;
+    background-image: url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h4.png');
+}
+
+.bg-cluster[data-idx="4"] .t1 {
+    left: 10vw;
+    top: 50vh;
+    background-size: cover;
+    background-image: url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h1.png');
+}
+
+.bg-cluster[data-idx="4"] .t2 {
+    left: 18vw;
+    top: 30vh;
+    background-size: cover;
+    background-image: url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h2.png');
+}
+
+.bg-cluster[data-idx="4"] .t3 {
+    left: 86vw;
+    top: 30vh;
+    background-size: cover;
+    background-image: url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h3.png');
+}
+
+/* 6_MINERS_RELIQUARY */
+.bg-cluster[data-idx="5"] .t1 {
+    left: 10vw;
+    top: 38vh;
+    background-size: cover;
+    background-image: url('http://mary-soroka.github.io/images/art/miners_reliquary/h/mary_soroka_miners_reliquary_h4.png');
+}
+
+.bg-cluster[data-idx="5"] .t2 {
+    left: 2vw;
+    top: 58vh;
+    background-size: cover;
+    background-image: url('http://mary-soroka.github.io/images/art/miners_reliquary/h/mary_soroka_miners_reliquary_h2.png');
+}
+
+/* 7_HALF_LIGHT */
+.bg-cluster[data-idx="6"] .t1 {
+    left: -12vw;
+    top: 58vh;
+    background-size: cover;
+    background-image: url('http://mary-soroka.github.io/images/art/half_light/h/mary_soroka_half_light_h3.png');
+}
+
+.bg-cluster[data-idx="6"] .t2 {
+    left: 10vw;
+    top: 46vh;
+    background-size: cover;
+    background-image: url('http://mary-soroka.github.io/images/art/half_light/h/mary_soroka_half_light_h2.png');
+}
+
+.bg-cluster[data-idx="6"] .t4 {
+    left: 92vw;
+    top: 52vh;
+    background-size: cover;
+    background-image: url('http://mary-soroka.github.io/images/art/half_light/h/mary_soroka_half_light_h4.png');
+}
+
+/* 8_SILK */
+.bg-cluster[data-idx="7"] .t1 {
+    left: 8vw;
+    top: 35vh;
+    background-size: cover;
+    background-image: url('http://mary-soroka.github.io/images/art/silk/h/mary_soroka_silk_h1.png');
+}
+
+.bg-cluster[data-idx="7"] .t3 {
+    left: 12vw;
+    top: 52vh;
+    background-size: cover;
+    background-image: url('http://mary-soroka.github.io/images/art/silk/h/mary_soroka_silk_h3.png');
+}
+
+.bg-cluster[data-idx="7"] .t2 {
+    left: 60vw;
+    top: 55vh;
+    background-size: cover;
+    background-image: url('http://mary-soroka.github.io/images/art/silk/h/mary_soroka_silk_h2.png');
+}
+
+#backToTop {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: -.5px;
+    height: 44vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 10vw 0 3vw;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 2147483647;
+}
+
+#backToTop.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#backToTop h2 {
+    margin: 0;
+    color: rgba(0, 0, 0, .3);
+    transition: color .2s;
+    cursor: pointer;
+}
+
+#backToTop h2:hover {
+    color: #000;
+}
+
+#backToTop .btp-overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    background: rgba(255, 255, 255, .001);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0, black 65%);
+    mask-image: linear-gradient(to bottom, transparent 0, black 65%);
+    -webkit-backdrop-filter: blur(0);
+    backdrop-filter: blur(0);
+    transition: backdrop-filter .2s, -webkit-backdrop-filter .2s, background .2s;
+}
+
+#backToTop:has(h2:hover) .btp-overlay {
+    background: rgba(255, 255, 255, .22);
+    -webkit-backdrop-filter: blur(3vw);
+    backdrop-filter: blur(3vw);
+}

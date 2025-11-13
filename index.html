@@ -40,15 +40,15 @@
         <h2>Atmospheres</h2>
         <div class="content-row three">
           <div class="item">
-            <iframe class="video_with_audio" style="background-image:url('http://mary-soroka.github.io/images/art/atmospheres/v/mary_soroka_atmospheres_v1.png')"
+            <iframe class="show-volume" style="background-image:url('http://mary-soroka.github.io/images/art/atmospheres/v/mary_soroka_atmospheres_v1.png')"
               src="https://player.vimeo.com/video/1135480037?background=1&autoplay=1&muted=1&loop=1&autopause=0" title="Atmospheres 1" allow="autoplay; fullscreen; picture-in-picture"></iframe>
           </div>
           <div class="item">
-            <iframe class="video_with_audio" style="background-image:url('http://mary-soroka.github.io/images/art/atmospheres/v/mary_soroka_atmospheres_v2.png')"
+            <iframe class="show-volume" style="background-image:url('http://mary-soroka.github.io/images/art/atmospheres/v/mary_soroka_atmospheres_v2.png')"
               src="https://player.vimeo.com/video/1135477684?background=1&autoplay=1&muted=1&loop=1&autopause=0" title="Atmospheres 2" allow="autoplay; fullscreen; picture-in-picture"></iframe>
           </div>
           <div class="item">
-            <iframe class="video_with_audio" style="background-image:url('http://mary-soroka.github.io/images/art/atmospheres/v/mary_soroka_atmospheres_v3.png')"
+            <iframe class="show-volume" style="background-image:url('http://mary-soroka.github.io/images/art/atmospheres/v/mary_soroka_atmospheres_v3.png')"
               src="https://player.vimeo.com/video/1135478920?background=1&autoplay=1&muted=1&loop=1&autopause=0" title="Atmospheres 3" allow="autoplay; fullscreen; picture-in-picture"></iframe>
           </div>
         </div>
@@ -57,7 +57,7 @@
       <section class="project" data-key="canticle">
         <h2>Canticle</h2>
         <div class="content-row three">
-          <div class="item embedded_video" style="--zoom:1.6;--tx:0px;--ty:-10px">
+          <div class="item narrow" style="--zoom:1.6;--tx:0px;--ty:-10px">
             <iframe src="https://player.vimeo.com/video/1135570330?background=1&autoplay=1&muted=1&loop=1&autopause=0"
               title="Canticle – Left" allow="autoplay; fullscreen; picture-in-picture"></iframe>
           </div>
@@ -99,7 +99,7 @@
         <h2>Miner’s Reliquary</h2>
         <div class="content-row three grid">
           <div class="item span-2" style="background-image:url('http://mary-soroka.github.io/images/art/miners_reliquary/v/mary_soroka_miners_reliquary_v2.png')"></div>
-          <div class="item embedded_video" style="--zoom:1.15;--tx:0px;--ty:-10px">
+          <div class="item narrow" style="--zoom:1.15;--tx:0px;--ty:-10px">
             <iframe src="https://player.vimeo.com/video/1135556799?background=1&autoplay=1&muted=1&loop=1&autopause=0"
               title="Miner’s Reliquary – Left" allow="autoplay; fullscreen; picture-in-picture"></iframe>
           </div>
@@ -177,7 +177,7 @@ function frame(){y+=(tgt-y)*E;for(let i=0;i<clusters.length;i++){const c=cluster
   <script src="https://player.vimeo.com/api/player.js"></script>
   <script>
   (() => {
-    document.querySelectorAll('iframe.video_with_audio').forEach(f => {
+    document.querySelectorAll('iframe.show-volume').forEach(f => {
       f.parentElement.classList.add('vimeo-wrap');
       const player = new Vimeo.Player(f);
       const btn = document.createElement('button');
