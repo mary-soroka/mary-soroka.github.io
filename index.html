@@ -1,8 +1,5 @@
 <!doctype html>
 <html lang="en">
-
-<!--------------------------------------------------------------- HEAD -->
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -21,27 +18,10 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
 </head>
-
-<!--------------------------------------------------------------- BODY -->
-
 <body>
-
-<!------------------------------------------------------------ DESKTOP -->
-
   <div class="site-desktop">
-
-<!------------------------------------------------------------ CONTENT -->
-
     <main class="content">
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-<!------------------------------------------------------------ WELCOME -->
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
       <section class="welcome">
-
-<!---------------------------------------------------------------- NAV -->
-
         <nav class="nav">
           <div class="nav_col1">NYC &#8594; TO</div>
           <div class="nav_col2">Mary Soroka is an internationally award-winning Creative Director, filmmaker, and digital artist.</div>
@@ -51,28 +31,10 @@
             <a href="https://www.linkedin.com/in/marysoroka" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
         </nav>
-
-<!----------------------------------------------------------- BIG_NAME -->
-
         <h1>Mary<br />Soroka</h1>
-
-<!------------------------------------------------------------ BIG_IMG -->
-
         <div class="welcome_img"></div>
-
-<!------------------------------------------------------------- SCROLL -->
-
         <div class="scroll"><h2>Work <span class="slash">&#8595;</span></h2></div>
-
       </section>
-
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-<!----------------------------------------------------------- PROJECTS -->
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-
-<!------------------------------------------------------------- PROJ_1 -->
 
       <section class="project atmospheres" data-key="atmospheres">
         <h2>Atmospheres</h2>
@@ -92,8 +54,6 @@
         </div>
       </section>
 
-<!------------------------------------------------------------- PROJ_2 -->
-
       <section class="project" data-key="canticle">
         <h2>Canticle</h2>
         <div class="content-row three">
@@ -106,8 +66,6 @@
         </div>
       </section>
 
-<!------------------------------------------------------------- PROJ_3 -->
-
       <section class="project" data-key="cradle">
         <h2>Cradle</h2>
         <div class="content-row full">
@@ -118,8 +76,6 @@
         </div>
       </section>
 
-<!------------------------------------------------------------- PROJ_4 -->
-
       <section class="project" data-key="self">
         <h2>Self</h2>
         <div class="content-row three">
@@ -128,8 +84,6 @@
           <div class="item" style="background-image:url('http://mary-soroka.github.io/images/art/self/v/mary_soroka_self_v3.png')"></div>
         </div>
       </section>
-
-<!------------------------------------------------------------- PROJ_6 -->
 
       <section class="project" data-key="upside-down">
         <h2>Upside Down</h2>
@@ -141,21 +95,16 @@
         </div>
       </section>
 
-<!------------------------------------------------------------- PROJ_7 -->
-
       <section class="project" data-key="miners-reliquary">
         <h2>Miner’s Reliquary</h2>
-        <div class="content-row three">
+        <div class="content-row three grid">
           <div class="item narrow" style="--zoom:1.15;--tx:0px;--ty:-10px">
             <iframe src="https://player.vimeo.com/video/1135556799?background=1&autoplay=1&muted=1&loop=1&autopause=0"
               title="Miner’s Reliquary – Left" allow="autoplay; fullscreen; picture-in-picture"></iframe>
           </div>
-          <div class="item" style="background-image:url('http://mary-soroka.github.io/images/art/miners_reliquary/v/mary_soroka_miners_reliquary_v3.png')"></div>
-          <div class="item" style="background-image:url('http://mary-soroka.github.io/images/art/miners_reliquary/v/mary_soroka_miners_reliquary_v2.png')"></div>
+          <div class="item span-2" style="background-image:url('http://mary-soroka.github.io/images/art/miners_reliquary/v/mary_soroka_miners_reliquary_v2.png')"></div>
         </div>
       </section>
-
-<!------------------------------------------------------------- PROJ_8 -->
 
       <section class="project" data-key="half-light">
         <h2>Half-Light</h2>
@@ -165,8 +114,6 @@
           <div class="item" style="background-image:url('http://mary-soroka.github.io/images/art/half_light_protocol/v/mary_soroka_half_light_protocol_v3.png')"></div>
         </div>
       </section>
-
-<!------------------------------------------------------------- PROJ_9 -->
 
       <section class="project" data-key="silk" style="border-bottom:0;margin-bottom:10vw;">
         <h2>Silk</h2>
@@ -179,15 +126,7 @@
     </main>
   </div>
 
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-<!------------------------------------------------------------ SCRIPTS -->
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-
-<!----------------------------------------------------------- CLUSTERS -->
-
-<script>
+  <script>
 (()=>{const $$=s=>[...document.querySelectorAll(s)],projects=$$('.project');if(!projects.length)return;
 let field=document.querySelector('.bg-field');if(!field){field=document.createElement('div');field.className='bg-field';document.body.prepend(field);}
 let clusters=[...field.querySelectorAll('.bg-cluster')];
@@ -197,9 +136,7 @@ let y=scrollY,tgt=scrollY,H=innerHeight;addEventListener('scroll',()=>tgt=scroll
 addEventListener('resize',()=>{H=innerHeight;},{passive:true});
 const projTop=el=>scrollY+el.getBoundingClientRect().top;
 function frame(){y+=(tgt-y)*E;for(let i=0;i<clusters.length;i++){const c=clusters[i],p=projects[i];const projMid=projTop(p)+p.clientHeight/2;const pinY=projMid-(H/2);c.style.setProperty('--pinY',pinY+'px');const rel=y-projMid;[...c.children].forEach((t,k)=>{const dy=rel*SPD(t)+Math.sin((y*WOB_F)+(k*.7))*WOB_A;const dx=((y*.002)+k*.3)*HDX(t)*10;t.style.transform=`translate3d(${dx}px,${dy}px,0)`;});}requestAnimationFrame(frame);}requestAnimationFrame(frame);})();
-</script>
-
-<!----------------------------------------------------------- NO_RIGHT -->
+  </script>
 
   <script>
   document.addEventListener('contextmenu', e => e.preventDefault());
@@ -208,8 +145,6 @@ function frame(){y+=(tgt-y)*E;for(let i=0;i<clusters.length;i++){const c=cluster
     if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) e.preventDefault();
   });
   </script>
-
-<!----------------------------------------------------------- BLURRING -->
 
   <script>
   (() => {
@@ -238,8 +173,6 @@ function frame(){y+=(tgt-y)*E;for(let i=0;i<clusters.length;i++){const c=cluster
   })();
   </script>
 
-<!------------------------------------------------------------ UN_MUTE -->
-
   <script src="https://player.vimeo.com/api/player.js"></script>
   <script>
   (() => {
@@ -266,8 +199,6 @@ function frame(){y+=(tgt-y)*E;for(let i=0;i<clusters.length;i++){const c=cluster
   })();
   </script>
 
-<!------------------------------------------------------------ BACK_UP -->
-
   <div id="backToTop">
     <h2>Top <span class="slash">↑</span></h2>
     <span class="btp-overlay" aria-hidden="true"></span>
@@ -283,10 +214,5 @@ function frame(){y+=(tgt-y)*E;for(let i=0;i<clusters.length;i++){const c=cluster
     topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   })();
   </script>
-
-<!----------------------------------------------------------------------->
-
-
-
 </body>
 </html>
