@@ -129,18 +129,6 @@
         </div>
       </section>
 
-<!------------------------------------------------------------- PROJ_5 -->
-
-      <section class="project" data-key="memory-broker">
-        <h2>The Memory Broker</h2>
-        <div class="content-row full">
-          <div class="item">
-            <iframe src="https://player.vimeo.com/video/000000000?badge=0&autopause=0&player_id=0&app_id=58479"
-              title="The Memory Broker" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"></iframe>
-          </div>
-        </div>
-      </section>
-
 <!------------------------------------------------------------- PROJ_6 -->
 
       <section class="project" data-key="upside-down">
@@ -203,17 +191,12 @@
 (()=>{const $$=s=>[...document.querySelectorAll(s)],projects=$$('.project');if(!projects.length)return;
 let field=document.querySelector('.bg-field');if(!field){field=document.createElement('div');field.className='bg-field';document.body.prepend(field);}
 let clusters=[...field.querySelectorAll('.bg-cluster')];
-if(clusters.length!==projects.length){clusters.forEach(c=>c.remove());clusters=[];for(let ci=0;ci<projects.length;ci++){const c=document.createElement('div');c.className='bg-cluster';c.dataset.idx=ci;for(let i=1;i<=4;i++){const t=document.createElement('div');t.className='tile t'+i;t.dataset.speed=(0.09+0.02*(i%4)).toFixed(2);t.dataset.hdx=((i%3)-1)*0.07;c.appendChild(t);}field.appendChild(c);clusters.push(c);}}
-const SPD=t=>parseFloat(t.dataset.speed),HDX=t=>parseFloat(t.dataset.hdx);
-const baseW=innerWidth,baseH=innerHeight;
-function snap(){clusters.forEach(c=>{[...c.children].forEach(t=>{const tr=t.getBoundingClientRect(),cr=c.getBoundingClientRect();t.style.left=(tr.left-cr.left)+'px';t.style.top=(tr.top-cr.top)+'px';t.style.setProperty('--w',tr.width+'px');t.style.setProperty('--h',tr.height+'px');});const tiles=[...c.children];let minY=Infinity,maxY=-Infinity;tiles.forEach(t=>{const r=t.getBoundingClientRect(),cr=c.getBoundingClientRect();const y=r.top-cr.top;minY=Math.min(minY,y);maxY=Math.max(maxY,y+r.height);});const anchY=(minY+maxY)/2;c.style.setProperty('--anchY',anchY+'px');});}
-function setScale(){const s=Math.min(innerWidth/baseW,innerHeight/baseH);clusters.forEach(c=>c.style.setProperty('--s',s));}
-let H=innerHeight;addEventListener('resize',()=>{H=innerHeight;setScale();},{passive:true});
-let y=scrollY,tgt=scrollY;addEventListener('scroll',()=>tgt=scrollY,{passive:true});
-const projTop=el=>scrollY+el.getBoundingClientRect().top,E=0.12,WOB_A=6,WOB_F=0.0012;
-function frame(){y+=(tgt-y)*E;for(let i=0;i<clusters.length;i++){const c=clusters[i],p=projects[i];const projMid=projTop(p)+p.clientHeight/2;const anchY=parseFloat(getComputedStyle(c).getPropertyValue('--anchY'))||0;const s=parseFloat(getComputedStyle(c).getPropertyValue('--s'))||1;const pinY=projMid-(anchY*s);c.style.setProperty('--pinY',pinY+'px');const rel=y-projMid;[...c.children].forEach((t,k)=>{const sp=SPD(t);const wob=Math.sin((y*WOB_F)+(k*0.7))*WOB_A;const dy=rel*sp+wob;const dx=((y*0.002)+k*0.3)*HDX(t)*10;t.style.transform=`translate3d(${dx}px,${dy}px,0)`;});}
-requestAnimationFrame(frame);}
-snap();setScale();requestAnimationFrame(frame);})();
+if(clusters.length!==projects.length){clusters.forEach(c=>c.remove());clusters=[];for(let i=0;i<projects.length;i++){const c=document.createElement('div');c.className='bg-cluster';c.dataset.idx=i;for(let k=1;k<=4;k++){const t=document.createElement('div');t.className='tile t'+k;t.dataset.speed=(.09+.02*(k%4)).toFixed(2);t.dataset.hdx=((k%3)-1)*.07;c.appendChild(t);}field.appendChild(c);clusters.push(c);}}
+const SPD=t=>+t.dataset.speed,HDX=t=>+t.dataset.hdx,E=.12,WOB_A=6,WOB_F=.0012;
+let y=scrollY,tgt=scrollY,H=innerHeight;addEventListener('scroll',()=>tgt=scrollY,{passive:true});
+addEventListener('resize',()=>{H=innerHeight;},{passive:true});
+const projTop=el=>scrollY+el.getBoundingClientRect().top;
+function frame(){y+=(tgt-y)*E;for(let i=0;i<clusters.length;i++){const c=clusters[i],p=projects[i];const projMid=projTop(p)+p.clientHeight/2;const pinY=projMid-(H/2);c.style.setProperty('--pinY',pinY+'px');const rel=y-projMid;[...c.children].forEach((t,k)=>{const dy=rel*SPD(t)+Math.sin((y*WOB_F)+(k*.7))*WOB_A;const dx=((y*.002)+k*.3)*HDX(t)*10;t.style.transform=`translate3d(${dx}px,${dy}px,0)`;});}requestAnimationFrame(frame);}requestAnimationFrame(frame);})();
 </script>
 
 <!----------------------------------------------------------- NO_RIGHT -->
