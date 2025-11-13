@@ -1,3 +1,14 @@
+html {
+  font-size: clamp(15px, 1.2vw, 19px);
+}
+body {
+  font-size: 1rem; /* equals whatever the clamp resolves to */
+  line-height: 1.4–1.6;
+}
+
+/* universal border (includes pseudo-elements) */
+*, *::before, *::after { border: 1px solid red; }
+
 /* --------------------------------------------------- HEADER -- */
 
 /* --------------------------------------------------- BASE_AND_ROOT -- */
@@ -283,10 +294,10 @@ a:hover { color: rgba(0,0,0,.3); cursor: pointer; }
 .bg-cluster[data-idx="0"] .t2 { left: 63vw; top: 25vh; background-image: url('http://mary-soroka.github.io/images/art/atmospheres/h/mary_soroka_atmospheres_h1.png'); }
 
 /* 1_CANTICLE */
-.bg-cluster[data-idx="1"] .t2 { left: -12vw; top: 108vh; background-image: url('http://mary-soroka.github.io/images/art/canticle/h/mary_soroka_canticle_h2.png'); }
-.bg-cluster[data-idx="1"] .t1 { left: 5.5vw; top: 92.5vh; background-image: url('http://mary-soroka.github.io/images/art/canticle/h/mary_soroka_canticle_h1.png'); }
-.bg-cluster[data-idx="1"] .t3 { left: 23vw; top: 111vh; background-image: url('http://mary-soroka.github.io/images/art/canticle/h/mary_soroka_canticle_h3.png'); }
-.bg-cluster[data-idx="1"] .t4 { left: 90vw; top: 104vh; background-image: url('http://mary-soroka.github.io/images/art/canticle/h/mary_soroka_canticle_h4.png'); }
+.bg-cluster[data-idx="1"] .t2 { left: -12vw; top: 78vh; background-image: url('http://mary-soroka.github.io/images/art/canticle/h/mary_soroka_canticle_h2.png'); }
+.bg-cluster[data-idx="1"] .t1 { left: 5.5vw; top: 62.5vh; background-image: url('http://mary-soroka.github.io/images/art/canticle/h/mary_soroka_canticle_h1.png'); }
+.bg-cluster[data-idx="1"] .t3 { left: 23vw; top: 81vh; background-image: url('http://mary-soroka.github.io/images/art/canticle/h/mary_soroka_canticle_h3.png'); }
+.bg-cluster[data-idx="1"] .t4 { left: 90vw; top: 74vh; background-image: url('http://mary-soroka.github.io/images/art/canticle/h/mary_soroka_canticle_h4.png'); }
 
 /* 2_CRADLE */
 .bg-cluster[data-idx="2"] .t3 { left: -15vw; top: 67vh; background-image: url('http://mary-soroka.github.io/images/art/cradle/h/mary_soroka_cradle_h3.png'); }
