@@ -486,3 +486,17 @@ a:hover {
 .bg-cluster[data-idx="6"] .t1{left:8vw;top:35vh;background-image:url('http://mary-soroka.github.io/images/art/silk/h/mary_soroka_silk_h1.png')}
 .bg-cluster[data-idx="6"] .t2{left:60vw;top:55vh;background-image:url('http://mary-soroka.github.io/images/art/silk/h/mary_soroka_silk_h2.png')}
 .bg-cluster[data-idx="6"] .t3{left:12vw;top:52vh;background-image:url('http://mary-soroka.github.io/images/art/silk/h/mary_soroka_silk_h3.png')}
+
+
+/* Fix YouTube cropping only in Cradle and Upside Down */
+.project[data-key="cradle"] iframe,
+.project[data-key="upside-down"] iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transform: none;
+  border: 0;
+  object-fit: contain;
+  background: #000;
+}
