@@ -250,6 +250,13 @@ a:hover {
   display: block;
 }
 
+.project.atmospheres .video_with_audio {
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-color: #000; /* fills any empty space */
+}
+
 .project h2 {
   position: absolute;
   left: 2vw;
