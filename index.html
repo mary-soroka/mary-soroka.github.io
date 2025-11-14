@@ -107,7 +107,7 @@
         </div>
       </section>
 
-      <section class="project" data-key="silk">
+      <section class="project" data-key="silk" style="border-bottom:0;margin-bottom:10vw;">
         <h2>Silk</h2>
         <div class="content-row three">
           <div class="item" style="background-image:url('http://mary-soroka.github.io/images/art/silk/v/mary_soroka_silk_v1.png')"></div>
@@ -115,10 +115,6 @@
           <div class="item" style="background-image:url('http://mary-soroka.github.io/images/art/silk/v/mary_soroka_silk_v3.png')"></div>
         </div>
       </section>
-        <div id="backToTop">
-    <h2>Back to top <span class="slash">↑</span></h2>
-    <span class="btp-overlay" aria-hidden="true"></span>
-  </div>
     </main>
   </div>
 
@@ -131,7 +127,7 @@ const SPD=t=>+t.dataset.speed,HDX=t=>+t.dataset.hdx,E=.12,WOB_A=6,WOB_F=.0012;
 let y=scrollY,tgt=scrollY,H=innerHeight;addEventListener('scroll',()=>tgt=scrollY,{passive:true});
 addEventListener('resize',()=>{H=innerHeight;},{passive:true});
 const projTop=el=>scrollY+el.getBoundingClientRect().top;
-function frame(){y+=(tgt-y)*E;for(let i=0;i<clusters.length;i++){const c=clusters[i],p=projects[i];const projMid=projTop(p)+p.clientHeight/2;const pinY=projMid-(H/2);c.style.setProperty('--pinY',pinY+'px');const rel=y-projMid;[...c.children].forEach((t,k)=>{const dy=rel*SPD(t)+Math.sin((y*WOB_F)+(k*.7))*WOB_A;const dx=((y*.002)+k*.3)*HDX(t)*10;t.style.transform=translate3d(${dx}px,${dy}px,0);});}requestAnimationFrame(frame);}requestAnimationFrame(frame);})();
+function frame(){y+=(tgt-y)*E;for(let i=0;i<clusters.length;i++){const c=clusters[i],p=projects[i];const projMid=projTop(p)+p.clientHeight/2;const pinY=projMid-(H/2);c.style.setProperty('--pinY',pinY+'px');const rel=y-projMid;[...c.children].forEach((t,k)=>{const dy=rel*SPD(t)+Math.sin((y*WOB_F)+(k*.7))*WOB_A;const dx=((y*.002)+k*.3)*HDX(t)*10;t.style.transform=`translate3d(${dx}px,${dy}px,0)`;});}requestAnimationFrame(frame);}requestAnimationFrame(frame);})();
   </script>
 
   <script>
@@ -195,6 +191,10 @@ function frame(){y+=(tgt-y)*E;for(let i=0;i<clusters.length;i++){const c=cluster
   })();
   </script>
 
+  <div id="backToTop">
+    <h2>Top <span class="slash">↑</span></h2>
+    <span class="btp-overlay" aria-hidden="true"></span>
+  </div>
   <script>
   (() => {
     const topBtn = document.getElementById('backToTop');
