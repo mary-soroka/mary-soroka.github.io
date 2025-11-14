@@ -380,16 +380,19 @@ a:hover {
   z-index: 9999;
 }
 
+/* Custom blur timing for the first project “Atmospheres” */
 .project.atmospheres {
   --blur: 100px;
   --dur: 3s;
 }
 
+/* Matching blur timing for its corresponding cluster */
 .bg-cluster[data-idx='0'] {
   --blur: 100px;
   --dur: 5s;
 }
 
+/* After intro “drama” animation finishes, reset blur for smoother scroll */
 .drama-done .project.atmospheres {
   --blur: 20px;
   --dur: 0.3s;
@@ -400,6 +403,7 @@ a:hover {
   --dur: 0.3s;
 }
 
+/* Overlay veil on all projects to fade inactive ones */
 .project::before {
   content: '';
   position: absolute;
@@ -411,6 +415,7 @@ a:hover {
   z-index: 3;
 }
 
+/* Remove overlay on active project */
 .project.active::before {
   opacity: 0;
 }
@@ -443,8 +448,9 @@ a:hover {
   transition: color .2s;
   cursor: pointer;
   bottom: 2vw;
-  right: 2vw;           /* ← add this line */
-  text-align: right;    /* ← add this line */
+  left: 50%;                /* center horizontally */
+  transform: translateX(-50%);
+  text-align: center;
 }
 
 #backToTop a {
@@ -480,7 +486,7 @@ opacity:1}
 /* 0_ATMOSPHERES */
 .bg-cluster[data-idx="0"] .t1{left:8vw;top:40vh;background-image:url('http://mary-soroka.github.io/images/art/atmospheres/h/mary_soroka_atmospheres_h3.png')}
 .bg-cluster[data-idx="0"] .t2{left:63vw;top:35vh;background-image:url('http://mary-soroka.github.io/images/art/atmospheres/h/mary_soroka_atmospheres_h1.png')}
-.bg-cluster[data-idx="0"] .t3{left:12vw;top:60vh;background-image:url('http://mary-soroka.github.io/images/art/atmospheres/h/mary_soroka_atmospheres_h2.png')}
+.bg-cluster[data-idx="0"] .t3{left:12vw;top:60vh;filter: brightness(1.2) contrast(.9);background-image:url('http://mary-soroka.github.io/images/art/atmospheres/h/mary_soroka_atmospheres_h2.png')}
 
 /* 1_CANTICLE */
 .bg-cluster[data-idx="1"] .t1{left:8vw;top:40vh;background-image:url('http://mary-soroka.github.io/images/art/canticle/h/mary_soroka_canticle_h1.png')}
@@ -490,13 +496,13 @@ opacity:1}
 
 /* 2_CRADLE */
 .bg-cluster[data-idx="2"] .t1{left:8vw;top:36vh;background-image:url('http://mary-soroka.github.io/images/art/cradle/h/mary_soroka_cradle_h1.png')}
-.bg-cluster[data-idx="2"] .t2{left:13.5vw;top:56vh;background-image:url('http://mary-soroka.github.io/images/art/cradle/h/mary_soroka_cradle_h2.png')}
-.bg-cluster[data-idx="2"] .t3{left:-15vw;top:47vh;background-image:url('http://mary-soroka.github.io/images/art/cradle/h/mary_soroka_cradle_h3.png')}
+.bg-cluster[data-idx="2"] .t2{left:13.5vw;top:56vh;filter: brightness(1) contrast(.95);background-image:url('http://mary-soroka.github.io/images/art/cradle/h/mary_soroka_cradle_h2.png')}
+.bg-cluster[data-idx="2"] .t3{left:-15vw;top:47vh;filter: brightness(1.05) contrast(.95);background-image:url('http://mary-soroka.github.io/images/art/cradle/h/mary_soroka_cradle_h3.png')}
 .bg-cluster[data-idx="2"] .t4{left:88vw;top:50vh;background-image:url('http://mary-soroka.github.io/images/art/cradle/h/mary_soroka_cradle_h4.png')}
 
 /* 4_UPSIDE_DOWN */
 .bg-cluster[data-idx="3"] .t1{left:10vw;top:50vh;background-image:url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h1.png')}
-.bg-cluster[data-idx="3"] .t2{left:18vw;top:30vh;background-image:url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h2.png')}
+.bg-cluster[data-idx="3"] .t2{left:18vw;top:30vh;filter: brightness(1.05) contrast(.97);background-image:url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h2.png')}
 .bg-cluster[data-idx="3"] .t3{left:86vw;top:30vh;background-image:url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h3.png')}
 .bg-cluster[data-idx="3"] .t4{left:-19.5vw;top:55vh;background-image:url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h4.png')}
 
@@ -512,7 +518,7 @@ opacity:1}
 /* 7_SILK */
 .bg-cluster[data-idx="6"] .t1{left:8vw;top:35vh;background-image:url('http://mary-soroka.github.io/images/art/silk/h/mary_soroka_silk_h1.png')}
 .bg-cluster[data-idx="6"] .t2{left:60vw;top:55vh;background-image:url('http://mary-soroka.github.io/images/art/silk/h/mary_soroka_silk_h2.png')}
-.bg-cluster[data-idx="6"] .t3{left:12vw;top:52vh;background-image:url('http://mary-soroka.github.io/images/art/silk/h/mary_soroka_silk_h3.png')}
+.bg-cluster[data-idx="6"] .t3{left:12vw;top:52vh;filter: brightness(1.15) contrast(.85);background-image:url('http://mary-soroka.github.io/images/art/silk/h/mary_soroka_silk_h3.png')}
 
 
 /* Fix YouTube cropping only in Cradle and Upside Down */
