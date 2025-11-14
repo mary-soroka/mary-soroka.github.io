@@ -393,11 +393,9 @@ a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 44vw;                          /* keeps blur canvas */
-  display: flex;
-  align-items: flex-end;
+  height: 44vw; 
   justify-content: center;
-  padding: 2vw 0;                        /* 2vw internal padding above link */
+  padding: 2vw 0 2vw 2vw;                        /* 2vw internal padding above link */
   background: transparent;
   opacity: 0;
   pointer-events: none;
@@ -410,17 +408,18 @@ a:hover {
 }
 
 #backToTop h2 {
-  margin: 0;
+  position:fixed;margin: 0;
   color: rgba(0,0,0,.3);
   transition: color .2s;
   cursor: pointer;
+  bottom:2vw;
 }
 
 #backToTop a {
   width:100%;
   border-top: 1px solid rgba(0,0,0,.1);
+  text-align:left;
 }
-
 
 #backToTop h2:hover { color: #000; }
 
@@ -442,9 +441,6 @@ a:hover {
   -webkit-backdrop-filter: blur(3vw);
   backdrop-filter: blur(3vw);
 }
-
-
-
 
 
 /* 0_ATMOSPHERES */
