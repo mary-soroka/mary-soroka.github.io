@@ -6,7 +6,6 @@
   <meta name="description" content="Mary Soroka is an artist and internationally award-winning Creative and Film Director in NYC." />
   <title>Mary Soroka | Portfolio</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/cluster.css" />
   <link rel="stylesheet" href="css/font.css" />
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
@@ -116,13 +115,10 @@
           <div class="item" style="background-image:url('http://mary-soroka.github.io/images/art/silk/v/mary_soroka_silk_v3.png')"></div>
         </div>
       </section>
-
-      <div id="backToTop">
-        <div class="btp-pad"></div>
-        <h2>Top <span class="slash">↑</span></h2>
-        <div class="btp-pad"></div>
-        <span class="btp-overlay" aria-hidden="true"></span>
-      </div>
+        <div id="backToTop">
+    <h2>Back to top <span class="slash">↑</span></h2>
+    <span class="btp-overlay" aria-hidden="true"></span>
+  </div>
     </main>
   </div>
 
@@ -135,7 +131,7 @@ const SPD=t=>+t.dataset.speed,HDX=t=>+t.dataset.hdx,E=.12,WOB_A=6,WOB_F=.0012;
 let y=scrollY,tgt=scrollY,H=innerHeight;addEventListener('scroll',()=>tgt=scrollY,{passive:true});
 addEventListener('resize',()=>{H=innerHeight;},{passive:true});
 const projTop=el=>scrollY+el.getBoundingClientRect().top;
-function frame(){y+=(tgt-y)*E;for(let i=0;i<clusters.length;i++){const c=clusters[i],p=projects[i];const projMid=projTop(p)+p.clientHeight/2;const pinY=projMid-(H/2);c.style.setProperty('--pinY',pinY+'px');const rel=y-projMid;[...c.children].forEach((t,k)=>{const dy=rel*SPD(t)+Math.sin((y*WOB_F)+(k*.7))*WOB_A;const dx=((y*.002)+k*.3)*HDX(t)*10;t.style.transform=`translate3d(${dx}px,${dy}px,0)`;});}requestAnimationFrame(frame);}requestAnimationFrame(frame);})();
+function frame(){y+=(tgt-y)*E;for(let i=0;i<clusters.length;i++){const c=clusters[i],p=projects[i];const projMid=projTop(p)+p.clientHeight/2;const pinY=projMid-(H/2);c.style.setProperty('--pinY',pinY+'px');const rel=y-projMid;[...c.children].forEach((t,k)=>{const dy=rel*SPD(t)+Math.sin((y*WOB_F)+(k*.7))*WOB_A;const dx=((y*.002)+k*.3)*HDX(t)*10;t.style.transform=translate3d(${dx}px,${dy}px,0);});}requestAnimationFrame(frame);}requestAnimationFrame(frame);})();
   </script>
 
   <script>
@@ -202,6 +198,11 @@ function frame(){y+=(tgt-y)*E;for(let i=0;i<clusters.length;i++){const c=cluster
   <script>
   (() => {
     const topBtn = document.getElementById('backToTop');
+    const lastProject = document.querySelector('.project:last-of-type');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => topBtn.classList.toggle('visible', e.isIntersecting));
+    }, { threshold: 0.6 });
+    if (lastProject) observer.observe(lastProject);
     topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   })();
   </script>
