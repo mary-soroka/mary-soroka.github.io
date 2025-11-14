@@ -6,6 +6,7 @@
   <meta name="description" content="Mary Soroka is an artist and internationally award-winning Creative and Film Director in NYC." />
   <title>Mary Soroka | Portfolio</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/cluster.css" />
   <link rel="stylesheet" href="css/font.css" />
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
@@ -107,7 +108,7 @@
         </div>
       </section>
 
-      <section class="project" data-key="silk" style="border-bottom:0;margin-bottom:10vw;">
+      <section class="project" data-key="silk">
         <h2>Silk</h2>
         <div class="content-row three">
           <div class="item" style="background-image:url('http://mary-soroka.github.io/images/art/silk/v/mary_soroka_silk_v1.png')"></div>
@@ -115,6 +116,13 @@
           <div class="item" style="background-image:url('http://mary-soroka.github.io/images/art/silk/v/mary_soroka_silk_v3.png')"></div>
         </div>
       </section>
+
+      <div id="backToTop">
+        <div class="btp-pad"></div>
+        <h2>Top <span class="slash">↑</span></h2>
+        <div class="btp-pad"></div>
+        <span class="btp-overlay" aria-hidden="true"></span>
+      </div>
     </main>
   </div>
 
@@ -191,18 +199,9 @@ function frame(){y+=(tgt-y)*E;for(let i=0;i<clusters.length;i++){const c=cluster
   })();
   </script>
 
-  <div id="backToTop">
-    <h2>Top <span class="slash">↑</span></h2>
-    <span class="btp-overlay" aria-hidden="true"></span>
-  </div>
   <script>
   (() => {
     const topBtn = document.getElementById('backToTop');
-    const lastProject = document.querySelector('.project:last-of-type');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(e => topBtn.classList.toggle('visible', e.isIntersecting));
-    }, { threshold: 0.6 });
-    if (lastProject) observer.observe(lastProject);
     topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   })();
   </script>
