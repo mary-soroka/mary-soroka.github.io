@@ -423,6 +423,7 @@ a:hover {
 /* --------------------------------------------------- BACK TO TOP */
 
 #backToTop {
+  display:none;
   position: fixed;
   left: 0;
   right: 0;
