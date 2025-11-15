@@ -575,18 +575,6 @@ opacity:1}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* mobile.css */
 
 /* Default: keep desktop visible, hide mobile */
@@ -594,7 +582,7 @@ opacity:1}
   display: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
   .site-desktop {
     display: none !important;
   }
@@ -652,21 +640,20 @@ opacity:1}
   .m-overlay {
     position: absolute;
     inset: 0;
-    padding: 6vw;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.45) 0 35%, transparent 60%);
+    padding: 5vw;
   }
 
   .m-nav {
     display: flex;
     justify-content: space-between;
     gap: 4vw;
-    font-size: 3.6vw;
+    font-size: 14px;
   }
 
   .m-nav a {
     color: #fff;
     text-decoration: none;
-    opacity: 0.9;
+    opacity: 1;
   }
 
   .m-nav a:hover {
@@ -688,14 +675,14 @@ opacity:1}
 
   .m-bio {
     position: absolute;
-    bottom: 5vw;
+    top: 5vw;
     left: 5vw;
     margin: 0;
-    font-size: 3.6vw;
+    font-size: 14px;
     line-height: 1.45;
-    max-width: 90%;
+    max-width: 50%;
     color: #fff;
-    opacity: 0.9;
+    opacity: 1;
   }
 
   .m-title {
