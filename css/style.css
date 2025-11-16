@@ -502,24 +502,24 @@ opacity:1}
 .bg-cluster[data-idx="2"] .t4{left:88vw;top:50vh;background-image:url('http://mary-soroka.github.io/images/art/cradle/h/mary_soroka_cradle_h4.png')}
 
 /* 4_UPSIDE_DOWN */
-.bg-cluster[data-idx="3"] .t1{left:10vw;top:50vh;background-image:url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h1.png')}
-.bg-cluster[data-idx="3"] .t2{left:18vw;top:30vh;filter: brightness(1.05) contrast(.97);background-image:url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h2.png')}
-.bg-cluster[data-idx="3"] .t3{left:86vw;top:30vh;background-image:url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h3.png')}
-.bg-cluster[data-idx="3"] .t4{left:-19.5vw;top:55vh;background-image:url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h4.png')}
+.bg-cluster[data-idx="6"] .t1{left:10vw;top:50vh;background-image:url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h1.png')}
+.bg-cluster[data-idx="6"] .t2{left:18vw;top:30vh;filter: brightness(1.05) contrast(.97);background-image:url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h2.png')}
+.bg-cluster[data-idx="6"] .t3{left:86vw;top:30vh;background-image:url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h3.png')}
+.bg-cluster[data-idx="6"] .t4{left:-19.5vw;top:55vh;background-image:url('http://mary-soroka.github.io/images/art/upside_down/h/mary_soroka_upside_down_h4.png')}
 
 /* 5_MINERS_RELIQUARY */
-.bg-cluster[data-idx="4"] .t1{left:10vw;top:38vh;background-image:url('http://mary-soroka.github.io/images/art/miners_reliquary/h/mary_soroka_miners_reliquary_h4.png')}
-.bg-cluster[data-idx="4"] .t2{left:2vw;top:58vh;background-image:url('http://mary-soroka.github.io/images/art/miners_reliquary/h/mary_soroka_miners_reliquary_h2.png')}
+.bg-cluster[data-idx="3"] .t1{left:10vw;top:38vh;background-image:url('http://mary-soroka.github.io/images/art/miners_reliquary/h/mary_soroka_miners_reliquary_h4.png')}
+.bg-cluster[data-idx="3"] .t2{left:2vw;top:58vh;background-image:url('http://mary-soroka.github.io/images/art/miners_reliquary/h/mary_soroka_miners_reliquary_h2.png')}
 
 /* 6_HALF_LIGHT */
-.bg-cluster[data-idx="5"] .t1{left:-12vw;top:58vh;background-image:url('http://mary-soroka.github.io/images/art/half_light/h/mary_soroka_half_light_h3.png')}
-.bg-cluster[data-idx="5"] .t2{left:10vw;top:46vh;background-image:url('http://mary-soroka.github.io/images/art/half_light/h/mary_soroka_half_light_h2.png')}
-.bg-cluster[data-idx="5"] .t4{left:92vw;top:52vh;background-image:url('http://mary-soroka.github.io/images/art/half_light/h/mary_soroka_half_light_h4.png')}
+.bg-cluster[data-idx="4"] .t1{left:-12vw;top:58vh;background-image:url('http://mary-soroka.github.io/images/art/half_light/h/mary_soroka_half_light_h3.png')}
+.bg-cluster[data-idx="4"] .t2{left:10vw;top:46vh;background-image:url('http://mary-soroka.github.io/images/art/half_light/h/mary_soroka_half_light_h2.png')}
+.bg-cluster[data-idx="4"] .t4{left:92vw;top:52vh;background-image:url('http://mary-soroka.github.io/images/art/half_light/h/mary_soroka_half_light_h4.png')}
 
 /* 7_SILK */
-.bg-cluster[data-idx="6"] .t1{left:8vw;top:35vh;background-image:url('http://mary-soroka.github.io/images/art/silk/h/mary_soroka_silk_h1.png')}
-.bg-cluster[data-idx="6"] .t2{left:60vw;top:55vh;background-image:url('http://mary-soroka.github.io/images/art/silk/h/mary_soroka_silk_h2.png')}
-.bg-cluster[data-idx="6"] .t3{left:12vw;top:52vh;filter: brightness(1.15) contrast(.85);background-image:url('http://mary-soroka.github.io/images/art/silk/h/mary_soroka_silk_h3.png')}
+.bg-cluster[data-idx="5"] .t1{left:8vw;top:35vh;background-image:url('http://mary-soroka.github.io/images/art/silk/h/mary_soroka_silk_h1.png')}
+.bg-cluster[data-idx="5"] .t2{left:60vw;top:55vh;background-image:url('http://mary-soroka.github.io/images/art/silk/h/mary_soroka_silk_h2.png')}
+.bg-cluster[data-idx="5"] .t3{left:12vw;top:52vh;filter: brightness(1.15) contrast(.85);background-image:url('http://mary-soroka.github.io/images/art/silk/h/mary_soroka_silk_h3.png')}
 
 
 /* Fix YouTube cropping only in Cradle and Upside Down */
