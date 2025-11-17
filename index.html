@@ -279,122 +279,184 @@ function frame(){y+=(tgt-y)*E;for(let i=0;i<clusters.length;i++){const c=cluster
 
 <!-- mobile.html -->
 <div class="site-mobile">
-  <!-- 1) Welcome (nav + hero + full bio) -->
-  <section class="m-screen m-welcome" style="--bg:url('http://mary-soroka.github.io/images/art/miners_reliquary/v/mary_soroka_miners_reliquary_v2.png')">
-    <div class="m-overlay">
-      <div class="m-nav">
 
-        <span><a href="mailto:maryintro@icloud.com">Email</a> ／ <a href="https://www.linkedin.com/in/marysoroka" target="_blank" rel="noopener">LinkedIn</a></span>
+  <!-- 1) WELCOME / NAV / LOGO -->
+  <section class="m-screen m-welcome"
+           style="--bg:url('http://mary-soroka.github.io/images/art/miners_reliquary/v/mary_soroka_miners_reliquary_v2.png')">
+    <div class="m-overlay">
+
+      <!-- 1A) TOP NAV LINKS -->
+      <div class="m-nav">
+        <span>
+          <a href="mailto:maryintro@icloud.com">Email</a>
+          ／
+          <a href="https://www.linkedin.com/in/marysoroka" target="_blank" rel="noopener">LinkedIn</a>
+        </span>
       </div>
+
+      <!-- 1B) NAME LOGO -->
       <div class="welcome_title_mobile">
-  <img class="logo-name" src="images/logo/ms-name.svg" alt="Mary Soroka">
-</div>
-<div class="m-bio">
+        <img class="logo-name" src="images/logo/ms-name.svg" alt="Mary Soroka">
       </div>
+
+      <!-- 1C) BIO TEXT (INTENTIONALLY EMPTY FOR NOW) -->
+      <div class="m-bio"></div>
+
     </div>
   </section>
 
-
-  <!-- 2) Miner's (3 videos) -->
-
-      <section class="m-screen"><div class="m-media" style="--img:url('http://mary-soroka.github.io/images/art/miners_reliquary/v/mary_soroka_miners_reliquary_v3.png')"></div>
-  <div class="m-title"></div></section>
-
-      <section class="m-screen"><div class="m-media">
-    <iframe class="m-zoom" style="--zoom:1.05;--tx:0vw;--ty:0vw;" src="https://player.vimeo.com/video/1135556799?background=1&autoplay=1&muted=1&loop=1&autopause=0" title="Miner’s Reliquary — Video" allow="autoplay; fullscreen; picture-in-picture"></iframe>
-  </div><div class="m-title"></div></section>
-
-      <section class="m-screen"><div class="m-media" style="--img:url('http://mary-soroka.github.io/images/art/miners_reliquary/v/mary_soroka_miners_reliquary_v1.png')"></div>
-  <div class="m-title"></div></section>
-
-
-
-
-
-
-    <section class="m-screen"><div class="m-media" style="--img:url('http://mary-soroka.github.io/images/art/canticle/v/mary_soroka_canticle_v2.png')"></div>
-  <div class="m-title"></div></section>
-
-
-
-  <!-- 2) Atmospheres (3 videos) -->
-  <section class="m-screen"><div class="m-media">
-    <iframe class="m-zoom" style="--zoom:1.05;--tx:0vw;--ty:0vw;" src="https://player.vimeo.com/video/1135480037?background=1&autoplay=1&muted=1&loop=1&autopause=0" title="Atmospheres 1" allow="autoplay; fullscreen; picture-in-picture"></iframe>
-  </div><div class="m-title"></div></section>
-
-  <section class="m-screen"><div class="m-media">
-    <iframe class="m-zoom" style="--zoom:1.05;--tx:0vw;--ty:0vw;" src="https://player.vimeo.com/video/1135477684?background=1&autoplay=1&muted=1&loop=1&autopause=0" title="Atmospheres 2" allow="autoplay; fullscreen; picture-in-picture"></iframe>
-  </div><div class="m-title"></div></section>
-
-  <section class="m-screen"><div class="m-media">
-    <iframe class="m-zoom" style="--zoom:1.05;--tx:0vw;--ty:0vw;" src="https://player.vimeo.com/video/1135478046?background=1&autoplay=1&muted=1&loop=1&autopause=0" title="Atmospheres 3" allow="autoplay; fullscreen; picture-in-picture"></iframe>
-  </div><div class="m-title"></div></section>
-
-  <!-- 3) Canticle (1 video, 2 images) -->
-  <section class="m-screen"><div class="m-media">
-    <iframe class="m-zoom" style="--zoom:1.5;--tx:0vw;--ty:-3vw;" src="https://player.vimeo.com/video/1135570330?background=1&autoplay=1&muted=1&loop=1&autopause=0" title="Canticle — Video" allow="autoplay; fullscreen; picture-in-picture"></iframe>
-  </div><div class="m-title"></div></section>
-
-  <section class="m-screen"><div class="m-media" style="--img:url('http://mary-soroka.github.io/images/art/canticle/v/mary_soroka_canticle_v2.png')"></div>
-  <div class="m-title"></div></section>
-
-  <section class="m-screen"><div class="m-media" style="--img:url('http://mary-soroka.github.io/images/art/canticle/v/mary_soroka_canticle_v3b.png')"></div>
-  <div class="m-title"></div></section>
-
-  <!-- 4) Cradle (YouTube) 
-  <section class="m-screen"><div class="m-media">
-    <iframe src="https://www.youtube.com/embed/cUYS2USfZ-c?si=MJ7TbnQmhVIZZClL" title="Cradle" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  </div><div class="m-title"></div></section>-->
-
-  <!-- 5) Self (3 images) 
-  <section class="m-screen"><div class="m-media" style="--img:url('http://mary-soroka.github.io/images/art/self/v/mary_soroka_self_v1.png')"></div>
-  <div class="m-title"></div></section>
-
-  <section class="m-screen"><div class="m-media" style="--img:url('http://mary-soroka.github.io/images/art/self/v/mary_soroka_self_v2.png')"></div>
-  <div class="m-title"></div></section>
-
-<section class="m-screen"><div class="m-media" style="--img:url('http://mary-soroka.github.io/images/art/self/v/mary_soroka_self_v3.png')"></div>
-  <div class="m-title"></div></section>-->
-
-  <!-- 6) Upside Down (YouTube) 
-  <section class="m-screen"><div class="m-media">
-    <iframe src="https://www.youtube.com/embed/-9MWBZO40UM?si=W08tcMnTnGgrryL7" title="Upside Down" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  </div><div class="m-title">Watch Video<span class="slash">&#8594;</span></div></section>-->
-
-  <!-- 7) Miner’s Reliquary (image, video) 
-  <section class="m-screen"><div class="m-media" style="--img:url('http://mary-soroka.github.io/images/art/miners_reliquary/v/mary_soroka_miners_reliquary_v2.png')"></div>
-  <div class="m-title"></div></section>-->
-
-  <!-- 8) Half-Light (3 images) -->
-  <section class="m-screen"><div class="m-media" style="--img:url('http://mary-soroka.github.io/images/art/half_light/v/mary_soroka_half_light_v1.png')"></div>
-  <div class="m-title"></div></section>
-
-  <section class="m-screen"><div class="m-media" style="--img:url('http://mary-soroka.github.io/images/art/half_light/v/mary_soroka_half_light_v2.png')"></div>
-  <div class="m-title"></div></section>
-
-  <section class="m-screen"><div class="m-media" style="--img:url('http://mary-soroka.github.io/images/art/half_light/v/mary_soroka_half_light_v3.png')"></div>
-  <div class="m-title"></div></section>
-
-  <!-- 9) Silk (3 images) -->
-
-
-  <section class="m-screen"><div class="m-media" style="--img:url('http://mary-soroka.github.io/images/art/silk/v/mary_soroka_silk_v1.png')"></div>
-  <div class="m-title"></div></section>
-
-
-
-  <section class="m-screen"><div class="m-media">
-
-
-            <iframe class="m-zoom" style="--zoom:1.05;--tx:0vw;--ty:0vw;" src="https://player.vimeo.com/video/1137335504?background=1&autoplay=1&muted=1&loop=1&autopause=0"
-              title="Miner’s Reliquary – Left" allow="autoplay; fullscreen; picture-in-picture"></iframe>
-</div>
+  <!-- 2) MINER’S RELIQUARY – STILL 1 (V3) -->
+  <section class="m-screen">
+    <div class="m-media"
+         style="--img:url('http://mary-soroka.github.io/images/art/miners_reliquary/v/mary_soroka_miners_reliquary_v3.png')">
+    </div>
+    <div class="m-title"></div>
   </section>
 
-      <section class="m-screen"><div class="m-media" style="--img:url('http://mary-soroka.github.io/images/art/silk/v/mary_soroka_silk_v3.png')"></div>
-  <div class="m-title"></div></section>
+  <!-- 2) MINER’S RELIQUARY – VIDEO 
+  <section class="m-screen">
+    <div class="m-media">
+      <iframe class="m-zoom"
+              style="--zoom:1.05;--tx:0vw;--ty:0vw;"
+              src="https://player.vimeo.com/video/1135556799?background=1&autoplay=1&muted=1&loop=1&autopause=0"
+              title="Miner’s Reliquary — Video"
+              allow="autoplay; fullscreen; picture-in-picture"></iframe>
+    </div>
+    <div class="m-title"></div>
+  </section>-->
 
-  
+  <!-- 2) MINER’S RELIQUARY – STILL 2 (V1) -->
+  <section class="m-screen">
+    <div class="m-media"
+         style="--img:url('http://mary-soroka.github.io/images/art/miners_reliquary/v/mary_soroka_miners_reliquary_v1.png')">
+    </div>
+    <div class="m-title"></div>
+  </section>
+
+  <!-- 4) ATMOSPHERES – VIDEO 1 
+  <section class="m-screen">
+    <div class="m-media">
+      <iframe class="m-zoom"
+              style="--zoom:1.05;--tx:0vw;--ty:0vw;"
+              src="https://player.vimeo.com/video/1135480037?background=1&autoplay=1&muted=1&loop=1&autopause=0"
+              title="Atmospheres 1"
+              allow="autoplay; fullscreen; picture-in-picture"></iframe>
+    </div>
+    <div class="m-title"></div>
+  </section>-->
+
+  <!-- 4) ATMOSPHERES – VIDEO 2 
+  <section class="m-screen">
+    <div class="m-media">
+      <iframe class="m-zoom"
+              style="--zoom:1.05;--tx:0vw;--ty:0vw;"
+              src="https://player.vimeo.com/video/1135477684?background=1&autoplay=1&muted=1&loop=1&autopause=0"
+              title="Atmospheres 2"
+              allow="autoplay; fullscreen; picture-in-picture"></iframe>
+    </div>
+    <div class="m-title"></div>
+  </section>-->
+
+  <!-- 4) ATMOSPHERES – VIDEO 3 
+  <section class="m-screen">
+    <div class="m-media">
+      <iframe class="m-zoom"
+              style="--zoom:1.05;--tx:0vw;--ty:0vw;"
+              src="https://player.vimeo.com/video/1135478046?background=1&autoplay=1&muted=1&loop=1&autopause=0"
+              title="Atmospheres 3"
+              allow="autoplay; fullscreen; picture-in-picture"></iframe>
+    </div>
+    <div class="m-title"></div>
+  </section>-->
+
+  <!-- 5) CANTICLE – MAIN VIDEO 
+  <section class="m-screen">
+    <div class="m-media">
+      <iframe class="m-zoom"
+              style="--zoom:1.5;--tx:0vw;--ty:-3vw;"
+              src="https://player.vimeo.com/video/1135570330?background=1&autoplay=1&muted=1&loop=1&autopause=0"
+              title="Canticle — Video"
+              allow="autoplay; fullscreen; picture-in-picture"></iframe>
+    </div>
+    <div class="m-title"></div>
+  </section>-->
+
+  <!-- 5) CANTICLE – STILL 1 (V2) -->
+  <section class="m-screen">
+    <div class="m-media"
+         style="--img:url('http://mary-soroka.github.io/images/art/canticle/v/mary_soroka_canticle_v2.png')">
+    </div>
+    <div class="m-title"></div>
+  </section>
+
+  <!-- 5) CANTICLE – STILL 2 (V3B) -->
+  <section class="m-screen">
+    <div class="m-media"
+         style="--img:url('http://mary-soroka.github.io/images/art/canticle/v/mary_soroka_canticle_v3b.png')">
+    </div>
+    <div class="m-title"></div>
+  </section>
+
+  <!-- 6) HALF-LIGHT – STILL 1 -->
+  <section class="m-screen">
+    <div class="m-media"
+         style="--img:url('http://mary-soroka.github.io/images/art/half_light/v/mary_soroka_half_light_v1.png')">
+    </div>
+    <div class="m-title"></div>
+  </section>
+
+  <!-- 6) HALF-LIGHT – STILL 2 -->
+  <section class="m-screen">
+    <div class="m-media"
+         style="--img:url('http://mary-soroka.github.io/images/art/half_light/v/mary_soroka_half_light_v2.png')">
+    </div>
+    <div class="m-title"></div>
+  </section>
+
+  <!-- 6) HALF-LIGHT – STILL 3 -->
+  <section class="m-screen">
+    <div class="m-media"
+         style="--img:url('http://mary-soroka.github.io/images/art/half_light/v/mary_soroka_half_light_v3.png')">
+    </div>
+    <div class="m-title"></div>
+  </section>
+
+  <!-- 7) SILK – STILL 1 -->
+  <section class="m-screen">
+    <div class="m-media"
+         style="--img:url('http://mary-soroka.github.io/images/art/silk/v/mary_soroka_silk_v1.png')">
+    </div>
+    <div class="m-title"></div>
+  </section>
+
+  <!-- 7) SILK – VIDEO (CURRENTLY LABELED AS MINER’S LEFT IN DESKTOP) 
+  <section class="m-screen">
+    <div class="m-media">
+      <iframe class="m-zoom"
+              style="--zoom:1.05;--tx:0vw;--ty:0vw;"
+              src="https://player.vimeo.com/video/1137335504?background=1&autoplay=1&muted=1&loop=1&autopause=0"
+              title="Silk – Video"
+              allow="autoplay; fullscreen; picture-in-picture"></iframe>
+    </div>
+    <div class="m-title"></div>
+  </section>-->
+
+  <!-- 7) SILK – STILL 2 (V2) -->
+  <section class="m-screen">
+    <div class="m-media"
+         style="--img:url('http://mary-soroka.github.io/images/art/silk/v/mary_soroka_silk_v2.png')">
+    </div>
+    <div class="m-title"></div>
+  </section>
+
+    <!-- 7) SILK – STILL 3 (V3) -->
+  <section class="m-screen">
+    <div class="m-media"
+         style="--img:url('http://mary-soroka.github.io/images/art/silk/v/mary_soroka_silk_v3.png')">
+    </div>
+    <div class="m-title"></div>
+  </section>
+
 </div>
 
 
