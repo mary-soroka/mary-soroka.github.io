@@ -37,7 +37,7 @@ html, body {
   position:absolute;
   top:0;
   width:100%;
-  height:7vw;
+  height:8vw;
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -137,6 +137,16 @@ a:hover {
 }
 
 /* --------------------------------------------------- WELCOME SECTION */
+
+.welcome_title{
+  margin:0;
+  padding:10vw 0 0 2vw;
+}
+.logo-name{
+  width:20vw;
+  display:block;
+filter: invert(1);
+}
 
 .welcome {
   position: relative;
