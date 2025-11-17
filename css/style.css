@@ -583,165 +583,163 @@ opacity:1}
 
 
 
-
-
-
 /* mobile.css */
 
-/* Default: keep desktop visible, hide mobile */
-.site-mobile {
-  display: none;
+/* 0) DEFAULT: DESKTOP ON, MOBILE OFF */
+.site-mobile{
+  display:none;
 }
 
-@media (max-width: 800px) {
-  .site-desktop {
-    display: none !important;
+/* 1) MOBILE BREAKPOINT */
+@media (max-width:800px){
+
+  /* 1A) HIDE DESKTOP, SHOW MOBILE */
+  .site-desktop{display:none!important;}
+  .site-mobile{
+    display:block;
+    height:100svh;
+    overflow-y:auto;
+    scroll-snap-type:y mandatory;
+    -webkit-overflow-scrolling:touch;
+    background:#000;
+    font-family:'Monument Grotesk',sans-serif;
+    color:#fff;
   }
 
-.site-mobile {
-  display: block;
-  height: 100svh;
-  overflow-y: auto;
-  scroll-snap-type: y mandatory;
-  -webkit-overflow-scrolling: touch;
-  background: #000;
-  font-family: 'Monument Grotesk', sans-serif;
-  color: #fff;
-}
+  /* 1B) GLOBAL TYPOGRAPHY */
+  h1{color:#fff;}
+  p{font-size:18px;}
 
-  h1 {
-    color: white;
+  /* 1C) MOBILE LOGO TITLE */
+  .welcome_title{
+    margin:0;
+    padding:0;
   }
-
-    .welcome_title {
-      margin:0;
-      padding:0;
-    }
-
-    .logo-name {
+  .logo-name{
     width:50vw;
     display:block;
-    filter: invert(1);
-      padding:5vw 0 0 5vw;
-}
-
-  p {
-    font-size:18px;
+    filter:invert(1);
+    padding:5vw 0 0 5vw;
   }
 
-
-  .m-screen {
-    position: relative;
-    height: 100svh;
-    width: 100%;
-    scroll-snap-align: start;
-    background: #000;
+  /* 2) FULLSCREEN SNAP SECTIONS */
+  .m-screen{
+    position:relative;
+    height:100svh;
+    width:100%;
+    scroll-snap-align:start;
+    background:#000;
   }
 
+  /* 3) MEDIA + WELCOME BACKGROUND */
   .m-media,
-  .m-welcome::before {
-    position: absolute;
-    inset: 0;
-    background: #000 center/cover no-repeat;
+  .m-welcome::before{
+    position:absolute;
+    inset:0;
+    background:#000 center/cover no-repeat;
   }
-
-  .m-welcome::before {
-    content: "";
-    background-image: var(--bg);
+  .m-welcome::before{
+    content:"";
+    background-image:var(--bg);
   }
-
-  .m-media[style*="--img"] {
-    background-image: var(--img);
+  .m-media[style*="--img"]{
+    background-image:var(--img);
   }
-
   .m-media iframe,
   .m-media video,
-  .m-media img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-    object-fit: cover;
-  }
-
-  .m-overlay {
-    position: absolute;
-    inset: 0;
-    padding: 0;
-  }
-
-  .m-nav {
+  .m-media img{
     position:absolute;
-    top:5vw;
-    right:5vw;
-    display: flex;
-    justify-content: space-between;
-    gap: 4vw;
-    font-size: 14px;
+    inset:0;
+    width:100%;
+    height:100%;
+    border:0;
+    object-fit:cover;
   }
 
-  .m-nav a {
-    color: #fff;
-    text-decoration: none;
-    opacity: 1;
-    font-size:18px;
-  }
-
-  .m-nav a:hover {
-    opacity: 1;
-  }
-
-  .m-overlay h1 {
-    margin: 18svh 0 2vw;
-    font-weight: 400;
-    font-size: 12vw;
-    line-height: 0.9;
-  }
-
-  .m-sub {
-    margin: 0;
-    font-size: 3.8vw;
-    opacity: 0.9;
-  }
-
-  .m-bio {
-    position: absolute;
-    bottom: 5vw;
-    left: 5vw;
-    margin: 0;
-    max-width: 50%;
-    color: #fff;
-    opacity: 1;
+  /* 4) WELCOME OVERLAY CONTAINER */
+  .m-overlay{
+    position:absolute;
+    inset:0;
     padding:0;
   }
 
-  .m-title {
-    display:none;
-    position: absolute;
-    left: 5vw;
-    bottom: 5vw;
-    font-size: 3.8vw;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.35);
-    padding: 2.2vw 3vw;
-    border-radius: 2vw;
-    backdrop-filter: saturate(1.2) blur(4px);
+  /* 5) WELCOME NAV LINKS (TOP RIGHT) */
+  .m-nav{
+    position:absolute;
+    top:5vw;
+    right:5vw;
+    display:flex;
+    justify-content:space-between;
+    gap:4vw;
+    font-size:14px;
+  }
+  .m-nav a{
+    color:#fff;
+    text-decoration:none;
+    opacity:1;
+    font-size:18px;
+  }
+  .m-nav a:hover{
+    opacity:1;
   }
 
-  /* Kill desktop-only effects on mobile safely */
+  /* 6) OPTIONAL MOBILE H1 STYLE (IF USED) */
+  .m-overlay h1{
+    margin:18svh 0 2vw;
+    font-weight:400;
+    font-size:12vw;
+    line-height:.9;
+  }
+  .m-sub{
+    margin:0;
+    font-size:3.8vw;
+    opacity:.9;
+  }
+
+  /* 7) MOBILE BIO BLOCK (BOTTOM LEFT) */
+  .m-bio{
+    position:absolute;
+    bottom:5vw;
+    left:5vw;
+    margin:0;
+    max-width:50%;
+    color:#fff;
+    opacity:1;
+    padding:0;
+  }
+
+  /* 8) PER-SCREEN TITLE BADGE (CURRENTLY HIDDEN) */
+  .m-title{
+    display:none;
+    position:absolute;
+    left:5vw;
+    bottom:5vw;
+    font-size:3.8vw;
+    color:#fff;
+    background:rgba(0,0,0,.35);
+    padding:2.2vw 3vw;
+    border-radius:2vw;
+    backdrop-filter:saturate(1.2) blur(4px);
+  }
+
+  /* 9) DISABLE DESKTOP BLUR SYSTEM ON MOBILE */
   .bg-field,
   .bg-cluster,
-  .project::before {
-    display: none !important;
-    filter: none !important;
+  .project::before{
+    display:none!important;
+    filter:none!important;
   }
 
-.m-zoom{
-
-  width:100%;height:100%;border:0;
-  --zoom:1;--tx:0vw;--ty:0vw;
-  transform:translate(var(--tx),var(--ty)) scale(var(--zoom));
-  transform-origin:center;
-  object-fit:cover;
+  /* 10) PER-IFRAME ZOOM CONTROL (USED VIA INLINE CUSTOM PROPS) */
+  .m-zoom{
+    width:100%;
+    height:100%;
+    border:0;
+    --zoom:1;
+    --tx:0vw;
+    --ty:0vw;
+    transform:translate(var(--tx),var(--ty)) scale(var(--zoom));
+    transform-origin:center;
+    object-fit:cover;
+  }
 }
